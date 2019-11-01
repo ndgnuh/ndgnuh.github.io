@@ -1,5 +1,5 @@
 ---
-title: "Cài đặt ngôn ngữ Julia"
+title: "[Hướng dẫn] Cài đặt ngôn ngữ Julia"
 date: 2019-11-01T22:18:00+07:00
 draft: false
 description: "Cách tải và cài đặt Julia"
