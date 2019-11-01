@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on #Rants</title>
-    <link>ndgnuh.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on #Rants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi-vn</language>
     <lastBuildDate>Fri, 01 Nov 2019 22:18:00 +0700</lastBuildDate>
     
-	<atom:link href="ndgnuh.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>hướng dẫn</title>
-      <link>ndgnuh.github.io/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</link>
+      <link>/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</link>
       <pubDate>Fri, 01 Nov 2019 22:18:00 +0700</pubDate>
       
-      <guid>ndgnuh.github.io/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</guid>
+      <guid>/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>julia</title>
-      <link>ndgnuh.github.io/tags/julia/</link>
+      <link>/tags/julia/</link>
       <pubDate>Fri, 01 Nov 2019 22:18:00 +0700</pubDate>
       
-      <guid>ndgnuh.github.io/tags/julia/</guid>
+      <guid>/tags/julia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>lập trình</title>
-      <link>ndgnuh.github.io/tags/l%E1%BA%ADp-tr%C3%ACnh/</link>
+      <link>/tags/l%E1%BA%ADp-tr%C3%ACnh/</link>
       <pubDate>Fri, 01 Nov 2019 22:18:00 +0700</pubDate>
       
-      <guid>ndgnuh.github.io/tags/l%E1%BA%ADp-tr%C3%ACnh/</guid>
+      <guid>/tags/l%E1%BA%ADp-tr%C3%ACnh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linh tinh</title>
-      <link>ndgnuh.github.io/tags/linh-tinh/</link>
+      <link>/tags/linh-tinh/</link>
       <pubDate>Fri, 01 Nov 2019 16:46:41 +0700</pubDate>
       
-      <guid>ndgnuh.github.io/tags/linh-tinh/</guid>
+      <guid>/tags/linh-tinh/</guid>
       <description></description>
     </item>
     

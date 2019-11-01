@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hướng dẫn on #Rants</title>
-    <link>ndgnuh.github.io/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</link>
+    <link>/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</link>
     <description>Recent content in hướng dẫn on #Rants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi-vn</language>
     <lastBuildDate>Fri, 01 Nov 2019 22:18:00 +0700</lastBuildDate>
     
-	<atom:link href="ndgnuh.github.io/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Cài đặt ngôn ngữ Julia</title>
-      <link>ndgnuh.github.io/posts/cai-dat-julia/</link>
+      <title>[Hướng dẫn] Cài đặt ngôn ngữ Julia</title>
+      <link>/posts/cai-dat-julia/</link>
       <pubDate>Fri, 01 Nov 2019 22:18:00 +0700</pubDate>
       
-      <guid>ndgnuh.github.io/posts/cai-dat-julia/</guid>
+      <guid>/posts/cai-dat-julia/</guid>
       <description>Cách tải và cài đặt ngôn ngữ Julia.
 Tải Julia về máy Việc tải và cài đặt Julia rất đơn giản, bạn chỉ cần tải bản phân phối tương ứng với hệ điều hành của mình Julia tại https://julialang.org/downloads. Có ba lựa chọn cơ bản cho bạn tải:
  Current stable release: là phiên bản ổn định hiện tại Long term support: là phiên bản hỗ trợ lâu dài, hiểu nôm na nó là bản rất ổn định Upcoming release: là ứng cử viên phiên bản cho phiên bản ổn định sắp tới  Bạn nào ngại đọc tiếng Anh thì có thể đọc hướng dẫn từng-bước ở đây:</description>
