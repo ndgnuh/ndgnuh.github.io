@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="no-js" lang="vi-vn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Dùng Julia với Jupyter Notebook - #Rants</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="#Rants" rel="home">
+				<div class="logo__title">#Rants</div>
+				<div class="logo__tagline">Blog cá nhân, ranting, moaning, abc xyz...</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Dùng Julia với Jupyter Notebook</h1>
+			
+		</header><div class="content post__content clearfix">
+			
+
+<p><strong>Fun fact: tên Jupyter trong Project Jupyter là sự kết hợp của ba ngôn ngữ Julia, Python và R.</strong>  (thông tin này là thật, các bạn có thể nhấn vào <a href="https://github.com/jupyter/design/wiki/Jupyter-Logo">link này</a> trên để xác thực). Vì Jupyter hỗ trợ Julia chính thức nên việc sử dụng Julia với nó rất dễ dàng.</p>
+
+<h1 id="cài-đặt">Cài đặt</h1>
+
+<p>Yêu cầu: Jupyter đã được cài trước</p>
+
+<blockquote>
+<p>Hãy đọc hết hướng dẫn trước khi tiến hành</p>
+</blockquote>
+
+<ol>
+<li>Đầu tiên bạn cần khởi động môi trường REPL Julia. Hãy mở một terminal, chạy lệnh <code>julia</code>. Trên Windows có thể dùng powershell và cmd.</li>
+<li>Trên Julia REPL gõ <code>]</code>. Tới đây REPL sẽ chuyển sang chế độ package manager, nhấn <code>backspace</code> (nút xóa) để chuyển sang chế độ thường.</li>
+<li>Chạy lệnh <code>add IJulia</code>
+
+<ul>
+<li>lệnh này sẽ cài gói <code>IJulia.jl</code> và cài một kernel jupyter</li>
+<li>nếu bạn muốn dùng đường dẫn tùy chỉnh tới jupyter hoặc jupyter không nằm trong <code>$PATH</code> của bạn thì bạn có thể đặt đường dẫn đó bằng cách chạy lệnh <code>ENV[&quot;JUPYTER&quot;] = &quot;/đường/dẫn/tới/jupyter&quot;</code> trong chế độ thường. Có thể kiểm tra xem Jupyter nằm trên <code>$PATH</code> hay không bằng cách chạy lệnh <code>jupyter</code> trên một terminal</li>
+</ul></li>
+</ol>
+
+<div align="center">
+<img src="/img/cai-dat-ijulia-3.png" width=320/></br>
+Nếu bạn cài thành công thì nó sẽ ra một đống info màu xanh lá. Thực chất mình cài rồi nên chạy lại nó chỉ update thôi.
+</div>
+
+<h1 id="sử-dụng">Sử dụng</h1>
+
+<p>Đầu tiên hãy chạy <code>jupyter notebook</code> để bắt đầu jupyter. sau đó nhấn vào new. Ở mục notebook chọn Julia, jupyter sẽ tạo một notebook mới với kernel Julia, tới đây các bạn dùng notebook này như bình thường, thử nghiệmcode, nghiên cứu này nọ :D</p>
+
+<p>À đúng rồi, <code>IJulia.jl</code> hoạt động với cả jupyter notebook và cái jupyter lab xịn sò, nên nếu bạn nào làm việc với lab thì vẫn ok nhé!</p>
+
+<p>Tham khảo thêm:</p>
+
+<ul>
+<li><a href="https://github.com/JuliaLang/IJulia.jl">Trang github của IJulia</a></li>
+</ul>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/" rel="tag">hướng dẫn</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/julia/" rel="tag">julia</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/l%E1%BA%ADp-tr%C3%ACnh/" rel="tag">lập trình</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/posts/cai-dat-julia/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">[Hướng dẫn] Cài đặt ngôn ngữ Julia</p></a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2019 #Rants.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
