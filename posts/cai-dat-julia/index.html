@@ -39,73 +39,54 @@
 			<h1 class="post__title">[Hướng dẫn] Cài đặt ngôn ngữ Julia</h1>
 			
 		</header><div class="content post__content clearfix">
-			
-
-<p>Cách tải và cài đặt ngôn ngữ Julia.</p>
-
-<h3 id="tải-julia-về-máy">Tải Julia về máy</h3>
-
+			<p>Cách tải và cài đặt ngôn ngữ Julia.</p>
+<h3 id="ti-julia-v-my">Tải Julia về máy</h3>
 <p>Việc tải và cài đặt Julia rất đơn giản, bạn chỉ cần tải bản phân phối tương ứng với hệ điều hành của mình Julia tại <a href="https://julialang.org/downloads">https://julialang.org/downloads</a>. Có ba lựa chọn cơ bản cho bạn tải:</p>
-
 <ul>
 <li><em>Current stable release</em>: là phiên bản ổn định hiện tại</li>
 <li><em>Long term support</em>: là phiên bản hỗ trợ lâu dài, hiểu nôm na nó là bản <em>rất ổn định</em></li>
 <li><em>Upcoming release</em>: là ứng cử viên phiên bản cho phiên bản ổn định sắp tới</li>
 </ul>
-
 <p>Bạn nào ngại đọc tiếng Anh thì có thể đọc hướng dẫn từng-bước ở đây:</p>
-
 <ol>
 <li>Truy cập trang <a href="https://julialang.org/downloads">https://julialang.org/downloads</a></li>
 <li>Tìm đề mục tương ứng với những lựa chọn ở trên (Current stable release, Long term support,&hellip;)</li>
 <li>Chọn file tương ứng với hệ điều hành của mình:
-
 <ul>
 <li>chọn phiên bản 32-bit &amp; 64-bit tương ứng</li>
 <li>nếu dùng windows thì chọn  <code>windows (.exe)</code></li>
 <li>nếu dùng MacOS thì chọn  <code>MacOS 10.8+ (.dmg)</code></li>
 <li>nếu bạn dùng Linux hay FreeBSD thì mình nghĩ các bạn cũng không đọc đến phần này :) nhưng nêú bạn đọc đến đây mà không biết chọn gì thì <em>khả năng rất cao</em> là bạn nên chọn  <code>Generic Linux/FreeBSD Binaries for x86</code></li>
 <li>chọn bản 32-bit hoặc 64-bit tương ứng máy bạn</li>
-</ul></li>
+</ul>
+</li>
 </ol>
-
 <p>Nếu bạn là một người thích chơi ở mức khó, bạn có thể thử bản Nightly tại <a href="https://julialang.org/downloads/nightlies.html">đây</a> nếu bạn thích tùy chỉnh thì có thể tự compile Julia, mã nguồn có trong <a href="https://julialang.org/downloads">trang download</a> và cả trên <a href="https://github.com/JuliaLang/julia/releases">github</a></p>
-
-<h3 id="lưu-ý-riêng-với-những-bạn-dùng-nix-linux-bsd">Lưu ý riêng với những bạn dùng *Nix (Linux, BSD, &hellip;)</h3>
-
+<h3 id="lu--ring-vi-nhng-bn-dng-nix-linux-bsd-">Lưu ý riêng với những bạn dùng *Nix (Linux, BSD, &hellip;)</h3>
 <ul>
 <li>Nếu bạn không dùng những hệ điều hành này có thể nhảy tới phần sau</li>
 <li>Nếu bạn biết package manager hoạt động như thế nào, và cài đặt môi trường ra sao thì có thể bạn cũng không cần đọc phần này.</li>
 </ul>
-
 <p>Có thể package manager của các bạn (<code>apt</code>, <code>pacman</code>, <code>xbps</code>,..) có phân phối Julia trong repo. Nếu vậy bạn hoàn toàn có thể dùng package manager để cài đặt, tiện quá rồi (<em>duh!</em>). Tuy nhiên, mình vẫn khuyên các bạn nên sử dụng bản phân phối chính thức trên trang web của Julia. Lí do là có những gói Julia trong package manager <strong>không</strong> phải là bản build chính thức (tức là họ tự build Julia rồi phân phối cho bạn), và có 2 vấn đề đi kèm việc đó:</p>
-
 <ul>
 <li>Bản Julia này có thể nó sẽ gây lỗi, ví dụ như lỗi build <code>Arpack.jl</code> trên ArchLinux (<em>thực ra lỗi build Arpack này là lỗi duy nhất mình biết, nếu bạn không gặp lỗi này thì chắc có thể cho qua được ._.</em>)</li>
 <li>Update chậm hơn release: cái này còn tùy vào người bảo trì cái repo cho distro bạn dùng. Nếu đội dev Julia tung ra bản mới mà ông bảo trì repo lười thì mới cũng như cũ :P</li>
 </ul>
-
 <p>Tuy nhiên, với những gói mà chứa y nguyên bản Julia trên trang chủ thì bạn cài gói đó cho tiện :) ví dụ như <code>julia-bin</code> trong AUR của ArchLinux. Còn nếu bạn quyết định cài từ bản binary từ trang chủ thì bạn có thể làm theo hướng dẫn ở <a href="moi-truong-linux">đây</a> để cài đặt môi trường.</p>
-
-<h3 id="editor-và-ide">Editor và IDE</h3>
-
+<h3 id="editor-v-ide">Editor và IDE</h3>
 <p>Bạn có thể theo dõi <a href="https://github.com/JuliaEditorSupport">https://github.com/JuliaEditorSupport</a> để xem hiện tại có những Text editor và IDE nào hỗ trợ Julia. Mình sẽ kể tên một số plugin thông dụng dưới đây:</p>
-
 <ul>
 <li>VSCode</li>
 <li>Sublime</li>
 <li>Atom (plugin Julia của editor này cực kì đủ tính năng, và cũng nặng nhất luôn)</li>
 </ul>
-
 <p>Hoặc nếu bạn là một thanh niên bài trừ <code>electron.js</code> giống mình:</p>
-
 <ul>
 <li>Vim</li>
 <li>Emacs</li>
 <li>Notepad++</li>
 <li>IntelliJ</li>
 </ul>
-
 <p>Ngoài ra bạn có thể dùng Jupyter notebook với Julia một cách dễ dàng. Xem hướng dẫn tại <a href="dung-julia-voi-jupyter-notebook">đây</a></p>
 
 		</div>
