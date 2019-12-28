@@ -3,6 +3,11 @@ languageCode = "vi-vn"
 title = "#Rants"
 theme = "mainroad"
 
+[sitemap]
+changefreq = "monthly"
+filename = "sitemap.xml"
+priority = 0.5
+
 [Author]
 name = "Hùng"
 
@@ -25,4 +30,3 @@ tags_counter = true
 [Params.widgets.social]
 github = "ndgnuh"
 email = "ndgnuh@protonmail.com"
-
