@@ -1,6 +1,7 @@
 ---
 title: "Dùng Julia với Jupyter Notebook"
 date: 2019-11-01T23:27:05+07:00
+draft: true
 summary: "Fun fact: tên Jupyter trong Project Jupyter là sự kết hợp của ba ngôn ngữ Julia, Python và R."
 tags: 
 - hướng dẫn
