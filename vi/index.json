@@ -1,0 +1,100 @@
+[
+{
+	"uri": "/vi/",
+	"title": "#Rant",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/",
+	"title": "hướng dẫn",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/tags/julia/",
+	"title": "julia",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/posts/julia-repl/",
+	"title": "Julia từ con số không: Julia REPL",
+	"tags": ["hướng dẫn", "julia"],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": "Ở phần đầu tiên của series \u0026ldquo;Julia từ con số không\u0026rdquo;, chúng ta đã tiến hành cài đặt Julia. Giờ chúng ta sẽ bắt đầu làm việc với giao diện cơ bản nhất của Julia: REPL.\nREPL là gì? REPL là viết tắt của Read - Eval - Print - Loop, hay Đọc - Thực Thi - In Kết Quả - Lặp Lại. Nói một cách dễ hiểu, bạn nhập một dòng lệnh vào, Julia sẽ thực thi dòng lệnh đó, in ra kết quả và quá trình này lặp đi lặp lại đến khi bạn chán thì dừng.\nGiả sử bạn cài đặt Julia như trong hướng dẫn. Để mở REPL, hãy chạy julia trong terminal hoặc nhấp đúp vào icon Julia. Bạn sẽ được chào đón bởi màn hình sau:\nGõ print(\u0026quot;Hello world\u0026quot;) và ấn Enter. Vậy là bạn đã viết xong hello world bằng Julia rồi! Qua ví dụ này chắc bạn cũng hiểu rõ cách chạy lệnh trong REPL rồi. Để thoát REPL, bạn có thể nhấn tổ hợp phím Ctrl + D khi đang có một dòng trống, hoặc chạy lệnh exit().\nSau đây mình sẽ giới thiệu một số tính năng của Julia REPL, bao gồm những tính năng tiêu chuẩn và cả những tính năng cực kì độc mà (mình nghĩ) chỉ Julia có.\nCác tính năng Tab completion Tính năng này khá quen thuộc nếu bạn đã từng làm việc với bất kì dạng REPL nào. Bạn gõ vài thứ, ấn tab, một danh sách những thứ có thể viết sẽ hiện ra, nếu chỉ có một lựa chọn thì lựa chọn đó sẽ được tự động điền.\nTuy nhiên, REPL của Julia có một thứ khá độc. Bạn hãy gõ \\cup và nhấn tab trên REPL, sau đó nhấn Enter.\nGiờ có hai vấn đề chúng ta cần quan tâm ở đây: \u0026ldquo;kí tự lạ\u0026rdquo; trông giống như chữ u vừa xuất hiện và nếu nó là kí tự lạ, tại sao Julia không báo lỗi?. Thứ nhất, kí tự trên thực chất là kí hiệu phép hợp trong toán học. $$ \\{1, 2\\} \\cup \\{4\\} = \\{1, 2, 4\\} $$\nThứ hai, Julia hỗ trợ tên biến và tên hàm chứa kí tự unicode, và ∪ là một hàm hoàn toàn hợp lệ. Nếu không tin hãy chạy thử:\n1 2 3 4 5 6 7  julia\u0026gt; [1, 2] ∪ 4 ∪ [5, 9] 5-element Array{Int64,1}: 1 2 4 5 9   Những kí hiệu này bình thường sẽ không được dùng khi lập trình, tuy nhiên trong những công thức toán phức tạp, chúng sẽ rất hữu dụng cho việc biểu đạt code. Vậy làm thế nào để sử dụng những kí tự này? Rất đơn giản, chúng đều được định danh bằng tên trong LaTeX. Nếu không nhớ rõ tên bạn có thể gõ \\ và nhấn tab để tab completion gợi ý cho bạn.\nVí dụ nhỏ về cách dùng: \\sigma\u0026lt;tab\u0026gt;(x) = one(x) / (one(x) + exp(-x)):\n1 2  julia\u0026gt; σ(x) = one(x) / (one(x) + exp(-x)) σ (generic function with 1 method)   Chế độ trợ giúp (help mode) REPL của Julia chia làm các chế độ khác nhau. Khi chạy lệnh như trên, bạn đang ở trong một chế độ gọi là Julian mode. Sau đây mình sẽ giới thiệu một mode rất hữu dụng: Help mode. Trong chế độ này, bạn có thể xem tài liệu hướng dẫn cho các hàm, biến hoặc module, rất giống như lệnh help trong Matlab. Để chuyển sang chế độ trợ giúp, bạn chỉ cần nhập kí tự ? ở đầu dòng, câu hỏi của dòng lệnh sẽ đổi thành help?\u0026gt;. Để sử dụng trở giúp, hãy sử dụng cú pháp help?\u0026gt;tên_hàm_hoặc_biến\n1 2 3 4 5 6 7 8 9  help?\u0026gt; Complex search: Complex complex ComplexF64 ComplexF32 ComplexF16 precompile Complex{T\u0026lt;:Real} \u0026lt;: Number Complex number type with real and imaginary part of type T. ComplexF16, ComplexF32 and ComplexF64 are aliases for Complex{Float16}, Complex{Float32} and Complex{Float64} respectively.   Trong chế độ help, bạn có thể sử dụng kết hợp tính năng tab completion ở trên\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  help?\u0026gt; π \u0026#34;π\u0026#34; can be typed by \\pi\u0026lt;tab\u0026gt; search: π π pi The constant pi. Examples ≡≡≡≡≡≡≡≡≡≡ julia\u0026gt; pi π = 3.1415926535897...   Chế độ Shell Chế độ shell giúp bạn gọi lệnh từ shell hệ thống một cách nhanh chóng. Chế độ shell có thể được truy cập bằng cách thêm dấu ; ở đầu một dòng. Câu hỏi ở đầu dòng REPL sẽ chuyển thành shell\u0026gt; và chúng ta có thể gọi lệnh hệ thống.\n1 2 3 4 5 6 7  shell\u0026gt; cd /tmp /tmp shell\u0026gt; ls hugo_cache mpd.fifo nvimeosFJ9   Chế độ này rất tiện lợi khi chúng ta muốn chạy những câu lệnh đơn giản. Tuy nhiên, nếu bạn cần dùng đến những đoạn lệnh có cấu trúc phức tạp hơn với điều kiện, lặp, hay pipe, chúng ta sẽ đề cập trong một bài viết khác.\nPackage manager mode Chế độ này dùng để quản lý các gói Julia được cài trong máy bạn. Nó có thể được truy cập bằng cách thêm dấu ] ở đầu dòng. Tuy nhiên, phần này đáng được đặt ra một bài viết riêng, do đó mình sẽ không đi vào chi tiết ở đây.\nChế độ tìm kiếm Khi bạn nhấn tổ hợp Ctrl + r, câu hỏi ở dòng lệnh sẽ chuyển thành (reverse-i-search)':, bạn đã vào chế độ tìm kiếm ngược (reverse search). Trong chế độ này, khi bạn gõ bất kì thứ gì, REPL sẽ tìm nó trong những câu lệnh bạn đã chạy và gợi ý câu lệnh đó. Nếu có nhiều cầu lệnh khớp với cụm từ bạn nhập, câu lệnh gần đây nhất sẽ hiện ra. Nếu bạn muốn tìm câu lệnh tiếp theo mà khớp, hãy nhấn Ctrl + r một lần nữa. Sau khi câu lệnh bạn muốn xuất hiện, bạn có thể nhấn Enter để điền câu lệnh đó vào REPL, nếu không hãy nhấn Ctrl + c để hủy.\n1 2 3 4 5  # sau khi nhấn Ctrl + r và điền kí tự \\cup # bạn vẫn có thể dùng tab completion trong chế độ này (reverse-i-search)`∪\u0026#39;:[1,2]∪4∪[5,9]#saukhinhấnenterjulia\u0026gt;[1,2]∪4∪[5,9]  Ngoài ra còn có một chế độ tìm kiếm khác là forward search, có thể được truy cập bằng tổ hợp phím Ctrl + s. Mình không hay dùng tính năng này lắm.\nTính năng khác REPL của Julia có rất nhiều tính năng, tuy nhiên mình chỉ giới thiệu những tính năng cơ bản thôi. Những tính năng khác như tạo menu, custom key binding, custom color scheme các bạn có thể tự tìm hiểu tại trang tài liệu Julia. Có thể mình sẽ viết một bài khác về những tính năng này, nhưng đó không phải là ưu tiên hiện tại.\nMột số phím tắt trên Julia REPL    Phím tắt chức năng     Ctrl + c Dừng thực thi hoặc hủy lệnh đang nhập   Ctrl + d Thoát Julia (khi dòng lệnh trống)   Ctrl + l Xóa màn hình   Ctrl + r Chế độ tìm kiếm ngược   Ctrl + mũi tên trái  Di chuyển sang trái 1 từ   Ctrl + mũi tên phải  Di chuyển sang phải 1 từ   Alt + Enter Xuống dòng nhưng không chạy   ? (đầu dòng) Chế độ trợ giúp   ; (đầu dòng) Chế độ shell   ] (đầu dòng) Chế độ quản lý gói    Ở đây mình chỉ đưa ra các phím tắt mình cho rằng hữu dụng. Các phím tắt khác các bạn có thể tìm hiểu tại trang tài liệu Julia về REPL\n"
+},
+{
+	"uri": "/vi/posts/",
+	"title": "Posts",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/tags/",
+	"title": "Tags",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/posts/cai-dat-julia/",
+	"title": "Julia từ con số không: hướng dẫn cài đặt Julia",
+	"tags": ["hướng dẫn", "julia"],
+	"categories": [],
+	"series": [],
+	"description": "Cách tải và cài đặt Julia",
+	"content": "Chào mừng các bạn đến với bài viết đầu tiên của series \u0026ldquo;Julia từ con số không\u0026rdquo;. Trong bài viết này mình sẽ hướng dẫn các bạn cách tải và cài đặt Julia.\nNội dung chính:\n Chuẩn bị Sử dụng bản phân phối chính thức  Tải Julia Hướng dẫn cài đặt cho Windows Hướng dẫn cài đặt cho MacOS Hướng dẫn cài đặt cho *Nix (Linux, BSD)   Sử dụng bản phân phối cộng đồng Code bằng cái gì?  Chuẩn bị Để cài Julia, chúng ta có 2 cách:\n Cài đặt từ bản phân phối chính thức: cách này được khuyến cáo vì nó sẽ không gây lỗi lặt vặt, tuy nhiên quá trình cài đặt sẽ hơi dài một chút. Cài đặt từ bản phân phối của cộng đồng: cách này rất đơn giản, đặc biệt với những bạn dùng Linux. Tuy nhiên cách này có thể gây lỗi vặt (thực ra mình mới chỉ thấy một lỗi trên ArchLinux, chưa thấy có người gửi issue nào khác)  Việc cài đặt có thể sử dụng tới terminal (dòng lệnh, hiểu nôm na là vậy), vậy có kiến thức cơ bản về việc sử dụng terminal và shell có thể sẽ hữu dụng và giúp quá trình cài đặt dễ dàng hơn.\nSử dụng bản phân phối chính thức Tải Julia Đầu tiên bạn cần tải bản phân phối tương ứng với hệ điều hành của mình Julia tại https://julialang.org/downloads. Có ba lựa chọn cơ bản cho bạn tải:\n Current stable release: là phiên bản ổn định hiện tại Long term support: là phiên bản hỗ trợ lâu dài, hiểu nôm na nó là bản rất ổn định Upcoming release: là ứng cử viên phiên bản cho phiên bản ổn định sắp tới  Bạn nào ngại đọc tiếng Anh thì có thể đọc hướng dẫn từng-bước ở đây:\n Truy cập trang https://julialang.org/downloads Tìm đề mục tương ứng với những lựa chọn ở trên (Current stable release, Long term support,\u0026hellip;) Chọn file tương ứng với hệ điều hành của mình:  Chọn phiên bản 32-bit \u0026amp; 64-bit tương ứng Nếu dùng windows hãy chọn windows (.exe) Nếu dùng MacOS hãy chọn MacOS 10.8+ (.dmg) Nếu bạn dùng Linux hoặc BSD hãy chọn bản cài tương ứng với cấu trúc máy tính của mình. Nếu bạn không biết chọn cái nào thì khả năng rất cao là bạn nên chọn Generic Linux/FreeBSD Binaries for x86 Chọn bản 32-bit hoặc 64-bit tương ứng máy bạn    Nếu bạn là một người thích chơi ở mức khó, bạn có thể thử bản Nightly tại đây nếu bạn thích tùy chỉnh thì có thể tự compile Julia, mã nguồn có trong trang download và cả trên github\nHướng dẫn cài đặt cho Windows Julia hỗ trợ Windows 7 trở lên, bạn có thể cài đặt theo các bước sau:\n Sau khi tải file .exe từ trang chủ về, hãy mở file .exe lên để tiến hành cài đặt. Nếu bạn muốn cài Julia cho mọi người dùng trên hệ thống hãy chạy file .exe với tư cách Administrator. Khi bộ cài sẵn sàng, nhấn Next, chọn thư mục bạn muốn cài Julia (hãy copy đường dẫn ra notepad hoặc chỗ nào đó để dùng sau này). Sau đó, nhấn Install để cài. Sau khi cài xong, bạn có 3 lựa chọn, hãy chọn theo ý thích:  Open Julia install folder: mở thư mục cài Julia Create Start Menu folder and shortcut: tạo đường dẫn ở Start Menu Create desktop shortcut: tạo đường dẫn ở desktop   Chọn Finish, nếu bạn muốn chạy Julia từ terminal hãy làm những bước sau. Nếu không có thể click vào icon Julia để chạy. Nhấn tổ hợp phím Windows + R, gõ sysdm.cpl và nhấn Enter Một cửa sổ hiện lên, hãy chọn thẻ Advanced, chọn Environment Variables. Thêm một cửa sổ nữa hiện lên, trong phần System variables, chọn Path và click vào nút Edit Đến đây có sự khác biệt giữa Windows 7 và 10 (mình sẽ giả sử không ai dùng Windows 8)  Nếu bạn dùng Windows 7:  Sau khi nhấn Edit, sẽ có một cửa sổ với 2 hộp văn bản xuất hiện. Click vào hộp văn bản thứ 2 (Variable value:) và di chuyển đến cuối dòng, nếu cuối dòng không có dấu ; hãy thêm dấu ; vào. Lấy đường dẫn cài đặt ở bước 2 ra, thêm \\bin vào đuôi và copy thêm vào cuối của hộp văn bản thứ 2. Ví dụ mình cài Julia vào E:\\julia, mình sẽ ghi thêm E:\\julia\\bin vào cuối. Nhắc lại rất kĩ là ghi thêm nhé, ông nào paste đè lên cái cũ xong hỏng máy tôi không chịu trách nhiệm đâu.   Nếu bạn dùng Windows 10:  Một cửa sổ hiện ra, nhấn New. Một cửa sổ mới hiện ra với một hộp văn bản Lấy đường dẫn cài đặt ở bước 2 ra, thêm \\bin vào đuôi và copy vô cái hộp văn bản đó. Ví dụ mình cài Julia vào E:\\julia, mình sẽ ghi E:\\julia\\bin.     Ấn Ok, tắt hết các hộp thoại, giờ bạn đã cài xong Julia. Bạn có thể mở cmd hoặc Powershell và chạy lệnh julia để bắt đầu nghịch.  Lưu ý, người dùng Windows 7 và Windows Server 2012 cần cài thêm một số thứ để Julia thực sự hoạt động:\n bản update này sẽ giúp trình quản lý gói của Julia hoạt động. Xuống phần Method 2 và click vào link Microsoft Update Catalog. Windows Management Framework 3.0 hoặc hơn để cài Powershell. Vào trang web trên, kéo xuống dưới cái bảng và click vào phiên bản bạn muốn download. Bạn nên cài một terminal khác ngoài cmd.exe vì nó có một số vấn đề gây ảnh hưởng tới chức năng của Julia.  Hướng dẫn cài đặt cho MacOS Phần này cần cần các bạn phản hồi, mình không có MacOS nên chưa kiểm thử.\n Mở file .dmg bạn tải về, bên trong có file Julia-\u0026lt;phiên-bản\u0026gt;.app. Kéo thả file này vào thư mục Application. Nếu bạn cần chạy Julia từ terminal, chạy open -a TextEdit ~/.bash_profile (nếu dùng zsh thì thay .bash_profile bằng .zshrc) Thêm dòng export PATH=\u0026quot;/Applications/Julia-.app/Contents/Resources/julia/bin:${PATH}\u0026quot; vào cuối và save lại  Giờ bạn có thể chạy Julia bằng cách click vào icon hoặc chạy lệnh julia trong terminal\nHướng dẫn cài đặt cho *Nix (Linux, BSD)  Sau khi tải file .tar.gz từ trang chủ về, bạn có thể giải nén nó bằng bất kì công cụ nào bạn muốn, cách đơn giản nhất là dùng lệnh:  1  tar -xvzf đường/dẫn/tới/julia-\u0026lt;thay-chỗ-này-giống-tên-file-của-bạn\u0026gt;.tar.gz   File được giải nén tới một thư mục julia-\u0026lt;phiên-bản\u0026gt;. Mình sẽ gọi cái này là \u0026lt;julia dir\u0026gt;. Bạn có thể copy thư mục này tới vị trí cài đặt mong muốn. Giờ bạn có 3 lựa chọn như dưới đây  Cài đặt cho người dùng của bạn Thêm thư mục Julia vào biến $PATH bằng cách thêm dòng sau:\n1  export PATH=\u0026#34;$PATH:/đường/dẫn/tới/\u0026lt;julia dir\u0026gt;/bin\u0026#34;   vào ~/.bashrc và ~/.bash_profile. Nếu bạn dùng zsh thì phải thêm vào ~/.zshrc. Nếu bạn dùng các shell khác nữa thì mình không biết, sorry.\nSau khi tắt terimnal đi và bật lại thì bạn có thể chạy julia để kiểm tra.\nCài đặt trên toàn hệ thống Cách 1: tạo đường dẫn từ file julia tới một trong những thư mục nằm trong biến PATH.\n Chạy echo $PATH xem có những thư mục nào. Ở đây mình sẽ chọn /usr/bin Chạy lệnh sudo ln -s /đường/dẫn/tới/\u0026lt;julia dir\u0026gt;/bin/julia /usr/bin/  Cách 2: thêm thư mục Julia vào biến PATH. Các bạn làm như phần cài đặt cho người dùng, nhưng thay vì thêm vô file .bashrc hay .zshrc, hãy thêm vào file /etc/profile, /etc/bashrc và /etc/zshrc.\nVới cách 1 thì bạn có thể chạy julia ngay lập tức mà không cần restart cái terminal.\nCách cục súc Chạy /đường/dẫn/tới/\u0026lt;julia dir\u0026gt;/bin/julia mỗi lần bạn dùng đến nó.\nSử dụng bản phân phối cộng đồng Ngoài cách cài đặt từ bản cài từ trang chủ, chúng ta có thể cài từ các bản phân phối ngoài. Những bản phân phối này do cộng đồng người dùng Julia đóng góp. Lưu ý rằng, dù cài những bản không chính thức này rất dễ dàng, việc cài Julia từ bản phân phối chính thức vẫn được khuyến cáo hơn.\nChocolately trên Windows Cài đặt:\n1  choco install julia --confirm   Cập nhật:\n1  choco upgrade julia --confirm   HomeBrew trên Mac 1  brew cask install julia   Fedora/Red hat/Cent OS và các distro tương tự Với Fedora bản 19 hoặc hơn:\n1 2  sudo dnf copr enable nalimilan/julia sudo yum install julia   Nếu bạn dùng Cent OS bản 7 hoặc hơn:\n1 2  sudo yum-config-manager –add-repo https://copr.fedorainfracloud.org/coprs/nalimilan/julia/repo/epel-7/nalimilan-julia-epel-7.repo sudo yum install julia   Nếu dnf và yum-config-manager không khả dụng trên hệ thống của bạn, hãy tải file .repo tương ứng ở link phía trên và copy vào /etc/yum.repos, sau đó chạy câu lệnh thứ 2.\nĐể cập nhật Julia:\n1  yum upgrade julia   Debian/Ubuntu và các distro tương tự Cài đặt:\n1 2  sudo apt update sudo apt install julia   Cập nhật:\n1 2  sudo apt update sudo apt upgrade   Archlinux và các distro tương tự Cài đặt:\n1 2 3 4  sudo pacman -S julia # bản không chính thức # những bản này cần `yay` để cài tự động sudo yay -S julia-bin # tương ứng với bản chính thức từ trang chủ yay -S julia-git # tương ứng vởi bản build từ git   Cập nhật:\n1 2 3  sudo pacman -Syu # hoặc yay -Syu   Code bằng cái gì? Bạn có thể theo dõi https://github.com/JuliaEditorSupport để xem hiện tại có những Text editor và IDE nào hỗ trợ Julia. Mình sẽ kể tên một số plugin thông dụng dưới đây:\n VSCode Sublime Atom (plugin Julia của editor này cực kì đủ tính năng, và cũng nặng nhất luôn)  Hoặc nếu bạn là một thanh niên bài trừ electron.js giống mình:\n Vim Emacs Notepad++ (chưa thử) IntelliJ (không tốt lắm)  Ngoài ra bạn có thể sử dụng Julia với Jupyter notebook\nSau khi đã thoải mái với cài đặt của mình. Phần kế tiếp: Julia REPL.\n"
+},
+{
+	"uri": "/vi/posts/from-zero-to-julia-gioi-thieu/",
+	"title": "Julia từ con số không: giới thiệu",
+	"tags": ["julia", "hướng dẫn"],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": "Julia từ con số không (From zero to Julia) là một series nhỏ với những bài học mang tính giới thiệu về ngôn ngữ Julia. Mục đích chính của series này là đem lại kiến thức cơ bản để người đọc có thể lập trình với Julia, đồng thời giới thiệu Julia tới cộng đồng Việt Nam với mong muốn ngôn ngữ này được phát triển hơn nữa.\nTrong Julia từ con số không, độc giả sẽ được làm quen với hệ thống kiểu dữ liệu của Julia và cách để định ra những kiểu dữ liệu phức tạp hơn phù hợp với nhu cầu sử dụng của mình, cùng với cách viết các hàm, cách làm việc với module và một trong những tính năng quan trọng nhất của Julia: multiple dispatch.\nDù kinh nghiệm lập trình không phải điều kiện bắt buộc để có thể theo dõi series này, những kiến thức lập trình cơ bản có thể hữu dụng và giúp bạn hiểu dễ dàng hơn.\nChuỗi bài học này được dựa trên series From zero to Julia của Aurelio Amerio (đã xin phép tác giả), đồng thời thêm thắt chút kiến thức của bản thân mình. Nếu bạn có thắc mắc hay ý kiến đóng góp, đừng ngại liên hệ mình thông qua email ndgnuh@protonmail.com, hoặc gửi một issue tại đây.\nNội dung: (sẽ được update dần dần)\n Cài đặt Julia  "
+},
+{
+	"uri": "/vi/categories/",
+	"title": "Categories",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/series/",
+	"title": "Series",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/year-all-rights-reserved/",
+	"title": "©{Year}, All Rights Reserved",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+}]

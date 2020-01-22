@@ -29,14 +29,5 @@
       <description>Julia từ con số không (From zero to Julia) là một series nhỏ với những bài học mang tính giới thiệu về ngôn ngữ Julia. Mục đích chính của series này là đem lại kiến thức cơ bản để người đọc có thể lập trình với Julia.</description>
     </item>
     
-    <item>
-      <title>Work in Progress</title>
-      <link>/posts/work-in-progress/</link>
-      <pubDate>Fri, 01 Nov 2019 16:46:41 +0700</pubDate>
-      
-      <guid>/posts/work-in-progress/</guid>
-      <description>Work in progress Trang này mới tạo nên chưa có content, bình tõm.</description>
-    </item>
-    
   </channel>
 </rss>

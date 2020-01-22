@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/year-all-rights-reserved/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/year-all-rights-reserved/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/year-all-rights-reserved/"
+                />
+  </url>
+  
+</urlset>

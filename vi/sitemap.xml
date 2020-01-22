@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/vi/</loc>
+    <lastmod>2020-01-20T23:59:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</loc>
+    <lastmod>2020-01-20T23:59:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/tags/julia/</loc>
+    <lastmod>2020-01-20T23:59:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/posts/julia-repl/</loc>
+    <lastmod>2020-01-20T23:59:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/posts/</loc>
+    <lastmod>2020-01-20T23:59:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/tags/</loc>
+    <lastmod>2020-01-20T23:59:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/posts/cai-dat-julia/</loc>
+    <lastmod>2020-01-20T19:26:13+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/posts/from-zero-to-julia-gioi-thieu/</loc>
+    <lastmod>2020-01-20T19:00:13+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vi/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>/vi/year-all-rights-reserved/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/year-all-rights-reserved/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/year-all-rights-reserved/"
+                />
+  </url>
+  
+</urlset>
