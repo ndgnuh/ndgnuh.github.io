@@ -8,10 +8,9 @@ tags:
 - hướng dẫn
 - julia
 ---
+Chào mừng các bạn đến với bài viết đầu tiên của series "Julia từ con số không". Trong bài viết này mình sẽ hướng dẫn các bạn cách tải và cài đặt Julia.
 
-Cách tải và cài đặt ngôn ngữ Julia.
-
-Nội dung trong bài viết này:
+Nội dung chính:
 
 - [Chuẩn bị](#chuẩn-bị)
 - [Sử dụng bản phân phối chính thức](#sử-dụng-bản-phân-phối-chính-thức)

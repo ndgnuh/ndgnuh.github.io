@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2019-11-01T16:32:49+07:00
-draft: false
+draft: true
 ---
 
 # Trang này về cái gì?

@@ -1,47 +1,147 @@
 ---
-title: "Tương tác với Julia qua REPL"
-date: 2019-12-08T23:37:39+07:00
-summary: "Giới thiệu về việc sử dụng chế độ tương tác với Julia (Julia REPL)"
-draft: true
+title: "Julia từ con số không: Julia REPL"
+date: 2020-01-20T23:59:00+07:00
+summary: "Bài viết thuộc series Julia từ con số không, giới thiệu về việc sử dụng chế độ tương tác với Julia (Julia REPL)"
+draft: false
+tags:
+- hướng dẫn
+- julia
+libraries:
+- katex
+- highlight
 ---
 
-#### Mục lục
-- [REPL là gì?](#repl-l-g)
-- [Sử dụng cơ bản](#s-dng-c-bn)
-- [Các chế độ làm việc](#cc-ch--lm-vic)
-- Những tính năng hay ho và độc nhất khác :)
+Ở phần đầu tiên của series "Julia từ con số không", chúng ta đã tiến hành [cài đặt Julia](../cai-dat-julia). Giờ chúng ta sẽ bắt đầu làm việc với giao diện cơ bản nhất của Julia: REPL.
 
 ## REPL là gì?
 
 REPL là viết tắt của Read - Eval - Print - Loop, hay Đọc - Thực Thi - In Kết Quả - Lặp Lại. Nói một cách dễ hiểu, bạn nhập một dòng lệnh vào, Julia sẽ thực thi dòng lệnh đó, in ra kết quả và quá trình này lặp đi lặp lại đến khi bạn chán thì dừng.
 
-Có thể bạn đã gặp REPL trước đây rồi, vì kha khá ngôn ngữ có tính năng này, những REPL khá phổ biến là Python hoặc console Javascript trên trình duyệt. Trong khi REPL như IPython có vẻ rất "ngon ăn" với những tính năng cần thiết như tự điền, stack trace, một số REPL khác dùng rất sida và thậm chí gây khó chịu (theo trải nhiệm của mình).
+Giả sử bạn cài đặt Julia như trong hướng dẫn. Để mở REPL, hãy chạy `julia` trong terminal hoặc nhấp đúp vào icon Julia. Bạn sẽ được chào đón bởi màn hình sau:
 
-Rất may là: Julia không phải một trong những ngôn ngữ đó. Julia được ship với chế độ REPL built-in và thực sự nó **rất ngon** :)
+![ảnh minh họa](/img/julia-repl-001.png)
 
-## Sử dụng cơ bản
+Gõ `print("Hello world")` và ấn Enter. Vậy là bạn đã viết xong hello world bằng Julia rồi! Qua ví dụ này chắc bạn cũng hiểu rõ cách chạy lệnh trong REPL rồi. Để thoát REPL, bạn có thể nhấn tổ hợp phím `Ctrl + D` khi đang có một dòng trống, hoặc chạy lệnh `exit()`.
 
-Để mở REPL có 2 cách:
-- Click vào biểu tượng Julia (easy mà)
-- Vào terminal/cmd, chạy `julia` (chỉ thực hiện được nếu đã cài biến môi trường)
+Sau đây mình sẽ giới thiệu một số tính năng của Julia REPL, bao gồm những tính năng tiêu chuẩn và cả những tính năng cực kì độc mà (mình nghĩ) chỉ Julia có.
 
-Và để thoát ra thì chỉ cần gõ `exit()` và ấn enter. Về cơ bản thì đây là cách để bạn chạy một đoạn code. Ngoài ra nếu không nhớ tên đầy đủ của cái gì đó thì bạn có thể ấn tab để REPL tự điền tên hàm, biến, bla bla cho bạn (tab completion).
+## Các tính năng 
 
-Sử dụng rất ez đúng không :) Nhưng nãy giờ chưa thấy có gì đặc sắc cả???
+### Tab completion
 
-## Các chế độ làm việc
+Tính năng này khá quen thuộc nếu bạn đã từng làm việc với bất kì dạng REPL nào. Bạn gõ vài thứ, ấn `tab`, một danh sách những thứ có thể viết sẽ hiện ra, nếu chỉ có một lựa chọn thì lựa chọn đó sẽ được tự động điền.
 
-Trước khi nói đến đoạn `Tại sao nó ngon? Nãy giờ có thấy gì đâu? Ông chém gió à?`, mình sẽ phải nói về các chế độ vi của REPL trước, có thể nó hơi khác với các REPL khác ở điểm này. Đừng lo, bạn không phải học cái này cái nọ hay thay đổi cách làm việc đâu, chỉ là REPL của Julia chia thành các `chế độ`, và mỗi chế độ sẽ phục vụ một tính năng và có hành vi khác nhau, chỉ có vậy thôi.
+Tuy nhiên, REPL của Julia có một thứ khá độc. Bạn hãy gõ `\cup` và nhấn `tab` trên REPL, sau đó nhấn Enter.
 
-Thông não trước khi đọc:
-- Khi mình nói REPL, bạn cứ hiểu là Julia REPL nhé, viết dài ngại =))
-- Hành vi sẽ bao gồm các tính năng nhé :v
+![ảnh minh họa](/img/julia-repl-002.png)
 
-#### Hành vi chung của tất cả các chế độ
+Giờ có hai vấn đề chúng ta cần quan tâm ở đây: *"kí tự lạ" trông giống như chữ `u` vừa xuất hiện* và *nếu nó là kí tự lạ, tại sao Julia không báo lỗi?*. Thứ nhất, kí tự trên thực chất là kí hiệu phép hợp trong toán học. $$ \\{1, 2\\} \cup \\{4\\} = \\{1, 2, 4\\} $$
+Thứ hai, Julia **hỗ trợ** tên biến và tên hàm chứa kí tự unicode, và `∪` là một hàm hoàn toàn hợp lệ. Nếu không tin hãy chạy thử:
 
-#### Chế độ "tiêu chuẩn"
+```julia
+julia> [1, 2] ∪ 4 ∪ [5, 9]
+5-element Array{Int64,1}:
+ 1
+ 2
+ 4
+ 5
+ 9
+```
 
-Đây là chế độ mặc định trên REPL, bạn nhập một `đoạn code` vào và ấn enter thì nó sẽ chạy. 
+Những kí hiệu này bình thường sẽ không được dùng khi lập trình, tuy nhiên trong những công thức toán phức tạp, chúng sẽ rất hữu dụng cho việc biểu đạt code. Vậy làm thế nào để sử dụng những kí tự này? Rất đơn giản, chúng đều được định danh bằng tên trong LaTeX. Nếu không nhớ rõ tên bạn có thể gõ `\` và nhấn `tab` để tab completion gợi ý cho bạn.
 
+Ví dụ nhỏ về cách dùng: `\sigma<tab>(x) = one(x) / (one(x) + exp(-x))`:
+```julia
+julia> σ(x) = one(x) / (one(x) + exp(-x))
+σ (generic function with 1 method)
+```
 
-**Help**: đây là một tính năng cực kì hữu dụng
+### Chế độ trợ giúp (help mode)
+
+REPL của Julia chia làm các chế độ khác nhau. Khi chạy lệnh như trên, bạn đang ở trong một chế độ gọi là `Julian mode`. Sau đây mình sẽ giới thiệu một mode rất hữu dụng: `Help mode`. Trong chế độ này, bạn có thể xem tài liệu hướng dẫn cho các hàm, biến hoặc module, rất giống như lệnh `help` trong Matlab. Để chuyển sang chế độ trợ giúp, bạn chỉ cần nhập kí tự `?` ở đầu dòng, câu hỏi của dòng lệnh sẽ đổi thành `help?>`. Để sử dụng trở giúp, hãy sử dụng cú pháp `help?>tên_hàm_hoặc_biến`
+
+```julia
+help?> Complex
+search: Complex complex ComplexF64 ComplexF32 ComplexF16 precompile
+
+  Complex{T<:Real} <: Number
+
+  Complex number type with real and imaginary part of type T.
+
+  ComplexF16, ComplexF32 and ComplexF64 are aliases for Complex{Float16},
+  Complex{Float32} and Complex{Float64} respectively.
+```
+
+Trong chế độ help, bạn có thể sử dụng kết hợp tính năng tab completion ở trên
+```julia
+help?> π
+"π" can be typed by \pi<tab>
+
+search: π
+
+  π
+  pi
+
+  The constant pi.
+
+  Examples
+  ≡≡≡≡≡≡≡≡≡≡
+
+  julia> pi
+  π = 3.1415926535897...
+```
+
+### Chế độ Shell 
+
+Chế độ shell giúp bạn gọi lệnh từ shell hệ thống một cách nhanh chóng. Chế độ shell có thể được truy cập bằng cách thêm dấu `;` ở đầu một dòng. Câu hỏi ở đầu dòng REPL sẽ chuyển thành `shell>` và chúng ta có thể gọi lệnh hệ thống.
+
+```julia
+shell> cd /tmp
+/tmp
+
+shell> ls
+hugo_cache
+mpd.fifo
+nvimeosFJ9
+```
+
+Chế độ này rất tiện lợi khi chúng ta muốn chạy những câu lệnh đơn giản. Tuy nhiên, nếu bạn cần dùng đến những đoạn lệnh có cấu trúc phức tạp hơn với điều kiện, lặp, hay pipe, chúng ta sẽ đề cập trong một bài viết khác.
+
+### Package manager mode
+
+Chế độ này dùng để quản lý các gói Julia được cài trong máy bạn. Nó có thể được truy cập bằng cách thêm dấu `]` ở đầu dòng. Tuy nhiên, phần này đáng được đặt ra một bài viết riêng, do đó mình sẽ không đi vào chi tiết ở đây.
+
+### Chế độ tìm kiếm
+
+Khi bạn nhấn tổ hợp `Ctrl + r`, câu hỏi ở dòng lệnh sẽ chuyển thành `(reverse-i-search)':`, bạn đã vào chế độ tìm kiếm ngược (reverse search). Trong chế độ này, khi bạn gõ bất kì thứ gì, REPL sẽ tìm nó trong những câu lệnh bạn đã chạy và gợi ý câu lệnh đó. Nếu có nhiều cầu lệnh khớp với cụm từ bạn nhập, câu lệnh gần đây nhất sẽ hiện ra. Nếu bạn muốn tìm câu lệnh tiếp theo mà khớp, hãy nhấn `Ctrl + r` một lần nữa. Sau khi câu lệnh bạn muốn xuất hiện, bạn có thể nhấn `Enter` để điền câu lệnh đó vào REPL, nếu không hãy nhấn `Ctrl + c` để hủy.
+
+```julia
+# sau khi nhấn Ctrl + r và điền kí tự \cup
+# bạn vẫn có thể dùng tab completion trong chế độ này
+(reverse-i-search)`∪': [1, 2] ∪ 4 ∪ [5, 9]
+# sau khi nhấn enter
+julia> [1, 2] ∪ 4 ∪ [5, 9]
+```
+
+Ngoài ra còn có một chế độ tìm kiếm khác là forward search, có thể được truy cập bằng tổ hợp phím `Ctrl + s`. Mình không hay dùng tính năng này lắm.
+
+### Tính năng khác
+
+REPL của Julia có rất nhiều tính năng, tuy nhiên mình chỉ giới thiệu những tính năng cơ bản thôi. Những tính năng khác như tạo menu, custom key binding, custom color scheme các bạn có thể tự tìm hiểu tại [trang tài liệu Julia](https://docs.julialang.org/en/v1/stdlib/REPL/#The-Julia-REPL-1). Có thể mình sẽ viết một bài khác về những tính năng này, nhưng đó không phải là ưu tiên hiện tại.
+
+## Một số phím tắt trên Julia REPL
+
+Phím tắt | chức năng
+--- | ---
+`Ctrl + c` | Dừng thực thi hoặc hủy lệnh đang nhập
+`Ctrl + d` | Thoát Julia (khi dòng lệnh trống)
+`Ctrl + l` | Xóa màn hình
+`Ctrl + r` | Chế độ tìm kiếm ngược
+`Ctrl + mũi tên trái ` | Di chuyển sang trái 1 từ
+`Ctrl + mũi tên phải ` | Di chuyển sang phải 1 từ
+`Alt + Enter` | Xuống dòng nhưng không chạy
+`?` (đầu dòng) | Chế độ trợ giúp
+`;` (đầu dòng) | Chế độ shell
+`]` (đầu dòng) | Chế độ quản lý gói
+
+Ở đây mình chỉ đưa ra các phím tắt mình cho rằng hữu dụng. Các phím tắt khác các bạn có thể tìm hiểu tại [trang tài liệu Julia về REPL](https://docs.julialang.org/en/v1/stdlib/REPL/#The-Julia-REPL-1)
