@@ -5,6 +5,7 @@ description = "Blog cá nhân, ranting, moaning, etc" # for SEO
 custom_css = [
 "css/katex.min.css",
 "css/font.css",
+"css/custom-color.css",
 "highlight.js/styles/tomorrow-night-blue.css"
 ] # custom_css = ["scss/custom.scss"] and then make file at root/assets/scss/custom.scss
 custom_js = [
@@ -12,7 +13,7 @@ custom_js = [
 "js/katex-auto-render.min.js",
 "hightlight.js/highlight.js"]
 # custom_js = ["js/custom.js"] and then make file at root/assets/js/custom.js
-useFaviconGenerator = true # https://www.favicon-generator.org/
+useFaviconGenerator = false # https://www.favicon-generator.org/
 
 themeOptions = ["dark", "light", "hacker", "solarized", "kimbie"] # select options for site color theme
 notAllowedTypesInHome = ["contact", "talks", "about", "showcase"] # not allowed page types in home page. type can be set in front matter or default to folder name.
@@ -20,7 +21,7 @@ notAllowedTypesInHomeSidebar = ["about", "archive", "showcase"] # not allowed pa
 notAllowedTypesInArchive = ["about", "talks", "showcase"] # not allowed page types in archive page
 
 # header
-homeHeaderType = "text" # text, img, slide
+homeHeaderType = "img" # text, img, slide
 
 # navbar
 enableThemeChange = true # site color theme
@@ -75,13 +76,13 @@ busuanziSitePV = false # site total page view count
 busuanziPagePV = false # post view count
 
 # comment
-enableComment = true
+enableComment = false
 disqus_shortname = "" 
 commento = false
 
 [gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-  owner = ""              # Your GitHub ID
-  repo = ""               # The repo to store comments
+  owner = "ndgnuh"              # Your GitHub ID
+  repo = "ndgnuh.github.io"               # The repo to store comments
   clientId = ""           # Your client ID
   clientSecret = ""       # Your client secret
 

@@ -1,0 +1,11 @@
+.slider {
+    background-color: #61FF88 !important;
+}
+
+item.active {
+    color: #61ff88 !important;
+}
+
+.theme__dark .slider {
+    background-color: #61FF88 !important;
+}

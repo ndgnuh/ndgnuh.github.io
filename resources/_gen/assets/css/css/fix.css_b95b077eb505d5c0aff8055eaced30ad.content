@@ -1,0 +1,1 @@
+.wrapper{display:grid;width:100%;min-height:100vh;max-width:960px;grid-template-columns:minmax(240px,5fr)minmax(250px,2fr);grid-template-rows:50px auto 1fr auto;grid-column-gap:32px;grid-row-gap:0}.inner{display:grid;grid-template-columns:250px 1fr 1fr;grid-template-rows:1fr;grid-column-gap:16px;grid-row-gap:0;grid-template-columns:1fr 1fr 250px}

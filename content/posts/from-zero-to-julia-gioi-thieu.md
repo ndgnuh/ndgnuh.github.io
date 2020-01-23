@@ -19,4 +19,6 @@ Chuỗi bài học này được dựa trên [series `From zero to Julia` của 
 Nội dung: (sẽ được update dần dần)
 
 1. [Cài đặt Julia](../cai-dat-julia)
-
+2. Công cụ lập trình
+    - [Julia REPL](../julia-repl)
+    - [Dùng Julia với Jupyter notebook](../dung-julia-voi-jupyter-notebook)
