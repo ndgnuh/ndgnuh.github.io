@@ -1,4 +1,6 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://ndgnuh.github.io/en/</loc>
@@ -12,11 +14,6 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ndgnuh.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="x-default"
                 href="https://ndgnuh.github.io/en/"
                 />
   </url>
@@ -35,11 +32,6 @@
                 hreflang="en"
                 href="https://ndgnuh.github.io/en/categories/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="x-default"
-                href="https://ndgnuh.github.io/en/categories/"
-                />
   </url>
   
   <url>
@@ -54,11 +46,6 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ndgnuh.github.io/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="x-default"
                 href="https://ndgnuh.github.io/en/series/"
                 />
   </url>
@@ -77,11 +64,6 @@
                 hreflang="en"
                 href="https://ndgnuh.github.io/en/tags/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="x-default"
-                href="https://ndgnuh.github.io/en/tags/"
-                />
   </url>
   
   <url>
@@ -96,11 +78,6 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ndgnuh.github.io/en/year-all-rights-reserved/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="x-default"
                 href="https://ndgnuh.github.io/en/year-all-rights-reserved/"
                 />
   </url>
