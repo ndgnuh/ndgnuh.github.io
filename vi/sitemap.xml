@@ -4,7 +4,6 @@
   
   <url>
     <loc>https://ndgnuh.github.io/vi/</loc>
-    <lastmod>2020-01-24T23:27:05+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -17,79 +16,6 @@
                 hreflang="vi"
                 href="https://ndgnuh.github.io/vi/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/vi/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</loc>
-    <lastmod>2020-01-24T23:27:05+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/vi/tags/julia/</loc>
-    <lastmod>2020-01-24T23:27:05+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/vi/posts/from-zero-to-julia/julia-jupyter-notebook/</loc>
-    <lastmod>2020-01-24T23:27:05+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/vi/tags/l%E1%BA%ADp-tr%C3%ACnh/</loc>
-    <lastmod>2020-01-24T23:27:05+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/vi/posts/</loc>
-    <lastmod>2020-01-24T23:27:05+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/vi/tags/</loc>
-    <lastmod>2020-01-24T23:27:05+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ndgnuh.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://ndgnuh.github.io/vi/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/vi/posts/from-zero-to-julia/julia-repl/</loc>
-    <lastmod>2020-01-20T23:59:00+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/vi/posts/from-zero-to-julia/cai-dat-julia/</loc>
-    <lastmod>2020-01-20T19:26:13+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/vi/posts/from-zero-to-julia-gioi-thieu/</loc>
-    <lastmod>2020-01-20T19:00:13+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
@@ -121,6 +47,22 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://ndgnuh.github.io/vi/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/vi/tags/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ndgnuh.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://ndgnuh.github.io/vi/tags/"
                 />
   </url>
   
