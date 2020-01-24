@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Julia từ con số không: hướng dẫn cài đặt Julia – #Rant</title>
+    <title>Julia từ con số không: cài đặt và chạy file Julia – #Rant</title>
     
 
   
@@ -825,17 +825,17 @@
 
 
     
-<meta name="description" content="Cách tải và cài đặt Julia" />
+<meta name="description" content="Blog cá nhân, ranting, moaning, etc" />
 <meta name="keywords" content="">
 <meta name="created" content="2020-01-20T19:26:13&#43;0700">
 <meta name="modified" content="2020-01-20T19:26:13&#43;0700">
 
 
 <meta property="og:site_name" content="#Rant">
-<meta property="og:title" content="Julia từ con số không: hướng dẫn cài đặt Julia">
+<meta property="og:title" content="Julia từ con số không: cài đặt và chạy file Julia">
 <meta property="og:url" content="https://ndgnuh.github.io/vi/posts/from-zero-to-julia/cai-dat-julia/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="Cách tải và cài đặt Julia">
+<meta property="og:description" content="Blog cá nhân, ranting, moaning, etc">
 
 
 <meta name="generator" content="Hugo 0.62.2" />
@@ -853,11 +853,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Julia từ con số không: hướng dẫn cài đặt Julia",
+    "headline": "Julia từ con số không: cài đặt và chạy file Julia",
     "datePublished": "2020-01-20T19:26:13+07:00",
     "dateModified": "2020-01-20T19:26:13+07:00",
     "url" : "https://ndgnuh.github.io/vi/posts/from-zero-to-julia/cai-dat-julia/",
-    "description": "Cách tải và cài đặt Julia",
+    "description": "Đây là bài viết đầu tiên của series Julia từ con số không. Trong bài học này mình sẽ hướng dẫn các bạn cách tải, cài đặt và chạy một file Julia",
     "keywords": ["hướng dẫn","julia"],
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -1043,7 +1043,7 @@
   
   <li  class="is-active" >
     
-      <span>Julia từ con số không: hướng dẫn cài đặt Julia</span>
+      <span>Julia từ con số không: cài đặt và chạy file Julia</span>
     
   </li>
   
@@ -1052,11 +1052,11 @@
 </nav>
   
   <div class="single">
-    <h2 class="single__title">Julia từ con số không: hướng dẫn cài đặt Julia</h2>
+    <h2 class="single__title">Julia từ con số không: cài đặt và chạy file Julia</h2>
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="">📅&nbsp; </time>  &middot; <span class="single__info" title=""> ☕ 8  </span>
+  <time class="single__info" title="">📅&nbsp; </time>  &middot; <span class="single__info" title=""> ☕ 9  </span>
   <span class="single__info">
     
   </span>
@@ -1087,7 +1087,7 @@
     </div>    
     <article class="single__contents">
       
-      <p>Chào mừng các bạn đến với bài viết đầu tiên của series &ldquo;Julia từ con số không&rdquo;. Trong bài viết này mình sẽ hướng dẫn các bạn cách tải và cài đặt Julia.</p>
+      <p>Chào mừng các bạn đến với bài viết đầu tiên của series &ldquo;Julia từ con số không&rdquo;. Trong bài viết này mình sẽ hướng dẫn các bạn cách tải, cài đặt và chạy một script Julia.</p>
 <p>Nội dung chính:</p>
 <ul>
 <li><a href="#chu%E1%BA%A9n-b%E1%BB%8B">Chuẩn bị</a></li>
@@ -1100,6 +1100,7 @@
 </ul>
 </li>
 <li><a href="#s%E1%BB%AD-d%E1%BB%A5ng-b%E1%BA%A3n-ph%C3%A2n-ph%E1%BB%91i-c%E1%BB%99ng-%C4%91%E1%BB%93ng">Sử dụng bản phân phối cộng đồng</a></li>
+<li><a href="#ch%E1%BA%A1y-th%E1%BB%AD-file-julia">Chạy file Julia</a></li>
 <li><a href="#code-b%E1%BA%B1ng-c%C3%A1i-g%C3%AC">Tổng kết</a></li>
 </ul>
 <h2 id="chuẩn-bị">Chuẩn bị</h2>
@@ -1336,9 +1337,29 @@ yay -S julia-git <span class="c1"># tương ứng vởi bản build từ git</sp
 yay -Syu
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="tổng-kết">Tổng kết</h2>
+</div><h2 id="chạy-thử-file-julia">Chạy thử file Julia</h2>
+<p>Sau khi đã cài đặt biến môi trường. Bạn hãy tạo một file <code>hello-world.jl</code> (file mã nguồn Julia có đuôi <code>jl</code>) với nội dung sau:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">println</span><span class="o"></span><span class="p">(</span><span class="s">&#34;</span><span class="s">H</span><span class="s">e</span><span class="s">l</span><span class="s">l</span><span class="s">o</span><span class="s"> </span><span class="s">w</span><span class="s">o</span><span class="s">r</span><span class="s">l</span><span class="s">d</span><span class="s">&#34;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Sau đó, hãy mở một terminal tại vị trí bạn vừa tạo file <code>hello-world.jl</code> và chạy lệnh sau:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">julia hello-world.jl
+</code></pre></td></tr></table>
+</div>
+</div><p>Nếu bạn thấy có dòng chữ &ldquo;Hello world&rdquo; được in ra, tức là bạn đã thành công rồi đó.</p>
+<h2 id="tổng-kết">Tổng kết</h2>
 <p>Các bạn có thể cài đặt Julia theo cách mình muốn. Bản cài chính thức cài đặt sẽ dài dòng hơn một chút nhưng đảm bảo hơn, bản cài do cộng đồng phân phối sẽ tiện lợi hơn với một tỉ lệ rất rất nhỏ xảy ra bug.</p>
-<p>Sau khi đã thoải mái với cài đặt của mình. Ở phần tiếp theo mình sẽ nói đến một số công cụ có thể dùng để lập trình Julia.</p>
+<p>Sau khi cài đặt xong, để chạy script Julia, bạn chỉ cần chạy lệnh <code>julia đường-dẫn-đến-script.jl</code>. Ở phần tiếp theo mình sẽ nói đến một số công cụ có thể dùng để lập trình Julia. Bạn sẽ không cần chạy từng script như vậy mọi lúc nữa.</p>
 
     </article>
     
@@ -1842,6 +1863,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <li><a href="#archlinux-và-các-distro-tương-tự">Archlinux và các distro tương tự</a></li>
       </ul>
     </li>
+    <li><a href="#chạy-thử-file-julia">Chạy thử file Julia</a></li>
     <li><a href="#tổng-kết">Tổng kết</a></li>
   </ul>
 </nav>

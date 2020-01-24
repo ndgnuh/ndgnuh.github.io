@@ -9,12 +9,21 @@
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
     <webMaster>ndgnuh@protonmail.com (Hùng)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 20 Jan 2020 23:59:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jan 2020 23:27:05 +0700</lastBuildDate>
     
         <atom:link href="https://ndgnuh.github.io/vi/tags/julia/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>Julia từ con số không: Jupyter Notebook ♡ Julia</title>
+        <link>https://ndgnuh.github.io/vi/posts/from-zero-to-julia/julia-jupyter-notebook/</link>
+        <pubDate>Fri, 24 Jan 2020 23:27:05 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        <guid>https://ndgnuh.github.io/vi/posts/from-zero-to-julia/julia-jupyter-notebook/</guid>
+        <description>Fun fact: tên Jupyter trong Project Jupyter là sự kết hợp của ba ngôn ngữ Julia, Python và R.</description>
+      </item>
       
       <item>
         <title>Julia từ con số không: Julia REPL</title>
@@ -26,12 +35,12 @@
       </item>
       
       <item>
-        <title>Julia từ con số không: hướng dẫn cài đặt Julia</title>
+        <title>Julia từ con số không: cài đặt và chạy file Julia</title>
         <link>https://ndgnuh.github.io/vi/posts/from-zero-to-julia/cai-dat-julia/</link>
         <pubDate>Mon, 20 Jan 2020 19:26:13 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
         <guid>https://ndgnuh.github.io/vi/posts/from-zero-to-julia/cai-dat-julia/</guid>
-        <description>Đây là bài viết đầu tiên của series Julia từ con số không. Trong bài học này mình sẽ hướng dẫn các bạn cách tải và cài đặt Julia</description>
+        <description>Đây là bài viết đầu tiên của series Julia từ con số không. Trong bài học này mình sẽ hướng dẫn các bạn cách tải, cài đặt và chạy một file Julia</description>
       </item>
       
       <item>

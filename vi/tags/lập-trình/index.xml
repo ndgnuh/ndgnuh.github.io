@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>lập trình on #Rant</title>
-    <link>/vi/tags/l%E1%BA%ADp-tr%C3%ACnh/</link>
+    <link>https://ndgnuh.github.io/vi/tags/l%E1%BA%ADp-tr%C3%ACnh/</link>
     <description>Recent content in lập trình on #Rant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi</language>
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
     <webMaster>ndgnuh@protonmail.com (Hùng)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 01 Nov 2019 23:27:05 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jan 2020 23:27:05 +0700</lastBuildDate>
     
-        <atom:link href="/vi/tags/l%E1%BA%ADp-tr%C3%ACnh/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://ndgnuh.github.io/vi/tags/l%E1%BA%ADp-tr%C3%ACnh/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
-        <title>Dùng Julia với Jupyter Notebook</title>
-        <link>/vi/posts/dung-julia-voi-jupyter-notebook/</link>
-        <pubDate>Fri, 01 Nov 2019 23:27:05 +0700</pubDate>
+        <title>Julia từ con số không: Jupyter Notebook ♡ Julia</title>
+        <link>https://ndgnuh.github.io/vi/posts/from-zero-to-julia/julia-jupyter-notebook/</link>
+        <pubDate>Fri, 24 Jan 2020 23:27:05 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
-        <guid>/vi/posts/dung-julia-voi-jupyter-notebook/</guid>
+        <guid>https://ndgnuh.github.io/vi/posts/from-zero-to-julia/julia-jupyter-notebook/</guid>
         <description>Fun fact: tên Jupyter trong Project Jupyter là sự kết hợp của ba ngôn ngữ Julia, Python và R.</description>
       </item>
       
