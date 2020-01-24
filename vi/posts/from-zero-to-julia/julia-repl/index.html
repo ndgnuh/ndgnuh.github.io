@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Julia từ con số không: giới thiệu – #Rant</title>
+    <title>Julia từ con số không: Julia REPL – #Rant</title>
     
 
   
@@ -827,13 +827,13 @@
     
 <meta name="description" content="Blog cá nhân, ranting, moaning, etc" />
 <meta name="keywords" content="">
-<meta name="created" content="2020-01-20T19:00:13&#43;0700">
-<meta name="modified" content="2020-01-20T19:00:13&#43;0700">
+<meta name="created" content="2020-01-20T23:59:00&#43;0700">
+<meta name="modified" content="2020-01-20T23:59:00&#43;0700">
 
 
 <meta property="og:site_name" content="#Rant">
-<meta property="og:title" content="Julia từ con số không: giới thiệu">
-<meta property="og:url" content="/vi/posts/from-zero-to-julia-gioi-thieu/">
+<meta property="og:title" content="Julia từ con số không: Julia REPL">
+<meta property="og:url" content="/vi/posts/from-zero-to-julia/julia-repl/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="Blog cá nhân, ranting, moaning, etc">
 
@@ -841,7 +841,7 @@
 <meta name="generator" content="Hugo 0.62.2" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<link rel="canonical" href="/vi/posts/from-zero-to-julia-gioi-thieu/">
+<link rel="canonical" href="/vi/posts/from-zero-to-julia/julia-repl/">
 <link rel="manifest" href="/manifest.json">
 
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -853,12 +853,12 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Julia từ con số không: giới thiệu",
-    "datePublished": "2020-01-20T19:00:13+07:00",
-    "dateModified": "2020-01-20T19:00:13+07:00",
-    "url" : "/vi/posts/from-zero-to-julia-gioi-thieu/",
-    "description": "Julia từ con số không (From zero to Julia) là một series nhỏ với những bài học mang tính giới thiệu về ngôn ngữ Julia. Mục đích chính của series này là đem lại kiến thức …",
-    "keywords": ["julia","hướng dẫn"],
+    "headline": "Julia từ con số không: Julia REPL",
+    "datePublished": "2020-01-20T23:59:00+07:00",
+    "dateModified": "2020-01-20T23:59:00+07:00",
+    "url" : "/vi/posts/from-zero-to-julia/julia-repl/",
+    "description": "Bài viết thuộc series Julia từ con số không, giới thiệu về việc sử dụng chế độ tương tác với Julia (Julia REPL)",
+    "keywords": ["hướng dẫn","julia"],
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "/"
@@ -1043,7 +1043,7 @@
   
   <li  class="is-active" >
     
-      <span>Julia từ con số không: giới thiệu</span>
+      <span>Julia từ con số không: Julia REPL</span>
     
   </li>
   
@@ -1052,11 +1052,11 @@
 </nav>
   
   <div class="single">
-    <h2 class="single__title">Julia từ con số không: giới thiệu</h2>
+    <h2 class="single__title">Julia từ con số không: Julia REPL</h2>
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="">📅&nbsp; </time>  &middot; <span class="single__info" title=""> ☕ 2  </span>
+  <time class="single__info" title="">📅&nbsp; </time>  &middot; <span class="single__info" title=""> ☕ 7  </span>
   <span class="single__info">
     
   </span>
@@ -1068,8 +1068,8 @@
   
   
   <li>
-    <a href="/vi/tags/julia" class="single__tag" title="julia">
-      #julia
+    <a href="/vi/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn" class="single__tag" title="hướng dẫn">
+      #hướng dẫn
     </a>
   </li>
     
@@ -1077,8 +1077,8 @@
   
   
   <li>
-    <a href="/vi/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn" class="single__tag" title="hướng dẫn">
-      #hướng dẫn
+    <a href="/vi/tags/julia" class="single__tag" title="julia">
+      #julia
     </a>
   </li>
     
@@ -1087,20 +1087,227 @@
     </div>    
     <article class="single__contents">
       
-      <p>Julia từ con số không (From zero to Julia) là một series nhỏ với những bài học mang tính giới thiệu về ngôn ngữ Julia. Mục đích chính của series này là đem lại kiến thức cơ bản để người đọc có thể lập trình với Julia, đồng thời giới thiệu Julia tới cộng đồng Việt Nam với mong muốn ngôn ngữ này được phát triển hơn nữa.</p>
-<p>Trong <code>Julia từ con số không</code>, độc giả sẽ được làm quen với hệ thống kiểu dữ liệu của Julia và cách để định ra những kiểu dữ liệu phức tạp hơn phù hợp với nhu cầu sử dụng của mình, cùng với cách viết các hàm, cách làm việc với module và một trong những tính năng quan trọng nhất của Julia: <code>multiple dispatch</code>.</p>
-<p>Dù kinh nghiệm lập trình không phải điều kiện bắt buộc để có thể theo dõi series này, những kiến thức lập trình cơ bản có thể hữu dụng và giúp bạn hiểu dễ dàng hơn.</p>
-<p>Chuỗi bài học này được dựa trên <a href="https://techytok.com/from-zero-to-julia/">series <code>From zero to Julia</code> của Aurelio Amerio</a> (đã xin phép tác giả), đồng thời thêm thắt chút kiến thức của bản thân mình. Nếu bạn có thắc mắc hay ý kiến đóng góp, đừng ngại liên hệ mình thông qua email <code>ndgnuh@protonmail.com</code>, hoặc gửi một issue <a href="https://github.com/ndgnuh/ndgnuh.github.io/issues">tại đây</a>.</p>
-<p>Nội dung: (sẽ được update dần dần)</p>
-<ol>
-<li><a href="../from-zero-to-julia/cai-dat-julia">Cài đặt Julia</a></li>
-<li>Công cụ lập trình
+      <p>Ở phần đầu tiên của series &ldquo;Julia từ con số không&rdquo;, chúng ta đã tiến hành <a href="../cai-dat-julia">cài đặt Julia</a>. Giờ chúng ta sẽ bắt đầu làm việc với giao diện cơ bản nhất của Julia: REPL.</p>
+<h2 id="repl-là-gì">REPL là gì?</h2>
+<p>REPL là viết tắt của Read - Eval - Print - Loop, hay Đọc - Thực Thi - In Kết Quả - Lặp Lại. Nói một cách dễ hiểu, bạn nhập một dòng lệnh vào, Julia sẽ thực thi dòng lệnh đó, in ra kết quả và quá trình này lặp đi lặp lại đến khi bạn chán thì dừng.</p>
+<p>Giả sử bạn cài đặt Julia như trong hướng dẫn. Để mở REPL, hãy chạy <code>julia</code> trong terminal hoặc nhấp đúp vào icon Julia. Bạn sẽ được chào đón bởi màn hình sau:</p>
+<p><img src="/img/julia-repl-001.png" alt="ảnh minh họa" /></p>
+<p>Gõ <code>print(&quot;Hello world&quot;)</code> và ấn Enter. Vậy là bạn đã viết xong hello world bằng Julia rồi! Qua ví dụ này chắc bạn cũng hiểu rõ cách chạy lệnh trong REPL rồi. Để thoát REPL, bạn có thể nhấn tổ hợp phím <code>Ctrl + D</code> khi đang có một dòng trống, hoặc chạy lệnh <code>exit()</code>.</p>
+<p>Sau đây mình sẽ giới thiệu một số tính năng của Julia REPL, bao gồm những tính năng tiêu chuẩn và cả những tính năng cực kì độc mà (mình nghĩ) chỉ Julia có.</p>
+<h2 id="các-tính-năng">Các tính năng</h2>
+<h3 id="tab-completion">Tab completion</h3>
+<p>Tính năng này khá quen thuộc nếu bạn đã từng làm việc với bất kì dạng REPL nào. Bạn gõ vài thứ, ấn <code>tab</code>, một danh sách những thứ có thể viết sẽ hiện ra, nếu chỉ có một lựa chọn thì lựa chọn đó sẽ được tự động điền.</p>
+<p>Tuy nhiên, REPL của Julia có một thứ khá độc. Bạn hãy gõ <code>\cup</code> và nhấn <code>tab</code> trên REPL, sau đó nhấn Enter.</p>
+<p><img src="/img/julia-repl-002.png" alt="ảnh minh họa" /></p>
+<p>Giờ có hai vấn đề chúng ta cần quan tâm ở đây: <em>&ldquo;kí tự lạ&rdquo; trông giống như chữ <code>u</code> vừa xuất hiện</em> và <em>nếu nó là kí tự lạ, tại sao Julia không báo lỗi?</em>. Thứ nhất, kí tự trên thực chất là kí hiệu phép hợp trong toán học. $$ \{1, 2\} \cup \{4\} = \{1, 2, 4\} $$<br />
+Thứ hai, Julia <strong>hỗ trợ</strong> tên biến và tên hàm chứa kí tự unicode, và <code>∪</code> là một hàm hoàn toàn hợp lệ. Nếu không tin hãy chạy thử:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">julia</span><span class="o"></span><span class="o">&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">∪</span> <span class="mi">4</span> <span class="o">∪</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="mi">5</span><span class="o">-</span><span class="n">element</span><span class="o"></span> <span class="kt">Array</span><span class="p">{</span><span class="kt">Int64</span><span class="p">,</span><span class="mi">1</span><span class="p">}</span><span class="o">:</span>
+ <span class="mi">1</span>
+ <span class="mi">2</span>
+ <span class="mi">4</span>
+ <span class="mi">5</span>
+ <span class="mi">9</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Những kí hiệu này bình thường sẽ không được dùng khi lập trình, tuy nhiên trong những công thức toán phức tạp, chúng sẽ rất hữu dụng cho việc biểu đạt code. Vậy làm thế nào để sử dụng những kí tự này? Rất đơn giản, chúng đều được định danh bằng tên trong LaTeX. Nếu không nhớ rõ tên bạn có thể gõ <code>\</code> và nhấn <code>tab</code> để tab completion gợi ý cho bạn.</p>
+<p>Ví dụ nhỏ về cách dùng: <code>\sigma&lt;tab&gt;(x) = one(x) / (one(x) + exp(-x))</code>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">julia</span><span class="o"></span><span class="o">&gt;</span> <span class="n">σ</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="o">=</span> <span class="n">one</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">one</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="o">+</span> <span class="n">exp</span><span class="o"></span><span class="p">(</span><span class="o">-</span><span class="n">x</span><span class="o"></span><span class="p">)</span><span class="p">)</span>
+<span class="n">σ</span><span class="o"></span> <span class="p">(</span><span class="n">generic</span><span class="o"></span> <span class="k">function</span> <span class="n">with</span><span class="o"></span> <span class="mi">1</span> <span class="n">method</span><span class="o"></span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>Nhưng nếu không ở trong REPL thì tạo mấy kí tự này kiểu gì?</p>
+</blockquote>
+<p>Các bạn yên tâm, tất cả các công cụ dành cho Julia đều hỗ trợ tính năng này. Do đó khi các bạn dùng editor/ide/jupyter notebook cũng chỉ cần thao tác tương tự như trên là có thể tạo ra được các kí tự đặc biệt.</p>
+<div class="notices note" >
+Đối với các bạn dùng Windows, nếu các bạn gặp lỗi khi in ra những kí tự đặc biệt này (in ra ô vuông, không in ra cái gì), mình khuyên các bạn dùng một thứ gì khác ngoài cmd và powershell. Tại sao? Vì hai cái này gặp vấn đề trong việc render các kí tự đặc biệt. 
+</div>
+<h3 id="chế-độ-trợ-giúp-help-mode">Chế độ trợ giúp (help mode)</h3>
+<p>REPL của Julia chia làm các chế độ khác nhau. Khi chạy lệnh như trên, bạn đang ở trong một chế độ gọi là <code>Julian mode</code>. Sau đây mình sẽ giới thiệu một mode rất hữu dụng: <code>Help mode</code>. Trong chế độ này, bạn có thể xem tài liệu hướng dẫn cho các hàm, biến hoặc module, rất giống như lệnh <code>help</code> trong Matlab. Để chuyển sang chế độ trợ giúp, bạn chỉ cần nhập kí tự <code>?</code> ở đầu dòng, câu hỏi của dòng lệnh sẽ đổi thành <code>help?&gt;</code>. Để sử dụng trở giúp, hãy sử dụng cú pháp <code>help?&gt;tên_hàm_hoặc_biến</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">help</span><span class="o"></span><span class="o">?</span><span class="o">&gt;</span> <span class="kt">Complex</span>
+<span class="n">search</span><span class="o"></span><span class="o">:</span> <span class="kt">Complex</span> <span class="n">complex</span><span class="o"></span> <span class="n">ComplexF64</span><span class="o"></span> <span class="n">ComplexF32</span><span class="o"></span> <span class="n">ComplexF16</span><span class="o"></span> <span class="n">precompile</span><span class="o"></span>
+
+  <span class="kt">Complex</span><span class="p">{</span><span class="n">T</span><span class="o"></span><span class="o">&lt;</span><span class="o">:</span><span class="kt">Real</span><span class="p">}</span> <span class="o">&lt;</span><span class="o">:</span> <span class="kt">Number</span>
+
+  <span class="kt">Complex</span> <span class="n">number</span><span class="o"></span> <span class="n">type</span><span class="o"></span> <span class="n">with</span><span class="o"></span> <span class="n">real</span><span class="o"></span> <span class="n">and</span><span class="o"></span> <span class="n">imaginary</span><span class="o"></span> <span class="n">part</span><span class="o"></span> <span class="n">of</span><span class="o"></span> <span class="n">type</span><span class="o"></span> <span class="n">T</span><span class="o"></span><span class="o">.</span>
+
+  <span class="n">ComplexF16</span><span class="o"></span><span class="p">,</span> <span class="n">ComplexF32</span><span class="o"></span> <span class="n">and</span><span class="o"></span> <span class="n">ComplexF64</span><span class="o"></span> <span class="n">are</span><span class="o"></span> <span class="n">aliases</span><span class="o"></span> <span class="k">for</span> <span class="kt">Complex</span><span class="p">{</span><span class="kt">Float16</span><span class="p">}</span><span class="p">,</span>
+  <span class="kt">Complex</span><span class="p">{</span><span class="kt">Float32</span><span class="p">}</span> <span class="n">and</span><span class="o"></span> <span class="kt">Complex</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}</span> <span class="n">respectively</span><span class="o"></span><span class="o">.</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Trong chế độ help, bạn có thể sử dụng kết hợp tính năng tab completion ở trên. Nếu bạn gặp một kí hiệu không biết gõ như thế nào, bạn có thể copy nó vào trong REPL và dùng help mode, Julia sẽ chỉ cho bạn cách để gõ nó.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">help</span><span class="o"></span><span class="o">?</span><span class="o">&gt;</span> <span class="nb">π</span>
+<span class="s">&#34;</span><span class="s">π</span><span class="s">&#34;</span> <span class="n">can</span><span class="o"></span> <span class="n">be</span><span class="o"></span> <span class="n">typed</span><span class="o"></span> <span class="n">by</span><span class="o"></span> <span class="o">\</span><span class="nb">pi</span><span class="o">&lt;</span><span class="n">tab</span><span class="o"></span><span class="o">&gt;</span>
+
+<span class="n">search</span><span class="o"></span><span class="o">:</span> <span class="nb">π</span>
+
+  <span class="nb">π</span>
+  <span class="nb">pi</span>
+
+  <span class="n">The</span><span class="o"></span> <span class="n">constant</span><span class="o"></span> <span class="nb">pi</span><span class="o">.</span>
+
+  <span class="n">Examples</span><span class="o"></span>
+  <span class="o">≡</span><span class="o">≡</span><span class="o">≡</span><span class="o">≡</span><span class="o">≡</span><span class="o">≡</span><span class="o">≡</span><span class="o">≡</span><span class="o">≡</span><span class="o">≡</span>
+
+  <span class="n">julia</span><span class="o"></span><span class="o">&gt;</span> <span class="nb">pi</span>
+  <span class="nb">π</span> <span class="o">=</span> <span class="mf">3.1415926535897</span><span class="o">.</span><span class="o">.</span><span class="o">.</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="chế-độ-shell">Chế độ Shell</h3>
+<p>Chế độ shell giúp bạn gọi lệnh từ shell hệ thống một cách nhanh chóng. Chế độ shell có thể được truy cập bằng cách thêm dấu <code>;</code> ở đầu một dòng. Câu hỏi ở đầu dòng REPL sẽ chuyển thành <code>shell&gt;</code> và chúng ta có thể gọi lệnh hệ thống.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">shell</span><span class="o"></span><span class="o">&gt;</span> <span class="n">cd</span><span class="o"></span> <span class="o">/</span><span class="n">tmp</span><span class="o"></span>
+<span class="o">/</span><span class="n">tmp</span><span class="o"></span>
+
+<span class="n">shell</span><span class="o"></span><span class="o">&gt;</span> <span class="n">ls</span><span class="o"></span>
+<span class="n">hugo_cache</span><span class="o"></span>
+<span class="n">mpd</span><span class="o"></span><span class="o">.</span><span class="n">fifo</span><span class="o"></span>
+<span class="n">nvimeosFJ9</span><span class="o"></span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Chế độ này rất tiện lợi khi chúng ta muốn chạy những câu lệnh đơn giản. Tuy nhiên, nếu bạn cần dùng đến những đoạn lệnh có cấu trúc phức tạp hơn với điều kiện, lặp, hay pipe, chúng ta sẽ đề cập trong một bài viết khác.</p>
+<h3 id="package-manager-mode">Package manager mode</h3>
+<p>Chế độ này dùng để quản lý các gói Julia được cài trong máy bạn. Nó có thể được truy cập bằng cách thêm dấu <code>]</code> ở đầu dòng. Tuy nhiên, phần này đáng được đặt ra một bài viết riêng, do đó mình sẽ không đi vào chi tiết ở đây.</p>
+<h3 id="chế-độ-tìm-kiếm">Chế độ tìm kiếm</h3>
+<p>Khi bạn nhấn tổ hợp <code>Ctrl + r</code>, câu hỏi ở dòng lệnh sẽ chuyển thành <code>(reverse-i-search)':</code>, bạn đã vào chế độ tìm kiếm ngược (reverse search). Trong chế độ này, khi bạn gõ bất kì thứ gì, REPL sẽ tìm nó trong những câu lệnh bạn đã chạy và gợi ý câu lệnh đó. Nếu có nhiều cầu lệnh khớp với cụm từ bạn nhập, câu lệnh gần đây nhất sẽ hiện ra. Nếu bạn muốn tìm câu lệnh tiếp theo mà khớp, hãy nhấn <code>Ctrl + r</code> một lần nữa. Sau khi câu lệnh bạn muốn xuất hiện, bạn có thể nhấn <code>Enter</code> để điền câu lệnh đó vào REPL, nếu không hãy nhấn <code>Ctrl + c</code> để hủy.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="c"># sau khi nhấn Ctrl + r và điền kí tự \cup</span>
+<span class="c"># bạn vẫn có thể dùng tab completion trong chế độ này</span>
+<span class="p">(</span><span class="n">reverse</span><span class="o"></span><span class="o">-</span><span class="n">i</span><span class="o"></span><span class="o">-</span><span class="n">search</span><span class="o"></span><span class="p">)</span><span class="sb">`</span><span class="sb">∪</span><span class="sb">&#39;</span><span class="sb">:</span><span class="sb"> </span><span class="sb">[</span><span class="sb">1</span><span class="sb">,</span><span class="sb"> </span><span class="sb">2</span><span class="sb">]</span><span class="sb"> </span><span class="sb">∪</span><span class="sb"> </span><span class="sb">4</span><span class="sb"> </span><span class="sb">∪</span><span class="sb"> </span><span class="sb">[</span><span class="sb">5</span><span class="sb">,</span><span class="sb"> </span><span class="sb">9</span><span class="sb">]</span><span class="sb">
+</span><span class="sb"></span><span class="sb">#</span><span class="sb"> </span><span class="sb">s</span><span class="sb">a</span><span class="sb">u</span><span class="sb"> </span><span class="sb">k</span><span class="sb">h</span><span class="sb">i</span><span class="sb"> </span><span class="sb">n</span><span class="sb">h</span><span class="sb">ấ</span><span class="sb">n</span><span class="sb"> </span><span class="sb">e</span><span class="sb">n</span><span class="sb">t</span><span class="sb">e</span><span class="sb">r</span><span class="sb">
+</span><span class="sb"></span><span class="sb">j</span><span class="sb">u</span><span class="sb">l</span><span class="sb">i</span><span class="sb">a</span><span class="sb">&gt;</span><span class="sb"> </span><span class="sb">[</span><span class="sb">1</span><span class="sb">,</span><span class="sb"> </span><span class="sb">2</span><span class="sb">]</span><span class="sb"> </span><span class="sb">∪</span><span class="sb"> </span><span class="sb">4</span><span class="sb"> </span><span class="sb">∪</span><span class="sb"> </span><span class="sb">[</span><span class="sb">5</span><span class="sb">,</span><span class="sb"> </span><span class="sb">9</span><span class="sb">]</span><span class="sb">
+</span></code></pre></td></tr></table>
+</div>
+</div><p>Ngoài ra còn có một chế độ tìm kiếm khác là forward search, có thể được truy cập bằng tổ hợp phím <code>Ctrl + s</code>. Mình không hay dùng tính năng này lắm.</p>
+<h2 id="một-số-phím-tắt-trên-julia-repl">Một số phím tắt trên Julia REPL</h2>
+<table>
+<thead>
+<tr>
+<th>Phím tắt</th>
+<th>chức năng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Ctrl + c</code></td>
+<td>Dừng thực thi hoặc hủy lệnh đang nhập</td>
+</tr>
+<tr>
+<td><code>Ctrl + d</code></td>
+<td>Thoát Julia (khi dòng lệnh trống)</td>
+</tr>
+<tr>
+<td><code>Ctrl + l</code></td>
+<td>Xóa màn hình</td>
+</tr>
+<tr>
+<td><code>Ctrl + r</code></td>
+<td>Chế độ tìm kiếm ngược</td>
+</tr>
+<tr>
+<td><code>Ctrl + mũi tên trái </code></td>
+<td>Di chuyển sang trái 1 từ</td>
+</tr>
+<tr>
+<td><code>Ctrl + mũi tên phải </code></td>
+<td>Di chuyển sang phải 1 từ</td>
+</tr>
+<tr>
+<td><code>Alt + Enter</code></td>
+<td>Xuống dòng nhưng không chạy</td>
+</tr>
+<tr>
+<td><code>?</code> (đầu dòng)</td>
+<td>Chế độ trợ giúp</td>
+</tr>
+<tr>
+<td><code>;</code> (đầu dòng)</td>
+<td>Chế độ shell</td>
+</tr>
+<tr>
+<td><code>]</code> (đầu dòng)</td>
+<td>Chế độ quản lý gói</td>
+</tr>
+</tbody>
+</table>
+<div class="notices note" >
+Đây chỉ là một số phím tắt mà mình cho rằng hữu dụng, không phải toàn bộ
+</div>
+<h2 id="tổng-kết">Tổng kết</h2>
+<p>Ở bài này mình đã giới thiệu sơ qua về REPL của Julia, thực chất những tính năng của REPL, các công cụ khác sẽ có gần như toàn bộ chúng. Ngoài ra, Julia còn có nhiều những tính năng nâng cao khác như tạo menu, custom key binding, custom color scheme, các bạn có thể tự tìm hiểu tại <a href="https://docs.julialang.org/en/v1/stdlib/REPL/#The-Julia-REPL-1">trang tài liệu Julia</a>. Bản thân mình chủ yếu dùng REPL cho những tính toán đơn giản, xem lệnh help hoặc chạy một chương trình mà được viết sẵn ở đâu đó.</p>
+<p>Với các bạn dùng Windows, mình đưa ra một số gợi ý về Terminal:</p>
 <ul>
-<li><a href="../from-zero-to-julia/julia-repl">Julia REPL</a></li>
-<li><a href="../from-zero-to-julia/julia-jupyter-notebook">Dùng Julia với Jupyter notebook</a></li>
+<li>Terminal của <a href="https://code.visualstudio.com">Visual Studio Code</a></li>
+<li><a href="https://gitforwindows.org">Git bash</a></li>
 </ul>
-</li>
-</ol>
 
     </article>
     
@@ -1199,18 +1406,37 @@
     <section class="related">
     
     
+    <h1 class="related__title">
+      <hr class="hr-dots"/>
+      <div>
+        
+      </div>
+      <hr class="hr-dots"/>
+    </h1>
+    <ul class="related-ul">
+        
+        <li>
+          <a href="/vi/posts/from-zero-to-julia/cai-dat-julia/" class="related__link">Julia từ con số không: hướng dẫn cài đặt Julia</a>
+        </li>
+        
+        <li>
+          <a href="/vi/posts/from-zero-to-julia-gioi-thieu/" class="related__link">Julia từ con số không: giới thiệu</a>
+        </li>
+        
+    </ul>
+    
   </section>
     <div class="grow"></div>
 <nav class="pagination-single">
   
-  <div class="grow"></div>
-  
-    <a href="/vi/posts/from-zero-to-julia/cai-dat-julia/" class="pagination-single__right">      
-      <div class="pagination-single__right-title">Julia từ con số không: hướng dẫn cài đặt Julia</div>
+    <a href="/vi/posts/from-zero-to-julia/cai-dat-julia/" class="pagination-single__left">
       <div class="pagination-single__icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
       </div>
+      <div class="pagination-single__left-title">Julia từ con số không: hướng dẫn cài đặt Julia</div>      
     </a>
+  
+  <div class="grow"></div>
   
 </nav>
     
@@ -1562,7 +1788,22 @@ document.addEventListener('DOMContentLoaded', function () {
     
   </div>
   <div class="toc ">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#repl-là-gì">REPL là gì?</a></li>
+    <li><a href="#các-tính-năng">Các tính năng</a>
+      <ul>
+        <li><a href="#tab-completion">Tab completion</a></li>
+        <li><a href="#chế-độ-trợ-giúp-help-mode">Chế độ trợ giúp (help mode)</a></li>
+        <li><a href="#chế-độ-shell">Chế độ Shell</a></li>
+        <li><a href="#package-manager-mode">Package manager mode</a></li>
+        <li><a href="#chế-độ-tìm-kiếm">Chế độ tìm kiếm</a></li>
+      </ul>
+    </li>
+    <li><a href="#một-số-phím-tắt-trên-julia-repl">Một số phím tắt trên Julia REPL</a></li>
+    <li><a href="#tổng-kết">Tổng kết</a></li>
+  </ul>
+</nav>
   </div>
 </section>
 
@@ -1648,6 +1889,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung=" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha256-F/Xda58SPdcUCr&#43;xhSGz9MA2zQBPb0ASEYKohl8UCHc=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha256-90d2pnfw0r4K8CZAWPko4rpFXQsZvJhTBGYNkipDprI=" crossorigin="anonymous"></script>
 
 
 
@@ -1967,7 +2212,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     
     
-    var lib = JSON.parse("null");
+    var lib = JSON.parse("[\"katex\",\"highlight\"]");
 
     if (lib && lib.includes('mermaid')) {
       
@@ -2235,7 +2480,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
     
     
-  <a href="/vi/posts/from-zero-to-julia-gioi-thieu//index.xml" type="application/rss+xml" title="rss" aria-label="RSS Feed Link">
+  <a href="/vi/posts/from-zero-to-julia/julia-repl//index.xml" type="application/rss+xml" title="rss" aria-label="RSS Feed Link">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><circle fill="currentColor" cx="6.18" cy="17.82" r="2.18"/><path fill="currentColor" d="M5.59 10.23c-.84-.14-1.59.55-1.59 1.4 0 .71.53 1.28 1.23 1.4 2.92.51 5.22 2.82 5.74 5.74.12.7.69 1.23 1.4 1.23.85 0 1.54-.75 1.41-1.59-.68-4.2-3.99-7.51-8.19-8.18zm-.03-5.71C4.73 4.43 4 5.1 4 5.93c0 .73.55 1.33 1.27 1.4 6.01.6 10.79 5.38 11.39 11.39.07.73.67 1.28 1.4 1.28.84 0 1.5-.73 1.42-1.56-.73-7.34-6.57-13.19-13.92-13.92z"/></svg>
   </a>
 
