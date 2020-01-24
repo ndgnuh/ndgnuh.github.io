@@ -48,3 +48,8 @@ tag = "tags"
 series = "series"
 copyright = "©{year}, All Rights Reserved"
 
+[sitemap]
+changefreq = "daily"
+filename = "sitemap.xml"
+priority = 0.5
+

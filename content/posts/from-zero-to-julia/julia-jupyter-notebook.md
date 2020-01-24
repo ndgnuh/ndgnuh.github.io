@@ -16,31 +16,52 @@ Ba ngôn ngữ lập trình chính được cài đặt trong phần mềm của
 
 ## Cài đặt
 
+Nếu bạn đã cài đặt Jupyter, hãy skip đến phần [Cài đặt IJulia](#cài-đặt-ijulia)
+
 ### Cài đặt Jupyter
-Để cài đặt được Jupyter thì trước hết cần có `python` cài đặt trong máy, 
-Yêu cầu: Jupyter đã được cài trước
+Để cài đặt được Jupyter thì trước hết cần có `python` cài đặt trong máy. Mình sẽ không hướng dẫn cài Python ở đây, các bạn chịu khó Google vì cài đặt nó cũng khá dễ. Sau khi cài đặt Python xong, các bạn có thể cài Jupyter theo hai câu lệnh sau:
 
-> Hãy đọc hết hướng dẫn trước khi tiến hành
+```shell
+# nếu bạn muốn dùng jupyter lab
+pip install --user jupyterlab
+# nếu bạn muốn dùng jupyter notebook
+pip install --user notebook
+```
 
-1. Đầu tiên bạn cần khởi động môi trường REPL Julia. Hãy mở một terminal, chạy lệnh `julia`. Trên Windows có thể dùng powershell và cmd.
-2. Trên Julia REPL gõ `]`. Tới đây REPL sẽ chuyển sang chế độ package manager, nhấn `backspace` (nút xóa) để chuyển sang chế độ thường.
-3. Chạy lệnh `add IJulia`
-    - lệnh này sẽ cài gói `IJulia.jl` và cài một kernel jupyter
-    - nếu bạn muốn dùng đường dẫn tùy chỉnh tới jupyter hoặc jupyter không nằm trong `$PATH` của bạn thì bạn có thể đặt đường dẫn đó bằng cách chạy lệnh `ENV["JUPYTER"] = "/đường/dẫn/tới/jupyter"` trong chế độ thường. Có thể kiểm tra xem Jupyter nằm trên `$PATH` hay không bằng cách chạy lệnh `jupyter` trên một terminal
+{{< notice note >}}
+Nếu bạn muốn cài đặt cho toàn bộ người dùng trên hệ thống của mình, hãy bỏ chữ `--user` trong hai câu lệnh trên. Lưu ý rằng, việc này sẽ cần quyền quản trị viên trên máy (người dùng `root` hoặc quyền sử dụng `sudo` trên Linux, hay lựa chọn `Run as Administrator` trên Windows).
+
+Ngoài ra nếu trình quản lí gói của các bạn có cung cung cấp, các bạn có thể cài từ đó cho tiện cũng được
+{{</notice >}}
+
+Thực chất, Jupyter chỉ cung cấp giao diện để bạn làm việc. Để Jupyter notebook thực sự hoạt động, bạn sẽ cần một thứ gọi là "nhân" (kernel). Mỗi ngôn ngữ lập trình sẽ có một nhân riêng (Ví dụ như Python 3 Kernel), thậm chí có nhân sẽ dịch được nhiều ngôn ngữ lập trình. Khi hoạt động Jupyter sẽ đưa mã nguồn mà bạn nhập vào cho kernel, kernel sẽ dịch mã nguồn của ngôn ngữ mà nó phụ trách, đưa kết quả lại cho Jupyter, cuối cùng thì Jupyter hiển thị kết quả cho bạn.
+
+{{< notice note >}}
+Trên Windows, bạn có thể sẽ phải thêm "C:\Users\$tên_người_dùng\AppData\Roaming\Python\Python$phiên_bản\Scripts" vào biến PATH như lúc cài đặt Julia
+{{< /notice >}}
+
+### Cài đặt IJulia
+
+IJulia chính là nhân Jupyter dành cho ngôn ngữ Julia, giúp các bạn có thể dùng Julia với Jupyter notebook hoặc Jupyter lab. Thực chất IJulia là một *gói* ở trong Julia. Để cài đặt nó, các bạn hãy mở [REPL](../julia-repl) lên, nhấn `]` để vào chế độ package manager. Mình sẽ nói chi tiết về việc quản lý gói trên Julia sau, hiện tại các bạn cứ chạy lệnh sau (trong chế độ package manager) để cài `IJulia`.
+```julia
+add IJulia
+```
+
+IJulia sẽ được cài đặt cùng với những gói phụ thuộc cần thiết. Nếu các bạn cài đặt thành công nó sẽ ra rất nhiều chữ màu xanh lá như trong hình. Thực chất mình đã cài IJulia từ trước rồi nên phần mềm quản lí gói chỉ check lại và update một số gói phụ thuộc thôi.
+
+{{<img src="/img/cai-dat-ijulia-3.png" caption="Kết quả khi lệnh add IJulia thành công" width="320px">}}
 
 
-<div align="center">
-<img src="/img/cai-dat-ijulia-3.png" width=320/></br>
-Nếu bạn cài thành công thì nó sẽ ra một đống info màu xanh lá. Thực chất mình cài rồi nên chạy lại nó chỉ update thôi.
-</div>
-
-
-# Sử dụng
+## Sử dụng
 
 Đầu tiên hãy chạy `jupyter notebook` để bắt đầu jupyter. sau đó nhấn vào new. Ở mục notebook chọn Julia, jupyter sẽ tạo một notebook mới với kernel Julia, tới đây các bạn dùng notebook này như bình thường, thử nghiệmcode, nghiên cứu này nọ :D
 
 À đúng rồi, `IJulia.jl` hoạt động với cả jupyter notebook và cái jupyter lab xịn sò, nên nếu bạn nào làm việc với lab thì vẫn ok nhé!
 
-Tham khảo thêm:
+
+## Tổng kết
+
+Khi mục đích là tìm hiểu, nghiên cứu hay thử nghiệm, Jupyter notebook hay Jupyter lab là công cụ tuyệt vời cho các bạn. Nếu các bạn gặp vấn đề hay bất kì thắc mắc gì, hãy liên hệ mình qua email `ndgnuh@protonmail.com`, để lại một issue trên [github](https://github.com/ndgnuh/ndgnuh.github.io) hoặc tham khảo thêm tại những trang web sau:
 
 - [Trang github của IJulia](https://github.com/JuliaLang/IJulia.jl)
+- [Trang chủ của Project Jupyter](https://jupyter.org/install)

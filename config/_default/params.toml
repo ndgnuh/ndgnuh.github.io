@@ -42,7 +42,7 @@ talksGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
 # whoami: usage - home page sidebar, single page bottom of post. all values can be empty
 myname = "Hùng"
 email = "ndgnuh@protonmail.com"
-whoami = "Sinh viên cùi bắp đú đởn làm blog"
+whoami = "Sinh viên đú đởn làm blog :)"
 useGravatar = true
 location = "Đâu đó ở Việt Nam"
 organization = ""
