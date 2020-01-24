@@ -1,6 +1,5 @@
 #!/bin/sh
 
-yes | rm public/* -rf
 hugo
 git add .
 git commit -vm "$(date)"
