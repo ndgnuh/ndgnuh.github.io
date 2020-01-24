@@ -3,7 +3,6 @@ languageCode = "vi"
 title = "#Rants"
 theme = "zzo"
 
-enableRobotsTXT = "true"
 pygmentsuseclasses = true
 
 defaultContentLanguage = "vi" # Default language to use (if you setup multilingual)
