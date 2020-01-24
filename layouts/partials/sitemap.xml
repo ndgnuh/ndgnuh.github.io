@@ -2,7 +2,7 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	{{ range . }}
 	<sitemap>
-		<loc>https://ndgnuh.github.io/{{ .SitemapAbsURL }}</loc>
+		<loc>https://ndgnuh.github.io{{ .SitemapAbsURL }}</loc>
 		{{ if not .LastChange.IsZero }}
 	   	<lastmod>{{ .LastChange.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</lastmod>
 		{{ end }}
