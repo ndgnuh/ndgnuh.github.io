@@ -1,5 +1,5 @@
-baseURL = "/"
-languageCode = "vi-vn"
+baseURL = "https://ndgnuh.github.io/"
+languageCode = "vi"
 title = "#Rants"
 theme = "zzo"
 
