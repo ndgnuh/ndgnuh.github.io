@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>/vi/</loc>
@@ -17,6 +15,11 @@
                 hreflang="vi"
                 href="/vi/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="/vi/"
+                />
   </url>
   
   <url>
@@ -24,6 +27,11 @@
     <lastmod>2020-01-20T23:59:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="/vi/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/"
+                />
   </url>
   
   <url>
@@ -31,6 +39,11 @@
     <lastmod>2020-01-20T23:59:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="/vi/tags/julia/"
+                />
   </url>
   
   <url>
@@ -38,6 +51,11 @@
     <lastmod>2020-01-20T23:59:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="/vi/posts/from-zero-to-julia/julia-repl/"
+                />
   </url>
   
   <url>
@@ -45,6 +63,11 @@
     <lastmod>2020-01-20T23:59:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="/vi/posts/"
+                />
   </url>
   
   <url>
@@ -62,6 +85,11 @@
                 hreflang="vi"
                 href="/vi/tags/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="/vi/tags/"
+                />
   </url>
   
   <url>
@@ -69,6 +97,11 @@
     <lastmod>2020-01-20T19:26:13+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="/vi/posts/from-zero-to-julia/cai-dat-julia/"
+                />
   </url>
   
   <url>
@@ -76,6 +109,11 @@
     <lastmod>2020-01-20T19:00:13+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="/vi/posts/from-zero-to-julia-gioi-thieu/"
+                />
   </url>
   
   <url>
@@ -90,6 +128,11 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
+                href="/vi/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
                 href="/vi/categories/"
                 />
   </url>
@@ -108,6 +151,11 @@
                 hreflang="vi"
                 href="/vi/series/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="/vi/series/"
+                />
   </url>
   
   <url>
@@ -122,6 +170,11 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
+                href="/vi/year-all-rights-reserved/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
                 href="/vi/year-all-rights-reserved/"
                 />
   </url>

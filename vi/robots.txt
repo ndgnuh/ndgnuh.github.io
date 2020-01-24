@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /some-path/
+
+
+
+Sitemap: /vi/sitemap.xml
