@@ -450,14 +450,14 @@
   
     var baseurl = null;
     
-    var siteBaseURL = JSON.parse("\"/\"");
+    var siteBaseURL = JSON.parse("\"https://ndgnuh.github.io/\"");
     var siteBaseChecker = /\/\w+\//i;
     var isSlug = siteBaseChecker.test(siteBaseURL);
     var isThemeSite = location.origin.includes('themes.gohugo.io');
 
     
         if (isThemeSite) {
-          baseurl = "\/\/en";
+          baseurl = "https:\/\/ndgnuh.github.io\/\/en";
         } else {
           var hasLangPostfix = location.pathname.includes("/en");
           if (hasLangPostfix) {
@@ -833,7 +833,7 @@
 
 <meta property="og:site_name" content="#Rant">
 <meta property="og:title" content="404 Page not found">
-<meta property="og:url" content="/en/404.html">
+<meta property="og:url" content="https://ndgnuh.github.io/en/404.html">
 <meta property="og:type" content="website">
 <meta property="og:description" content="Blog cá nhân, ranting, moaning, etc">
 
@@ -841,7 +841,7 @@
 <meta name="generator" content="Hugo 0.62.2" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<link rel="canonical" href="/en/404.html">
+<link rel="canonical" href="https://ndgnuh.github.io/en/404.html">
 <link rel="manifest" href="/manifest.json">
 
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -853,17 +853,17 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "url" : "/en/404.html",
+    "url" : "https://ndgnuh.github.io/en/404.html",
     "name": "404 Page not found",
     "description": "Blog cá nhân, ranting, moaning, etc",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "/"
+      "@id": "https://ndgnuh.github.io/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "#Rant",
-      "url": "/"
+      "url": "https://ndgnuh.github.io/"
     }
   }
 </script>
@@ -892,12 +892,12 @@
             <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar__brand">
     
-    <a href="/en" title="Home" rel="home" class="navbar__logo-link">
+    <a href="/en/" title="Home" rel="home" class="navbar__logo-link">
       <img src="/logo.png" alt="Home" class="navbar__logo">
     </a>
     
     
-      <a href="/en" title="Home" rel="home" class="navbar__title-link">
+      <a href="/en/" title="Home" rel="home" class="navbar__title-link">
         <h6 class="navbar__title">#Rant</h6>
       </a>
     
@@ -1100,7 +1100,7 @@
             
     
     
-  <a href="/en/404.html/index.xml" type="application/rss+xml" title="rss" aria-label="RSS Feed Link">
+  <a href="https://ndgnuh.github.io/en/404.html/index.xml" type="application/rss+xml" title="rss" aria-label="RSS Feed Link">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><circle fill="currentColor" cx="6.18" cy="17.82" r="2.18"/><path fill="currentColor" d="M5.59 10.23c-.84-.14-1.59.55-1.59 1.4 0 .71.53 1.28 1.23 1.4 2.92.51 5.22 2.82 5.74 5.74.12.7.69 1.23 1.4 1.23.85 0 1.54-.75 1.41-1.59-.68-4.2-3.99-7.51-8.19-8.18zm-.03-5.71C4.73 4.43 4 5.1 4 5.93c0 .73.55 1.33 1.27 1.4 6.01.6 10.79 5.38 11.39 11.39.07.73.67 1.28 1.4 1.28.84 0 1.5-.73 1.42-1.56-.73-7.34-6.57-13.19-13.92-13.92z"/></svg>
   </a>
 

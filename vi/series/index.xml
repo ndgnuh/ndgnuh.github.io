@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on #Rant</title>
-    <link>/vi/series/</link>
+    <link>https://ndgnuh.github.io/vi/series/</link>
     <description>Recent content in Series on #Rant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi</language>
@@ -10,7 +10,7 @@
     <webMaster>ndgnuh@protonmail.com (Hùng)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
     
-        <atom:link href="/vi/series/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://ndgnuh.github.io/vi/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     

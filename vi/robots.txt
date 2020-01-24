@@ -3,4 +3,4 @@ Disallow: /some-path/
 
 
 
-Sitemap: /vi/sitemap.xml
+Sitemap: https://ndgnuh.github.io/vi/sitemap.xml

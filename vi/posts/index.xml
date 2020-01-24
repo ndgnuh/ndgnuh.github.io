@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on #Rant</title>
-    <link>/vi/posts/</link>
+    <link>https://ndgnuh.github.io/vi/posts/</link>
     <description>Recent content in Posts on #Rant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi</language>
@@ -11,35 +11,35 @@
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 20 Jan 2020 23:59:00 +0700</lastBuildDate>
     
-        <atom:link href="/vi/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://ndgnuh.github.io/vi/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Julia từ con số không: Julia REPL</title>
-        <link>/vi/posts/from-zero-to-julia/julia-repl/</link>
+        <link>https://ndgnuh.github.io/vi/posts/from-zero-to-julia/julia-repl/</link>
         <pubDate>Mon, 20 Jan 2020 23:59:00 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
-        <guid>/vi/posts/from-zero-to-julia/julia-repl/</guid>
+        <guid>https://ndgnuh.github.io/vi/posts/from-zero-to-julia/julia-repl/</guid>
         <description>Bài viết thuộc series Julia từ con số không, giới thiệu về việc sử dụng chế độ tương tác với Julia (Julia REPL)</description>
       </item>
       
       <item>
         <title>Julia từ con số không: hướng dẫn cài đặt Julia</title>
-        <link>/vi/posts/from-zero-to-julia/cai-dat-julia/</link>
+        <link>https://ndgnuh.github.io/vi/posts/from-zero-to-julia/cai-dat-julia/</link>
         <pubDate>Mon, 20 Jan 2020 19:26:13 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
-        <guid>/vi/posts/from-zero-to-julia/cai-dat-julia/</guid>
+        <guid>https://ndgnuh.github.io/vi/posts/from-zero-to-julia/cai-dat-julia/</guid>
         <description>Đây là bài viết đầu tiên của series Julia từ con số không. Trong bài học này mình sẽ hướng dẫn các bạn cách tải và cài đặt Julia</description>
       </item>
       
       <item>
         <title>Julia từ con số không: giới thiệu</title>
-        <link>/vi/posts/from-zero-to-julia-gioi-thieu/</link>
+        <link>https://ndgnuh.github.io/vi/posts/from-zero-to-julia-gioi-thieu/</link>
         <pubDate>Mon, 20 Jan 2020 19:00:13 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
-        <guid>/vi/posts/from-zero-to-julia-gioi-thieu/</guid>
+        <guid>https://ndgnuh.github.io/vi/posts/from-zero-to-julia-gioi-thieu/</guid>
         <description>Julia từ con số không (From zero to Julia) là một series nhỏ với những bài học mang tính giới thiệu về ngôn ngữ Julia. Mục đích chính của series này là đem lại kiến thức cơ bản để người đọc có thể lập trình với Julia.</description>
       </item>
       

@@ -1,107 +1,107 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/en/</loc>
+    <loc>https://ndgnuh.github.io/en/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/"
+                href="https://ndgnuh.github.io/vi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="https://ndgnuh.github.io/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="x-default"
-                href="/en/"
+                href="https://ndgnuh.github.io/en/"
                 />
   </url>
   
   <url>
-    <loc>/en/categories/</loc>
+    <loc>https://ndgnuh.github.io/en/categories/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/categories/"
+                href="https://ndgnuh.github.io/vi/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/categories/"
+                href="https://ndgnuh.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="x-default"
-                href="/en/categories/"
+                href="https://ndgnuh.github.io/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>/en/series/</loc>
+    <loc>https://ndgnuh.github.io/en/series/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/series/"
+                href="https://ndgnuh.github.io/vi/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/series/"
+                href="https://ndgnuh.github.io/en/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="x-default"
-                href="/en/series/"
+                href="https://ndgnuh.github.io/en/series/"
                 />
   </url>
   
   <url>
-    <loc>/en/tags/</loc>
+    <loc>https://ndgnuh.github.io/en/tags/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/tags/"
+                href="https://ndgnuh.github.io/vi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/"
+                href="https://ndgnuh.github.io/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="x-default"
-                href="/en/tags/"
+                href="https://ndgnuh.github.io/en/tags/"
                 />
   </url>
   
   <url>
-    <loc>/en/year-all-rights-reserved/</loc>
+    <loc>https://ndgnuh.github.io/en/year-all-rights-reserved/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/year-all-rights-reserved/"
+                href="https://ndgnuh.github.io/vi/year-all-rights-reserved/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/year-all-rights-reserved/"
+                href="https://ndgnuh.github.io/en/year-all-rights-reserved/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="x-default"
-                href="/en/year-all-rights-reserved/"
+                href="https://ndgnuh.github.io/en/year-all-rights-reserved/"
                 />
   </url>
   
