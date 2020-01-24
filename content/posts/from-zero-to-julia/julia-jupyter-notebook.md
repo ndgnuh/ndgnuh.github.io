@@ -1,6 +1,6 @@
 ---
-title: "Dùng Julia với Jupyter Notebook"
-date: 2019-11-01T23:27:05+07:00
+title: "Julia từ con số không: Jupyter Notebook ♡ Julia"
+date: 2020-01-24T23:27:05+07:00
 draft: true
 summary: "Fun fact: tên Jupyter trong Project Jupyter là sự kết hợp của ba ngôn ngữ Julia, Python và R."
 tags: 
@@ -9,10 +9,15 @@ tags:
 - lập trình
 ---
 
-**Fun fact: tên Jupyter trong Project Jupyter là sự kết hợp của ba ngôn ngữ Julia, Python và R.**  (thông tin này là thật, các bạn có thể nhấn vào [link này](https://github.com/jupyter/design/wiki/Jupyter-Logo) trên để xác thực). Vì Jupyter hỗ trợ Julia chính thức nên việc sử dụng Julia với nó rất dễ dàng.
+> The three original programming languages that worked in Jupyter’s software were Julia, Python and R. While the name “Jupyter” is not a direct acronym for these languages, it nods its head in their directions. In particular, the “py” in the middle of Jupyter was chosen to honor our Python heritag
+> - Jupyter Brand Guide - https://github.com/jupyter/design
 
-# Cài đặt
+Ba ngôn ngữ lập trình chính được cài đặt trong phần mềm của Jupyter là Julia, Python và R. Dù cái tên `Jupyter` không phải tên viết tắt trực tiếp, nó vẫn mang tính gợi về về ba ngôn ngữ này. Đương nhiên, vì thiết kế cốt lõi của Jupyter bao gồm cả Julia, việc sử dụng Jupyter Notebook hay Jupyter Lab với Julia tương đối dễ dàng. 
 
+## Cài đặt
+
+### Cài đặt Jupyter
+Để cài đặt được Jupyter thì trước hết cần có `python` cài đặt trong máy, 
 Yêu cầu: Jupyter đã được cài trước
 
 > Hãy đọc hết hướng dẫn trước khi tiến hành

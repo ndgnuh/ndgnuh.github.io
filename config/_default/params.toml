@@ -5,7 +5,7 @@ description = "Blog cá nhân, ranting, moaning, etc" # for SEO
 custom_css = [
 "css/katex.min.css",
 "css/font.css",
-"css/custom-color.css",
+# "css/custom-color.css",
 "highlight.js/styles/tomorrow-night-blue.css"
 ] # custom_css = ["scss/custom.scss"] and then make file at root/assets/scss/custom.scss
 custom_js = [

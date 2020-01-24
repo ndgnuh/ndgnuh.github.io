@@ -19,7 +19,7 @@ Nội dung chính:
     - [Hướng dẫn cài đặt cho MacOS](#hướng-dẫn-cài-đặt-cho-macos)
     - [Hướng dẫn cài đặt cho *Nix (Linux, BSD)](#hướng-dẫn-cài-đặt-cho-nix-linux-bsd)
 - [Sử dụng bản phân phối cộng đồng](#sử-dụng-bản-phân-phối-cộng-đồng)
-- [Code bằng cái gì?](#code-bằng-cái-gì)
+- [Tổng kết](#code-bằng-cái-gì)
 
 ## Chuẩn bị
 
@@ -74,7 +74,9 @@ Julia hỗ trợ Windows 7 trở lên, bạn có thể cài đặt theo các bư
         2. Lấy đường dẫn cài đặt ở bước 2 ra, thêm `\bin` vào đuôi và copy vô cái hộp văn bản đó. Ví dụ mình cài Julia vào `E:\julia`, mình sẽ ghi `E:\julia\bin`.
 9. Ấn `Ok`, tắt hết các hộp thoại, giờ bạn đã cài xong Julia. Bạn có thể mở `cmd` hoặc `Powershell` và chạy lệnh `julia` để bắt đầu nghịch.
 
-**Lưu ý,** người dùng Windows 7 và Windows Server 2012 cần cài thêm một số thứ để Julia thực sự hoạt động:
+{{< notice note >}}
+Người dùng Windows 7 và Windows Server 2012 cần cài thêm một số thứ để Julia thực sự hoạt động:
+{{< /notice >}}
 
 - [bản update này](https://support.microsoft.com/en-us/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-wi) sẽ giúp trình quản lý gói của Julia hoạt động. Xuống phần `Method 2` và click vào link [Microsoft Update Catalog](https://support.microsoft.com/en-us/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-wi).
 - [Windows Management Framework 3.0 hoặc hơn](https://docs.microsoft.com/en-us/powershell/scripting/wmf/overview) để cài Powershell. Vào trang web trên, kéo xuống dưới cái bảng và click vào phiên bản bạn muốn download.
@@ -90,7 +92,7 @@ Giờ bạn có thể chạy Julia bằng cách click vào icon hoặc chạy l�
 
 ### Hướng dẫn cài đặt cho *Nix (Linux, BSD)
 1. Sau khi tải file `.tar.gz` từ trang chủ về, bạn có thể giải nén nó bằng bất kì công cụ nào bạn muốn, cách đơn giản nhất là dùng lệnh:
-```
+```shell
 tar -xvzf đường/dẫn/tới/julia-<thay-chỗ-này-giống-tên-file-của-bạn>.tar.gz
 ```
 2. File được giải nén tới một thư mục `julia-<phiên-bản>`. Mình sẽ gọi cái này là `<julia dir>`. Bạn có thể copy thư mục này tới vị trí cài đặt mong muốn.
@@ -98,7 +100,7 @@ tar -xvzf đường/dẫn/tới/julia-<thay-chỗ-này-giống-tên-file-của-b
 
 #### Cài đặt cho người dùng của bạn
 Thêm thư mục Julia vào biến `$PATH` bằng cách thêm dòng sau:
-```
+```shell
 export PATH="$PATH:/đường/dẫn/tới/<julia dir>/bin"
 ```
 vào `~/.bashrc` và `~/.bash_profile`. Nếu bạn dùng `zsh` thì phải thêm vào `~/.zshrc`. Nếu bạn dùng các shell khác nữa thì mình không biết, sorry.
@@ -121,30 +123,30 @@ Ngoài cách cài đặt từ bản cài từ trang chủ, chúng ta có thể c
 
 ### Chocolately trên Windows
 Cài đặt:
-```
+```shell
 choco install julia --confirm
 ```
 Cập nhật:
-```
+```shell
 choco upgrade julia --confirm
 ```
 
 ### HomeBrew trên Mac
 
-```
+```shell
 brew cask install julia
 ```
 
 ### Fedora/Red hat/Cent OS và các distro tương tự
 
 Với Fedora bản 19 hoặc hơn:
-```
+```shell
 sudo dnf copr enable nalimilan/julia
 sudo yum install julia
 ```
 
 Nếu bạn dùng Cent OS bản 7 hoặc hơn:
-```
+```shell
 sudo yum-config-manager –add-repo https://copr.fedorainfracloud.org/coprs/nalimilan/julia/repo/epel-7/nalimilan-julia-epel-7.repo
 sudo yum install julia
 ```
@@ -152,19 +154,19 @@ sudo yum install julia
 Nếu `dnf` và `yum-config-manager` không khả dụng trên hệ thống của bạn, hãy tải file `.repo` tương ứng ở link phía trên và copy vào `/etc/yum.repos`, sau đó chạy câu lệnh thứ 2.
 
 Để cập nhật Julia:
-```
+```shell
 yum upgrade julia
 ```
 
-## Debian/Ubuntu và các distro tương tự
+### Debian/Ubuntu và các distro tương tự
 
 Cài đặt:
-```
+```shell
 sudo apt update
 sudo apt install julia
 ```
 Cập nhật:
-```
+```shell
 sudo apt update
 sudo apt upgrade
 ```
@@ -172,35 +174,20 @@ sudo apt upgrade
 ### Archlinux và các distro tương tự
 
 Cài đặt:
-```
+```shell
 sudo pacman -S julia # bản không chính thức
 # những bản này cần `yay` để cài tự động
 sudo yay -S julia-bin # tương ứng với bản chính thức từ trang chủ
 yay -S julia-git # tương ứng vởi bản build từ git
 ```
 Cập nhật:
-```
+```shell
 sudo pacman -Syu
 # hoặc
 yay -Syu
 ```
 
-## Code bằng cái gì?
+## Tổng kết
+Các bạn có thể cài đặt Julia theo cách mình muốn. Bản cài chính thức cài đặt sẽ dài dòng hơn một chút nhưng đảm bảo hơn, bản cài do cộng đồng phân phối sẽ tiện lợi hơn với một tỉ lệ rất rất nhỏ xảy ra bug.
 
-Bạn có thể theo dõi https://github.com/JuliaEditorSupport để xem hiện tại có những Text editor và IDE nào hỗ trợ Julia. Mình sẽ kể tên một số plugin thông dụng dưới đây:
-
-- VSCode
-- Sublime
-- Atom (plugin Julia của editor này cực kì đủ tính năng, và cũng nặng nhất luôn)
-
-Hoặc nếu bạn là một thanh niên bài trừ `electron.js` giống mình:
-
-- Vim
-- Emacs
-- Notepad++ (chưa thử)
-- IntelliJ (không tốt lắm)
-
-Ngoài ra bạn có thể [sử dụng Julia với Jupyter notebook](#)
-
-Sau khi đã thoải mái với cài đặt của mình. [Phần kế tiếp: Julia REPL](#). 
-
+Sau khi đã thoải mái với cài đặt của mình. Ở phần tiếp theo mình sẽ nói đến một số công cụ có thể dùng để lập trình Julia.

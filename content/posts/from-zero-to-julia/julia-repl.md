@@ -51,10 +51,19 @@ julia> [1, 2] ∪ 4 ∪ [5, 9]
 Những kí hiệu này bình thường sẽ không được dùng khi lập trình, tuy nhiên trong những công thức toán phức tạp, chúng sẽ rất hữu dụng cho việc biểu đạt code. Vậy làm thế nào để sử dụng những kí tự này? Rất đơn giản, chúng đều được định danh bằng tên trong LaTeX. Nếu không nhớ rõ tên bạn có thể gõ `\` và nhấn `tab` để tab completion gợi ý cho bạn.
 
 Ví dụ nhỏ về cách dùng: `\sigma<tab>(x) = one(x) / (one(x) + exp(-x))`:
+
 ```julia
 julia> σ(x) = one(x) / (one(x) + exp(-x))
 σ (generic function with 1 method)
 ```
+
+> Nhưng nếu không ở trong REPL thì tạo mấy kí tự này kiểu gì?
+
+Các bạn yên tâm, tất cả các công cụ dành cho Julia đều hỗ trợ tính năng này. Do đó khi các bạn dùng editor/ide/jupyter notebook cũng chỉ cần thao tác tương tự như trên là có thể tạo ra được các kí tự đặc biệt.
+
+{{< notice note >}}
+Đối với các bạn dùng Windows, nếu các bạn gặp lỗi khi in ra những kí tự đặc biệt này (in ra ô vuông, không in ra cái gì), mình khuyên các bạn dùng một thứ gì khác ngoài cmd và powershell. Tại sao? Vì hai cái này gặp vấn đề trong việc render các kí tự đặc biệt. 
+{{< /notice >}}
 
 ### Chế độ trợ giúp (help mode)
 
@@ -72,7 +81,7 @@ search: Complex complex ComplexF64 ComplexF32 ComplexF16 precompile
   Complex{Float32} and Complex{Float64} respectively.
 ```
 
-Trong chế độ help, bạn có thể sử dụng kết hợp tính năng tab completion ở trên
+Trong chế độ help, bạn có thể sử dụng kết hợp tính năng tab completion ở trên. Nếu bạn gặp một kí hiệu không biết gõ như thế nào, bạn có thể copy nó vào trong REPL và dùng help mode, Julia sẽ chỉ cho bạn cách để gõ nó.
 ```julia
 help?> π
 "π" can be typed by \pi<tab>
@@ -125,10 +134,6 @@ julia> [1, 2] ∪ 4 ∪ [5, 9]
 
 Ngoài ra còn có một chế độ tìm kiếm khác là forward search, có thể được truy cập bằng tổ hợp phím `Ctrl + s`. Mình không hay dùng tính năng này lắm.
 
-### Tính năng khác
-
-REPL của Julia có rất nhiều tính năng, tuy nhiên mình chỉ giới thiệu những tính năng cơ bản thôi. Những tính năng khác như tạo menu, custom key binding, custom color scheme các bạn có thể tự tìm hiểu tại [trang tài liệu Julia](https://docs.julialang.org/en/v1/stdlib/REPL/#The-Julia-REPL-1). Có thể mình sẽ viết một bài khác về những tính năng này, nhưng đó không phải là ưu tiên hiện tại.
-
 ## Một số phím tắt trên Julia REPL
 
 Phím tắt | chức năng
@@ -144,4 +149,13 @@ Phím tắt | chức năng
 `;` (đầu dòng) | Chế độ shell
 `]` (đầu dòng) | Chế độ quản lý gói
 
-Ở đây mình chỉ đưa ra các phím tắt mình cho rằng hữu dụng. Các phím tắt khác các bạn có thể tìm hiểu tại [trang tài liệu Julia về REPL](https://docs.julialang.org/en/v1/stdlib/REPL/#The-Julia-REPL-1)
+{{< notice note >}}
+Đây chỉ là một số phím tắt mà mình cho rằng hữu dụng, không phải toàn bộ
+{{< /notice >}}
+## Tổng kết
+
+Ở bài này mình đã giới thiệu sơ qua về REPL của Julia, thực chất những tính năng của REPL, các công cụ khác sẽ có gần như toàn bộ chúng. Ngoài ra, Julia còn có nhiều những tính năng nâng cao khác như tạo menu, custom key binding, custom color scheme, các bạn có thể tự tìm hiểu tại [trang tài liệu Julia](https://docs.julialang.org/en/v1/stdlib/REPL/#The-Julia-REPL-1). Bản thân mình chủ yếu dùng REPL cho những tính toán đơn giản, xem lệnh help hoặc chạy một chương trình mà được viết sẵn ở đâu đó. 
+
+Với các bạn dùng Windows, mình đưa ra một số gợi ý về Terminal:
+- Terminal của [Visual Studio Code](https://code.visualstudio.com)
+- [Git bash](https://gitforwindows.org)
