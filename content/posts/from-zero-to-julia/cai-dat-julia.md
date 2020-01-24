@@ -1,7 +1,7 @@
 ---
 title: "Julia từ con số không: cài đặt và chạy file Julia"
 date: 2020-01-20T19:26:13+07:00
-draft: false
+draft: true
 summary: "Đây là bài viết đầu tiên của series Julia từ con số không. Trong bài học này mình sẽ hướng dẫn các bạn cách tải, cài đặt và chạy một file Julia"
 tags: 
 - hướng dẫn

@@ -2,7 +2,7 @@
 title: "Julia từ con số không: Julia REPL"
 date: 2020-01-20T23:59:00+07:00
 summary: "Bài viết thuộc series Julia từ con số không, giới thiệu về việc sử dụng chế độ tương tác với Julia (Julia REPL)"
-draft: false
+draft: true
 tags:
 - hướng dẫn
 - julia

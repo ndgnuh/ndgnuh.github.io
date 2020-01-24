@@ -1,7 +1,7 @@
 ---
 title: "Julia từ con số không: giới thiệu"
 date: 2020-01-20T19:00:13+07:00
-draft: false
+draft: true
 summary: Julia từ con số không (From zero to Julia) là một series nhỏ với những bài học mang tính giới thiệu về ngôn ngữ Julia. Mục đích chính của series này là đem lại kiến thức cơ bản để người đọc có thể lập trình với Julia.
 tags:
 - julia

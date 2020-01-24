@@ -1,7 +1,7 @@
 ---
 title: "Julia từ con số không: Jupyter Notebook ♡ Julia"
 date: 2020-01-24T23:27:05+07:00
-draft: false
+draft: true
 summary: "Fun fact: tên Jupyter trong Project Jupyter là sự kết hợp của ba ngôn ngữ Julia, Python và R."
 tags: 
 - hướng dẫn
