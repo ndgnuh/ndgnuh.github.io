@@ -1,14 +1,13 @@
 ---
-title: "Julia từ con số không: hướng dẫn cài đặt Julia"
+title: "Julia từ con số không: cài đặt và chạy file Julia"
 date: 2020-01-20T19:26:13+07:00
 draft: false
-description: "Cách tải và cài đặt Julia"
-summary: "Đây là bài viết đầu tiên của series Julia từ con số không. Trong bài học này mình sẽ hướng dẫn các bạn cách tải và cài đặt Julia"
+summary: "Đây là bài viết đầu tiên của series Julia từ con số không. Trong bài học này mình sẽ hướng dẫn các bạn cách tải, cài đặt và chạy một file Julia"
 tags: 
 - hướng dẫn
 - julia
 ---
-Chào mừng các bạn đến với bài viết đầu tiên của series "Julia từ con số không". Trong bài viết này mình sẽ hướng dẫn các bạn cách tải và cài đặt Julia.
+Chào mừng các bạn đến với bài viết đầu tiên của series "Julia từ con số không". Trong bài viết này mình sẽ hướng dẫn các bạn cách tải, cài đặt và chạy một script Julia.
 
 Nội dung chính:
 
@@ -19,6 +18,7 @@ Nội dung chính:
     - [Hướng dẫn cài đặt cho MacOS](#hướng-dẫn-cài-đặt-cho-macos)
     - [Hướng dẫn cài đặt cho *Nix (Linux, BSD)](#hướng-dẫn-cài-đặt-cho-nix-linux-bsd)
 - [Sử dụng bản phân phối cộng đồng](#sử-dụng-bản-phân-phối-cộng-đồng)
+- [Chạy file Julia](#chạy-thử-file-julia)
 - [Tổng kết](#code-bằng-cái-gì)
 
 ## Chuẩn bị
@@ -187,7 +187,23 @@ sudo pacman -Syu
 yay -Syu
 ```
 
+## Chạy thử file Julia
+
+Sau khi đã cài đặt biến môi trường. Bạn hãy tạo một file `hello-world.jl` (file mã nguồn Julia có đuôi `jl`) với nội dung sau:
+
+```julia
+println("Hello world")
+```
+
+Sau đó, hãy mở một terminal tại vị trí bạn vừa tạo file `hello-world.jl` và chạy lệnh sau:
+
+```shell
+julia hello-world.jl
+```
+
+Nếu bạn thấy có dòng chữ "Hello world" được in ra, tức là bạn đã thành công rồi đó.
+
 ## Tổng kết
 Các bạn có thể cài đặt Julia theo cách mình muốn. Bản cài chính thức cài đặt sẽ dài dòng hơn một chút nhưng đảm bảo hơn, bản cài do cộng đồng phân phối sẽ tiện lợi hơn với một tỉ lệ rất rất nhỏ xảy ra bug.
 
-Sau khi đã thoải mái với cài đặt của mình. Ở phần tiếp theo mình sẽ nói đến một số công cụ có thể dùng để lập trình Julia.
+Sau khi cài đặt xong, để chạy script Julia, bạn chỉ cần chạy lệnh `julia đường-dẫn-đến-script.jl`. Ở phần tiếp theo mình sẽ nói đến một số công cụ có thể dùng để lập trình Julia. Bạn sẽ không cần chạy từng script như vậy mọi lúc nữa.

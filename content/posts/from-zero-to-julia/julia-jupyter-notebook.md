@@ -1,7 +1,7 @@
 ---
 title: "Julia từ con số không: Jupyter Notebook ♡ Julia"
 date: 2020-01-24T23:27:05+07:00
-draft: true
+draft: false
 summary: "Fun fact: tên Jupyter trong Project Jupyter là sự kết hợp của ba ngôn ngữ Julia, Python và R."
 tags: 
 - hướng dẫn
@@ -36,10 +36,6 @@ Ngoài ra nếu trình quản lí gói của các bạn có cung cung cấp, cá
 
 Thực chất, Jupyter chỉ cung cấp giao diện để bạn làm việc. Để Jupyter notebook thực sự hoạt động, bạn sẽ cần một thứ gọi là "nhân" (kernel). Mỗi ngôn ngữ lập trình sẽ có một nhân riêng (Ví dụ như Python 3 Kernel), thậm chí có nhân sẽ dịch được nhiều ngôn ngữ lập trình. Khi hoạt động Jupyter sẽ đưa mã nguồn mà bạn nhập vào cho kernel, kernel sẽ dịch mã nguồn của ngôn ngữ mà nó phụ trách, đưa kết quả lại cho Jupyter, cuối cùng thì Jupyter hiển thị kết quả cho bạn.
 
-{{< notice note >}}
-Trên Windows, bạn có thể sẽ phải thêm "C:\Users\$tên_người_dùng\AppData\Roaming\Python\Python$phiên_bản\Scripts" vào biến PATH như lúc cài đặt Julia
-{{< /notice >}}
-
 ### Cài đặt IJulia
 
 IJulia chính là nhân Jupyter dành cho ngôn ngữ Julia, giúp các bạn có thể dùng Julia với Jupyter notebook hoặc Jupyter lab. Thực chất IJulia là một *gói* ở trong Julia. Để cài đặt nó, các bạn hãy mở [REPL](../julia-repl) lên, nhấn `]` để vào chế độ package manager. Mình sẽ nói chi tiết về việc quản lý gói trên Julia sau, hiện tại các bạn cứ chạy lệnh sau (trong chế độ package manager) để cài `IJulia`.
@@ -54,10 +50,19 @@ IJulia sẽ được cài đặt cùng với những gói phụ thuộc cần th
 
 ## Sử dụng
 
-Đầu tiên hãy chạy `jupyter notebook` để bắt đầu jupyter. sau đó nhấn vào new. Ở mục notebook chọn Julia, jupyter sẽ tạo một notebook mới với kernel Julia, tới đây các bạn dùng notebook này như bình thường, thử nghiệmcode, nghiên cứu này nọ :D
+Đầu tiên hãy chạy `jupyter notebook` để bắt đầu jupyter. sau đó nhấn vào new. Ở mục notebook chọn Julia, jupyter sẽ tạo một notebook mới với kernel Julia.
 
-À đúng rồi, `IJulia.jl` hoạt động với cả jupyter notebook và cái jupyter lab xịn sò, nên nếu bạn nào làm việc với lab thì vẫn ok nhé!
+{{<img src="/img/ijulia-su-dung-001.png" caption="Tạo một notebook mới" >}}
 
+Sau khi tạo xong notebook, bạn có thể mở notebook đó lên bằng cách nhấp đúp vào nó. Jupyter có các ô để bạn nhập code Julia vào, bạn có thể nhấn tổ hợp phím `Ctrl + Enter` để chạy ô code đó.
+
+{{<img src="/img/ijulia-su-dung-002.png" caption="Sử dụng Julia với Jupyter notebook">}}
+
+Ngoài ra, bạn có thể chạy Jupyter bằng cách mở REPL trong thư mục chứa những file notebook, sau đó chạy lệnh sau:
+```julia
+using IJulia
+IJulia.notebook()
+```
 
 ## Tổng kết
 
