@@ -6,3 +6,5 @@ Disallow: {{ .RelPermalink }}
 {{ end }}
 
 Sitemap: {{ "sitemap.xml" | absLangURL }}
+Sitemap: {{ "vi/sitemap.xml" | absLangURL }}
+Sitemap: {{ "en/sitemap.xml" | absLangURL }}
