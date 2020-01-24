@@ -3,6 +3,7 @@ languageCode = "vi-vn"
 title = "#Rants"
 theme = "zzo"
 
+enableRobotsTXT = "true"
 pygmentsuseclasses = true
 
 defaultContentLanguage = "vi" # Default language to use (if you setup multilingual)
@@ -52,4 +53,3 @@ copyright = "©{year}, All Rights Reserved"
 changefreq = "daily"
 filename = "sitemap.xml"
 priority = 0.5
-
