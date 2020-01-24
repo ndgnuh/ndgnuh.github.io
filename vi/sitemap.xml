@@ -4,6 +4,7 @@
   
   <url>
     <loc>https://ndgnuh.github.io/vi/</loc>
+    <lastmod>2020-01-20T00:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -16,6 +17,51 @@
                 hreflang="vi"
                 href="https://ndgnuh.github.io/vi/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/vi/tags/julia/</loc>
+    <lastmod>2020-01-20T00:00:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/vi/julia-dojo/gioi-thieu/</loc>
+    <lastmod>2020-01-20T00:00:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/vi/julia-dojo/</loc>
+    <lastmod>2020-01-20T00:00:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/vi/tags/</loc>
+    <lastmod>2020-01-20T00:00:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ndgnuh.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://ndgnuh.github.io/vi/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/vi/about/</loc>
+    <lastmod>2019-11-01T16:32:49+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -47,22 +93,6 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://ndgnuh.github.io/vi/series/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/vi/tags/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ndgnuh.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://ndgnuh.github.io/vi/tags/"
                 />
   </url>
   
