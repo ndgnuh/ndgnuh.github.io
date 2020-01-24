@@ -3,6 +3,7 @@ languageCode = "vi"
 title = "#Rants"
 theme = "zzo"
 
+pluralizelisttitles = false
 pygmentsuseclasses = true
 
 defaultContentLanguage = "vi" # Default language to use (if you setup multilingual)
@@ -24,10 +25,10 @@ googleAnalytics = ""
 [markup]
   [markup.highlight]
     codeFences = true
-    guessSyntax = true
+    guessSyntax = false
     lineNos = true
     lineNumbersInTable = true
-    noClasses = false
+    noClasses = true
     tabWidth = 4
   [markup.goldmark]
     [markup.goldmark.renderer]

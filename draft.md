@@ -1,14 +1,8 @@
----
-title: "Julia từ con số không: giới thiệu"
-date: 2020-01-20T19:00:13+07:00
-draft: true
-summary: Julia từ con số không (From zero to Julia) là một series nhỏ với những bài học mang tính giới thiệu về ngôn ngữ Julia. Mục đích chính của series này là đem lại kiến thức cơ bản để người đọc có thể lập trình với Julia.
-tags:
-- julia
-- hướng dẫn
----
 
-Julia từ con số không (From zero to Julia) là một series nhỏ với những bài học mang tính giới thiệu về ngôn ngữ Julia. Mục đích chính của series này là đem lại kiến thức cơ bản để người đọc có thể lập trình với Julia, đồng thời giới thiệu Julia tới cộng đồng Việt Nam với mong muốn ngôn ngữ này được phát triển hơn nữa.
+Julia từ con số không (From zero to Julia) là một series nhỏ với những bài học mang tính giới thiệu về ngôn ngữ Julia. Mục đích chính của series này là đem lại kiến thức cơ bản để người đọc có thể lập trình với Julia.
+Julia từ con số không (From zero to JuliaJulia từ con số không (From zero to Julia))
+
+Julia Dojo là một series nhỏ với những bài học mang tính giới thiệu về ngôn ngữ Julia. Mục đích chính của series này là đem lại kiến thức cơ bản để người đọc có thể lập trình với Julia, đồng thời giới thiệu Julia tới cộng đồng Việt Nam với mong muốn ngôn ngữ này được phát triển hơn nữa.
 
 Trong `Julia từ con số không`, độc giả sẽ được làm quen với hệ thống kiểu dữ liệu của Julia và cách để định ra những kiểu dữ liệu phức tạp hơn phù hợp với nhu cầu sử dụng của mình, cùng với cách viết các hàm, cách làm việc với module và một trong những tính năng quan trọng nhất của Julia: `multiple dispatch`.
 
