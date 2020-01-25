@@ -1,6 +1,8 @@
 #!/bin/sh
 
 rm public/posts -rf
+rm public/vi -rf
+rm public/en -rf
 hugo
 git add .
 git commit -vm "$(date)"
