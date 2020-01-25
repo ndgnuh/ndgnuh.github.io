@@ -1,7 +1,7 @@
 [[main]]
 identifier = "julia Dojo"
 name = "Julia Dojo"
-url = "posts/julia-dojo"
+url = "posts/julia-dojo/intro"
 weight = 5
 pluralizelisttitles = false
 

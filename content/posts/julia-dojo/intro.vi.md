@@ -3,8 +3,17 @@ title: "Julia Dojo: giới thiệu"
 date: 2020-01-20T00:00:00+07:00
 draft: false
 summary: "Julia là cái gì?"
+lastmod: 2020-01-25T21:42:58+07:00
 tags:
 - julia
+- julia-dojo
+keywords:
+- julia
+- lập trình
+- ngôn ngữ julia
+- julia dojo
+- julialang
+- hướng dẫn
 ---
 ## Julia?
 

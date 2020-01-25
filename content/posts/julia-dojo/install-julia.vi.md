@@ -7,6 +7,7 @@ summary: "Hướng dẫn tải và cài đặt Julia trên máy tính của bạ
 description: "Hướng dẫn tải và cài đặt Julia trên máy tính của bạn"
 tags:
 - julia
+- julia-dojo
 keywords:
 - julia
 - lập trình
