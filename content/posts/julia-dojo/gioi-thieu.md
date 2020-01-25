@@ -27,6 +27,8 @@ Ok, mình vẫn chưa giải thích tại sao có nhiều "điểm tốt" như v
 - Julia dùng Just Intime Compiler (JIT)
 - Việc biên dịch của Julia **cực kì phức tạp**, khiến cho mã Julia khi dịch xong có tốc độ [so sánh được với C hoặc Fortran](https://julialang.org/benchmarks/)
 
+{{< img src="/img/julia-micro-benchmarks.png" label="Ảnh: Julia micro benchmark" caption="Micro benchmark theo thời gian chạy một số ngôn ngữ, thời gian chạy của C được lấy làm mốc. Các ngôn ngữ khác được so sánh tương đối.">}}
+
 Đương nhiên, Julia cũng có khiếm khuyết, không có cái gì hoàn hảo cả. Và cộng đồng cũng rất cố gắng để cải thiện, xử lý chúng.
 1. Cộng đồng Julia nhỏ một cách tương đối so với những "ông lớn" như Python, đặc biệt là cộng đồng người Việt. Mình cho rằng đây là vấn đề thời gian, và vấn đề này cũng là lí do mình ở đây, viết cái đống này cho các bạn :).
 2. Mảng trong Julia *đánh chỉ số từ 1*. Có thể bạn đang nghĩ rằng sẽ dừng đọc và drop cái ngôn ngữ của nợ này ngay tại đây, hãy khoan đã. Theo mình thấy, vấn đề chỉ số này không ảnh hưởng nhiều lắm. Việc đánh chỉ số từ 0 được ông Dijikstra đưa ra và áp dụng trong kha khá ngôn ngữ lập trình, nhưng vẫn có những người dám phản dmg ông và đi theo trường phái khác. Cá nhân mình không có thành kiến gì với cả hai trường phái đâu, mình chỉ muốn nói **cả hai đều có thể dùng được**. Lí do duy nhất mình đưa cái này vào khuyết điểm vì có thể nó sẽ "dọa" những người mới.

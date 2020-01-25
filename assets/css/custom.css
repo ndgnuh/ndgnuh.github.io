@@ -13,3 +13,7 @@
 .theme__dark .summary-card .title a:hover, .theme__dark .summary-card .title a:active, .theme__dark .summary-card .title a:focus {
     color: #61ff88;
 }
+
+.expand__content {
+    font-family: 'sans-serif'
+}
