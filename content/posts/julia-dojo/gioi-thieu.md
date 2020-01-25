@@ -56,5 +56,5 @@ Với tài liệu chính thức và Julia Con, bạn có thể xem một cách m
 Fun fact: "Julia" nghe rất giống tên của một phụ nữ trong nhiều nền văn hóa, do đó, dù quy chuẩn của cộng đồng cho rằng Julia không dựa trên tên của ai và ngôn ngữ này không được nhân hóa dưới bất kì hình thức nào, một cơ số người khi nói về ngôn ngữ này vẫn vô thức dùng đại từ "cô ấy", trong đó có cả mình :))
 {{</notice>}}
 
-Ok, mình nghĩ đến đây là đủ cho bài giới thiệu. Chắc các bạn cũng đoán ra được rằng, mình đang muốn mở rộng cồng đồng người dùng Julia, cụ thể hơn là ở Việt Nam. Một lần nữa, nếu bạn quyết định cho Julia một cơ hội, mình xin cảm ơn. Mình sẽ cố viết post chất lượng và giải đáp thắc mắc của các bạn.
+Ok, mình nghĩ đến đây là đủ cho bài giới thiệu. Chắc các bạn cũng đoán ra được rằng, mình đang muốn mở rộng cộng đồng người dùng Julia, cụ thể hơn là ở Việt Nam. Một lần nữa, nếu bạn quyết định cho Julia một cơ hội, mình xin cảm ơn. Mình sẽ cố viết post chất lượng và giải đáp thắc mắc của các bạn.
 
