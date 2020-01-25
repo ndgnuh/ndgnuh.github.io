@@ -52,6 +52,10 @@ Với tài liệu chính thức và Julia Con, bạn có thể xem một cách m
 
 Ý tưởng chính của Julia Dojo là: chúng ta sẽ train từng level một. Với mỗi level chúng ta sẽ đi sâu vào trong hệ thống của Julia hơn và thấy các thứ liên kết với nhau như thế nào. Trang này sẽ là nơi mình update các level của Dojo cùng với nội dung trong đó mỗi khi có bài mới.
 
+### Level 1: nhập môn
+
+- [Tải và cài đặt Julia](../julia-install.vi.md)
+
 ## Tạm kết
 
 {{<notice note>}}
