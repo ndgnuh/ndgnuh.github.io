@@ -1,8 +1,0 @@
-User-agent: *
-Disallow: /some-path/
-
-
-
-Sitemap: https://ndgnuh.github.io/vi/sitemap.xml
-Sitemap: https://ndgnuh.github.io/vi/sitemap.xml
-Sitemap: https://ndgnuh.github.io/vi/en/sitemap.xml
