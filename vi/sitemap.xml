@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://ndgnuh.github.io/vi/</loc>
-    <lastmod>2020-01-20T00:00:00+07:00</lastmod>
+    <lastmod>2020-01-25T21:36:08+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -21,28 +21,28 @@
   
   <url>
     <loc>https://ndgnuh.github.io/vi/tags/julia/</loc>
-    <lastmod>2020-01-20T00:00:00+07:00</lastmod>
+    <lastmod>2020-01-25T21:36:08+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://ndgnuh.github.io/vi/posts/julia-dojo/gioi-thieu/</loc>
-    <lastmod>2020-01-20T00:00:00+07:00</lastmod>
+    <loc>https://ndgnuh.github.io/vi/posts/julia-dojo/julia-dojo-c%C3%A0i-%C4%91%E1%BA%B7t-julia/</loc>
+    <lastmod>2020-01-25T21:36:08+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/vi/posts/</loc>
-    <lastmod>2020-01-20T00:00:00+07:00</lastmod>
+    <lastmod>2020-01-25T21:36:08+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/vi/tags/</loc>
-    <lastmod>2020-01-20T00:00:00+07:00</lastmod>
+    <lastmod>2020-01-25T21:36:08+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -55,6 +55,13 @@
                 hreflang="vi"
                 href="https://ndgnuh.github.io/vi/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/vi/posts/julia-dojo/gioi-thieu/</loc>
+    <lastmod>2020-01-20T00:00:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>

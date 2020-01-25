@@ -8,20 +8,6 @@
     <title>julia – #Rant</title>
     
 
-  
-  
-    
-    <script defer src="/js/katex.min.min.17f5dd6b9f123dd7140abfb18521b3f4c036cd004f6f40121182a8865f140877.js"></script>
-  
-
-  
-  
-
-  
-  
-
-
-
 
 <script defer src="/js/fuse.min.94c78ad70b02749822921660cf4e9f0b3701bc0680c421afb784a78228de0275.js"></script>
 
@@ -208,8 +194,11 @@
     var navbar = document.querySelector('.navbar');
     var tocFlexbox = document.querySelector('.toc__flexbox');
     var tocFlexboxOuter = document.querySelector('.toc__flexbox--outer');
+    var expandContents = document.querySelectorAll('.expand__content');
+    var boxContents = document.querySelectorAll('.box');
     var notAllowedTitleIds = null;
 
+    
     singleContentsElem && singleContentsElem.querySelectorAll(".tab") ?
     singleContentsElem.querySelectorAll(".tab").forEach(function (elem) {
       elem.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(function (element) {
@@ -218,6 +207,25 @@
           [element.getAttribute('id')];
       });
     }) : null;
+
+    
+    expandContents ? expandContents.forEach(function(elem) {
+      elem.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(function (element) {
+        notAllowedTitleIds = Array.isArray(notAllowedTitleIds) ?
+          notAllowedTitleIds.concat(element.getAttribute('id')) :
+          [element.getAttribute('id')];
+      });
+    }) : null;
+
+    
+    boxContents ? boxContents.forEach(function(elem) {
+      elem.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(function (element) {
+        notAllowedTitleIds = Array.isArray(notAllowedTitleIds) ?
+          notAllowedTitleIds.concat(element.getAttribute('id')) :
+          [element.getAttribute('id')];
+      });
+    }) : null;
+
     
     window.onscroll = function () {
       scrollFunction();
@@ -885,12 +893,6 @@
   
   
     
-    <link rel="stylesheet" href="/css/katex.min.min.css">
-  
-
-  
-  
-    
     <link rel="stylesheet" href="/css/font.min.css">
   
 
@@ -903,8 +905,8 @@
 
 <meta name="description" content="Blog cá nhân, ranting, moaning, etc" />
 <meta name="keywords" content="">
-<meta name="created" content="2020-01-20T00:00:00&#43;0700">
-<meta name="modified" content="2020-01-20T00:00:00&#43;0700">
+<meta name="created" content="2020-01-25T21:36:08&#43;0700">
+<meta name="modified" content="2020-01-25T21:36:08&#43;0700">
 
 
 <meta property="og:site_name" content="#Rant">
@@ -1144,6 +1146,25 @@
         
   <article class="summary-card">
   <header>
+    <h5 class="title h5"><a href='https://ndgnuh.github.io/vi/posts/julia-dojo/julia-dojo-c%C3%A0i-%C4%91%E1%BA%B7t-julia/'> Julia Dojo: cài đặt Julia</a> </h5>
+    <h6 class="subtitle caption"><time title="">📅 </time>  <span title=""> &middot; ☕ 8 </span></h6>
+  </header>
+  
+  <div class="summary-card__content">
+    <div class="summary-card__text p2">
+      
+      Hướng dẫn tải và cài đặt Julia trên máy tính của bạn
+      
+    </div>
+    
+  </div>
+  <hr />
+</article>
+
+      
+        
+  <article class="summary-card">
+  <header>
     <h5 class="title h5"><a href='https://ndgnuh.github.io/vi/posts/julia-dojo/gioi-thieu/'> Julia Dojo: giới thiệu</a> </h5>
     <h6 class="subtitle caption"><time title="">📅 </time>  <span title=""> &middot; ☕ 6 </span></h6>
   </header>
@@ -1189,6 +1210,10 @@
     
         
         <li class="sidebar-recent">
+            <a href="/vi/posts/julia-dojo/julia-dojo-c%C3%A0i-%C4%91%E1%BA%B7t-julia/" class="sidebar-recent__title p1">Julia Dojo: cài đặt Julia</a>
+        </li>
+        
+        <li class="sidebar-recent">
             <a href="/vi/posts/julia-dojo/gioi-thieu/" class="sidebar-recent__title p1">Julia Dojo: giới thiệu</a>
         </li>
         
@@ -1212,7 +1237,7 @@
                         julia
                     </span>
                     <span class="taxo__num">
-                        1
+                        2
                     </span>
                 </a>
             </span>

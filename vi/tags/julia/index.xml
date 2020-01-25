@@ -9,12 +9,21 @@
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
     <webMaster>ndgnuh@protonmail.com (Hùng)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 20 Jan 2020 00:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jan 2020 21:36:08 +0700</lastBuildDate>
     
         <atom:link href="https://ndgnuh.github.io/vi/tags/julia/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>Julia Dojo: cài đặt Julia</title>
+        <link>https://ndgnuh.github.io/vi/posts/julia-dojo/julia-dojo-c%C3%A0i-%C4%91%E1%BA%B7t-julia/</link>
+        <pubDate>Sat, 25 Jan 2020 21:36:08 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        <guid>https://ndgnuh.github.io/vi/posts/julia-dojo/julia-dojo-c%C3%A0i-%C4%91%E1%BA%B7t-julia/</guid>
+        <description>Hướng dẫn tải và cài đặt Julia trên máy tính của bạn</description>
+      </item>
       
       <item>
         <title>Julia Dojo: giới thiệu</title>
