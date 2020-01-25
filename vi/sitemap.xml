@@ -65,11 +65,6 @@
   </url>
   
   <url>
-    <loc>https://ndgnuh.github.io/vi/posts/linux-shell-terminal-and-env/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ndgnuh.github.io/vi/categories/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
