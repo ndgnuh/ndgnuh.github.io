@@ -120,6 +120,35 @@
 
 
     
+    document.querySelectorAll('.codetab') ? 
+    document.querySelectorAll('.codetab').forEach(function(elem, idx) {
+      var containerId = elem.getAttribute('id');
+      var containerElem = elem;
+      var codetabLinks = elem.querySelectorAll('.codetab__link');
+      var codetabContents = elem.querySelectorAll('.codetab__content');
+      var ids = [];
+
+      codetabLinks && codetabLinks.length > 0 ?
+      codetabLinks.forEach(function(link, index, self) {
+        link.onclick = function(e) {
+          for (var i = 0; i < self.length; i++) {
+            if (index === parseInt(i, 10)) {
+              if (!self[i].classList.contains('active')) {
+                self[i].classList.add('active');
+                codetabContents[i].style.display = 'block';
+              }
+            } else {
+              self[i].classList.remove('active');
+              codetabContents[i].style.display = 'none';
+            }
+          }
+        }
+      }) : null;
+    }) : null;
+    
+
+
+    
     var gttBtn = document.getElementById("gtt");
     gttBtn.style.display = "none";
     gttBtn.addEventListener('click', function () {
@@ -177,7 +206,19 @@
     var toggleTocElem = document.getElementById('toggle-toc');
     var singleContentsElem = document.querySelector('.single__contents');
     var navbar = document.querySelector('.navbar');
+    var tocFlexbox = document.querySelector('.toc__flexbox');
+    var tocFlexboxOuter = document.querySelector('.toc__flexbox--outer');
+    var notAllowedTitleIds = null;
 
+    singleContentsElem && singleContentsElem.querySelectorAll(".tab") ?
+    singleContentsElem.querySelectorAll(".tab").forEach(function (elem) {
+      elem.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(function (element) {
+        notAllowedTitleIds = Array.isArray(notAllowedTitleIds) ?
+          notAllowedTitleIds.concat(element.getAttribute('id')) :
+          [element.getAttribute('id')];
+      });
+    }) : null;
+    
     window.onscroll = function () {
       scrollFunction();
       
@@ -198,40 +239,60 @@
         } else if (navbar.classList.contains('navbar--show')) {
           navbar.classList.remove('navbar--show');
         }
-        
-        singleContentsElem ?
-        singleContentsElem.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(function(elem) {
-          if (toggleTocElem && !toggleTocElem.checked) {
-            return null;
-          }
-          
-          if (document.documentElement.scrollTop >= elem.offsetTop) {
-            if (tableOfContentsElem) {
-              var id = elem.getAttribute('id');
-              tocElem.querySelectorAll('a').forEach(function (elem) {
-                elem.classList.remove('active');
-              });
-              tocElem.querySelector('a[href="#' + id + '"]') ? 
-              tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
 
-              tableOfContentsElem.querySelector('ul') ?
-              tableOfContentsElem.querySelector('ul').querySelectorAll('li').forEach(function (liElem) {
-                liElem.querySelectorAll('ul').forEach(function (ulElem) {
-                  ulElem.style.display = 'none';
-                });
-              }) : null;
-
-              var curElem = tableOfContentsElem.querySelector("[href='#" + id + "']");
-              if (curElem && curElem.nextElementSibling) {
-                curElem.nextElementSibling.style.display = 'block';
+        if (singleContentsElem) {
+          if (singleContentsElem.querySelectorAll("h1, h2, h3, h4, h5, h6").length > 0) {
+            singleContentsElem.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(function (elem) {
+              if (toggleTocElem && !toggleTocElem.checked) {
+                return null;
               }
-              getParents(curElem, 'ul') ?
-              getParents(curElem, 'ul').forEach(function (elem) {
-                elem.style.display = 'block';
-              }) : null;
+
+              if (notAllowedTitleIds && notAllowedTitleIds.includes(elem.getAttribute('id'))) {
+                return null;
+              }
+              
+              if (document.documentElement.scrollTop >= elem.offsetTop) {
+                if (tableOfContentsElem) {
+                  var id = elem.getAttribute('id');
+                  tocElem.querySelectorAll('a').forEach(function (elem) {
+                    elem.classList.remove('active');
+                  });
+                  tocElem.querySelector('a[href="#' + id + '"]') ?
+                    tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
+
+                  tableOfContentsElem.querySelector('ul') ?
+                    tableOfContentsElem.querySelector('ul').querySelectorAll('li').forEach(function (liElem) {
+                      liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                        ulElem.style.display = 'none';
+                      });
+                    }) : null;
+
+                  var curElem = tableOfContentsElem.querySelector("[href='#" + id + "']");
+                  if (curElem && curElem.nextElementSibling) {
+                    curElem.nextElementSibling.style.display = 'block';
+                  }
+                  getParents(curElem, 'ul') ?
+                    getParents(curElem, 'ul').forEach(function (elem) {
+                      elem.style.display = 'block';
+                    }) : null;
+                }
+              }
+            });
+          } else {
+            if (tocFlexbox) {
+              tocFlexbox.setAttribute('data-position', '');
+              if (!tocFlexbox.classList.contains('hide')) {
+                tocFlexbox.classList.add('hide');
+              }
+            }
+            if (tocFlexboxOuter) {
+              tocFlexboxOuter.setAttribute('data-position', '');
+              if (!tocFlexboxOuter.classList.contains('hide')) {
+                tocFlexboxOuter.classList.add('hide');
+              }
             }
           }
-        }) : null;
+        }
       } else { 
         if (st < 250) {
           gttBtn.style.display = "none";
@@ -243,40 +304,55 @@
           navbar.classList.add('navbar--show');
         }
 
-        singleContentsElem ? 
-        singleContentsElem.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(function(elem) {
-          if (toggleTocElem && !toggleTocElem.checked) {
-            return null;
-          }
-
-          if (document.documentElement.scrollTop >= elem.offsetTop) {
-            if (tableOfContentsElem) {
-              var id = elem.getAttribute('id');
-              tocElem.querySelectorAll('a').forEach(function (elem) {
-                elem.classList.remove('active');
-              });
-              tocElem.querySelector('a[href="#' + id + '"]') ? 
-              tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
-
-              tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
-                rootUl.querySelectorAll('li').forEach(function (liElem) {
-                  liElem.querySelectorAll('ul').forEach(function (ulElem) {
-                    ulElem.style.display = 'none';
-                  });
-                });
-              });
-
-              var curElem = tableOfContentsElem.querySelector("[href='#" + id + "']");
-              if (curElem && curElem.nextElementSibling) {
-                curElem.nextElementSibling.style.display = 'block';
+        if (singleContentsElem) {
+          if (singleContentsElem.querySelectorAll("h1, h2, h3, h4, h5, h6").length > 0) {
+            singleContentsElem.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(function (elem) {
+              if (toggleTocElem && !toggleTocElem.checked) {
+                return null;
               }
-              getParents(curElem, 'ul') ? 
-              getParents(curElem, 'ul').forEach(function (elem) {
-                elem.style.display = 'block';
-              }) : null;
+              
+              if (notAllowedTitleIds && notAllowedTitleIds.includes(elem.getAttribute('id'))) {
+                return null;
+              }
+
+              if (document.documentElement.scrollTop >= elem.offsetTop) {
+                if (tableOfContentsElem) {
+                  var id = elem.getAttribute('id');
+                  tocElem.querySelectorAll('a').forEach(function (elem) {
+                    elem.classList.remove('active');
+                  });
+                  tocElem.querySelector('a[href="#' + id + '"]') ?
+                    tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
+
+                  tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
+                    rootUl.querySelectorAll('li').forEach(function (liElem) {
+                      liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                        ulElem.style.display = 'none';
+                      });
+                    });
+                  });
+
+                  var curElem = tableOfContentsElem.querySelector("[href='#" + id + "']");
+                  if (curElem && curElem.nextElementSibling) {
+                    curElem.nextElementSibling.style.display = 'block';
+                  }
+                  getParents(curElem, 'ul') ?
+                    getParents(curElem, 'ul').forEach(function (elem) {
+                      elem.style.display = 'block';
+                    }) : null;
+                }
+              }
+            });
+          } else {
+            if (tocFlexbox && !tocFlexbox.classList.contains('hide')) {
+              tocFlexbox.classList.add('hide');
+            }
+            if (tocFlexboxOuter && !tocFlexboxOuter.classList.contains('hide')) {
+              tocFlexboxOuter.classList.add('hide');
             }
           }
-        }) : null;
+          
+        }
 
         if (tableOfContentsElem && document.documentElement.scrollTop < 250) {
           tableOfContentsElem.querySelector('ul') ?
@@ -295,8 +371,6 @@
   
     var navbarBurgerElem = document.querySelector('.navbar__burger');
     var navbarMenuElem = document.querySelector('.navbar__menu');
-    console.log(navbarBurgerElem);
-    console.log(navbarMenuElem);
     navbarBurgerElem ?
     navbarBurgerElem.addEventListener('click', function () {
       if (navbarBurgerElem.classList.contains('is-active')) {
@@ -507,7 +581,7 @@
             location: 0,
             distance: 100,
             maxPatternLength: 32,
-            minMatchCharLength: 1,
+            minMatchCharLength: 2,
           });
         }
         else {
@@ -890,7 +964,7 @@
     
     <div id="container">
         <div class="wrapper__left"></div>
-        <div class="wrapper">
+        <div class="wrapper" data-type="tags" data-kind="taxonomy">
             <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar__brand">
     
@@ -1024,7 +1098,7 @@
 
 <script src="/js/enquire.min.dfb99dee1e029d51d6cfb672d847929890b1585402de17f5ed092edd72a688b4.js"></script>
 
-<main class="main inner">
+<main class="main inner" data-sidebar-position="right">
   <div class="list__main lm">
     <nav class="breadcrumb" aria-label="breadcrumbs">
   <ol>
