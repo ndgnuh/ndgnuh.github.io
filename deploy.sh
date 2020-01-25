@@ -1,7 +1,7 @@
 #!/bin/sh
 
 for f in public/*; do
-    rm "public/$f"
+    rm "$f" -rf
 done
 hugo
 git add .
