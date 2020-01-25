@@ -1,8 +1,8 @@
 #!/bin/sh
 
-rm public/posts -rf
-rm public/vi -rf
-rm public/en -rf
+for f in public/*; do
+    rm "public/$f"
+done
 hugo
 git add .
 git commit -vm "$(date)"
