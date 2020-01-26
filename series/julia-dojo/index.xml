@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>#Rant</title>
-    <link>https://ndgnuh.github.io/</link>
-    <description>Recent content on #Rant</description>
+    <title>Julia Dojo on #Rant</title>
+    <link>https://ndgnuh.github.io/series/julia-dojo/</link>
+    <description>Recent content in Julia Dojo on #Rant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi</language>
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
@@ -11,7 +11,7 @@
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 26 Jan 2020 21:34:44 +0700</lastBuildDate>
     
-        <atom:link href="https://ndgnuh.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://ndgnuh.github.io/series/julia-dojo/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -41,15 +41,6 @@
         <author>ndgnuh@protonmail.com (Hùng)</author>
         <guid>https://ndgnuh.github.io/julia-dojo/</guid>
         <description>Julia là cái gì?</description>
-      </item>
-      
-      <item>
-        <title>Giới thiệu</title>
-        <link>https://ndgnuh.github.io/about/</link>
-        <pubDate>Fri, 01 Nov 2019 16:32:49 +0700</pubDate>
-        <author>ndgnuh@protonmail.com (Hùng)</author>
-        <guid>https://ndgnuh.github.io/about/</guid>
-        <description>Vài lời mở đầu</description>
       </item>
       
     

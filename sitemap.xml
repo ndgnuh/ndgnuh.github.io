@@ -10,7 +10,14 @@
   </url>
   
   <url>
-    <loc>https://ndgnuh.github.io/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</loc>
+    <loc>https://ndgnuh.github.io/categories/</loc>
+    <lastmod>2020-01-26T21:34:44+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/categories/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</loc>
     <lastmod>2020-01-26T21:34:44+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -24,14 +31,21 @@
   </url>
   
   <url>
-    <loc>https://ndgnuh.github.io/posts/julia-dojo/hello-world/</loc>
+    <loc>https://ndgnuh.github.io/series/julia-dojo/</loc>
     <lastmod>2020-01-26T21:34:44+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://ndgnuh.github.io/tags/julia-dojo/</loc>
+    <loc>https://ndgnuh.github.io/julia-dojo/hello-world/</loc>
+    <lastmod>2020-01-26T21:34:44+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/categories/l%E1%BA%ADp-tr%C3%ACnh/</loc>
     <lastmod>2020-01-26T21:34:44+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -45,6 +59,13 @@
   </url>
   
   <url>
+    <loc>https://ndgnuh.github.io/series/</loc>
+    <lastmod>2020-01-26T21:34:44+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ndgnuh.github.io/tags/</loc>
     <lastmod>2020-01-26T21:34:44+07:00</lastmod>
     <changefreq>daily</changefreq>
@@ -52,14 +73,14 @@
   </url>
   
   <url>
-    <loc>https://ndgnuh.github.io/posts/julia-dojo/julia-dojo-c%C3%A0i-%C4%91%E1%BA%B7t-julia/</loc>
+    <loc>https://ndgnuh.github.io/julia-dojo/cai-dat-julia/</loc>
     <lastmod>2020-01-25T21:36:08+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://ndgnuh.github.io/posts/julia-dojo/intro/</loc>
+    <loc>https://ndgnuh.github.io/julia-dojo/</loc>
     <lastmod>2020-01-25T21:42:58+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -68,18 +89,6 @@
   <url>
     <loc>https://ndgnuh.github.io/about/</loc>
     <lastmod>2019-11-01T16:32:49+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/categories/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/series/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
