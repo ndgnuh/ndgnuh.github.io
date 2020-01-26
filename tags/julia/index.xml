@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>julia on #Rants</title>
+    <title>julia on #Rant</title>
     <link>https://ndgnuh.github.io/tags/julia/</link>
-    <description>Recent content in julia on #Rants</description>
+    <description>Recent content in julia on #Rant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi</language>
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
