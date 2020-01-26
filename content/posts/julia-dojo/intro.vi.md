@@ -7,6 +7,7 @@ lastmod: 2020-01-25T21:42:58+07:00
 tags:
 - julia
 - julia-dojo
+- hướng dẫn
 keywords:
 - julia
 - lập trình
