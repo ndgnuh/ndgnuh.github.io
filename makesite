@@ -1,5 +1,0 @@
-#!/bin/sh
-for f in public/*; do
-    rm "$f" -r
-done
-hugo
