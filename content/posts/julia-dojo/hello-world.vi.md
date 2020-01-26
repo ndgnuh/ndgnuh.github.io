@@ -1,16 +1,21 @@
 ---
 title: "Julia Dojo: hello world"
 date: 2020-01-26T21:34:44+07:00
+url: "/julia-dojo/hello-world"
 draft: false
 summary: "Viết chương trình đầu tiên của bạn trong Julia"
 description: "Viết chương trình đầu tiên của bạn trong Julia"
+categories:
+- hướng dẫn
+- lập trình
 tags:
 - julia
-- julia-dojo
-- hướng dẫn
+series:
+- Julia Dojo
 keywords:
 - julia
 - lập trình
+- học lập trình
 - ngôn ngữ julia
 - julia dojo
 - julialang
@@ -95,6 +100,6 @@ Thậm chí bạn có thể gõ `?println` và xem thông tin về những thứ
 
 {{< img src="/img/julia-dojo-hello-world-003.png" caption="chế độ help" >}}
 
-## Kết luận
+## Goodbye, world
 
 Ok, vậy là bạn đã biết những cách đơn giản nhất viết và chạy chương trình Julia (và cũng là chương trình đơn giản nhất luôn). Chúng ta sẽ lần lượt tìm hiểu những phương thức khác trong các bài tiếp theo. Riêng với chế độ tương tác, mình có thể làm một bài nữa, nói về những tính năng của nó. Hẹn gặp lại các bạn trong những bài viết sau :)

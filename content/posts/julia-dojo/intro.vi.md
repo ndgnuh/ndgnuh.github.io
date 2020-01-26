@@ -2,20 +2,30 @@
 title: "Julia Dojo: giới thiệu"
 date: 2020-01-20T00:00:00+07:00
 draft: false
+url: "/julia-dojo"
 summary: "Julia là cái gì?"
 lastmod: 2020-01-25T21:42:58+07:00
+categories:
+- hướng dẫn
+- lập trình
 tags:
 - julia
-- julia-dojo
-- hướng dẫn
+series:
+- Julia Dojo
 keywords:
 - julia
 - lập trình
+- học lập trình
 - ngôn ngữ julia
 - julia dojo
 - julialang
 - hướng dẫn
 aliases:
+- /julia-dojo
+- /posts/julia-dojo
+- /posts/from-zero-to-julia/
+- /posts/from-zero-to-julia-gioi-thieu/
+- /posts/from-zero-to-julia/julia-repl/
 - /vi/julia-dojo
 - /vi/posts/julia-dojo
 - /vi/posts/from-zero-to-julia/
@@ -70,8 +80,8 @@ Với tài liệu chính thức và Julia Con, bạn có thể xem một cách m
 
 ### Level 1: nhập môn
 
-- [Tải và cài đặt Julia](../julia-install.vi.md)
-- [Lời chào cao hơn mâm cỗ (hello world)](../hello-world.vi.md)
+- [Tải và cài đặt Julia](cai-dat-julia)
+- [Hello, world](hello-world)
 
 ## Tạm kết
 

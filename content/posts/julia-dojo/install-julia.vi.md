@@ -2,16 +2,20 @@
 title: "Julia Dojo: cài đặt Julia"
 date: 2020-01-25T21:36:08+07:00
 draft: false
-slug: "julia-dojo-cài-đặt-julia"
+url: "/julia-dojo/cai-dat-julia"
 summary: "Hướng dẫn tải và cài đặt Julia trên máy tính của bạn"
 description: "Hướng dẫn tải và cài đặt Julia trên máy tính của bạn"
+categories:
+- hướng dẫn
+- lập trình
 tags:
 - julia
-- julia-dojo
-- hướng dẫn
+series:
+- Julia Dojo
 keywords:
 - julia
 - lập trình
+- học lập trình
 - ngôn ngữ julia
 - julia dojo
 - julialang

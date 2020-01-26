@@ -4,7 +4,7 @@ theme = "zzo"
 
 defaultContentLanguage = "vi"
 disableLanguages = ["en"]
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 pluralizelisttitles = false
 pygmentsuseclasses = true
 

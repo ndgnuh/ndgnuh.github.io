@@ -1,12 +1,11 @@
 [[main]]
 identifier = "julia Dojo"
 name = "Julia Dojo"
-url = "/vi/posts/julia-dojo/intro"
+url = "/julia-dojo"
 weight = 5
-pluralizelisttitles = false
 
 [[main]]
 identifier = "about"
 name = "Giới thiệu"
-url = "about"
+url = "/about"
 weight = 1
