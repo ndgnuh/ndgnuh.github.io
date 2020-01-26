@@ -19,8 +19,13 @@ keywords:
 
 Chào mừng các bạn quay trở lại với series Julia Dojo. Hôm nay chúng ta sẽ học cách viết một chương trình trong Julia và làm thế nào để chạy nó.
 
-## Chương trình hello world của bạn
+Dân gian ta có câu:
+> Lời chào cao hơn mâm cỗ
+> -- Dân Gian Ta (mình cũng không biết đây là thằng nào)
 
+Lời chào rất quan trọng, trong lĩnh vực lập trình điều này không phải ngoại lệ. Do đó, hôm nay chúng ta sẽ viết chương trình "chào thế giới", dân-gian-ta còn gọi là "hello world".
+
+## Chương trình đầu tiên của bạn
 Hello world là chương trình rất quen thuộc nếu bạn đã học lập trình trước đây. Nó sẽ cho bạn cái nhìn đầu tiên về cấu trúc ngữ pháp của một ngôn ngữ lập trình. Đầu tiên, hãy mở một trình sửa văn bản, tạo một file tên `hello-world.jl`.
 
 Trước đây, đuôi file `.j` được sử dụng cho ngôn ngữ Julia. Sau này, họ đổi thành `.jl`, cá nhân mình thấy thích cái đuôi file này hơn.

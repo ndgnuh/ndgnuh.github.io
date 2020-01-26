@@ -15,6 +15,12 @@ keywords:
 - julia dojo
 - julialang
 - hướng dẫn
+aliases:
+- /vi/julia-dojo
+- /vi/posts/julia-dojo
+- /vi/posts/from-zero-to-julia/
+- /vi/posts/from-zero-to-julia-gioi-thieu/
+- /vi/posts/from-zero-to-julia/julia-repl/
 ---
 ## Julia?
 
@@ -65,6 +71,7 @@ Với tài liệu chính thức và Julia Con, bạn có thể xem một cách m
 ### Level 1: nhập môn
 
 - [Tải và cài đặt Julia](../julia-install.vi.md)
+- [Lời chào cao hơn mâm cỗ (hello world)](../hello-world.vi.md)
 
 ## Tạm kết
 
