@@ -9,7 +9,7 @@
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
     <webMaster>ndgnuh@protonmail.com (Hùng)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 25 Jan 2020 21:36:08 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jan 2020 21:34:44 +0700</lastBuildDate>
     
         <atom:link href="https://ndgnuh.github.io/vi/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,9 +17,18 @@
     
       
       <item>
+        <title>hướng dẫn</title>
+        <link>https://ndgnuh.github.io/vi/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</link>
+        <pubDate>Sun, 26 Jan 2020 21:34:44 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        <guid>https://ndgnuh.github.io/vi/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</guid>
+        <description></description>
+      </item>
+      
+      <item>
         <title>julia</title>
         <link>https://ndgnuh.github.io/vi/tags/julia/</link>
-        <pubDate>Sat, 25 Jan 2020 21:36:08 +0700</pubDate>
+        <pubDate>Sun, 26 Jan 2020 21:34:44 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
         <guid>https://ndgnuh.github.io/vi/tags/julia/</guid>
         <description></description>
@@ -28,7 +37,7 @@
       <item>
         <title>julia-dojo</title>
         <link>https://ndgnuh.github.io/vi/tags/julia-dojo/</link>
-        <pubDate>Sat, 25 Jan 2020 21:36:08 +0700</pubDate>
+        <pubDate>Sun, 26 Jan 2020 21:34:44 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
         <guid>https://ndgnuh.github.io/vi/tags/julia-dojo/</guid>
         <description></description>

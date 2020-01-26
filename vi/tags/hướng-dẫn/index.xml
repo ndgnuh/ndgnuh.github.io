@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on #Rant</title>
-    <link>https://ndgnuh.github.io/vi/posts/</link>
-    <description>Recent content in Posts on #Rant</description>
+    <title>hướng dẫn on #Rant</title>
+    <link>https://ndgnuh.github.io/vi/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</link>
+    <description>Recent content in hướng dẫn on #Rant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi</language>
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
@@ -11,7 +11,7 @@
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 26 Jan 2020 21:34:44 +0700</lastBuildDate>
     
-        <atom:link href="https://ndgnuh.github.io/vi/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://ndgnuh.github.io/vi/tags/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/index.xml" rel="self" type="application/rss+xml" />
     
     
     
