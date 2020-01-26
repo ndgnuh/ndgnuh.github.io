@@ -1,8 +1,10 @@
 baseURL = "https://ndgnuh.github.io/"
-defaultContentLanguage = "vi"
 title = "#Rants"
 theme = "zzo"
 
+defaultContentLanguage = "vi"
+disableLanguages = ["en"]
+defaultContentLanguageInSubdir = true
 pluralizelisttitles = false
 pygmentsuseclasses = true
 
