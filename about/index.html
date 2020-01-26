@@ -268,12 +268,14 @@
                   tocElem.querySelector('a[href="#' + id + '"]') ?
                     tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
 
-                  tableOfContentsElem.querySelector('ul') ?
-                    tableOfContentsElem.querySelector('ul').querySelectorAll('li').forEach(function (liElem) {
+                  tableOfContentsElem.querySelectorAll('ul') ? 
+                  tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
+                    rootUl.querySelectorAll('li').forEach(function (liElem) {
                       liElem.querySelectorAll('ul').forEach(function (ulElem) {
                         ulElem.style.display = 'none';
                       });
-                    }) : null;
+                    });
+                  }) : null;
 
                   var curElem = tableOfContentsElem.querySelector("[href='#" + id + "']");
                   if (curElem && curElem.nextElementSibling) {
@@ -332,13 +334,14 @@
                   tocElem.querySelector('a[href="#' + id + '"]') ?
                     tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
 
+                  tableOfContentsElem.querySelectorAll('ul') ? 
                   tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
                     rootUl.querySelectorAll('li').forEach(function (liElem) {
                       liElem.querySelectorAll('ul').forEach(function (ulElem) {
                         ulElem.style.display = 'none';
                       });
                     });
-                  });
+                  }) : null;
 
                   var curElem = tableOfContentsElem.querySelector("[href='#" + id + "']");
                   if (curElem && curElem.nextElementSibling) {
@@ -580,7 +583,7 @@
             location: 0,
             distance: 100,
             maxPatternLength: 32,
-            minMatchCharLength: 2,
+            minMatchCharLength: 1,
           });
         }
         else {
@@ -892,7 +895,7 @@
 
 
     
-<meta name="description" content="Blog cá nhân, ranting, moaning, etc" />
+<meta name="description" content="Blog cá nhân, viết tạp nham :)" />
 <meta name="keywords" content="">
 <meta name="created" content="2019-11-01T16:32:49&#43;0700">
 <meta name="modified" content="2019-11-01T16:32:49&#43;0700">
@@ -902,7 +905,7 @@
 <meta property="og:title" content="Giới thiệu">
 <meta property="og:url" content="https://ndgnuh.github.io/about/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="Blog cá nhân, ranting, moaning, etc">
+<meta property="og:description" content="Blog cá nhân, viết tạp nham :)">
 
 
 <meta name="generator" content="Hugo 0.63.1" />
@@ -1169,7 +1172,7 @@
     </div>
     <div class="whoami__desc">
       
-        Sinh viên đú đởn làm blog :)
+        Hello, friend
       
     </div>
     <div class="whoami__social">
@@ -1771,10 +1774,12 @@ document.addEventListener('DOMContentLoaded', function () {
     
     if ((enableToc || toc) && document.querySelector('.toc')) {
       var tableOfContentsElem = document.querySelector('.toc').querySelector('#TableOfContents');
-      tableOfContentsElem.querySelector('ul') ?
-      tableOfContentsElem.querySelector('ul').querySelectorAll('li').forEach(function (liElem) {
-        liElem.querySelectorAll('ul').forEach(function (ulElem) {
-          ulElem.style.display = 'none';
+      tableOfContentsElem.querySelectorAll('ul') ?
+      tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
+        rootUl.querySelectorAll('li').forEach(function (liElem) {
+          liElem.querySelectorAll('ul').forEach(function (ulElem) {
+            ulElem.style.display = 'none';
+          });
         });
       }) : null;
 
@@ -1791,13 +1796,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 elem.classList.remove('active');
               });
               elem.classList.add('active');
-
-              tableOfContentsElem.querySelector('ul') ?
-                tableOfContentsElem.querySelector('ul').querySelectorAll('li').forEach(function (liElem) {
-                  liElem.querySelectorAll('ul').forEach(function (ulElem) {
-                    ulElem.style.display = 'none';
-                  });
-                }) : null;
 
               var curElem = tableOfContentsElem.querySelector('[href="#' + id + '"]');
               if (curElem && curElem.nextElementSibling) {
