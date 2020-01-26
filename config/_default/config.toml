@@ -1,13 +1,11 @@
 baseURL = "https://ndgnuh.github.io/"
-languageCode = "vi"
+defaultContentLanguage = "vi"
 title = "#Rants"
 theme = "zzo"
 
 pluralizelisttitles = false
 pygmentsuseclasses = true
 
-defaultContentLanguage = "vi" # Default language to use (if you setup multilingual)
-defaultContentLanguageInSubdir = true # baseURL/en/, baseURL/kr/ ...
 hasCJKLanguage = true
 
 summaryLength = 70 # The length of a post description on a list page.
