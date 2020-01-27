@@ -23,14 +23,8 @@ keywords:
 aliases:
 - /julia-dojo
 - /posts/julia-dojo
-- /posts/from-zero-to-julia/
-- /posts/from-zero-to-julia-gioi-thieu/
-- /posts/from-zero-to-julia/julia-repl/
 - /vi/julia-dojo
 - /vi/posts/julia-dojo
-- /vi/posts/from-zero-to-julia/
-- /vi/posts/from-zero-to-julia-gioi-thieu/
-- /vi/posts/from-zero-to-julia/julia-repl/
 ---
 ## Julia?
 
