@@ -70,8 +70,8 @@ busuanziSitePV = false # site total page view count
 busuanziPagePV = false # post view count
 
 # comment
-enableComment = false
-disqus_shortname = "" 
+enableComment = true
+disqus_shortname = "gnuh" 
 commento = false
 
 [gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
