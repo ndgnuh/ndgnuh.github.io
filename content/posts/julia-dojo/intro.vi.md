@@ -82,6 +82,7 @@ Với tài liệu chính thức và Julia Con, bạn có thể xem một cách m
 
 - [Tải và cài đặt Julia](cai-dat-julia)
 - [Hello, world](hello-world)
+- [Vài đường cơ bản](vai-duong-co-ban)
 
 ## Tạm kết
 

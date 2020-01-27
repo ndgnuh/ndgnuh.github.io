@@ -1,7 +1,7 @@
 ---
 title: "Julia Dojo: vài đường cơ bản"
 date: 2020-01-27T17:28:39+07:00
-url: "/julia-dojo/variables-constants"
+url: "/julia-dojo/vai-duong-co-ban"
 draft: false
 summary: "Biến số, hằng số, kiểu dữ liệu và một số thao tác đơn giản với chúng trong Julia"
 description: "Biến số, hằng số, kiểu dữ liệu và một số thao tác đơn giản với chúng trong Julia"
@@ -22,13 +22,14 @@ keywords:
 - hướng dẫn
 ---
 
-Chào mừng các bạn trở lại với Julia Dojo. Hôm nay chúng ta sẽ tìm hiểu về một thứ khá cơ bản và thiết yếu trong các ngôn ngữ lập trình, đó là biến số (ok, không hẳn là thiết yếu, nhưng nó làm cuộc sống dễ dàng hơn).
+Chào mừng các bạn trở lại với Julia Dojo. Hôm nay chúng ta sẽ tìm hiểu về một thứ khá cơ bản và thiết yếu trong các ngôn ngữ lập trình, đó là biến số (ok, không hẳn là thiết yếu, nhưng nó làm cuộc sống dễ dàng hơn), đồng thời khám phá một số kiểu dữ liệu cơ bản và thao tác với chúng.
+
+
+## Biến số, hằng số
 
 {{< notice info >}}
 Đôi khi, trông các bài hướng dẫn về ngôn ngữ lập trình, họ đồng nhất biến số và hằng số theo kiểu "hằng số là một biến số mà không thể thay đổi". Điều này không đúng lắm về mặt kĩ thuật (technically correct is the best kind of correct). Tuy nhiên, nếu nó tiện lợi, nghe thuận tai và dễ hiểu hơn với bạn thì... meh, tùy, whatever floats your boat.
 {{< /notice >}}
-
-## Biến số, hằng số
 
 Để khai báo một biến trong Julia, bạn chỉ cần sử dụng cú pháp:
 
