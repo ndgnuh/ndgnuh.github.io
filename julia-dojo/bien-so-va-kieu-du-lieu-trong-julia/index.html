@@ -1451,12 +1451,14 @@
 </span><span class="lnt">5
 </span><span class="lnt">6
 </span><span class="lnt">7
+</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">clipboard</span><span class="o"></span><span class="p">(</span><span class="s">&#34;</span><span class="s">c</span><span class="s">o</span><span class="s">p</span><span class="s">y</span><span class="s"> </span><span class="s">t</span><span class="s">o</span><span class="s">à</span><span class="s">n</span><span class="s"> </span><span class="s">b</span><span class="s">ộ</span><span class="s"> </span><span class="s">x</span><span class="s">â</span><span class="s">u</span><span class="s"> </span><span class="s">k</span><span class="s">í</span><span class="s"> </span><span class="s">t</span><span class="s">ự</span><span class="s"> </span><span class="s">n</span><span class="s">à</span><span class="s">y</span><span class="s">,</span><span class="s"> </span><span class="s">d</span><span class="s">ù</span><span class="s">n</span><span class="s">g</span><span class="s"> </span><span class="s">c</span><span class="s">á</span><span class="s">i</span><span class="s"> </span><span class="s">n</span><span class="s">à</span><span class="s">y</span><span class="s"> </span><span class="s">m</span><span class="s">a</span><span class="s">x</span><span class="s"> </span><span class="s">t</span><span class="s">i</span><span class="s">ệ</span><span class="s">n</span><span class="s">&#34;</span><span class="p">)</span>
 <span class="n">collect</span><span class="o"></span><span class="p">(</span><span class="s">&#34;</span><span class="s">x</span><span class="s">â</span><span class="s">u</span><span class="s"> </span><span class="s">k</span><span class="s">í</span><span class="s"> </span><span class="s">t</span><span class="s">ự</span><span class="s">&#34;</span><span class="p">)</span> <span class="c"># chuyển xâu kí tự thành một mảng các kí tự</span>
 <span class="kt">Int</span><span class="p">(</span><span class="sc">&#39;c&#39;</span><span class="p">)</span> <span class="c"># Chuyển kí tự sang mã Unicode</span>
 <span class="kt">Char</span><span class="p">(</span><span class="mi">97</span><span class="p">)</span> <span class="c"># Chuyển mã kí tự thành kí tự</span>
+<span class="n">length</span><span class="o"></span><span class="p">(</span><span class="s">&#34;</span><span class="s">đ</span><span class="s">ộ</span><span class="s"> </span><span class="s">d</span><span class="s">à</span><span class="s">i</span><span class="s"> </span><span class="s">x</span><span class="s">â</span><span class="s">u</span><span class="s">&#34;</span><span class="p">)</span>
 <span class="s">&#34;</span><span class="s">n</span><span class="s">ố</span><span class="s">i</span><span class="s">&#34;</span> <span class="o">*</span> <span class="s">&#34;</span><span class="s">x</span><span class="s">â</span><span class="s">u</span><span class="s">&#34;</span> <span class="o">*</span> <span class="s">&#34;</span><span class="s">k</span><span class="s">í</span><span class="s"> </span><span class="s">t</span><span class="s">ự</span><span class="s">&#34;</span>
 <span class="s">&#34;</span><span class="s">n</span><span class="s">h</span><span class="s">â</span><span class="s">n</span><span class="s"> </span><span class="s">l</span><span class="s">ê</span><span class="s">n</span><span class="s"> </span><span class="s">3</span><span class="s"> </span><span class="s">l</span><span class="s">ầ</span><span class="s">n</span><span class="s"> </span><span class="s">&#34;</span> <span class="o">^</span> <span class="mi">3</span>
 <span class="s">&#34;</span><span class="s">a</span><span class="s">b</span><span class="s">c</span><span class="s">&#34;</span> <span class="o">&lt;</span> <span class="s">&#34;</span><span class="s">a</span><span class="s">b</span><span class="s">d</span><span class="s">&#34;</span> <span class="c"># so sánh theo thứ tự từ điển, dựa vào mã kí tự</span>
@@ -1566,8 +1568,19 @@
 </div>
 
 <h2 id="kết-luận">Kết luận</h2>
-<p>Ok, phần giới thiệu tới đây mình nghĩ đủ rồi. Vậy các là các bạn đã biết  cách khai báo biến, cộng trừ nhân chia và những trò hay ho mà trên trường giáo viên sẽ bắt chúng ta ngồi tính sấp mặt. Giờ bạn có thể dùng Julia như một cái máy tính cá nhân (nhưng vạn năng hơn một tí). Hẹn gặp các bạn trong bài viết sau.</p>
-
+<p>Ok, phần giới thiệu tới đây mình nghĩ đủ rồi. Vậy các là các bạn đã biết  cách khai báo biến, cộng trừ nhân chia và những trò hay ho mà trên trường giáo viên sẽ bắt chúng ta ngồi tính sấp mặt. Hẹn gặp các bạn trong bài viết sau.</p>
+<p>Bonus: nếu đang học đại học, giờ bạn có thể dùng Julia như một cái máy tính cá nhân (nhưng vạn năng hơn một tí)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="c"># Giải hệ phương trình A⋅X = B trong một nốt nhạc</span>
+<span class="n">A</span><span class="o"></span><span class="o">^</span><span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">B</span><span class="o"></span>
+</code></pre></td></tr></table>
+</div>
+</div>
     </article>
     
     
@@ -1700,6 +1713,13 @@
     </a>
   
   <div class="grow"></div>
+  
+    <a href="https://ndgnuh.github.io/julia-dojo/re-nhanh-va-lap-trong-julia/" class="pagination-single__right">      
+      <div class="pagination-single__right-title">Julia Dojo: cấu trúc điều khiển</div>
+      <div class="pagination-single__icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
+      </div>
+    </a>
   
 </nav>
     
