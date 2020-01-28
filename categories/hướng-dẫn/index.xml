@@ -17,11 +17,11 @@
     
       
       <item>
-        <title>Julia Dojo: vài đường cơ bản</title>
-        <link>https://ndgnuh.github.io/julia-dojo/vai-duong-co-ban/</link>
+        <title>Julia Dojo: biến số, kiểu dữ liệu, phép toán</title>
+        <link>https://ndgnuh.github.io/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia/</link>
         <pubDate>Mon, 27 Jan 2020 17:28:39 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
-        <guid>https://ndgnuh.github.io/julia-dojo/vai-duong-co-ban/</guid>
+        <guid>https://ndgnuh.github.io/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia/</guid>
         <description>Biến số, hằng số, kiểu dữ liệu và một số thao tác đơn giản với chúng trong Julia</description>
       </item>
       

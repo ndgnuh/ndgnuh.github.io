@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Julia Dojo: giới thiệu – #Rant</title>
+    <title>Julia Dojo: biến số, kiểu dữ liệu, phép toán – #Rant</title>
     
 
 
@@ -892,23 +892,23 @@
 
 
     
-<meta name="description" content="Blog cá nhân, viết tạp nham :)" />
+<meta name="description" content="Biến số, hằng số, kiểu dữ liệu và một số thao tác đơn giản với chúng trong Julia" />
 <meta name="keywords" content="julia,lập trình,học lập trình,ngôn ngữ julia,julia dojo,julialang,hướng dẫn">
-<meta name="created" content="2020-01-20T00:00:00&#43;0700">
-<meta name="modified" content="2020-01-25T21:42:58&#43;0700">
+<meta name="created" content="2020-01-27T17:28:39&#43;0700">
+<meta name="modified" content="2020-01-27T17:28:39&#43;0700">
 
 
 <meta property="og:site_name" content="#Rant">
-<meta property="og:title" content="Julia Dojo: giới thiệu">
-<meta property="og:url" content="https://ndgnuh.github.io/julia-dojo/">
+<meta property="og:title" content="Julia Dojo: biến số, kiểu dữ liệu, phép toán">
+<meta property="og:url" content="https://ndgnuh.github.io/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="Blog cá nhân, viết tạp nham :)">
+<meta property="og:description" content="Biến số, hằng số, kiểu dữ liệu và một số thao tác đơn giản với chúng trong Julia">
 
 
 <meta name="generator" content="Hugo 0.63.1" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<link rel="canonical" href="https://ndgnuh.github.io/julia-dojo/">
+<link rel="canonical" href="https://ndgnuh.github.io/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia/">
 <link rel="manifest" href="/manifest.json">
 
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -920,11 +920,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Julia Dojo: giới thiệu",
-    "datePublished": "2020-01-20T00:00:00+07:00",
-    "dateModified": "2020-01-25T21:42:58+07:00",
-    "url" : "https://ndgnuh.github.io/julia-dojo/",
-    "description": "Julia là cái gì?",
+    "headline": "Julia Dojo: biến số, kiểu dữ liệu, phép toán",
+    "datePublished": "2020-01-27T17:28:39+07:00",
+    "dateModified": "2020-01-27T17:28:39+07:00",
+    "url" : "https://ndgnuh.github.io/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia/",
+    "description": "Biến số, hằng số, kiểu dữ liệu và một số thao tác đơn giản với chúng trong Julia",
     "keywords": ["julia"],
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -1118,7 +1118,7 @@
   
   <li  class="is-active" >
     
-      <span>Julia Dojo: giới thiệu</span>
+      <span>Julia Dojo: biến số, kiểu dữ liệu, phép toán</span>
     
   </li>
   
@@ -1127,11 +1127,11 @@
 </nav>
   
   <div class="single">
-    <h2 class="single__title">Julia Dojo: giới thiệu</h2>
+    <h2 class="single__title">Julia Dojo: biến số, kiểu dữ liệu, phép toán</h2>
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="">📅&nbsp; </time>  &middot; <span class="single__info" title=""> ☕ 6  </span>
+  <time class="single__info" title="">📅&nbsp; </time>  &middot; <span class="single__info" title=""> ☕ 11  </span>
   <span class="single__info">
     
   </span>
@@ -1153,82 +1153,420 @@
     </div>    
     <article class="single__contents">
       
-      <h2 id="julia">Julia?</h2>
-<p>Julia là một ngôn ngữ lập trình bậc cao dễ sử dụng, <strong>nhanh</strong> và mạnh mẽ. Một số đặc trưng của Julia cũng như lí do bạn sẽ muốn dùng nó (hoặc không):</p>
-<ul>
-<li>Julia là một ngôn ngữ lập trình hàm</li>
-<li>Kiểu động (dynamic typing)</li>
-<li>Julia được biên dịch (compile), tuy nhiên cũng có chế độ thông dịch (intepreter) nếu bạn muốn</li>
-<li>Julia <strong>nhanh</strong></li>
-<li>Cú pháp rất dễ chịu, những bạn nào quen dùng <code>python</code> hoặc <code>matlab</code> sẽ thấy quen thuộc</li>
-<li>Cực kì mạnh, thư viện tiêu chuẩn hỗ trợ rất tốt việc tính toán toán học và xử lý song song.</li>
-<li>Multiple dispatch (cái này có thể khiến bạn cảm giác lạ lạ, nhưng nó đỉnh lắm)</li>
-<li>Julia miễn phí và mã nguồn mở (giấy phép MIT)</li>
-<li>Julia hứa hẹn sẽ giải quyết vấn đề hai ngôn ngữ</li>
-</ul>
-<p>Khoan, nhiều &ldquo;điểm tốt&rdquo; quá, nghe vô lý. Thằng Python bậc cao nhưng nó chậm như rùa, mọi thư viện đều phải binding và viết với C. Thằng C thì nhanh, nhưng mà để viết được nó thì không phải ông nào cũng làm được. Thằng Matlab thì nhanh và dễ viết thật, nhưng bạn ơi, tiền đâu mà dùng Matlab, ngồi crack thôi chứ còn gì. Hơn nữa, Matlab nếu bạn dùng cho mục đích cá nhân thì crack được, chứ một tổ chức hay cơ quan thì họ sẽ bảo rằng:</p>
-<blockquote>
-<p>Ở đây chúng tôi không làm vậy<br />
-&ndash; Họ không dùng Matlab ở Wakanda</p>
-</blockquote>
-<p>Ok, mình vẫn chưa giải thích tại sao có nhiều &ldquo;điểm tốt&rdquo; như vậy. Julia đạt được những điều như trên vì 2 lí do:</p>
-<ul>
-<li>Julia dùng Just Intime Compiler (JIT)</li>
-<li>Việc biên dịch của Julia <strong>cực kì phức tạp</strong>, khiến cho mã Julia khi dịch xong có tốc độ <a href="https://julialang.org/benchmarks/">so sánh được với C hoặc Fortran</a></li>
-</ul>
-<figure >
-  
-    
-    <img data-src="/img/julia-micro-benchmarks.png" alt="Micro benchmark theo thời gian chạy một số ngôn ngữ, thời gian chạy của C được lấy làm mốc. Các ngôn ngữ khác được so sánh tương đối." data-caption="Micro benchmark theo thời gian chạy một số ngôn ngữ, thời gian chạy của C được lấy làm mốc. Các ngôn ngữ khác được so sánh tương đối." src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" width="" height=""/>
-    
-  
-  <figcaption>
-    
-    Micro benchmark theo thời gian chạy một số ngôn ngữ, thời gian chạy của C được lấy làm mốc. Các ngôn ngữ khác được so sánh tương đối.
-    
-      
-      
-    
-  </figcaption>
-  
-</figure>
-<p>Đương nhiên, Julia cũng có khiếm khuyết, không có cái gì hoàn hảo cả. Và cộng đồng cũng rất cố gắng để cải thiện, xử lý chúng.</p>
-<ol>
-<li>Cộng đồng Julia nhỏ một cách tương đối so với những &ldquo;ông lớn&rdquo; như Python, đặc biệt là cộng đồng người Việt. Mình cho rằng đây là vấn đề thời gian, và vấn đề này cũng là lí do mình ở đây, viết cái đống này cho các bạn :).</li>
-<li>Mảng trong Julia <em>đánh chỉ số từ 1</em>. Có thể bạn đang nghĩ rằng sẽ dừng đọc và drop cái ngôn ngữ của nợ này ngay tại đây, hãy khoan đã. Theo mình thấy, vấn đề chỉ số này không ảnh hưởng nhiều lắm. Việc đánh chỉ số từ 0 được ông Dijikstra đưa ra và áp dụng trong kha khá ngôn ngữ lập trình, nhưng vẫn có những người dám phản dmg ông và đi theo trường phái khác. Cá nhân mình không có thành kiến gì với cả hai trường phái đâu, mình chỉ muốn nói <strong>cả hai đều có thể dùng được</strong>. Lí do duy nhất mình đưa cái này vào khuyết điểm vì có thể nó sẽ &ldquo;dọa&rdquo; những người mới.</li>
-</ol>
-<blockquote>
-<p>Tôi không biết bao nhiêu người trong số các ông đã đích thân gặp Dijikstra, nhưng các ông chắc đều biết rằng - sự kiêu ngạo trong tính toán khoa học được đo bằng nano-Dijikstra.<br />
-&ndash; Alan Kay (mình không biết ông này nhưng mà câu nói của ổng làm mình thấy khoái)</p>
-</blockquote>
-<ol start="3">
-<li>Lần đầu chạy code sẽ lâu hơn một chút. Ví dụ khi mình tạo random 100000 số kiểu double, lần đầu chạy <code>rand(Float64, 100000)</code> sẽ mất khoảng 0.06, những lần tiêp theo thời gian sẽ giảm đi còn 0.002 (nhanh gấp khoảng 30 lần). Có lẽ đây là vấn đề lớn nhất trong Julia. Nếu bạn hiểu JIT là cái gì, bạn sẽ thấy đặc điểm này gần như không thể tránh được. Tuy nhiên, với những người định &ldquo;dùng thử&rdquo; Julia, họ sẽ <strong>trải nghiệm thời gian compile và tưởng nó là runtime</strong>, sau đó sẽ nghĩ rằng &ldquo;cái này không nhanh như quảng cáo&rdquo;. Điều này ảnh hưởng rất nhiều tới khuyết điểm số 1. Hiện tại, cộng đồng Julia đang rất ưu tiên giải quyết vấn đề này, họ đã tìm cách giảm thời gian compile đáng kể, đồng thời có cách để compile hoàn toàn mã nguồn Julia dưới dạng thư viện liên kết động.</li>
-<li>Scala là cái tên được ghép từ &ldquo;scalable&rdquo; và &ldquo;language&rdquo;. Swift mang nghĩa chuyển động trơn tru và tốc độ cao. Ruby là một viên đá quý. C++ là C tăng lên 1 level. C là kế tiếp của B. Matlab là viết tắt của Matrix Laboratory, thậm chí trong một ngôn ngữ nào đó, nó có nghĩa là sự thông thái&hellip; Vậy Julia cái tên Julia thì sao, nó có ý nghĩa gì?</li>
-</ol>
-<blockquote>
-<p>Đây là câu hỏi ưa thích của mọi người. Thực ra chả có lí do gì đâu, nghe cái tên nó hay hay.<br />
-&ndash; Stefan Karpinski =))</p>
-</blockquote>
-<p>Huyên thuyên về Julia đủ rồi. Rất tiếc nếu mình không thuyết phục được bạn. Tuy nhiên, nếu bạn quyết định thử Julia và cho nó một cơ hội, hãy chuyển qua phần tiếp theo và bước vào <a href="#julia-dojo">Julia Dojo</a>.</p>
-<h2 id="julia-dojo">Julia Dojo</h2>
-<p>Vậy là bạn quyết định cho Julia một cơ hội, mình sẽ cảm ơn các bạn bằng một series hướng dẫn &amp; thảo luận, mang tên &ldquo;Julia Dojo&rdquo;. Series này sẽ tổng hợp từ rất nhiều nguồn kiến thức, nhưng chủ yếu mình sẽ lấy từ 3 nguồn:</p>
-<ul>
-<li>Tài liệu chính thức</li>
-<li>Julia Con (một hội thảo được tổ chức hàng năm)</li>
-<li>Hiểu biết của mình</li>
-</ul>
-<p>Với tài liệu chính thức và Julia Con, bạn có thể xem một cách miễn phí trên mạng nếu nếu không ngại tiếng Anh; còn cái nguồn thứ ba, bạn có thể xem nếu bạn quen mình ngoài đời thực và có khả năng ngoại cảm.</p>
-<p>Ý tưởng chính của Julia Dojo là: chúng ta sẽ train từng level một. Với mỗi level chúng ta sẽ đi sâu vào trong hệ thống của Julia hơn và thấy các thứ liên kết với nhau như thế nào. Trang này sẽ là nơi mình update các level của Dojo cùng với nội dung trong đó mỗi khi có bài mới.</p>
-<h3 id="level-1-nhập-môn">Level 1: nhập môn</h3>
-<ul>
-<li><a href="cai-dat-julia">Tải và cài đặt Julia</a></li>
-<li><a href="hello-world">Hello, world</a></li>
-<li><a href="/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia">Khai báo biến, kiểu dữ liệu, phép toán</a></li>
-</ul>
-<h2 id="tạm-kết">Tạm kết</h2>
-<div class="notices note" >Fun fact: &ldquo;Julia&rdquo; nghe rất giống tên của một phụ nữ trong nhiều nền văn hóa, do đó, dù quy chuẩn của cộng đồng cho rằng Julia không dựa trên tên của ai và ngôn ngữ này không được nhân hóa dưới bất kì hình thức nào, một cơ số người khi nói về ngôn ngữ này vẫn vô thức dùng đại từ &ldquo;cô ấy&rdquo;, trong đó có cả mình :))</div>
+      <p>Chào mừng các bạn trở lại với Julia Dojo. Hôm nay chúng ta sẽ tìm hiểu về một thứ khá cơ bản và thiết yếu trong các ngôn ngữ lập trình, đó là biến số (ok, không hẳn là thiết yếu, nhưng nó làm cuộc sống dễ dàng hơn), đồng thời khám phá một số kiểu dữ liệu cơ bản và thao tác với chúng.</p>
+<h2 id="biến-số-hằng-số">Biến số, hằng số</h2>
+<div class="notices info" >Đôi khi, trông các bài hướng dẫn về ngôn ngữ lập trình, họ đồng nhất biến số và hằng số theo kiểu &ldquo;hằng số là một biến số mà không thể thay đổi&rdquo;. Điều này không đúng lắm về mặt kĩ thuật (technically correct is the best kind of correct). Tuy nhiên, nếu nó tiện lợi, nghe thuận tai và dễ hiểu hơn với bạn thì&hellip; meh, tùy, whatever floats your boat.</div>
 
-<p>Ok, mình nghĩ đến đây là đủ cho bài giới thiệu. Chắc các bạn cũng đoán ra được rằng, mình đang muốn mở rộng cộng đồng người dùng Julia, cụ thể hơn là ở Việt Nam. Một lần nữa, nếu bạn quyết định cho Julia một cơ hội, mình xin cảm ơn. Mình sẽ cố viết post chất lượng và giải đáp thắc mắc của các bạn.</p>
+<p>Để khai báo một biến trong Julia, bạn chỉ cần sử dụng cú pháp:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">tên_biến</span><span class="o"></span> <span class="o">=</span> <span class="s">&#34;</span><span class="s">g</span><span class="s">i</span><span class="s">á</span><span class="s"> </span><span class="s">t</span><span class="s">r</span><span class="s">ị</span><span class="s">&#34;</span>
+<span class="n">こんにちは世界</span><span class="o"></span> <span class="o">=</span> <span class="s">&#34;</span><span class="s">H</span><span class="s">e</span><span class="s">l</span><span class="s">l</span><span class="s">o</span><span class="s"> </span><span class="s">w</span><span class="s">o</span><span class="s">r</span><span class="s">l</span><span class="s">d</span><span class="s">,</span><span class="s"> </span><span class="s">g</span><span class="s">o</span><span class="s">o</span><span class="s">g</span><span class="s">l</span><span class="s">e</span><span class="s"> </span><span class="s">d</span><span class="s">ị</span><span class="s">c</span><span class="s">h</span><span class="s"> </span><span class="s">v</span><span class="s">ậ</span><span class="s">y</span><span class="s"> </span><span class="s">:</span><span class="s">)</span><span class="s">&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Điều hay nhất là: hai dòng lệnh trên hoàn toàn hợp lệ trong Julia (copy nó vào REPL và chạy thử đi!). Tên biến số, hằng số trong Julia có thể Là kí tự unicode, và các kí tự tiếng Việt không phải ngoại lệ. Tuy nhiên, mình nghĩ bạn không nên code bằng tiếng Việt có dấu, tiêng Nhật, tiếng Tàu hay tiếng Thái đâu. Cách tốt nhất để dùng tính năng này là:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="cm">#=</span><span class="cm">
+</span><span class="cm"></span><span class="cm">B</span><span class="cm">ạ</span><span class="cm">n</span><span class="cm"> </span><span class="cm">c</span><span class="cm">ó</span><span class="cm"> </span><span class="cm">t</span><span class="cm">h</span><span class="cm">ể</span><span class="cm"> </span><span class="cm">g</span><span class="cm">õ</span><span class="cm"> </span><span class="cm">c</span><span class="cm">á</span><span class="cm">i</span><span class="cm"> </span><span class="cm">n</span><span class="cm">à</span><span class="cm">y</span><span class="cm"> </span><span class="cm">t</span><span class="cm">h</span><span class="cm">e</span><span class="cm">o</span><span class="cm"> </span><span class="cm">c</span><span class="cm">á</span><span class="cm">c</span><span class="cm"> </span><span class="cm">b</span><span class="cm">ư</span><span class="cm">ớ</span><span class="cm">c</span><span class="cm">:</span><span class="cm">
+</span><span class="cm"></span><span class="cm">1</span><span class="cm">.</span><span class="cm"> </span><span class="cm">N</span><span class="cm">h</span><span class="cm">ậ</span><span class="cm">p</span><span class="cm"> </span><span class="cm">&#34;</span><span class="cm">\</span><span class="cm">v</span><span class="cm">a</span><span class="cm">r</span><span class="cm">e</span><span class="cm">p</span><span class="cm">s</span><span class="cm">i</span><span class="cm">l</span><span class="cm">o</span><span class="cm">n</span><span class="cm">&#34;</span><span class="cm"> </span><span class="cm">(</span><span class="cm">v</span><span class="cm">a</span><span class="cm">r</span><span class="cm"> </span><span class="cm">e</span><span class="cm">p</span><span class="cm">s</span><span class="cm">i</span><span class="cm">l</span><span class="cm">o</span><span class="cm">n</span><span class="cm">)</span><span class="cm">
+</span><span class="cm"></span><span class="cm">2</span><span class="cm">.</span><span class="cm"> </span><span class="cm">N</span><span class="cm">h</span><span class="cm">ấ</span><span class="cm">n</span><span class="cm"> </span><span class="cm">p</span><span class="cm">h</span><span class="cm">í</span><span class="cm">m</span><span class="cm"> </span><span class="cm">&lt;</span><span class="cm">t</span><span class="cm">a</span><span class="cm">b</span><span class="cm">&gt;</span><span class="cm"> </span><span class="cm"> </span><span class="cm"> </span><span class="cm"> </span><span class="cm"> </span><span class="cm"> </span><span class="cm"> </span><span class="cm"> </span><span class="cm"> </span><span class="cm"> </span><span class="cm"> </span><span class="cm"> </span><span class="cm"> </span><span class="cm"> </span><span class="cm">
+</span><span class="cm"></span><span class="cm">T</span><span class="cm">í</span><span class="cm">n</span><span class="cm">h</span><span class="cm"> </span><span class="cm">n</span><span class="cm">ă</span><span class="cm">n</span><span class="cm">g</span><span class="cm"> </span><span class="cm">n</span><span class="cm">à</span><span class="cm">y</span><span class="cm"> </span><span class="cm">c</span><span class="cm">ó</span><span class="cm"> </span><span class="cm">t</span><span class="cm">r</span><span class="cm">ê</span><span class="cm">n</span><span class="cm"> </span><span class="cm">m</span><span class="cm">ọ</span><span class="cm">i</span><span class="cm"> </span><span class="cm">c</span><span class="cm">ô</span><span class="cm">n</span><span class="cm">g</span><span class="cm"> </span><span class="cm">c</span><span class="cm">ụ</span><span class="cm"> </span><span class="cm">h</span><span class="cm">ỗ</span><span class="cm"> </span><span class="cm">t</span><span class="cm">r</span><span class="cm">ợ</span><span class="cm"> </span><span class="cm">J</span><span class="cm">u</span><span class="cm">l</span><span class="cm">i</span><span class="cm">a</span><span class="cm">
+</span><span class="cm"></span><span class="cm">=#</span>
+<span class="n">ε</span><span class="o"></span> <span class="o">=</span> <span class="mf">1e-9</span> <span class="c"># Giờ thì công thức toán trong</span>
+         <span class="c"># code của bạn sẽ gọn và dễ đọc hơn</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Cực kì tiện lợi khi bạn code những phần mềm dùng nhiều công thức toán (mà lúc nào chẳng có toán chứ?). Nhân tiện mình giới thiệu luôn, dấu <code>#</code> được dùng để comment trên một dòng code (tất cả những gì sau dấu này sẽ được bỏ qua; còn cặp dấu <code>#=</code> và <code>=#</code> được dùng để comment trên nhiều dòng, mọi thứ giữa hai thằng này sẽ bị bỏ qua khi chạy code.</p>
+<p>Còn đề khai báo hằng số, bạn chỉ cần nhét thêm chữ <code>const</code> vào đầu dòng như sau:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="kd">const</span> <span class="n">hằng_số</span><span class="o"></span> <span class="o">=</span> <span class="kc">true</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Bất kì biến số, hằng nào bạn định nghĩa như trên trong REPL đều được coi là biến toàn cục. Nếu bạn viết một phần mềm sản xuất, hãy dùng ít biến toàn cục nhất có thể (vì lí do hiệu năng, lí do bảo dưỡng, v.v&hellip; bạn không dùng càng tốt). Nhưng hằng số toàn cục vẫn ok nhé, thực chất Julia chỉ cho phép khai báo hằng số toàn cục thôi. Bạn có thể dùng từ khóa <code>local</code> để khai báo nội bộ và từ khóa <code>global</code> để khai báo toàn cục.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="kd">local</span> <span class="n">x</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span> 
+<span class="kd">global</span> <span class="n">y</span><span class="o"></span> <span class="o">=</span> <span class="mi">2</span>
+<span class="kd">local</span> <span class="kd">const</span> <span class="n">z</span><span class="o"></span> <span class="o">=</span> <span class="s">&#34;</span><span class="s">l</span><span class="s">ỗ</span><span class="s">i</span><span class="s">&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Nếu bạn khai báo biến <code>local</code> trưc tiếp trên REPL, nó sẽ biến mất ngay lập tức và bạn không dùng được nó. Vậy biến nội bộ có hiệu lực ở đâu, hồi sau sẽ rõ :) Giờ chúng ta chuyển sang nói qua về kiểu dữ liệu.</p>
+<h2 id="kiểu-dữ-liệu">Kiểu dữ liệu</h2>
+<p>Khi bạn gán một biến trong Julia, bộ dịch sẽ tự phát hiện kiểu và gắn kiểu dữ liệu của nó cho biến. Điều tương tự cũng xảy ra với hằng số. Bạn có thể lấy kiểu dữ liệu của một biến hay hằng bằng hàm <code>typeof</code>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">x</span><span class="o"></span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">typeof</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="c"># Trả về một kiểu Float</span>
+<span class="n">typeof</span><span class="o"></span><span class="p">(</span><span class="nb">π</span><span class="p">)</span> <span class="c"># Trả về Irrational{:π}</span>
+          <span class="c"># đây là một hằng số</span>
+          <span class="c"># viết bằng cách \pi &lt;tab&gt;</span>
+          <span class="c"># có thể dùng chữ pi cũng được</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Nhìn mấy cái kiểu dữ liệu có vẻ lằng nhằng, nhưng chúng ta đang ở <a href="/julia-dojo">Level 1</a>, đừng bận tâm về nó vội. Mình chỉ giới thiệu qua một số kiểu dữ liệu hay dùng ở đây thôi.</p>
+<h3 id="các-kiểu-số">Các kiểu số</h3>
+<p>Một ít int</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">n</span><span class="o"></span> <span class="o">=</span> <span class="mi">3</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Một ít float</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">x</span><span class="o"></span> <span class="o">=</span> <span class="mf">2.0</span> 
+<span class="n">y</span><span class="o"></span> <span class="o">=</span> <span class="mf">4.0</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Một ít hữu tỉ</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">p</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="o">/</span><span class="mi">2</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Một ít hư ảo</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">z</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="nb">im</span> <span class="c"># hoặc 1 + 2 * im</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Một ít phép toán</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">đối</span><span class="o"></span> <span class="o">=</span> <span class="o">-</span><span class="n">z</span><span class="o"></span>
+<span class="n">cộng</span><span class="o"></span> <span class="o">=</span> <span class="n">n</span><span class="o"></span> <span class="o">+</span> <span class="n">x</span><span class="o"></span>
+<span class="n">cộng</span><span class="o"></span> <span class="o">+=</span> <span class="n">z</span><span class="o"></span>
+<span class="n">trừ</span><span class="o"></span> <span class="o">=</span> <span class="n">n</span><span class="o"></span> <span class="o">-</span> <span class="n">z</span><span class="o"></span>
+<span class="n">nhân</span><span class="o"></span> <span class="o">=</span> <span class="n">z</span><span class="o"></span> <span class="o">*</span> <span class="n">p</span><span class="o"></span>
+<span class="n">chia</span><span class="o"></span> <span class="o">=</span> <span class="n">n</span><span class="o"></span> <span class="o">/</span> <span class="n">x</span><span class="o"></span> <span class="c"># lấy n chia x</span>
+<span class="n">chia_ngược</span><span class="o"></span> <span class="o">=</span> <span class="n">n</span><span class="o"></span> <span class="o">\</span> <span class="n">x</span><span class="o"></span> <span class="c"># lấy x chia cho n</span>
+<span class="n">chia_hữu_tỉ</span><span class="o"></span> <span class="o">=</span> <span class="n">z</span><span class="o"></span> <span class="o">/</span><span class="o">/</span> <span class="p">(</span><span class="mi">3</span> <span class="o">-</span> <span class="mi">4</span><span class="nb">im</span><span class="p">)</span>
+<span class="n">lũy_thừa</span><span class="o"></span> <span class="o">=</span> <span class="n">x</span><span class="o"></span><span class="o">^</span><span class="n">n</span><span class="o"></span>
+<span class="n">lấy_căn</span><span class="o"></span> <span class="o">=</span> <span class="n">sqrt</span><span class="o"></span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">lấy_căn_phức</span><span class="o"></span> <span class="o">=</span> <span class="n">sqrt</span><span class="o"></span><span class="p">(</span><span class="n">complex</span><span class="o"></span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="p">)</span> <span class="c"># sqrt(-1) sẽ lỗi, vì kiểu của -1 là Real</span>
+<span class="n">giá_trị_tuyệt_đối</span><span class="o"></span> <span class="o">=</span> <span class="n">abs</span><span class="o"></span><span class="p">(</span><span class="o">-</span><span class="mf">3.4</span><span class="p">)</span>
+<span class="n">module_phức</span><span class="o"></span> <span class="o">=</span> <span class="n">abs</span><span class="o"></span><span class="p">(</span><span class="n">z</span><span class="o"></span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Một ít hàm toán học</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="c"># Các hàm liên quan đến logarith</span>
+<span class="n">exp</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="c"># e^x, e là hằng số Euler</span>
+<span class="n">log</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="c"># loga cơ số e</span>
+<span class="n">log10</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="c"># loga cơ số 10</span>
+<span class="n">log2</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="c"># loga cơ số 2</span>
+<span class="n">log1p</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="c"># loga cơ số e của (1 + x)</span>
+<span class="n">log</span><span class="o"></span><span class="p">(</span><span class="n">y</span><span class="o"></span><span class="p">,</span> <span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="c"># loga cơ số y của x</span>
+<span class="c"># Các hàm liên quan tới lượng giác</span>
+<span class="c"># Ngoài sin ra còn có cos, tan, cot</span>
+<span class="n">sin</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="c"># lượng giác, dùng radian, tương tự có cos, tan, cot</span>
+<span class="n">sind</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="c"># như sin, nhưng dùng đơn vị độ</span>
+<span class="n">sinh</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="c"># hàm hyperbolic</span>
+<span class="n">asin</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="c"># lượng giác ngược</span>
+<span class="n">asind</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="c"># như asin, đơn vị độ</span>
+<span class="n">asinh</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="c"># hàm hyperbolic ngược</span>
+<span class="n">deg2rad</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="c"># chuyển từ độ sang radian</span>
+<span class="n">rad2deg</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="c"># chuyển từ radian sang độ</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Một ít phép so sánh</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">bé_hơn</span><span class="o"></span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o"></span> <span class="o">&lt;</span> <span class="n">y</span><span class="o"></span><span class="p">)</span>
+<span class="n">lớn_hơn</span><span class="o"></span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o"></span> <span class="o">&gt;</span> <span class="n">y</span><span class="o"></span><span class="p">)</span>
+<span class="n">bằng</span><span class="o"></span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o"></span> <span class="o">=</span><span class="o">=</span> <span class="n">y</span><span class="o"></span><span class="p">)</span>
+<span class="n">khác</span><span class="o"></span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o"></span> <span class="o">!=</span> <span class="n">y</span><span class="o"></span><span class="p">)</span>
+<span class="n">khác</span><span class="o"></span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o"></span> <span class="o">≠</span> <span class="n">y</span><span class="o"></span><span class="p">)</span> <span class="c"># \ne&lt;tab&gt;</span>
+<span class="n">xấp_xỉ</span><span class="o"></span> <span class="o">=</span> <span class="n">isapprox</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">,</span> <span class="n">y</span><span class="o"></span><span class="p">)</span>
+<span class="n">xấp_xỉ</span><span class="o"></span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o"></span> <span class="n">≈</span><span class="o"></span> <span class="n">y</span><span class="o"></span><span class="p">)</span> <span class="c"># \approx&lt;tab&gt;</span>
+<span class="n">không_xấp_xỉ</span><span class="o"></span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o"></span> <span class="n">≉</span><span class="o"></span> <span class="n">y</span><span class="o"></span><span class="p">)</span> <span class="c"># \napprox&lt;tab&gt;</span>
+<span class="n">lớn_hơn_hoặc_bằng</span><span class="o"></span> <span class="o">=</span> <span class="n">x</span><span class="o"></span> <span class="o">&gt;</span><span class="o">=</span> <span class="n">y</span><span class="o"></span>
+<span class="n">lớn_hơn_hoặc_bằng</span><span class="o"></span> <span class="o">=</span> <span class="n">x</span><span class="o"></span> <span class="o">≥</span> <span class="n">y</span><span class="o"></span> <span class="c"># \ge&lt;tab&gt; (Greater than or Equal)</span>
+<span class="n">bé_hơn_hoặc_bằng</span><span class="o"></span> <span class="o">=</span> <span class="n">x</span><span class="o"></span> <span class="o">&lt;</span><span class="o">=</span> <span class="n">y</span><span class="o"></span>
+<span class="n">bé_hơn_hoặc_bằng</span><span class="o"></span> <span class="o">=</span> <span class="n">x</span><span class="o"></span> <span class="o">≤</span> <span class="n">y</span><span class="o"></span> <span class="c"># \le&lt;tab&gt; (Less than or Equal)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="kiểu-bool">Kiểu Bool</h3>
+<p>Julia dùng <code>true</code> và <code>false</code> cho các giá trị thuộc kiểu <code>Bool</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">a</span><span class="o"></span> <span class="o">=</span> <span class="kc">true</span>
+<span class="n">b</span><span class="o"></span> <span class="o">=</span> <span class="kc">false</span>
+<span class="n">phủ_định</span><span class="o"></span> <span class="o">=</span> <span class="o">!</span><span class="n">a</span><span class="o"></span>
+<span class="n">và_logic</span><span class="o"></span> <span class="o">=</span> <span class="n">a</span><span class="o"></span> <span class="o">&amp;&amp;</span> <span class="n">b</span><span class="o"></span>
+<span class="n">hoặc_logic</span><span class="o"></span> <span class="o">=</span> <span class="n">a</span><span class="o"></span> <span class="o">||</span> <span class="n">b</span><span class="o"></span>
+<span class="n">xor_logic</span><span class="o"></span> <span class="o">=</span> <span class="n">xor</span><span class="o"></span><span class="p">(</span><span class="n">a</span><span class="o"></span><span class="p">,</span> <span class="n">b</span><span class="o"></span><span class="p">)</span>
+<span class="n">xor_logc</span><span class="o"></span> <span class="o">=</span> <span class="n">a</span><span class="o"></span> <span class="n">⊻</span><span class="o"></span> <span class="n">b</span><span class="o"></span> <span class="c"># \xor&lt;tab&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="kí-tự-và-xâu-kí-tự">Kí tự và xâu kí tự</h3>
+<p>Trong Julia, kí tự được bao quanh bởi dấu nháy đơn, còn xâu kí tự được bao quanh bởi dấu nháy kép. Bạn có thể dùng 3 dấu nháy kép để viết các xâu kí tự phức tạp, gồm nhiều dòng.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">kí_tự</span><span class="o"></span> <span class="o">=</span> <span class="sc">&#39;a&#39;</span>
+<span class="n">xâu</span><span class="o"></span> <span class="o">=</span> <span class="s">&#34;</span><span class="s">h</span><span class="s">e</span><span class="s">l</span><span class="s">l</span><span class="s">o</span><span class="s"> </span><span class="s">w</span><span class="s">o</span><span class="s">r</span><span class="s">l</span><span class="s">d</span><span class="s">&#34;</span>
+<span class="n">xâu_phức_tạp</span><span class="o"></span> <span class="o">=</span> <span class="s">&#34;&#34;&#34;</span><span class="s">
+</span><span class="s"></span><span class="s"> </span><span class="s"> </span><span class="s"> </span><span class="s"> </span><span class="s">&#34;</span><span class="s">T</span><span class="s">r</span><span class="s">ă</span><span class="s">m</span><span class="s"> </span><span class="s">n</span><span class="s">ă</span><span class="s">m</span><span class="s"> </span><span class="s">t</span><span class="s">r</span><span class="s">o</span><span class="s">n</span><span class="s">g</span><span class="s"> </span><span class="s">c</span><span class="s">õ</span><span class="s">i</span><span class="s"> </span><span class="s">n</span><span class="s">g</span><span class="s">ư</span><span class="s">ờ</span><span class="s">i</span><span class="s"> </span><span class="s">t</span><span class="s">a</span><span class="s">,</span><span class="s">
+</span><span class="s"></span><span class="s"> </span><span class="s"> </span><span class="s"> </span><span class="s"> </span><span class="s">T</span><span class="s">h</span><span class="s">ú</span><span class="s">y</span><span class="s"> </span><span class="s">K</span><span class="s">i</span><span class="s">ề</span><span class="s">u</span><span class="s"> </span><span class="s">l</span><span class="s">à</span><span class="s"> </span><span class="s">m</span><span class="s">ẹ</span><span class="s">,</span><span class="s"> </span><span class="s">c</span><span class="s">o</span><span class="s">n</span><span class="s"> </span><span class="s">l</span><span class="s">à</span><span class="s"> </span><span class="s">T</span><span class="s">h</span><span class="s">ú</span><span class="s">y</span><span class="s"> </span><span class="s">V</span><span class="s">â</span><span class="s">n</span><span class="s">&#34;</span><span class="s">
+</span><span class="s"></span><span class="s"> </span><span class="s"> </span><span class="s"> </span><span class="s"> </span><span class="s">
+</span><span class="s"></span><span class="s"> </span><span class="s"> </span><span class="s"> </span><span class="s"> </span><span class="s">C</span><span class="s">â</span><span class="s">u</span><span class="s"> </span><span class="s">t</span><span class="s">h</span><span class="s">ơ</span><span class="s"> </span><span class="s">c</span><span class="s">h</span><span class="s">o</span><span class="s"> </span><span class="s">t</span><span class="s">h</span><span class="s">ấ</span><span class="s">y</span><span class="s"> </span><span class="s">t</span><span class="s">h</span><span class="s">ằ</span><span class="s">n</span><span class="s">g</span><span class="s"> </span><span class="s">n</span><span class="s">à</span><span class="s">o</span><span class="s"> </span><span class="s">n</span><span class="s">g</span><span class="s">ồ</span><span class="s">i</span><span class="s"> </span><span class="s">v</span><span class="s">i</span><span class="s">ế</span><span class="s">t</span><span class="s"> </span><span class="s">c</span><span class="s">á</span><span class="s">i</span><span class="s"> </span><span class="s">n</span><span class="s">à</span><span class="s">y</span><span class="s"> </span><span class="s">r</span><span class="s">ấ</span><span class="s">t</span><span class="s"> </span><span class="s">d</span><span class="s">ố</span><span class="s">t</span><span class="s"> </span><span class="s">v</span><span class="s">ă</span><span class="s">n</span><span class="s">.</span><span class="s">.</span><span class="s">.</span><span class="s">
+</span><span class="s"></span><span class="s">&#34;&#34;&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Julia hỗ trợ &ldquo;nội suy&rdquo; xâu kí tự (string interpolation, không mình biết dịch đúng không nữa). Dùng dấu <code>$</code> là bạn có thể &ldquo;nhúng&rdquo; một biến vào trong xâu kí tự. Nếu bạn muốn dưa một biểu thức vào, hãy dùng <code>$(biểu_thức)</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">x</span><span class="o"></span> <span class="o">=</span> <span class="n">rand</span><span class="o"></span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="o">:</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">println</span><span class="o"></span><span class="p">(</span><span class="s">&#34;</span><span class="s">m</span><span class="s">ộ</span><span class="s">t</span><span class="s"> </span><span class="s">s</span><span class="s">ố</span><span class="s"> </span><span class="s">n</span><span class="s">g</span><span class="s">ẫ</span><span class="s">u</span><span class="s"> </span><span class="s">n</span><span class="s">h</span><span class="s">i</span><span class="s">ê</span><span class="s">n</span><span class="s"> </span><span class="s">t</span><span class="s">r</span><span class="s">o</span><span class="s">n</span><span class="s">g</span><span class="s"> </span><span class="s">k</span><span class="s">h</span><span class="s">o</span><span class="s">ả</span><span class="s">n</span><span class="s">g</span><span class="s"> </span><span class="s">-</span><span class="s">3</span><span class="s"> </span><span class="s">t</span><span class="s">ớ</span><span class="s">i</span><span class="s"> </span><span class="s">3</span><span class="s">:</span><span class="s"> </span><span class="si">$x</span><span class="s">&#34;</span><span class="p">)</span>
+<span class="c"># hoặc</span>
+<span class="n">println</span><span class="o"></span><span class="p">(</span><span class="s">&#34;</span><span class="s">m</span><span class="s">ộ</span><span class="s">t</span><span class="s"> </span><span class="s">s</span><span class="s">ố</span><span class="s"> </span><span class="s">n</span><span class="s">g</span><span class="s">ẫ</span><span class="s">u</span><span class="s"> </span><span class="s">n</span><span class="s">h</span><span class="s">i</span><span class="s">ê</span><span class="s">n</span><span class="s"> </span><span class="s">t</span><span class="s">r</span><span class="s">o</span><span class="s">n</span><span class="s">g</span><span class="s"> </span><span class="s">k</span><span class="s">h</span><span class="s">o</span><span class="s">ả</span><span class="s">n</span><span class="s">g</span><span class="s"> </span><span class="s">-</span><span class="s">3</span><span class="s"> </span><span class="s">t</span><span class="s">ớ</span><span class="s">i</span><span class="s"> </span><span class="s">3</span><span class="s">:</span><span class="s"> </span><span class="si">$</span><span class="p">(</span><span class="n">rand</span><span class="o"></span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="o">:</span><span class="mi">3</span><span class="p">)</span><span class="p">)</span><span class="s">&#34;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Một số hành động với kí tự và xâu kí tự:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">clipboard</span><span class="o"></span><span class="p">(</span><span class="s">&#34;</span><span class="s">c</span><span class="s">o</span><span class="s">p</span><span class="s">y</span><span class="s"> </span><span class="s">t</span><span class="s">o</span><span class="s">à</span><span class="s">n</span><span class="s"> </span><span class="s">b</span><span class="s">ộ</span><span class="s"> </span><span class="s">x</span><span class="s">â</span><span class="s">u</span><span class="s"> </span><span class="s">k</span><span class="s">í</span><span class="s"> </span><span class="s">t</span><span class="s">ự</span><span class="s"> </span><span class="s">n</span><span class="s">à</span><span class="s">y</span><span class="s">,</span><span class="s"> </span><span class="s">d</span><span class="s">ù</span><span class="s">n</span><span class="s">g</span><span class="s"> </span><span class="s">c</span><span class="s">á</span><span class="s">i</span><span class="s"> </span><span class="s">n</span><span class="s">à</span><span class="s">y</span><span class="s"> </span><span class="s">m</span><span class="s">a</span><span class="s">x</span><span class="s"> </span><span class="s">t</span><span class="s">i</span><span class="s">ệ</span><span class="s">n</span><span class="s">&#34;</span><span class="p">)</span>
+<span class="n">collect</span><span class="o"></span><span class="p">(</span><span class="s">&#34;</span><span class="s">x</span><span class="s">â</span><span class="s">u</span><span class="s"> </span><span class="s">k</span><span class="s">í</span><span class="s"> </span><span class="s">t</span><span class="s">ự</span><span class="s">&#34;</span><span class="p">)</span> <span class="c"># chuyển xâu kí tự thành một mảng các kí tự</span>
+<span class="kt">Int</span><span class="p">(</span><span class="sc">&#39;c&#39;</span><span class="p">)</span> <span class="c"># Chuyển kí tự sang mã Unicode</span>
+<span class="kt">Char</span><span class="p">(</span><span class="mi">97</span><span class="p">)</span> <span class="c"># Chuyển mã kí tự thành kí tự</span>
+<span class="s">&#34;</span><span class="s">n</span><span class="s">ố</span><span class="s">i</span><span class="s">&#34;</span> <span class="o">*</span> <span class="s">&#34;</span><span class="s">x</span><span class="s">â</span><span class="s">u</span><span class="s">&#34;</span> <span class="o">*</span> <span class="s">&#34;</span><span class="s">k</span><span class="s">í</span><span class="s"> </span><span class="s">t</span><span class="s">ự</span><span class="s">&#34;</span>
+<span class="s">&#34;</span><span class="s">n</span><span class="s">h</span><span class="s">â</span><span class="s">n</span><span class="s"> </span><span class="s">l</span><span class="s">ê</span><span class="s">n</span><span class="s"> </span><span class="s">3</span><span class="s"> </span><span class="s">l</span><span class="s">ầ</span><span class="s">n</span><span class="s"> </span><span class="s">&#34;</span> <span class="o">^</span> <span class="mi">3</span>
+<span class="s">&#34;</span><span class="s">a</span><span class="s">b</span><span class="s">c</span><span class="s">&#34;</span> <span class="o">&lt;</span> <span class="s">&#34;</span><span class="s">a</span><span class="s">b</span><span class="s">d</span><span class="s">&#34;</span> <span class="c"># so sánh theo thứ tự từ điển, dựa vào mã kí tự</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="mảng-ma-trận">Mảng, ma trận</h3>
+<p>Phần hay nhất để dành cuối cùng :) Julia hộ trợ tính toán ma trận <strong>rất ngon</strong>. Ngon thế nào thì từ từ mới biết hết, đặc biệt các bạn dùng Matlab có thể sẽ thấy nó quen thuộc. Phần này đáng có một bài viết riêng, vì vậy trong bài này mình chỉ giới thiệu thôi.</p>
+<p>Trong Julia, số chiều của ma trận được phân biệt rất rõ ràng. Khi khai báo một vector, chúng ta dùng dấu <code>,</code> hoặc <code>;</code> để ngăn cách các phần tử:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">A</span><span class="o"></span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">B</span><span class="o"></span> <span class="o">=</span> <span class="n">rand</span><span class="o"></span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c"># vector ngẫu nhiên</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Đoạn code trên sẽ tạo ra <code>A</code> và <code>B</code> là vector <em>cột</em>. Đối với ma trận, chúng ta dùng dấu cách ngăn cách các phần tử cùng hàng, và dấu <code>;</code> để ngăn cách giữa các dòng</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">M</span><span class="o"></span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">;</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">;</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span> <span class="c"># lỗi, không dùng được dấu &#34;,&#34; đâu</span>
+<span class="n">M</span><span class="o"></span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">;</span> <span class="mi">4</span> <span class="mi">5</span> <span class="mi">6</span><span class="p">;</span> <span class="mi">7</span> <span class="mi">8</span> <span class="mi">9</span><span class="p">]</span>
+<span class="n">N</span><span class="o"></span> <span class="o">=</span> <span class="n">rand</span><span class="o"></span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="c"># ma trận ngẫu nhiên</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Để lấy chỉ số của vector, ma trận, chúng ta dùng cú pháp <code>ma_trận[chỉ_số]</code>. Julia lưu ma trận theo cột, chúng ta có thể dùng chỉ số 1 chiều hoặc 2 chiều để lấy ra phần tử của ma trận.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">M</span><span class="o"></span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="c"># hàng 2 cột 3, trả ra 6</span>
+<span class="n">M</span><span class="o"></span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="c"># phần tử thứ 4, nhưng duyệt theo từng hàng, trả ra 2</span>
+<span class="n">M</span><span class="o"></span><span class="p">[</span><span class="k">end</span><span class="p">]</span> <span class="c"># phân tử cuối cùng</span>
+<span class="n">M</span><span class="o"></span><span class="p">[</span><span class="mi">1</span><span class="o">:</span><span class="mi">2</span><span class="p">,</span> <span class="k">end</span><span class="p">]</span> <span class="c"># hàng 1 tới hàng 2, cột cuối cùng</span>
+<span class="n">M</span><span class="o"></span><span class="p">[</span><span class="k">end</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span><span class="p">]</span> <span class="c"># cột 1 và 3, hàng cuối cùng</span>
+<span class="n">M</span><span class="o"></span><span class="p">[</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span><span class="p">]</span> <span class="c"># đoán xem? :)</span>
+<span class="n">M</span><span class="o"></span><span class="p">[</span><span class="o">:</span><span class="p">,</span> <span class="k">end</span><span class="p">]</span> <span class="c"># cột cuối</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Trong Julia, việc gán ma trận sẽ không tạo bản copy của ma trận đó, trừ khi bạn lấy một phần của ma trận:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">L</span><span class="o"></span> <span class="o">=</span> <span class="n">M</span><span class="o"></span>
+<span class="n">L</span><span class="o"></span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span> <span class="c"># M cũng bị thay đổi</span>
+<span class="n">L</span><span class="o"></span> <span class="o">=</span> <span class="n">M</span><span class="o"></span><span class="p">[</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span><span class="p">,</span> <span class="o">:</span><span class="p">]</span>
+<span class="n">L</span><span class="o"></span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span> <span class="c"># M không bị đổi</span>
+<span class="n">L</span><span class="o"></span> <span class="o">=</span> <span class="n">copy</span><span class="o"></span><span class="p">(</span><span class="n">M</span><span class="o"></span><span class="p">)</span> <span class="c"># copy lại M, tạo ma trận mới</span>
+<span class="n">L</span><span class="o"></span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span> <span class="c"># M không bị đổi</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Các phép toán với vector, ma trận được thực hiện rất tự nhiên (theo quy tắc toán học):</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">A</span><span class="o"></span> <span class="o">*</span> <span class="n">B</span><span class="o"></span> <span class="c"># báo lỗi, hai vector có chiều 1 × 3 không nhân với nhau được</span>
+<span class="n">A</span><span class="o"></span> <span class="o">*</span> <span class="n">B</span><span class="o">&#39;</span> <span class="c"># nhưng nếu B chuyển vị thành vector hàng thì ok :)</span>
+<span class="n">M</span><span class="o"></span> <span class="o">*</span> <span class="n">N</span><span class="o"></span> <span class="c"># hai ma trận (3, 3) nhân với nhau</span>
+<span class="n">M</span><span class="o"></span> <span class="o">*</span> <span class="n">A</span><span class="o"></span> <span class="c"># nhân ma trận (3, 3) với vector (3, 1)</span>
+<span class="n">A</span><span class="o"></span> <span class="o">+</span> <span class="n">B</span><span class="o"></span> <span class="c"># cộng vector</span>
+<span class="n">M</span><span class="o"></span> <span class="o">+</span> <span class="n">N</span><span class="o"></span> <span class="c"># cộng ma trận</span>
+<span class="n">A</span><span class="o"></span> <span class="o">+</span> <span class="n">B</span><span class="o">&#39;</span> <span class="c"># lỗi, cộng vector ma trận phải cùng chiều</span>
+<span class="n">A</span><span class="o"></span> <span class="o">.+</span> <span class="n">B</span><span class="o">&#39;</span> <span class="c"># nhưng cộng từng phần tử lại là chuyện khác :)</span>
+<span class="n">A</span><span class="o"></span> <span class="o">.*</span> <span class="n">B</span><span class="o">&#39;</span> <span class="c"># nhân phần tử cũng vậy luôn</span>
+<span class="n">M</span><span class="o"></span> <span class="o">^</span> <span class="mi">5</span> <span class="c"># ma trận vuông có thể lấy lũy thừa</span>
+<span class="n">M</span><span class="o"></span> <span class="o">.^</span> <span class="mi">5</span> <span class="c"># lũy thừa từng phần tử</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="notices info" ><p>Lưu ý rằng, đối với trường hợp số thực, chúng ta có thể dùng <code>A'</code> để chuyển vị. Với ma trận số phức hãy dùng <code>transpose</code>. Để biết chi tiết hãy xem thêm:</p>
+<ul>
+<li>transpose: <a href="https://en.wikipedia.org/wiki/Transpose">https://en.wikipedia.org/wiki/Transpose</a></li>
+<li>adjoint (dấu nháy): <a href="https://en.wikipedia.org/wiki/Conjugate_transpose">https://en.wikipedia.org/wiki/Conjugate_transpose</a></li>
+</ul>
+<p>(sorry vì màu link khó nhìn, mình sẽ gửi issue lên người bảo trì theme này)</p>
+</div>
+
+<h2 id="kết-luận">Kết luận</h2>
+<p>Ok, phần giới thiệu tới đây mình nghĩ đủ rồi. Vậy các là các bạn đã biết  cách khai báo biến, cộng trừ nhân chia và những trò hay ho mà trên trường giáo viên sẽ bắt chúng ta ngồi tính sấp mặt. Giờ bạn có thể dùng Julia như một cái máy tính cá nhân (nhưng vạn năng hơn một tí). Hẹn gặp các bạn trong bài viết sau.</p>
 
     </article>
     
@@ -1327,25 +1665,41 @@
     <section class="related">
     
     
+    <h1 class="related__title">
+      <hr class="hr-dots"/>
+      <div>
+        
+      </div>
+      <hr class="hr-dots"/>
+    </h1>
+    <ul class="related-ul">
+        
+        <li>
+          <a href="/julia-dojo/hello-world/" class="related__link">Julia Dojo: hello world</a>
+        </li>
+        
+        <li>
+          <a href="/julia-dojo/cai-dat-julia/" class="related__link">Julia Dojo: cài đặt Julia</a>
+        </li>
+        
+        <li>
+          <a href="/julia-dojo/" class="related__link">Julia Dojo: giới thiệu</a>
+        </li>
+        
+    </ul>
+    
   </section>
     <div class="grow"></div>
 <nav class="pagination-single">
   
-    <a href="https://ndgnuh.github.io/about/" class="pagination-single__left">
+    <a href="https://ndgnuh.github.io/julia-dojo/hello-world/" class="pagination-single__left">
       <div class="pagination-single__icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
       </div>
-      <div class="pagination-single__left-title">Giới thiệu</div>      
+      <div class="pagination-single__left-title">Julia Dojo: hello world</div>      
     </a>
   
   <div class="grow"></div>
-  
-    <a href="https://ndgnuh.github.io/julia-dojo/cai-dat-julia/" class="pagination-single__right">      
-      <div class="pagination-single__right-title">Julia Dojo: cài đặt Julia</div>
-      <div class="pagination-single__icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-      </div>
-    </a>
   
 </nav>
     
@@ -1720,13 +2074,16 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc ">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#julia">Julia?</a></li>
-    <li><a href="#julia-dojo">Julia Dojo</a>
+    <li><a href="#biến-số-hằng-số">Biến số, hằng số</a></li>
+    <li><a href="#kiểu-dữ-liệu">Kiểu dữ liệu</a>
       <ul>
-        <li><a href="#level-1-nhập-môn">Level 1: nhập môn</a></li>
+        <li><a href="#các-kiểu-số">Các kiểu số</a></li>
+        <li><a href="#kiểu-bool">Kiểu Bool</a></li>
+        <li><a href="#kí-tự-và-xâu-kí-tự">Kí tự và xâu kí tự</a></li>
+        <li><a href="#mảng-ma-trận">Mảng, ma trận</a></li>
       </ul>
     </li>
-    <li><a href="#tạm-kết">Tạm kết</a></li>
+    <li><a href="#kết-luận">Kết luận</a></li>
   </ul>
 </nav>
   </div>
@@ -2415,7 +2772,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
     
     
-  <a href="https://ndgnuh.github.io/julia-dojo//index.xml" type="application/rss+xml" title="rss" aria-label="RSS Feed Link">
+  <a href="https://ndgnuh.github.io/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia//index.xml" type="application/rss+xml" title="rss" aria-label="RSS Feed Link">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><circle fill="currentColor" cx="6.18" cy="17.82" r="2.18"/><path fill="currentColor" d="M5.59 10.23c-.84-.14-1.59.55-1.59 1.4 0 .71.53 1.28 1.23 1.4 2.92.51 5.22 2.82 5.74 5.74.12.7.69 1.23 1.4 1.23.85 0 1.54-.75 1.41-1.59-.68-4.2-3.99-7.51-8.19-8.18zm-.03-5.71C4.73 4.43 4 5.1 4 5.93c0 .73.55 1.33 1.27 1.4 6.01.6 10.79 5.38 11.39 11.39.07.73.67 1.28 1.4 1.28.84 0 1.5-.73 1.42-1.56-.73-7.34-6.57-13.19-13.92-13.92z"/></svg>
   </a>
 
