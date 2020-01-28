@@ -98,6 +98,7 @@ Công cụ lập trình mà bạn có thể sẽ thích.
 Giống Level 1, nhưng kĩ hơn một tí
 - Mảng, ma trận
 - Tuple, từ điển, tập hợp
+- Struct
 - Chuỗi kí tự, biểu thức chính quy và biểu tượng
 - Làm việc với file
 - Xử lý ngoại lệ
