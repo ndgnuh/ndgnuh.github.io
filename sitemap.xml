@@ -106,11 +106,4 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/year-all-rights-reserved/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
 </urlset>
