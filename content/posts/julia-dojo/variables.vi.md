@@ -203,6 +203,7 @@ clipboard("copy toàn bộ xâu kí tự này, dùng cái này max tiện")
 collect("xâu kí tự") # chuyển xâu kí tự thành một mảng các kí tự
 Int('c') # Chuyển kí tự sang mã Unicode
 Char(97) # Chuyển mã kí tự thành kí tự
+length("độ dài xâu")
 "nối" * "xâu" * "kí tự"
 "nhân lên 3 lần " ^ 3
 "abc" < "abd" # so sánh theo thứ tự từ điển, dựa vào mã kí tự
@@ -271,4 +272,10 @@ Lưu ý rằng, đối với trường hợp số thực, chúng ta có thể d�
 
 ## Kết luận
 
-Ok, phần giới thiệu tới đây mình nghĩ đủ rồi. Vậy các là các bạn đã biết  cách khai báo biến, cộng trừ nhân chia và những trò hay ho mà trên trường giáo viên sẽ bắt chúng ta ngồi tính sấp mặt. Giờ bạn có thể dùng Julia như một cái máy tính cá nhân (nhưng vạn năng hơn một tí). Hẹn gặp các bạn trong bài viết sau.
+Ok, phần giới thiệu tới đây mình nghĩ đủ rồi. Vậy các là các bạn đã biết  cách khai báo biến, cộng trừ nhân chia và những trò hay ho mà trên trường giáo viên sẽ bắt chúng ta ngồi tính sấp mặt. Hẹn gặp các bạn trong bài viết sau.
+
+Bonus: nếu đang học đại học, giờ bạn có thể dùng Julia như một cái máy tính cá nhân (nhưng vạn năng hơn một tí)
+```julia
+# Giải hệ phương trình A⋅X = B trong một nốt nhạc
+A^-1 * B
+```

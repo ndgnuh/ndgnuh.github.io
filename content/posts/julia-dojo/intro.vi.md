@@ -4,7 +4,7 @@ date: 2020-01-20T00:00:00+07:00
 draft: false
 url: "/julia-dojo"
 summary: "Julia là cái gì?"
-lastmod: 2020-01-25T21:42:58+07:00
+lastmod: 2020-01-29T01:12:17+07:00
 categories:
 - hướng dẫn
 - lập trình
@@ -72,11 +72,65 @@ Với tài liệu chính thức và Julia Con, bạn có thể xem một cách m
 
 Ý tưởng chính của Julia Dojo là: chúng ta sẽ train từng level một. Với mỗi level chúng ta sẽ đi sâu vào trong hệ thống của Julia hơn và thấy các thứ liên kết với nhau như thế nào. Trang này sẽ là nơi mình update các level của Dojo cùng với nội dung trong đó mỗi khi có bài mới.
 
+{{< notice info >}}
+Có những bài viết mình đánh đấu là "tùy chọn" hoặc "nên xem", bạn không nhất thiết phải đọc vì nó không phải một "cơ bản" của Julia. Mình có để intro ở đầu mỗi bài viết, nếu bạn thấy không hứng thú hoặc phần đó bạn đã biết rồi, bạn có thể skip.
+{{< /notice >}}
 ### Level 1: nhập môn
 
-- [Tải và cài đặt Julia](cai-dat-julia)
-- [Hello, world](hello-world)
+Những thứ cơ bản nhất
+
+- [Tải và cài đặt Julia](/julia-dojo/cai-dat-julia)
+- [Hello, world](/julia-dojo/hello-world)
 - [Khai báo biến, kiểu dữ liệu, phép toán](/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia)
+- [Cấu trúc điều khiển](/julia-dojo/re-nhanh-va-lap-trong-julia)
+- Sắp tới: hàm
+
+### Level 2: làm chủ vũ khí (dự định)
+
+Công cụ lập trình mà bạn có thể sẽ thích. 
+- [nên đọc] Jupyter notebook
+- [nên đọc] VSCode
+- [tùy chọn] Atom: Juno / Julia pro
+- [tùy chọn] Vim
+- Emacs (chưa chắc)
+
+### Level 3: vài đường cơ bản (dự định)
+Giống Level 1, nhưng kĩ hơn một tí
+- Mảng, ma trận
+- Tuple, từ điển, tập hợp
+- Chuỗi kí tự, biểu thức chính quy và biểu tượng
+- Làm việc với file
+- Xử lý ngoại lệ
+- Broadcast
+
+### Level 4: gặp gỡ đồng môn (dự định)
+Hầu hết các bài trong phần này là tùy chọn, nhưng cũng có thể là phần hay ho nhất. Trong phần này mình sẽ nói thêm về cách làm việc với module. Vì có rất nhiều module mang tính chuyên ngành cao, mà trình độ của mình có giới hạn nên mình sẽ không cover hết được(mấy cái mô hình hóa sinh thì chịu rồi, mình dốt hóa).
+
+Do đó, nếu các bạn muốn hướng dẫn, giới thiệu một gói nào đó. Các bạn có thể:
+1. Gửi một đường dẫn cho mình tới blog của các bạn, mình sẽ gắn nó vào đây
+2. Gửi cho mình bài viết của các bạn kèm với một số thông về bạn, mình sẽ ghi credit đầy đủ cho các bạn, trừ khi bạn không muốn (nhưng mình vẫn sẽ ghi rõ bài viết do độc giả đóng góp)
+3. Dịch trang tài liệu chính thức của gói đó và đóng góp cho họ
+4. Không làm gì cả =))
+
+Nội dung dự kiến trong chương này
+- Sử dụng trình quản lí gói
+- Tạo gói riêng của bạn
+- Unit test
+- Viết tài liệu
+- Một số module built in (nhiều bài viết)
+- Một số module cộng đồng (nhiều bài viết)
+
+
+### Level 5: Thiên biến vạn hóa (dự định)
+Đa hình và những thứ liên quan tới nó
+- Nói thêm về hệ thống kiểu dữ liệu
+- Các loại giao diện
+- Multiple dispatch
+
+### ???
+- Một số kĩ thuật để code nhanh hơn
+- Tính toán song song
+- Meta programming
 
 ## Tạm kết
 
@@ -84,5 +138,5 @@ Với tài liệu chính thức và Julia Con, bạn có thể xem một cách m
 Fun fact: "Julia" nghe rất giống tên của một phụ nữ trong nhiều nền văn hóa, do đó, dù quy chuẩn của cộng đồng cho rằng Julia không dựa trên tên của ai và ngôn ngữ này không được nhân hóa dưới bất kì hình thức nào, một cơ số người khi nói về ngôn ngữ này vẫn vô thức dùng đại từ "cô ấy", trong đó có cả mình :))
 {{</notice>}}
 
-Ok, mình nghĩ đến đây là đủ cho bài giới thiệu. Chắc các bạn cũng đoán ra được rằng, mình đang muốn mở rộng cộng đồng người dùng Julia, cụ thể hơn là ở Việt Nam. Một lần nữa, nếu bạn quyết định cho Julia một cơ hội, mình xin cảm ơn. Mình sẽ cố viết post chất lượng và giải đáp thắc mắc của các bạn.
+Ok, mình nghĩ đến đây là đủ cho bài giới thiệu. Chắc các bạn cũng đoán ra được rằng, mình đang muốn mở rộng cộng đồng người dùng Julia, cụ thể hơn là ở Việt Nam. Một lần nữa, nếu bạn quyết định cho Julia một cơ hội, mình xin cảm ơn. Mình sẽ cố viết post chất lượng và giải đáp thắc mắc của các bạn. Nếu thấy có thiếu sót, đừng ngại gửi lại phản hồi cho mình.
 
