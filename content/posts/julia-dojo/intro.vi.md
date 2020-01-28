@@ -74,20 +74,22 @@ Với tài liệu chính thức và Julia Con, bạn có thể xem một cách m
 
 {{< notice info >}}
 Có những bài viết mình đánh đấu là "tùy chọn" hoặc "nên xem", bạn không nhất thiết phải đọc vì nó không phải một "cơ bản" của Julia. Mình có để intro ở đầu mỗi bài viết, nếu bạn thấy không hứng thú hoặc phần đó bạn đã biết rồi, bạn có thể skip.
+
+Layout phía dưới có những phần dự định, có thể khi mình viết bài thực sự mình sẽ thêm bớt hoặc chuyển chỗ một vài thứ trong đó.
 {{< /notice >}}
+
 ### Level 1: nhập môn
-
 Những thứ cơ bản nhất
-
 - [Tải và cài đặt Julia](/julia-dojo/cai-dat-julia)
 - [Hello, world](/julia-dojo/hello-world)
 - [Khai báo biến, kiểu dữ liệu, phép toán](/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia)
 - [Cấu trúc điều khiển](/julia-dojo/re-nhanh-va-lap-trong-julia)
 - Sắp tới: hàm
+- Cộng đồng Julia
 
 ### Level 2: làm chủ vũ khí (dự định)
-
 Công cụ lập trình mà bạn có thể sẽ thích. 
+- Làm việc với trình quản lí gói
 - [nên đọc] Jupyter notebook
 - [nên đọc] VSCode
 - [tùy chọn] Atom: Juno / Julia pro
@@ -95,43 +97,46 @@ Công cụ lập trình mà bạn có thể sẽ thích.
 - Emacs (chưa chắc)
 
 ### Level 3: vài đường cơ bản (dự định)
-Giống Level 1, nhưng kĩ hơn một tí
-- Mảng, ma trận
+Giống Level 1, nhưng kĩ hơn một tí, và giới thiệu các gói mình nghĩ là hay.
+- Làm việc với file
 - Tuple, từ điển, tập hợp
 - Struct
 - Chuỗi kí tự, biểu thức chính quy và biểu tượng
-- Làm việc với file
+- Đại số tuyến tính
+- Mảng, ma trận
+- Thống kê
+- Vẽ đồ thị
+- DataFrame
+- Gọi các ngôn ngữ khác
+- Đa luồng, đa tiến trình
 - Xử lý ngoại lệ
 - Broadcast
 
-### Level 4: gặp gỡ đồng môn (dự định)
-Hầu hết các bài trong phần này là tùy chọn, nhưng cũng có thể là phần hay ho nhất. Trong phần này mình sẽ nói thêm về cách làm việc với module. Vì có rất nhiều module mang tính chuyên ngành cao, mà trình độ của mình có giới hạn nên mình sẽ không cover hết được(mấy cái mô hình hóa sinh thì chịu rồi, mình dốt hóa).
-
-Do đó, nếu các bạn muốn hướng dẫn, giới thiệu một gói nào đó. Các bạn có thể:
-1. Gửi một đường dẫn cho mình tới blog của các bạn, mình sẽ gắn nó vào đây
-2. Gửi cho mình bài viết của các bạn kèm với một số thông về bạn, mình sẽ ghi credit đầy đủ cho các bạn, trừ khi bạn không muốn (nhưng mình vẫn sẽ ghi rõ bài viết do độc giả đóng góp)
-3. Dịch trang tài liệu chính thức của gói đó và đóng góp cho họ
-4. Không làm gì cả =))
-
-Nội dung dự kiến trong chương này
-- Sử dụng trình quản lí gói
-- Tạo gói riêng của bạn
-- Unit test
-- Viết tài liệu
-- Một số module built in (nhiều bài viết)
-- Một số module cộng đồng (nhiều bài viết)
-
-
-### Level 5: Thiên biến vạn hóa (dự định)
+### Level 4: thiên biến vạn hóa (dự định)
 Đa hình và những thứ liên quan tới nó
 - Nói thêm về hệ thống kiểu dữ liệu
 - Các loại giao diện
 - Multiple dispatch
 
-### ???
+### Level 5: sáng tạo chiêu thức (dự định)
+Sẽ có một ngày bạn phải tự viết chương trình của riêng mình
+- Tạo một project
+- Unit testing
+- Viết tài liệu
+
+### Ngoại truyện???
 - Một số kĩ thuật để code nhanh hơn
 - Tính toán song song
 - Meta programming
+- 
+
+### Về các module, gói
+
+Vì có rất nhiều module của Julia mang tính chuyên ngành cao, mà trình độ của mình có giới hạn nên mình sẽ không cover hết được(mấy cái mô hình hóa sinh thì chịu rồi, mình dốt hóa). Do đó, nếu các bạn muốn hướng dẫn, giới thiệu một gói nào đó. Các bạn có thể:
+1. Gửi một đường dẫn cho mình tới blog của các bạn, mình sẽ gắn nó vào đây
+2. Gửi cho mình bài viết của các bạn kèm với một số thông về bạn, mình sẽ ghi credit đầy đủ cho các bạn, trừ khi bạn không muốn (nhưng mình vẫn sẽ ghi rõ bài viết do độc giả đóng góp)
+3. Dịch trang tài liệu chính thức của gói đó và đóng góp cho họ
+4. Không làm gì cả =))
 
 ## Tạm kết
 
