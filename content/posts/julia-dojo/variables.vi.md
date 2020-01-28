@@ -1,7 +1,7 @@
 ---
-title: "Julia Dojo: vài đường cơ bản"
+title: "Julia Dojo: biến số, kiểu dữ liệu, phép toán"
 date: 2020-01-27T17:28:39+07:00
-url: "/julia-dojo/vai-duong-co-ban"
+url: "/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia"
 draft: false
 summary: "Biến số, hằng số, kiểu dữ liệu và một số thao tác đơn giản với chúng trong Julia"
 description: "Biến số, hằng số, kiểu dữ liệu và một số thao tác đơn giản với chúng trong Julia"
@@ -20,6 +20,8 @@ keywords:
 - julia dojo
 - julialang
 - hướng dẫn
+aliases:
+- "/julia-dojo/vai-duong-co-ban"
 ---
 
 Chào mừng các bạn trở lại với Julia Dojo. Hôm nay chúng ta sẽ tìm hiểu về một thứ khá cơ bản và thiết yếu trong các ngôn ngữ lập trình, đó là biến số (ok, không hẳn là thiết yếu, nhưng nó làm cuộc sống dễ dàng hơn), đồng thời khám phá một số kiểu dữ liệu cơ bản và thao tác với chúng.
@@ -110,6 +112,7 @@ Một ít phép toán
 ```julia
 đối = -z
 cộng = n + x
+cộng += z
 trừ = n - z
 nhân = z * p
 chia = n / x # lấy n chia x

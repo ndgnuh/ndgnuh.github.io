@@ -27,3 +27,6 @@ keywords:
 
 Chào mừng các bạn quay trở lại với series Julia Dojo. Như mình đã giới thiệu, Julia là một ngôn ngữ lập trình hàm, và ngôn ngữ lập trình hàm thì... không thể thiếu hàm. Trong bài viết này, mình sẽ giới thiệu về cách viết hàm, khối lệnh; các loại hàm và một vài thao tác với hàm trong Julia.
 
+## Hàm, hàm và hàm
+
+

@@ -76,7 +76,7 @@ Với tài liệu chính thức và Julia Con, bạn có thể xem một cách m
 
 - [Tải và cài đặt Julia](cai-dat-julia)
 - [Hello, world](hello-world)
-- [Vài đường cơ bản](vai-duong-co-ban)
+- [Khai báo biến, kiểu dữ liệu, phép toán](/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia)
 
 ## Tạm kết
 
