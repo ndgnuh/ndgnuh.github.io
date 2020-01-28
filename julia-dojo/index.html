@@ -1219,7 +1219,9 @@
 </ul>
 <p>Với tài liệu chính thức và Julia Con, bạn có thể xem một cách miễn phí trên mạng nếu nếu không ngại tiếng Anh; còn cái nguồn thứ ba, bạn có thể xem nếu bạn quen mình ngoài đời thực và có khả năng ngoại cảm.</p>
 <p>Ý tưởng chính của Julia Dojo là: chúng ta sẽ train từng level một. Với mỗi level chúng ta sẽ đi sâu vào trong hệ thống của Julia hơn và thấy các thứ liên kết với nhau như thế nào. Trang này sẽ là nơi mình update các level của Dojo cùng với nội dung trong đó mỗi khi có bài mới.</p>
-<div class="notices info" >Có những bài viết mình đánh đấu là &ldquo;tùy chọn&rdquo; hoặc &ldquo;nên xem&rdquo;, bạn không nhất thiết phải đọc vì nó không phải một &ldquo;cơ bản&rdquo; của Julia. Mình có để intro ở đầu mỗi bài viết, nếu bạn thấy không hứng thú hoặc phần đó bạn đã biết rồi, bạn có thể skip.</div>
+<div class="notices info" ><p>Có những bài viết mình đánh đấu là &ldquo;tùy chọn&rdquo; hoặc &ldquo;nên xem&rdquo;, bạn không nhất thiết phải đọc vì nó không phải một &ldquo;cơ bản&rdquo; của Julia. Mình có để intro ở đầu mỗi bài viết, nếu bạn thấy không hứng thú hoặc phần đó bạn đã biết rồi, bạn có thể skip.</p>
+<p>Layout phía dưới có những phần dự định, có thể khi mình viết bài thực sự mình sẽ thêm bớt hoặc chuyển chỗ một vài thứ trong đó.</p>
+</div>
 
 <h3 id="level-1-nhập-môn">Level 1: nhập môn</h3>
 <p>Những thứ cơ bản nhất</p>
@@ -1229,10 +1231,12 @@
 <li><a href="/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia">Khai báo biến, kiểu dữ liệu, phép toán</a></li>
 <li><a href="/julia-dojo/re-nhanh-va-lap-trong-julia">Cấu trúc điều khiển</a></li>
 <li>Sắp tới: hàm</li>
+<li>Cộng đồng Julia</li>
 </ul>
 <h3 id="level-2-làm-chủ-vũ-khí-dự-định">Level 2: làm chủ vũ khí (dự định)</h3>
 <p>Công cụ lập trình mà bạn có thể sẽ thích.</p>
 <ul>
+<li>Làm việc với trình quản lí gói</li>
 <li>[nên đọc] Jupyter notebook</li>
 <li>[nên đọc] VSCode</li>
 <li>[tùy chọn] Atom: Juno / Julia pro</li>
@@ -1240,47 +1244,51 @@
 <li>Emacs (chưa chắc)</li>
 </ul>
 <h3 id="level-3-vài-đường-cơ-bản-dự-định">Level 3: vài đường cơ bản (dự định)</h3>
-<p>Giống Level 1, nhưng kĩ hơn một tí</p>
+<p>Giống Level 1, nhưng kĩ hơn một tí, và giới thiệu các gói mình nghĩ là hay.</p>
 <ul>
-<li>Mảng, ma trận</li>
+<li>Làm việc với file</li>
 <li>Tuple, từ điển, tập hợp</li>
 <li>Struct</li>
 <li>Chuỗi kí tự, biểu thức chính quy và biểu tượng</li>
-<li>Làm việc với file</li>
+<li>Đại số tuyến tính</li>
+<li>Mảng, ma trận</li>
+<li>Thống kê</li>
+<li>Vẽ đồ thị</li>
+<li>DataFrame</li>
+<li>Gọi các ngôn ngữ khác</li>
+<li>Đa luồng, đa tiến trình</li>
 <li>Xử lý ngoại lệ</li>
 <li>Broadcast</li>
 </ul>
-<h3 id="level-4-gặp-gỡ-đồng-môn-dự-định">Level 4: gặp gỡ đồng môn (dự định)</h3>
-<p>Hầu hết các bài trong phần này là tùy chọn, nhưng cũng có thể là phần hay ho nhất. Trong phần này mình sẽ nói thêm về cách làm việc với module. Vì có rất nhiều module mang tính chuyên ngành cao, mà trình độ của mình có giới hạn nên mình sẽ không cover hết được(mấy cái mô hình hóa sinh thì chịu rồi, mình dốt hóa).</p>
-<p>Do đó, nếu các bạn muốn hướng dẫn, giới thiệu một gói nào đó. Các bạn có thể:</p>
-<ol>
-<li>Gửi một đường dẫn cho mình tới blog của các bạn, mình sẽ gắn nó vào đây</li>
-<li>Gửi cho mình bài viết của các bạn kèm với một số thông về bạn, mình sẽ ghi credit đầy đủ cho các bạn, trừ khi bạn không muốn (nhưng mình vẫn sẽ ghi rõ bài viết do độc giả đóng góp)</li>
-<li>Dịch trang tài liệu chính thức của gói đó và đóng góp cho họ</li>
-<li>Không làm gì cả =))</li>
-</ol>
-<p>Nội dung dự kiến trong chương này</p>
-<ul>
-<li>Sử dụng trình quản lí gói</li>
-<li>Tạo gói riêng của bạn</li>
-<li>Unit test</li>
-<li>Viết tài liệu</li>
-<li>Một số module built in (nhiều bài viết)</li>
-<li>Một số module cộng đồng (nhiều bài viết)</li>
-</ul>
-<h3 id="level-5-thiên-biến-vạn-hóa-dự-định">Level 5: Thiên biến vạn hóa (dự định)</h3>
+<h3 id="level-4-thiên-biến-vạn-hóa-dự-định">Level 4: thiên biến vạn hóa (dự định)</h3>
 <p>Đa hình và những thứ liên quan tới nó</p>
 <ul>
 <li>Nói thêm về hệ thống kiểu dữ liệu</li>
 <li>Các loại giao diện</li>
 <li>Multiple dispatch</li>
 </ul>
-<h3 id="heading">???</h3>
+<h3 id="level-5-sáng-tạo-chiêu-thức-dự-định">Level 5: sáng tạo chiêu thức (dự định)</h3>
+<p>Sẽ có một ngày bạn phải tự viết chương trình của riêng mình</p>
+<ul>
+<li>Tạo một project</li>
+<li>Unit testing</li>
+<li>Viết tài liệu</li>
+</ul>
+<h3 id="ngoại-truyện">Ngoại truyện???</h3>
 <ul>
 <li>Một số kĩ thuật để code nhanh hơn</li>
 <li>Tính toán song song</li>
 <li>Meta programming</li>
+<li></li>
 </ul>
+<h3 id="về-các-module-gói">Về các module, gói</h3>
+<p>Vì có rất nhiều module của Julia mang tính chuyên ngành cao, mà trình độ của mình có giới hạn nên mình sẽ không cover hết được(mấy cái mô hình hóa sinh thì chịu rồi, mình dốt hóa). Do đó, nếu các bạn muốn hướng dẫn, giới thiệu một gói nào đó. Các bạn có thể:</p>
+<ol>
+<li>Gửi một đường dẫn cho mình tới blog của các bạn, mình sẽ gắn nó vào đây</li>
+<li>Gửi cho mình bài viết của các bạn kèm với một số thông về bạn, mình sẽ ghi credit đầy đủ cho các bạn, trừ khi bạn không muốn (nhưng mình vẫn sẽ ghi rõ bài viết do độc giả đóng góp)</li>
+<li>Dịch trang tài liệu chính thức của gói đó và đóng góp cho họ</li>
+<li>Không làm gì cả =))</li>
+</ol>
 <h2 id="tạm-kết">Tạm kết</h2>
 <div class="notices note" >Fun fact: &ldquo;Julia&rdquo; nghe rất giống tên của một phụ nữ trong nhiều nền văn hóa, do đó, dù quy chuẩn của cộng đồng cho rằng Julia không dựa trên tên của ai và ngôn ngữ này không được nhân hóa dưới bất kì hình thức nào, một cơ số người khi nói về ngôn ngữ này vẫn vô thức dùng đại từ &ldquo;cô ấy&rdquo;, trong đó có cả mình :))</div>
 
@@ -1782,9 +1790,10 @@ document.addEventListener('DOMContentLoaded', function () {
         <li><a href="#level-1-nhập-môn">Level 1: nhập môn</a></li>
         <li><a href="#level-2-làm-chủ-vũ-khí-dự-định">Level 2: làm chủ vũ khí (dự định)</a></li>
         <li><a href="#level-3-vài-đường-cơ-bản-dự-định">Level 3: vài đường cơ bản (dự định)</a></li>
-        <li><a href="#level-4-gặp-gỡ-đồng-môn-dự-định">Level 4: gặp gỡ đồng môn (dự định)</a></li>
-        <li><a href="#level-5-thiên-biến-vạn-hóa-dự-định">Level 5: Thiên biến vạn hóa (dự định)</a></li>
-        <li><a href="#heading">???</a></li>
+        <li><a href="#level-4-thiên-biến-vạn-hóa-dự-định">Level 4: thiên biến vạn hóa (dự định)</a></li>
+        <li><a href="#level-5-sáng-tạo-chiêu-thức-dự-định">Level 5: sáng tạo chiêu thức (dự định)</a></li>
+        <li><a href="#ngoại-truyện">Ngoại truyện???</a></li>
+        <li><a href="#về-các-module-gói">Về các module, gói</a></li>
       </ul>
     </li>
     <li><a href="#tạm-kết">Tạm kết</a></li>
