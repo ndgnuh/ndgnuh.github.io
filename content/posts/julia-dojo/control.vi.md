@@ -5,6 +5,7 @@ draft: false
 url: "/julia-dojo/re-nhanh-va-lap-trong-julia"
 summary: "Cấu trúc điều kiện và lặp trong Julia"
 description: "Cấu trúc điều kiện và lặp trong Julia"
+lastmod: 2020-01-30T00:05:21+07:00
 categories:
 - hướng dẫn
 - lập trình
@@ -26,13 +27,37 @@ keywords:
 
 Chào mừng các bạn trở lại với Julia Dojo. Chúng ta đã tìm hiểu về cách khai báo biến và làm việc với một số kiểu dữ liệu trong bài viết [biến số, kiểu dữ liệu, phép toán](/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia). Nhưng một chương trình chỉ có gán, gọi hàm và phép toán không thì không đủ, do đó, chúng ta ta có các cấu trúc điều khiển.
 
+{{< expand "Nội dung chỉnh sửa">}}
+29/01/2020:
+    - thêm phần lặp for, lặp với bước nhảy không phải 1
+    - thêm phần khối lệnh (vốn định đưa sang bài hàm, nhưng thôi)
+{{< /expand >}}
+
+## Khối lệnh
 Đến phần này, chúng ta sẽ phải biết cách nhận biết một khối lệnh trong Julia. Trong các ngôn ngữ như C hoặc Java, chúng ta dùng một cặp { } để đánh dấu các dòng lệnh. Ở đây chúng tôi không làm vậy.
 
 {{<notice error>}}
 Lỗi: meme được dùng đi dùng lại quá nhiều
 {{< /notice >}}
 
-Thay vào đó, *mỗi* từ khóa `end` sẽ được kết hợp với các từ khóa lặp, khai báo hàm, rẽ nhánh... ở đầu của một khối lệnh. Một cặp "từ khóa mở đầu - end" sẽ đánh dấu một khối lệnh trong Julia.
+Thay vào đó, *mỗi* từ khóa `end` sẽ được kết hợp với các từ khóa lặp, khai báo hàm, rẽ nhánh, v.v... ở đầu của một khối lệnh. Một cặp "từ khóa mở đầu - end" sẽ đánh dấu một khối lệnh trong Julia. Khối lệnh đơn giản nhất trong Julia, là... một khối lệnh theo đúng nghĩa. Nó bắt đầu với từ khóa `begin`, mình thường dùng khi phép gán của mình có một biểu thức rất dài, nên muốn chia nó thành các biến phụ cho đỡ rối mắt.
+```julia
+z = begin
+    local x = 1
+    local y = 2 # tưởng tượng nó rất dài hộ mình :)
+    x + y
+end
+```
+
+Khối lệnh sẽ trả ra giá trị ứng với biểu thức ứng cuối cùng của nó (tức `x + y` trong ví dụ trên). Ngoài ra chúng ta cũng có thể dùng từ khóa `return` để trả về một giá trị và kết thúc việc thực hiện khối lệnh. Hãy cẩn thận, khối `begin` có thể thay đổi biến toàn cục mà không báo trước, đó cũng là lí do mình dùng từ khóa `local` ở trên. 
+
+Nếu bạn không thích dùng `begin`, `end` chúng ta cũng có thể viết:
+```julia
+z = (local x = 1; local y = 2; x + y)
+z = (local x = 1;
+    local y = 2;
+    x + y)
+```
 
 ## Mình là người có điều kiện
 
@@ -107,12 +132,18 @@ end
 Nếu biến `x` chưa tồn tại, nó sẽ được khai báo. Nếu nó đã tồn tại, giá trị của nó sẽ được thay đổi. Việc thêm từ khóa `local` sẽ không có tác dụng gì. Nói cách khác, khối `if` có *cùng phạm vi biến (scope) với khối lệnh chứa nó* 
 
 ## Lặp, lặp, lặp, lặp, lặp, lặp, lặp, lặp, lặp, lặp, lặp, lặp, lặp...
+Thử tưởng tượng lập trình mà không có vòng lặp xem (thực ra các bạn có thể dùng đệ quy thay cho vòng lặp, nhưng mình thấy lặp vẵn dễ sống hơn!). Vòng lặp khác với hai khối trên (ngoài việc nó lặp) ở chỗ: nó không trả về giá trị gì cả, trừ khi bạn ném từ khóa `return` vào trong vòng lặp.
+
+Julia cung cấp cho chúng ta hai loại vòng lặp: `for` và `while`, hãy cùng tìm hiểu chúng.
 
 ### Vòng lặp for
-Thử tưởng tượng lập trình mà không có vòng lặp xem (thực ra các bạn có thể dùng đệ quy thay cho vòng lặp, nhưng mình thấy lặp vẵn dễ sống hơn!). Julia cung cấp cho chúng ta hai loại vòng lặp. Đầu tiên là vòng lặp `for` để lặp với số lần xác định trước:
+Đầu tiên chúng ta có vòng lặp `for` để lặp với số lần xác định trước:
 ```julia
 for i = 1:10
     println(i)
+end
+for i = 1:2:10 # lặp với bước nhảy 2, mặc định bước nhảy là 1
+    println(i) 
 end
 ```
 
@@ -181,7 +212,7 @@ end
 
 ### Vòng lặp while
 
-Cấu trúc lặp `while` thực ra mạnh mẽ hơn lặp `for` rất nhiều, nó có thể dùng để lặp với số lần lặp không xác định. Vòng lặp `while` không có nhiều thứ cần đặc biệt lưu ý giống như `for`, các bạn có thể dùng nó với cú pháp như sau:
+Cấu trúc lặp `while` thì mạnh mẽ hơn lặp `for` rất nhiều, nó có thể dùng để lặp với số lần lặp không xác định (hoặc có, nhưng đó là việc của `for`). Vòng lặp `while` không có nhiều thứ cần đặc biệt lưu ý giống như `for`, các bạn có thể dùng nó với cú pháp như sau:
 ```julia
 điều_kiện = true # biểu thức điều kiện
 while điều_kiện

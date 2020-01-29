@@ -84,8 +84,7 @@ Những thứ cơ bản nhất
 - [Hello, world](/julia-dojo/hello-world)
 - [Khai báo biến, kiểu dữ liệu, phép toán](/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia)
 - [Cấu trúc điều khiển](/julia-dojo/re-nhanh-va-lap-trong-julia)
-- Sắp tới: hàm
-- Cộng đồng Julia
+- [Hàm](/julia-dojo/ham-trong-julia)
 
 ### Level 2: làm chủ vũ khí (dự định)
 Công cụ lập trình mà bạn có thể sẽ thích. 
