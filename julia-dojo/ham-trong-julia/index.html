@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Julia Dojo: cấu trúc điều khiển – #Rant</title>
+    <title>Julia Dojo: hàm – #Rant</title>
     
 
 
@@ -892,23 +892,23 @@
 
 
     
-<meta name="description" content="Cấu trúc điều kiện và lặp trong Julia" />
-<meta name="keywords" content="julia,lập trình,học lập trình,ngôn ngữ julia,julia dojo,julialang,hướng dẫn,lập trình Julia,hướng dẫn lập trình Julia">
-<meta name="created" content="2020-01-28T12:04:27&#43;0700">
-<meta name="modified" content="2020-01-30T00:05:21&#43;0700">
+<meta name="description" content="Giới thiệu về hàm trong Julia" />
+<meta name="keywords" content="julia,lập trình,học lập trình,ngôn ngữ julia,julia dojo,julialang,hướng dẫn,hàm trong Julia,Julia function,ngôn ngữ">
+<meta name="created" content="2020-01-30T00:06:10&#43;0700">
+<meta name="modified" content="2020-01-30T00:06:10&#43;0700">
 
 
 <meta property="og:site_name" content="#Rant">
-<meta property="og:title" content="Julia Dojo: cấu trúc điều khiển">
-<meta property="og:url" content="https://ndgnuh.github.io/julia-dojo/re-nhanh-va-lap-trong-julia/">
+<meta property="og:title" content="Julia Dojo: hàm">
+<meta property="og:url" content="https://ndgnuh.github.io/julia-dojo/ham-trong-julia/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="Cấu trúc điều kiện và lặp trong Julia">
+<meta property="og:description" content="Giới thiệu về hàm trong Julia">
 
 
 <meta name="generator" content="Hugo 0.63.1" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<link rel="canonical" href="https://ndgnuh.github.io/julia-dojo/re-nhanh-va-lap-trong-julia/">
+<link rel="canonical" href="https://ndgnuh.github.io/julia-dojo/ham-trong-julia/">
 <link rel="manifest" href="/manifest.json">
 
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -920,11 +920,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Julia Dojo: cấu trúc điều khiển",
-    "datePublished": "2020-01-28T12:04:27+07:00",
-    "dateModified": "2020-01-30T00:05:21+07:00",
-    "url" : "https://ndgnuh.github.io/julia-dojo/re-nhanh-va-lap-trong-julia/",
-    "description": "Cấu trúc điều kiện và lặp trong Julia",
+    "headline": "Julia Dojo: hàm",
+    "datePublished": "2020-01-30T00:06:10+07:00",
+    "dateModified": "2020-01-30T00:06:10+07:00",
+    "url" : "https://ndgnuh.github.io/julia-dojo/ham-trong-julia/",
+    "description": "Giới thiệu về hàm trong Julia",
     "keywords": ["julia"],
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -1118,7 +1118,7 @@
   
   <li  class="is-active" >
     
-      <span>Julia Dojo: cấu trúc điều khiển</span>
+      <span>Julia Dojo: hàm</span>
     
   </li>
   
@@ -1127,11 +1127,11 @@
 </nav>
   
   <div class="single">
-    <h2 class="single__title">Julia Dojo: cấu trúc điều khiển</h2>
+    <h2 class="single__title">Julia Dojo: hàm</h2>
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="">📅&nbsp; </time>  &middot; <span class="single__info" title=""> ☕ 10  </span>
+  <time class="single__info" title="">📅&nbsp; </time>  &middot; <span class="single__info" title=""> ☕ 8  </span>
   <span class="single__info">
     
   </span>
@@ -1153,60 +1153,29 @@
     </div>    
     <article class="single__contents">
       
-      <p>Chào mừng các bạn trở lại với Julia Dojo. Chúng ta đã tìm hiểu về cách khai báo biến và làm việc với một số kiểu dữ liệu trong bài viết <a href="/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia">biến số, kiểu dữ liệu, phép toán</a>. Nhưng một chương trình chỉ có gán, gọi hàm và phép toán không thì không đủ, do đó, chúng ta ta có các cấu trúc điều khiển.</p>
-<div class="expand">
-  <button type="button" class="expand__button" aria-label="Expand Button">
-    <span class="expand-icon expand-icon__right">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/></svg>
-    </span>
-    Nội dung chỉnh sửa
-  </button>
-  <div class="expand__content">
-    29/01/2020:<br />
-- thêm phần lặp for, lặp với bước nhảy không phải 1<br />
-- thêm phần khối lệnh (vốn định đưa sang bài hàm, nhưng thôi)
-  </div>
-</div>
-<h2 id="khối-lệnh">Khối lệnh</h2>
-<p>Đến phần này, chúng ta sẽ phải biết cách nhận biết một khối lệnh trong Julia. Trong các ngôn ngữ như C hoặc Java, chúng ta dùng một cặp { } để đánh dấu các dòng lệnh. Ở đây chúng tôi không làm vậy.</p>
-<div class="notices error" >Lỗi: meme được dùng đi dùng lại quá nhiều</div>
+      <p>Chào mừng các mọi người quay trở lại với series Julia Dojo. Như mình đã giới thiệu, Julia là một ngôn ngữ lập trình hàm, và ngôn ngữ lập trình hàm thì&hellip; không thể thiếu hàm. Thậm chí, hàm là thực thể &ldquo;hạng nhất&rdquo; của Julia. Trong bài viết này, mình sẽ giới thiệu về cú pháp viết và sử dụng các hàm, cũng như một số trường hợp hay gặp.</p>
+<div class="notices info" >Bài viết chủ yếu giới thiệu các cú pháp để làm việc với hàm nên không nói quá chi tiết. Phần đó được dành cho một bài viết khác</div>
 
-<p>Thay vào đó, <em>mỗi</em> từ khóa <code>end</code> sẽ được kết hợp với các từ khóa lặp, khai báo hàm, rẽ nhánh, v.v&hellip; ở đầu của một khối lệnh. Một cặp &ldquo;từ khóa mở đầu - end&rdquo; sẽ đánh dấu một khối lệnh trong Julia. Khối lệnh đơn giản nhất trong Julia, là&hellip; một khối lệnh theo đúng nghĩa. Nó bắt đầu với từ khóa <code>begin</code>, mình thường dùng khi phép gán của mình có một biểu thức rất dài, nên muốn chia nó thành các biến phụ cho đỡ rối mắt.</p>
+<p>Như mình nói ở phần cấu trúc điều khiển, nếu cấu trúc điều khiển của bạn quá phức tạp, bạn có thể sẽ phải viết một hàm. Trong bài viết này mình sẽ nói về việc khai báo, phạm vi biến và gọi hàm.</p>
+<h2 id="khai-báo-một-hàm">Khai báo một hàm</h2>
+<h3 id="ba-kiểu-khai-báo">Ba kiểu khai báo</h3>
+<p>Việc khai báo một hàm trong Julia có thể được làm theo nhiều cách. Cách 1 là dùng khối <code>function</code>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
-</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">z</span><span class="o"></span> <span class="o">=</span> <span class="k">begin</span>
-    <span class="kd">local</span> <span class="n">x</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="kd">local</span> <span class="n">y</span><span class="o"></span> <span class="o">=</span> <span class="mi">2</span> <span class="c"># tưởng tượng nó rất dài hộ mình :)</span>
-    <span class="n">x</span><span class="o"></span> <span class="o">+</span> <span class="n">y</span><span class="o"></span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">function</span> <span class="n">tên_hàm</span><span class="o"></span><span class="p">(</span><span class="n">tham_số</span><span class="o"></span><span class="p">)</span>
+    <span class="c"># thân hàm</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">giá</span><span class="o"></span> <span class="n">trị</span><span class="o"></span> <span class="n">trả</span><span class="o"></span> <span class="n">về</span><span class="o"></span><span class="p">)</span>
 <span class="k">end</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Khối lệnh sẽ trả ra giá trị ứng với biểu thức ứng cuối cùng của nó (tức <code>x + y</code> trong ví dụ trên). Ngoài ra chúng ta cũng có thể dùng từ khóa <code>return</code> để trả về một giá trị và kết thúc việc thực hiện khối lệnh. Hãy cẩn thận, khối <code>begin</code> có thể thay đổi biến toàn cục mà không báo trước, đó cũng là lí do mình dùng từ khóa <code>local</code> ở trên.</p>
-<p>Nếu bạn không thích dùng <code>begin</code>, <code>end</code> chúng ta cũng có thể viết:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">z</span><span class="o"></span> <span class="o">=</span> <span class="p">(</span><span class="kd">local</span> <span class="n">x</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="kd">local</span> <span class="n">y</span><span class="o"></span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">x</span><span class="o"></span> <span class="o">+</span> <span class="n">y</span><span class="o"></span><span class="p">)</span>
-<span class="n">z</span><span class="o"></span> <span class="o">=</span> <span class="p">(</span><span class="kd">local</span> <span class="n">x</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="kd">local</span> <span class="n">y</span><span class="o"></span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-    <span class="n">x</span><span class="o"></span> <span class="o">+</span> <span class="n">y</span><span class="o"></span><span class="p">)</span>
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="mình-là-người-có-điều-kiện">Mình là người có điều kiện</h2>
-<h3 id="if">If&hellip;</h3>
-<p>Hãy thử tượng tượng phải lập trình nhưng không được dùng các cấu trúc rẽ nhánh xem. Bạn sẽ làm ra một chương trình mà, hoặc không thể sử dụng được, hoặc chứa một đống các loại đa hình để thay cho cấu trúc rẽ nhánh (cũng không lí tưởng lắm!). Vậy nên, tội gì không sử dụng if - else cho cuộc sống dễ dàng.</p>
+</div><p>Đoạn code trên là ví dụ đơn giản nhất của một hàm. Từ khóa <code>return</code> không thực sự cần thiết, nếu không có <code>return</code> hàm trên sẽ trả về giá trị của biểu thức cuối cùng được chạy (giống khối <code>if</code>).</p>
+<p>Vì Julia là ngôn ngữ động nên hàm trên sẽ chạy với mọi kiểu dữ liệu. Tuy vậy, chúng ta vẫn có thể kiểm soát kiểu dữ liệu của tham số được truyền vào, cũng như kiểu dữ liệu mà hàm trả về.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1214,95 +1183,65 @@
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">x</span><span class="o"></span> <span class="o">=</span> <span class="n">rand</span><span class="o"></span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">:</span><span class="mi">1</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">x</span><span class="o"></span> <span class="o">=</span><span class="o">=</span> <span class="mi">1</span>
-    <span class="n">println</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span>
-<span class="k">elseif</span> <span class="n">x</span><span class="o"></span> <span class="o">=</span><span class="o">=</span> <span class="mi">0</span>
-    <span class="n">println</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-<span class="k">else</span>
-    <span class="n">println</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="c"># đây chỉ là ví dụ</span>
+<span class="c"># đừng viết hàm kiểu này</span>
+<span class="k">function</span> <span class="n">cộng_một</span><span class="o"></span><span class="p">(</span><span class="n">n</span><span class="o"></span><span class="o">:</span><span class="o">:</span><span class="kt">Int</span><span class="p">)</span><span class="o">:</span><span class="o">:</span><span class="kt">Int</span>
+    <span class="n">n</span><span class="o"></span> <span class="o">+</span> <span class="mi">1</span> <span class="c"># trả về (n + 1) vì đây là biểu thức cuối</span>
 <span class="k">end</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Chúc mừng, bạn đã viết thành công chương trình in ra số 1 (dùng if - else - end). Trong cấu trúc rẽ nhánh, các từ khóa <code>elseif</code>, <code>else</code> là không bắt buộc, nếu bạn không có nhiều trường hợp thì không phải viết chúng.</p>
-<p>Nếu các bạn đang tự hỏi Julia có cấu trúc <code>switch</code> hay không, mình trả lời luôn là không, lí do là&hellip; không cần thiết. Thực chất cấu trúc <code>switch</code> có thể được thay thế bằng <code>if</code> và một đống <code>elseif</code>, mỗi điều kiện chính là một <code>case</code>, và <code>else</code> chính là <code>default</code>.</p>
-<h3 id="toán-tử-ba-ngôi">Toán tử ba ngôi</h3>
-<p>Trong Julia, mọi cấu trúc <code>if</code> đều trả về một giá trị nào đó. Bạn hoàn toàn có thể viết như sau:</p>
+</div><p>Vì chúng ta chưa tìm hiểu sâu về kiểu dữ liệu nên <em>tạm thời</em> hãy viết những hàm mà chạy với tất cả các kiểu (tức là không định kiểu). Những hàm như vậy được gọi là &ldquo;generic&rdquo; (tổng quát).</p>
+<p>Với những hàm ngắn gọn như vậy, chúng ta có thể dùng hai cú pháp sau:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="nd">@show</span><span class="o"></span> <span class="n">a</span><span class="o"></span> <span class="o">=</span> <span class="n">rand</span><span class="o"></span><span class="p">(</span><span class="mi">0</span><span class="o">:</span><span class="mi">1</span><span class="p">)</span> <span class="c"># a nhận giá trị 0 hoặc 1, ngẫu nhiên</span>
-<span class="n">b</span><span class="o"></span> <span class="o">=</span> <span class="k">if</span> <span class="n">a</span><span class="o"></span> <span class="o">=</span><span class="o">=</span> <span class="mi">0</span>
-    <span class="mi">0</span>
-<span class="k">else</span>
-    <span class="mi">1</span>
-<span class="k">end</span><span class="p">;</span> <span class="n">println</span><span class="o"></span><span class="p">(</span><span class="s">&#34;</span><span class="s">b</span><span class="s"> </span><span class="s">=</span><span class="s"> </span><span class="si">$b</span><span class="s">&#34;</span><span class="p">)</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">cộng_một</span><span class="o"></span><span class="p">(</span><span class="n">n</span><span class="o"></span><span class="p">)</span> <span class="o">=</span> <span class="n">n</span><span class="o"></span> <span class="o">+</span> <span class="mi">1</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Đoạn chương trình trên&hellip; in ra số 0 và gắn <code>b</code> bằng <code>a</code> rồi in ra <code>b</code>. Giá trị của if trả về chính là câu lệnh cuối cùng mà nó chạy. nhưng nếu thích bạn có thể viết từ khóa <code>return</code> để &ldquo;trang trí&rdquo;.</p>
+</div><p>Mình nghĩ họ gọi kiểu hàm trên là hàm &ldquo;inline&rdquo;. Ngoài việc nhìn trông rất thích mắt (nhìn giống với hàm toán học), nếu được cài đặt đúng cách, khi chúng được gọi, thân hàm sẽ được <em>thay thế trực tiếp vào phần code đang gọi nó</em> (tức là code chạy nhanh hơn, không tốn thêm stack).</p>
+<p>Trong Julia, chúng ta có thể khai báo các hàm mà không cần đặt tên cho chúng, chỉ cần bỏ phần tên khỏi hàm:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">b</span><span class="o"></span> <span class="o">=</span> <span class="k">if</span> <span class="n">a</span><span class="o"></span> <span class="o">=</span><span class="o">=</span> <span class="mi">0</span>
-    <span class="k">return</span> <span class="mi">0</span>
-<span class="k">else</span>
-    <span class="k">return</span> <span class="mi">1</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">function</span><span class="p">(</span><span class="n">n</span><span class="o"></span><span class="p">)</span>
+    <span class="n">n</span><span class="o"></span> <span class="o">+</span> <span class="mi">1</span>
 <span class="k">end</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Nhưng mà thực sự, đừng làm như vậy :) Chúng ta có toán tử ba ngôi cho những việc như thế này.</p>
+</div><p>Những hàm kiểu này thường được dùng làm tham số của một hàm khác. Do dó Julia cung cấp cho chúng ta một cách khai báo tiện gợi hơn:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">a</span><span class="o"></span> <span class="o">=</span> <span class="n">rand</span><span class="o"></span><span class="p">(</span><span class="mi">0</span><span class="o">:</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">b</span><span class="o"></span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span><span class="o"></span> <span class="o">=</span><span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">?</span> <span class="mi">1</span> <span class="o">:</span> <span class="mi">0</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">n</span><span class="o"></span> <span class="o">-</span><span class="o">&gt;</span> <span class="n">n</span><span class="o"></span> <span class="o">+</span> <span class="mi">1</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Vẫn là chương trình random <code>a</code> rồi gán <code>b</code> bằng <code>a</code>, nhưng gọn hơn rất nhiều (<em>mình không nói là cách gọn nhất&hellip;</em>). Dấu ngoặc bao quanh điều kiện là không cần thiết, nhưng mình viết vậy vì nó dễ nhìn.</p>
-<p>Nếu dùng <code>@show</code> lên toán tử ba ngôi, chúng ta sẽ thấy nó chỉ là một khối if được đơn giản hóa.</p>
+</div><p>Đương nhiên, nếu muốn chúng ta vẫn có thể gắn tên cho chúng, vì hàm trong Julia có thể được coi là một biến:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">julia</span><span class="o"></span><span class="o">&gt;</span> <span class="nd">@show</span><span class="o"></span> <span class="p">(</span><span class="n">x</span><span class="o"></span> <span class="o">=</span><span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">?</span> <span class="mi">1</span> <span class="o">:</span> <span class="mi">0</span>
-<span class="k">if</span> <span class="n">x</span><span class="o"></span> <span class="o">=</span><span class="o">=</span> <span class="mi">1</span>
-    <span class="mi">1</span>
-<span class="k">else</span>
-    <span class="mi">0</span>
-<span class="k">end</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="mi">1</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">cộng_một</span><span class="o"></span> <span class="o">=</span> <span class="n">n</span><span class="o"></span> <span class="o">-</span><span class="o">&gt;</span> <span class="n">n</span><span class="o"></span> <span class="o">+</span> <span class="mi">1</span>
+<span class="n">cộng_một</span><span class="o"></span> <span class="o">=</span> <span class="k">function</span><span class="p">(</span><span class="n">n</span><span class="o"></span><span class="p">)</span> 
+     <span class="n">n</span><span class="o"></span> <span class="o">+</span> <span class="mi">1</span>
+<span class="k">end</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="phạm-vi-của-biến-trong-if">Phạm vi của biến trong if</h3>
-<p>Những biến được khai báo trong khối <code>if</code> sẽ tồn tại ở cả bên ngoài khối. Ví dụ trong đoạn code dưới đây:</p>
+</div><p>Tuy nhiên, cú pháp với <code>-&gt;</code> thường được sử dụng cho hàm vô danh, những hàm bạn chỉ dùng một lần rồi vứt, không nên dùng để khai báo một hàm có tên như vậy.</p>
+<p>Chúng ta cũng có thể khai báo một hàm là toàn cục hay nội bộ với từ khóa <code>local</code> hoặc <code>global</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1313,20 +1252,46 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">if</span> <span class="n">rand</span><span class="o"></span><span class="p">(</span><span class="kt">Bool</span><span class="p">)</span>
-    <span class="n">x</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span>
-<span class="k">else</span>
-    <span class="n">x</span><span class="o"></span> <span class="o">=</span> <span class="mi">10</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="kd">global</span> <span class="k">function</span> <span class="n">our_func</span><span class="o"></span><span class="p">(</span><span class="p">)</span>
+    <span class="c"># thân hàm</span>
 <span class="k">end</span>
-<span class="nd">@show</span><span class="o"></span> <span class="n">x</span><span class="o"></span>
+<span class="kd">local</span> <span class="k">function</span> <span class="n">our_func</span><span class="o"></span><span class="p">(</span><span class="p">)</span>
+    <span class="c"># thân hàm</span>
+<span class="k">end</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Nếu biến <code>x</code> chưa tồn tại, nó sẽ được khai báo. Nếu nó đã tồn tại, giá trị của nó sẽ được thay đổi. Việc thêm từ khóa <code>local</code> sẽ không có tác dụng gì. Nói cách khác, khối <code>if</code> có <em>cùng phạm vi biến (scope) với khối lệnh chứa nó</em></p>
-<h2 id="lặp-lặp-lặp-lặp-lặp-lặp-lặp-lặp-lặp-lặp-lặp-lặp-lặp">Lặp, lặp, lặp, lặp, lặp, lặp, lặp, lặp, lặp, lặp, lặp, lặp, lặp&hellip;</h2>
-<p>Thử tưởng tượng lập trình mà không có vòng lặp xem (thực ra các bạn có thể dùng đệ quy thay cho vòng lặp, nhưng mình thấy lặp vẵn dễ sống hơn!). Vòng lặp khác với hai khối trên (ngoài việc nó lặp) ở chỗ: nó không trả về giá trị gì cả, trừ khi bạn ném từ khóa <code>return</code> vào trong vòng lặp.</p>
-<p>Julia cung cấp cho chúng ta hai loại vòng lặp: <code>for</code> và <code>while</code>, hãy cùng tìm hiểu chúng.</p>
-<h3 id="vòng-lặp-for">Vòng lặp for</h3>
-<p>Đầu tiên chúng ta có vòng lặp <code>for</code> để lặp với số lần xác định trước:</p>
+</div><h3 id="tham-số-mặc-định">Tham số mặc định</h3>
+<p>Trong Julia bạn có thể gắn giá trị mặc định cho tham số của hàm:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">cộng</span><span class="o"></span><span class="p">(</span><span class="n">n</span><span class="o"></span><span class="p">,</span> <span class="n">i</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="n">n</span><span class="o"></span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Khi gọi hàm trên, nếu bạn không truyền tham số <code>i</code> thì <code>i</code> sẽ nhận giá trị mặc định là <code>1</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">cộng</span><span class="o"></span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="c"># trả về 11</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="tham-số-có-tên">Tham số có tên</h3>
+<p>Ngoài những tham số được sắp theo thứ tự như trên, hàm trong Julia còn hỗ trợ tham số có tên (keyword arguments). Mặc dù không cần thiết, tham số có tên được ngăn cách với tham số &ldquo;bình thường&rdquo; bằng dấu <code>;</code> (cả khi gọi và khai báo hàm).</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">cộng</span><span class="o"></span><span class="p">(</span><span class="n">n</span><span class="o"></span><span class="p">;</span> <span class="n">m</span><span class="o"></span><span class="p">)</span> <span class="o">=</span> <span class="n">n</span><span class="o"></span> <span class="o">+</span> <span class="n">m</span><span class="o"></span>
+<span class="n">cộng</span><span class="o"></span><span class="p">(</span><span class="mi">10</span><span class="p">;</span> <span class="n">m</span><span class="o"></span> <span class="o">=</span> <span class="mi">20</span><span class="p">)</span> <span class="c"># trả về 20</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Tham số có tên cũng có thể nhận giá trị mặc định. Khi gọi, thứ tự của tham số này không quan trọng, chỉ cần chúng ta định đúng tên:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1334,18 +1299,17 @@
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">for</span> <span class="n">i</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span><span class="o">:</span><span class="mi">10</span>
-    <span class="n">println</span><span class="o"></span><span class="p">(</span><span class="n">i</span><span class="o"></span><span class="p">)</span>
-<span class="k">end</span>
-<span class="k">for</span> <span class="n">i</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span><span class="o">:</span><span class="mi">2</span><span class="o">:</span><span class="mi">10</span> <span class="c"># lặp với bước nhảy 2, mặc định bước nhảy là 1</span>
-    <span class="n">println</span><span class="o"></span><span class="p">(</span><span class="n">i</span><span class="o"></span><span class="p">)</span> 
-<span class="k">end</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">cộng</span><span class="o"></span><span class="p">(</span><span class="n">n</span><span class="o"></span><span class="p">;</span> <span class="n">m</span><span class="o"></span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">p</span><span class="o"></span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span> <span class="o">=</span> <span class="n">n</span><span class="o"></span> <span class="o">+</span> <span class="n">m</span><span class="o"></span> <span class="o">+</span> <span class="n">p</span><span class="o"></span>
+<span class="n">cộng</span><span class="o"></span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="c"># trả về 15</span>
+<span class="n">cộng</span><span class="o"></span><span class="p">(</span><span class="mi">10</span><span class="p">;</span> <span class="n">p</span><span class="o"></span> <span class="o">=</span> <span class="mi">8</span><span class="p">)</span> <span class="c"># trả về 20</span>
+<span class="n">cộng</span><span class="o"></span><span class="p">(</span><span class="mi">10</span><span class="p">;</span> <span class="n">z</span><span class="o"></span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span> <span class="c"># lỗi, không có z</span>
+<span class="n">cộng</span><span class="o"></span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">m</span><span class="o"></span> <span class="o">=</span> <span class="mi">17</span><span class="p">)</span> <span class="c"># dùng dấu `,` cũng không sao</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Bạn cũng có thể dùng lặp với từng phần tử của một tập hợp hay một mảng nào đó.</p>
+</div><h3 id="tùy-lượng-tham-số">Tùy lượng tham số</h3>
+<p>Cuối cùng, chúng ta có một kiểu tham số đặc biệt. Mình nghĩ nó sẽ dễ hiểu hơn với một ví dụ:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1354,47 +1318,24 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">arr</span><span class="o"></span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="k">for</span> <span class="n">x</span><span class="o"></span> <span class="kp">in</span> <span class="n">arr</span><span class="o"></span>
-    <span class="n">println</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span>
-<span class="k">end</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">trung_bình</span><span class="o"></span><span class="p">(</span><span class="n">args</span><span class="o"></span><span class="o">.</span><span class="o">.</span><span class="o">.</span><span class="p">)</span> <span class="o">=</span> <span class="n">sum</span><span class="o"></span><span class="p">(</span><span class="n">args</span><span class="o"></span><span class="p">)</span> <span class="o">/</span> <span class="n">length</span><span class="o"></span><span class="p">(</span><span class="n">args</span><span class="o"></span><span class="p">)</span>
+<span class="n">trung_bình</span><span class="o"></span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> <span class="c"># trả về 4</span>
+<span class="n">trung_bình</span><span class="o"></span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="c"># 1.5</span>
+<span class="n">trung_bình</span><span class="o"></span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c"># 1</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Chúng ta cũng có thể lặp qua một xâu kí tự:</p>
+</div><p>Hàm <code>sum</code> có thể dùng để tính tổng của một mảng, còn <code>length</code> dùng để đếm số phần tử. Như vậy, khi khai báo hàm như trên, những tham số được &ldquo;nhét&rdquo; vào một mảng và cũng ta thao tác trực tiếp trên mảng đó. Điều đó có nghĩa chúng ta có thể truyền một cách tùy, bao nhiêu tham số cũng được.</p>
+<h2 id="gọi-hàm">Gọi hàm</h2>
+<p>Gọi hàm trong Julia rất đơn giản, chúng ta thậm chí đã gọi một số hàm trước đây rồi. Hàm được gọi bằng cú pháp tên_hàm(tham_số; tham_số_có_khóa)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">s</span><span class="o"></span> <span class="o">=</span> <span class="s">&#34;</span><span class="s">x</span><span class="s">i</span><span class="s">n</span><span class="s"> </span><span class="s">c</span><span class="s">h</span><span class="s">à</span><span class="s">o</span><span class="s">&#34;</span>
-<span class="k">for</span> <span class="n">i</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span><span class="o">:</span><span class="n">length</span><span class="o"></span><span class="p">(</span><span class="n">s</span><span class="o"></span><span class="p">)</span>
-    <span class="n">println</span><span class="o"></span><span class="p">(</span><span class="n">s</span><span class="o"></span><span class="p">[</span><span class="n">i</span><span class="o"></span><span class="p">]</span><span class="p">)</span>
-<span class="k">end</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">sort</span><span class="o"></span><span class="p">(</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span><span class="p">;</span> <span class="n">rev</span><span class="o"></span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="c"># sắp xếp giảm dần</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Khi chạy đoạn code trên, chúng ta sẽ thu được&hellip; lỗi.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">ERROR: StringIndexError<span class="o">(</span><span class="s2">&#34;xin chào&#34;</span>, 8<span class="o">)</span>
-Stacktrace:
- <span class="o">[</span>1<span class="o">]</span> string_index_err<span class="o">(</span>::String, ::Int64<span class="o">)</span> at ./strings/string.jl:12
- <span class="o">[</span>2<span class="o">]</span> getindex_continued<span class="o">(</span>::String, ::Int64, ::UInt32<span class="o">)</span> at ./strings/string.jl:220
- <span class="o">[</span>3<span class="o">]</span> getindex<span class="o">(</span>::String, ::Int64<span class="o">)</span> at ./strings/string.jl:213
- <span class="o">[</span>4<span class="o">]</span> top-level scope at ./REPL<span class="o">[</span>4<span class="o">]</span>:2
-</code></pre></td></tr></table>
-</div>
-</div><p>Điều này xảy ra vì Julia hỗ trợ unicode, do đó không phải string nào cũng là ascii (bạn có thể kiểm tra bằng hàm <code>isascii</code>). Những kí tự không nằm trong bảng ascii sẽ chiếm một số lượng index không xác định. Vậy muốn lặp qua một xâu kí tự an toàn thì làm như thế nào?</p>
+</div><p>Chúng ta cũng có thể gọi hàm một cách lồng nhau:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1402,26 +1343,12 @@ Stacktrace:
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">for</span> <span class="n">i</span><span class="o"></span> <span class="kp">in</span> <span class="n">eachindex</span><span class="o"></span><span class="p">(</span><span class="n">s</span><span class="o"></span><span class="p">)</span>
-    <span class="n">println</span><span class="o"></span><span class="p">(</span><span class="n">s</span><span class="o"></span><span class="p">[</span><span class="n">i</span><span class="o"></span><span class="p">]</span><span class="p">)</span>
-<span class="k">end</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="c"># tạo random mảng 4 phân tử trong khoảng [-9, 9]</span>
+<span class="c"># sau đó sắp xếp giảm dần</span>
+<span class="n">sort</span><span class="o"></span><span class="p">(</span><span class="n">rand</span><span class="o"></span><span class="p">(</span><span class="o">-</span><span class="mi">9</span><span class="o">:</span><span class="mi">9</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span><span class="p">;</span> <span class="n">rev</span><span class="o"></span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Hàm <code>eachindex</code> sẽ sinh ra một bộ chỉ số của xâu <code>s</code> và bạn có thể lặp qua từng kí tự của <code>s</code> một cách an toàn. Hơn nữa, <code>eachindex</code> nhìn đẹp hơn <code>1:length(s)</code>. Nếu bạn không cần chỉ số mà chỉ cần kí tự, bạn có thể lặp như sau:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">for</span> <span class="n">c</span><span class="o"></span> <span class="kp">in</span> <span class="n">s</span><span class="o"></span>
-    <span class="n">println</span><span class="o"></span><span class="p">(</span><span class="n">c</span><span class="o"></span><span class="p">)</span>
-<span class="k">end</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Không chỉ với string, <code>eachindex</code> hoạt động với <em>tất cả các kiễu dữ liệu có thể lặp được</em> (nói sau nhé), bao gồm cả mảng, ma trận. Nếu mình không nhầm, dùng nó cũng có lợi về hiệu năng hơn vì Julia sẽ không phải kiểm tra việc đánh chỉ số có đúng hay không.</p>
-<p>Bạn có thể dùng nhiều vòng lặp lồng nhau như các ngôn ngữ lập trình khác:</p>
+</div><p>Tuy nhiên, với những hàm gọi lồng nhau mà không cần tham số nào khác, kiểu như sau:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1429,53 +1356,82 @@ Stacktrace:
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">for</span> <span class="n">i</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span><span class="o">:</span><span class="mi">2</span>
-    <span class="k">for</span> <span class="n">j</span><span class="o"></span> <span class="o">=</span> <span class="mi">3</span><span class="o">:</span><span class="mi">4</span>
-        <span class="k">for</span> <span class="n">k</span><span class="o"></span> <span class="o">=</span> <span class="mi">5</span><span class="o">:</span><span class="mi">6</span>
-            <span class="nd">@show</span><span class="o"></span> <span class="p">(</span><span class="n">i</span><span class="o"></span><span class="p">,</span> <span class="n">j</span><span class="o"></span><span class="p">,</span> <span class="n">k</span><span class="o"></span><span class="p">)</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="c"># khai báo</span>
+<span class="n">f</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="o">=</span> <span class="n">x</span><span class="o"></span> <span class="o">+</span> <span class="mi">1</span>
+<span class="n">g</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="o">=</span> <span class="mi">42</span><span class="n">x</span><span class="o"></span>
+<span class="c"># gọi hàm</span>
+<span class="n">g</span><span class="o"></span><span class="p">(</span><span class="n">f</span><span class="o"></span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Julia cung cấp cho chúng ta toán tử rất tiện lợi để tổ hợp hàm:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="c"># cách gõ: \circ&lt;tab&gt;</span>
+<span class="p">(</span><span class="n">g</span><span class="o"></span> <span class="n">∘</span><span class="o"></span> <span class="n">f</span><span class="o"></span><span class="p">)</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c"># tương dương với g(f(1))</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Sự tiện lợi chưa dừng ở đây. Bạn có thể áp dụng một hàm lên một tập hợp giống như lúc làm với toán tử, bằng cách thêm dấu <code>.</code> ở giữa tên hàm và tham số truyền vào:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">M</span><span class="o"></span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">;</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">;</span> <span class="mi">4</span> <span class="mi">5</span> <span class="mi">6</span><span class="p">]</span>
+<span class="n">f</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="o">=</span> <span class="n">x</span><span class="o"></span><span class="o">^</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span>
+<span class="n">f</span><span class="o"></span><span class="o">.</span><span class="p">(</span><span class="n">M</span><span class="o"></span><span class="p">)</span> <span class="c"># lấy mọi phần tử trong ma trận M, mũ 2 rồi cộng 3</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="phạm-vi-biến-trong-hàm-julia">Phạm vi biến trong hàm Julia</h2>
+<p>Giống với các vòng lặp, mọi biến trong hàm của Julia đều mặc định có phạm vi là nội bộ. Hàm có thể thay đổi khai báo hoặc thay đổi biến toàn cục, nhưng phải dùng từ khóa <code>global</code>.</p>
+<h3 id="hàm-lồng-trong-hàm">Hàm lồng trong hàm</h3>
+<p>Như mình nói phần <a href="#khai-b%C3%A1o-h%C3%A0m">khai báo hàm</a>, chúng ta có thể thay đổi phạm vi của hàm, vậy các hàm <code>local</code> dùng ở đâu? Đương nhiên là dùng trong các khối khác, dễ hình dung nhất là &ldquo;hàm lồng trong hàm&rdquo;.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">function</span> <span class="n">hàm_cha</span><span class="o"></span><span class="p">(</span><span class="n">n</span><span class="o"></span><span class="p">)</span>
+    <span class="c"># tính toán</span>
+    <span class="k">function</span> <span class="n">hàm_con</span><span class="o"></span><span class="p">(</span><span class="n">tham_số_con</span><span class="o"></span><span class="p">)</span>
+        <span class="c"># thân hàm con</span>
+    <span class="k">end</span>
+    <span class="c"># tính toán</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">điều_kiện</span><span class="o"></span><span class="p">)</span>
+        <span class="c"># tính toán</span>
+        <span class="k">for</span> <span class="n">i</span><span class="o"></span> <span class="kp">in</span> <span class="n">một_cái_gì_đó</span><span class="o"></span>
+            <span class="c"># tính toán dùng hàm con vì logic ở đây khá dài</span>
+            <span class="n">hàm_con</span><span class="o"></span><span class="p">(</span><span class="n">tham_số_con</span><span class="o"></span><span class="p">)</span>
+            <span class="c"># tính toán</span>
         <span class="k">end</span>
+        <span class="c"># tính toán</span>
     <span class="k">end</span>
 <span class="k">end</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Trong trường hợp vòng lặp bên ngoài không có nhiệm vụ gì ngoài gọi vòng lặp con như trên, code của chúng ta sẽ trông như cái tam giác trống, nhìn hơi tù. Julia cung cấp cho chúng ta cách chồng các vòng lặp lên nhau.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">for</span> <span class="n">i</span><span class="o"></span><span class="o">=</span><span class="mi">1</span><span class="o">:</span><span class="mi">2</span><span class="p">,</span> <span class="n">j</span><span class="o"></span><span class="o">=</span><span class="mi">3</span><span class="o">:</span><span class="mi">4</span><span class="p">,</span> <span class="n">k</span><span class="o"></span><span class="o">=</span><span class="mi">5</span><span class="o">:</span><span class="mi">6</span>
-    <span class="nd">@show</span><span class="o"></span> <span class="p">(</span><span class="n">i</span><span class="o"></span><span class="p">,</span> <span class="n">j</span><span class="o"></span><span class="p">,</span> <span class="n">k</span><span class="o"></span><span class="p">)</span>
-<span class="k">end</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Đoạn code này sẽ in ra cùng một kết quả như trên, nhưng lại gọn gàng và dễ nhìn hơn. Dù sao, nếu bạn phải dùng tới ba bốn vòng lặp, logic trong code của bạn có thể đã trở nên phức tạp và đó là dấu hiệu của việc bạn nên viết <em>hàm</em>.</p>
-<h3 id="vòng-lặp-while">Vòng lặp while</h3>
-<p>Cấu trúc lặp <code>while</code> thì mạnh mẽ hơn lặp <code>for</code> rất nhiều, nó có thể dùng để lặp với số lần lặp không xác định (hoặc có, nhưng đó là việc của <code>for</code>). Vòng lặp <code>while</code> không có nhiều thứ cần đặc biệt lưu ý giống như <code>for</code>, các bạn có thể dùng nó với cú pháp như sau:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">điều_kiện</span><span class="o"></span> <span class="o">=</span> <span class="kc">true</span> <span class="c"># biểu thức điều kiện</span>
-<span class="k">while</span> <span class="n">điều_kiện</span><span class="o"></span>
-    <span class="c"># làm gì đó</span>
-    <span class="c"># với dữ liệu</span>
-<span class="k">end</span>
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="phạm-vi-biến-của-cấu-trúc-lặp">Phạm vi biến của cấu trúc lặp</h3>
-<p>Vòng lặp trong julia có phạm vi biến riêng. Điều đó có nghĩa, các vòng lặp sẽ không thay đổi các biến toàn cục một các tùy tiện.</p>
+</div><p>Vì những biến được định nghĩa trong hàm mặc định là <code>local</code> - và những hàm trong Julia có thể được coi là một biến, hàm định nghĩa trong hàm mặc định cũng là local. Trong trường hợp trên, <code>hàm_con</code> sẽ không bị &ldquo;rò rỉ&rdquo; ra ngoài phạm vi toàn cục. Chúng ta cũng có thể khai báo hàm local ở trong các khối khác, không nhất thiết phải trong một hàm:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1486,75 +1442,17 @@ Stacktrace:
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="c"># phạm vi toàn cục (global scope)</span>
-<span class="n">x</span><span class="o"></span> <span class="o">=</span> <span class="mi">10</span>
-<span class="k">for</span> <span class="n">i</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span><span class="o">:</span><span class="mi">10</span>
-    <span class="n">x</span><span class="o"></span> <span class="o">=</span> <span class="n">i</span><span class="o"></span> <span class="c"># biến i vẫn truy cập được</span>
-<span class="k">end</span>
-<span class="nd">@show</span><span class="o"></span> <span class="n">x</span><span class="o"></span> <span class="c"># x vẫn là 10</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Tuy nhiên, khi vòng lặp được lồng trong một phạm vi nội bộ (một vòng lặp khác, một hàm), chúng <em>có thể</em> cập nhật biến trong phạm vi đó:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">for</span> <span class="n">i</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span><span class="o">:</span><span class="mi">2</span>
-    <span class="n">x</span><span class="o"></span> <span class="o">=</span> <span class="n">i</span><span class="o"></span>
-    <span class="k">for</span> <span class="n">j</span><span class="o"></span> <span class="o">=</span> <span class="mi">3</span><span class="o">:</span><span class="mi">4</span>
-        <span class="n">x</span><span class="o"></span> <span class="o">=</span> <span class="n">x</span><span class="o"></span> <span class="o">*</span> <span class="n">j</span><span class="o"></span>
-    <span class="k">end</span>
-    <span class="nd">@show</span><span class="o"></span> <span class="n">x</span><span class="o"></span> <span class="c"># biến x sẽ thay đổi</span>
-<span class="k">end</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Nếu bạn muốn thay đổi biến toàn cục, hãy dùng từ khóa <code>global</code>:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">x</span><span class="o"></span> <span class="o">=</span> <span class="mi">10</span>
-<span class="k">for</span> <span class="n">i</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span><span class="o">:</span><span class="mi">5</span>
-    <span class="kd">global</span> <span class="n">x</span><span class="o"></span> <span class="o">*=</span> <span class="n">i</span><span class="o"></span>
-<span class="k">end</span>
-<span class="nd">@show</span><span class="o"></span> <span class="n">x</span><span class="o"></span> <span class="c"># x = 1200</span>
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="thoát-lặp-nhảy-lặp">Thoát lặp, nhảy lặp</h3>
-<p>Nếu bạn đang lặp mà muốn dừng giữa chừng, bạn có thể dùng <code>break</code> để thoát hoàn toàn khỏi vòng lặp.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">đếm</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span>
-<span class="k">while</span> <span class="kc">true</span>
-    <span class="kd">global</span> <span class="n">đếm</span><span class="o"></span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="k">if</span> <span class="n">đếm</span><span class="o"></span> <span class="o">=</span><span class="o">=</span> <span class="mi">4</span>
-        <span class="k">break</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">for</span> <span class="n">i</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span><span class="o">:</span><span class="mi">3</span>
+    <span class="n">cộng_thêm_i</span><span class="o"></span><span class="p">(</span><span class="n">x</span><span class="o"></span><span class="p">)</span> <span class="o">=</span> <span class="n">x</span><span class="o"></span> <span class="o">+</span> <span class="n">i</span><span class="o"></span>
+    <span class="k">for</span> <span class="n">j</span><span class="o"></span> <span class="o">=</span> <span class="mi">2</span><span class="o">:</span><span class="mi">3</span>
+        <span class="nd">@show</span><span class="o"></span> <span class="n">cộng_thêm_i</span><span class="o"></span><span class="p">(</span><span class="n">j</span><span class="o"></span><span class="p">)</span>
     <span class="k">end</span>
 <span class="k">end</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Nếu vì lí do nào đó, bạn muốn nhảy cóc một vòng lặp, bạn có thể dùng từ khóa <code>continue</code>.</p>
+</div><h2 id="hành-vi-với-tham-số-truyền-vào">Hành vi với tham số truyền vào</h2>
+<p>Trong Julia, đa số các hàm chỉ nhận tham trị và không thay đổi các biến đầu vào. Đương nhiên chúng ta vẫn có những hàm thay đổi tham số của nó. Những hàm này nếu dùng không cẩn thận có thể gây ra những hành vi rất khó đoán, việc phân biệt chúng cũng rất đau đầu trong một số ngôn ngữ.</p>
+<p>May thay, Julia cung cấp một quy ước để định ra những hàm thay đổi tham số truyền vào của chúng. Những hàm này sẽ có một dấu <code>!</code> ở sau tên của chúng.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1562,34 +1460,19 @@ Stacktrace:
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">for</span> <span class="n">i</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span><span class="o">:</span><span class="mi">4</span>
-    <span class="k">if</span> <span class="n">i</span><span class="o"></span> <span class="o">=</span><span class="o">=</span> <span class="mi">3</span>
-        <span class="k">continue</span>
-    <span class="k">else</span>
-        <span class="nd">@show</span><span class="o"></span> <span class="n">i</span><span class="o"></span>
-    <span class="k">end</span>
-<span class="k">end</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">arr</span><span class="o"></span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">sort</span><span class="o"></span><span class="p">(</span><span class="n">arr</span><span class="o"></span><span class="p">)</span> <span class="c"># hàm này chỉ trả về mảng đã sắp xếp</span>
+<span class="nd">@show</span><span class="o"></span> <span class="n">arr</span><span class="o"></span>
+<span class="n">sort!</span><span class="o"></span><span class="p">(</span><span class="n">arr</span><span class="o"></span><span class="p">)</span> <span class="c"># hàm này sắp xếp luôn mảng arr</span>
+<span class="nd">@show</span><span class="o"></span> <span class="n">arr</span><span class="o"></span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Với những đoạn rẽ nhánh đơn giản như trên, chúng ta có thể dùng kết hợp với toán tử ba ngôi cho gọn:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">for</span> <span class="n">i</span><span class="o"></span> <span class="o">=</span> <span class="mi">1</span><span class="o">:</span><span class="mi">4</span>
-    <span class="n">i</span><span class="o"></span> <span class="o">=</span><span class="o">=</span> <span class="mi">3</span> <span class="o">?</span> <span class="k">continue</span> <span class="o">:</span> <span class="nd">@show</span><span class="o"></span> <span class="n">i</span><span class="o"></span>
-<span class="k">end</span>
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="tạm-kết">Tạm kết</h2>
-<p>Sau khi biết được các cấu trúc điều khiển cơ bản. Hãy nhớ rằng nếu bạn lồng quá nhiều cấu trúc điều khiển với nhau, bạn có thể đang cần tách logic trong code ra thành một hàm. Viết hàm thế nào, hồi sau sẽ rõ :) Hẹn gặp lại các bạn ở bài viết sau.</p>
+</div><p>Lưu ý rằng đây chỉ là một quy ước, bạn hoàn toàn có thể viết hàm thay đổi tham số đầu vào mà không có dấu <code>!</code> trong tên và ngược lại.</p>
+<h2 id="tạm-kết">Tạm kết</h2>
+<p>Mình xin kết thúc bài giới thiệu về hàm ở đây. Vậy là chúng ta đã kết thúc level 1 của Julia Dojo. Tuy vậy, tất cả những thứ trong level này đều mang tính giới thiệu. Điều đó cũng khá hiển nhiên thôi, một ngôn ngữ vừa nhanh vừa tiện để viết, dù nó đơn giản nhưng bạn cũng không mong nó đơn giản tới mức cục mịch chứ? :)</p>
+<p>Đừng lo, dù phức tạp đi nữa thì Julia khá dễ vọc, không như kiểu hợp ngữ đâu. Mình sẽ cố giải thích cho các bạn những thứ cơ bản, đến khi đủ để các bạn tự tìm hiểu. Nếu các bạn có thắc mắc hoặc thấy thiếu sót đừng ngại liên hệ. Hẹn gặp mọi người trong những level tiếp theo.</p>
 
     </article>
     
@@ -1698,6 +1581,10 @@ Stacktrace:
     <ul class="related-ul">
         
         <li>
+          <a href="/julia-dojo/re-nhanh-va-lap-trong-julia/" class="related__link">Julia Dojo: cấu trúc điều khiển</a>
+        </li>
+        
+        <li>
           <a href="/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia/" class="related__link">Julia Dojo: biến số, kiểu dữ liệu, phép toán</a>
         </li>
         
@@ -1719,21 +1606,14 @@ Stacktrace:
     <div class="grow"></div>
 <nav class="pagination-single">
   
-    <a href="https://ndgnuh.github.io/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia/" class="pagination-single__left">
+    <a href="https://ndgnuh.github.io/julia-dojo/re-nhanh-va-lap-trong-julia/" class="pagination-single__left">
       <div class="pagination-single__icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
       </div>
-      <div class="pagination-single__left-title">Julia Dojo: biến số, kiểu dữ liệu, phép toán</div>      
+      <div class="pagination-single__left-title">Julia Dojo: cấu trúc điều khiển</div>      
     </a>
   
   <div class="grow"></div>
-  
-    <a href="https://ndgnuh.github.io/julia-dojo/ham-trong-julia/" class="pagination-single__right">      
-      <div class="pagination-single__right-title">Julia Dojo: hàm</div>
-      <div class="pagination-single__icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-      </div>
-    </a>
   
 </nav>
     
@@ -2108,22 +1988,21 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc ">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#khối-lệnh">Khối lệnh</a></li>
-    <li><a href="#mình-là-người-có-điều-kiện">Mình là người có điều kiện</a>
+    <li><a href="#khai-báo-một-hàm">Khai báo một hàm</a>
       <ul>
-        <li><a href="#if">If&hellip;</a></li>
-        <li><a href="#toán-tử-ba-ngôi">Toán tử ba ngôi</a></li>
-        <li><a href="#phạm-vi-của-biến-trong-if">Phạm vi của biến trong if</a></li>
+        <li><a href="#ba-kiểu-khai-báo">Ba kiểu khai báo</a></li>
+        <li><a href="#tham-số-mặc-định">Tham số mặc định</a></li>
+        <li><a href="#tham-số-có-tên">Tham số có tên</a></li>
+        <li><a href="#tùy-lượng-tham-số">Tùy lượng tham số</a></li>
       </ul>
     </li>
-    <li><a href="#lặp-lặp-lặp-lặp-lặp-lặp-lặp-lặp-lặp-lặp-lặp-lặp-lặp">Lặp, lặp, lặp, lặp, lặp, lặp, lặp, lặp, lặp, lặp, lặp, lặp, lặp&hellip;</a>
+    <li><a href="#gọi-hàm">Gọi hàm</a></li>
+    <li><a href="#phạm-vi-biến-trong-hàm-julia">Phạm vi biến trong hàm Julia</a>
       <ul>
-        <li><a href="#vòng-lặp-for">Vòng lặp for</a></li>
-        <li><a href="#vòng-lặp-while">Vòng lặp while</a></li>
-        <li><a href="#phạm-vi-biến-của-cấu-trúc-lặp">Phạm vi biến của cấu trúc lặp</a></li>
-        <li><a href="#thoát-lặp-nhảy-lặp">Thoát lặp, nhảy lặp</a></li>
+        <li><a href="#hàm-lồng-trong-hàm">Hàm lồng trong hàm</a></li>
       </ul>
     </li>
+    <li><a href="#hành-vi-với-tham-số-truyền-vào">Hành vi với tham số truyền vào</a></li>
     <li><a href="#tạm-kết">Tạm kết</a></li>
   </ul>
 </nav>
@@ -2813,7 +2692,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
     
     
-  <a href="https://ndgnuh.github.io/julia-dojo/re-nhanh-va-lap-trong-julia//index.xml" type="application/rss+xml" title="rss" aria-label="RSS Feed Link">
+  <a href="https://ndgnuh.github.io/julia-dojo/ham-trong-julia//index.xml" type="application/rss+xml" title="rss" aria-label="RSS Feed Link">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><circle fill="currentColor" cx="6.18" cy="17.82" r="2.18"/><path fill="currentColor" d="M5.59 10.23c-.84-.14-1.59.55-1.59 1.4 0 .71.53 1.28 1.23 1.4 2.92.51 5.22 2.82 5.74 5.74.12.7.69 1.23 1.4 1.23.85 0 1.54-.75 1.41-1.59-.68-4.2-3.99-7.51-8.19-8.18zm-.03-5.71C4.73 4.43 4 5.1 4 5.93c0 .73.55 1.33 1.27 1.4 6.01.6 10.79 5.38 11.39 11.39.07.73.67 1.28 1.4 1.28.84 0 1.5-.73 1.42-1.56-.73-7.34-6.57-13.19-13.92-13.92z"/></svg>
   </a>
 
