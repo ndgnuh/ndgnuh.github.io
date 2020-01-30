@@ -1,8 +1,68 @@
+[search-placeholder]
+other = "Tìm kiếm"
+
 [summary-dateformat]
 other = "02-01-2006"
 
-[search-placeholder]
-other = "Tìm kiếm..."
+[reading-time]
+other = " phút đọc"
+
+[tags]
+other = "Tags"
+
+[categories]
+other = "Phân loại"
+
+[series]
+other = "Series"
+
+[archive-dateformat]
+other = "02-01-2006"
+
+[talks-dateformat]
+other = "02-01-2006"
 
 [single-dateformat]
 other = "02-01-2006"
+
+[single-related]
+other = "Bài viết có liên quan"
+
+[single-writtenBy]
+other = "Tác giả"
+
+[toc-label]
+other = "Mục lục"
+
+[counter-site-pv]
+other = "Tổng lượt xem"
+
+[counter-site-uv]
+other = "Số truy cập"
+
+[counter-page-pv]
+other = "Lượt xem trang"
+
+[donate-message]
+other = "Ủng hộ tác giả"
+
+[share-message]
+other = "Chia sẻ"
+
+[tooltip-home]
+other = "Trang chủ"
+
+[tooltip-written]
+other = "Được viết lúc"
+
+[tooltip-modified]
+other = "Chỉnh sửa lúc"
+
+[tooltip-reading-time]
+other = "Thời gian đọc"
+
+[showcase-overview]
+other = "Tổng quan"
+
+[showcase-pinned]
+other = "Được ghim"
