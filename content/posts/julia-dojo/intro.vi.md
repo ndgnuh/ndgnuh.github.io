@@ -26,7 +26,7 @@ aliases:
 - /vi/julia-dojo
 - /vi/posts/julia-dojo
 ---
-## Julia?
+## Julia là gì? Tại sao lại học nó?
 
 Julia là một ngôn ngữ lập trình bậc cao dễ sử dụng, **nhanh** và mạnh mẽ. Một số đặc trưng của Julia cũng như lí do bạn sẽ muốn dùng nó (hoặc không):
 - Julia là một ngôn ngữ lập trình hàm
@@ -88,7 +88,7 @@ Những thứ cơ bản nhất
 
 ### Level 2: làm chủ vũ khí (dự định)
 Công cụ lập trình mà bạn có thể sẽ thích. 
-- Làm việc với trình quản lí gói
+- [Làm việc với trình quản lí gói](/julia-dojo/cai-dat-va-su-dung-goi-julia)
 - [nên đọc] Jupyter notebook
 - [nên đọc] VSCode
 - [tùy chọn] Atom: Juno / Julia pro
