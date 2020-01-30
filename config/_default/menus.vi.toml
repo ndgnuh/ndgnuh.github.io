@@ -9,3 +9,10 @@ identifier = "about"
 name = "Giới thiệu"
 url = "/about"
 weight = 1
+
+[[main]]
+identifier = "contact-vi"
+name = "Liên hệ"
+url = "/lien-he"
+weight = 2
+
