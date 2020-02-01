@@ -1,7 +1,7 @@
 ---
-title: "Cài đặt và sử dụng gói Julia"
-date: 2020-01-31T00:29:16+07:00
-draft: true
+title: "Julia Dojo: quản lí gói trong Julia"
+date: 2020-02-01T23:29:43+07:00
+draft: false
 url: "/julia-dojo/cai-dat-va-su-dung-goi-julia"
 summary: "Hướng dẫn cài đặt và sử dụng các gói trong Julia"
 description: "Hướng dẫn cài đặt và sử dụng các gói trong Julia"
@@ -67,21 +67,21 @@ Khi cài hoặc update gói, những gói phụ thược sẽ được cài đ�
 
 ## Sử dụng một gói
 
-Cách sử dụng một gói trong Julia rất đơn giản. Chúng ta có hai từ khóa `import` và `using` (trong chế độ bình thường)
+Cách sử dụng một gói trong Julia rất đơn giản. Một gói thông thường sẽ có nhiều module, trong đó có một module chính mang tên của gói đó (ví dụ như gói `IJulia.jl` sẽ có module `IJulia`). Chúng ta có hai từ khóa `import` và `using` (sử dụng trong chế độ bình thường)
 ```julia
-import TênGói
-using TênGói
+import TênModule
+using TênModule
 ```
 
 Sử dụng `import` sẽ chỉ nhập tên của gói vào phạm vi toàn cục, trong khi `using` sẽ nhập toàn bộ những hằng số, biến số hoặc hàm mà gói đó xuất ra.
 ```julia
-import Gói1
-using Gói2
+import Module1
+using Module2
 ```
 
-Giả sử `Gói1` có `hàm_a`, `Gói2` có `hàm_b`. Trong ví dụ trên, nếu chúng ta muốn gọi hai hàm:
+Giả sử `Module1` có `hàm_a`, `Module2` có `hàm_b`. Trong ví dụ trên, nếu chúng ta muốn gọi hai hàm:
 ```julia
-Gói1.hàm_a()
+Module2.hàm_a()
 hàm_b() # hàm_b được cho ra phạm vi toàn cục
 ```
 
@@ -122,13 +122,13 @@ activate /đường/dẫn/tới/thư/mục
 
 Để chuyển về môi trường mặc định, chúng ta sử dụng lệnh `activate` mà không truyền tham số vào.
 
-## Một số gói trong Julia
+## Một số gói/module trong Julia
 
-Mình chỉ giới thiệu một số gói thôi, chỗ này không đầy đủ.
+Mình chỉ giới thiệu một số thôi, chỗ này không phải tất cả nhé!
 
-Một số gói đi kèm trong Julia, không cần cài đặt (standard library): 
+Một số module đi kèm trong Julia, không cần cài đặt (standard library): 
 
-Tên gói | Chức năng
+Tên | Chức năng
 --- | ---
 Dates | Làm việc với thời gian
 Distributed | Hỗ trợ tính toán song song
@@ -162,9 +162,10 @@ ScikitLearn | Cài đặt lại hoàn toàn ScikitLearn trong Julia
 ## Tạm kết
 
 Trong bài viết này, chúng ta đã tìm hiểu về:
-1. Cách cài đặt, update, xem, xóa và sử dụng gói trong Julia
-2. Làm việc với môi trường
-3. Một số gói chính thức
+1. Cách cài đặt, update, xem và xóa gói Julia
+2. Cách sử dụng các module trong Julia
+3. Làm việc với môi trường của gói
+3. Một số module và gói trong Julia
 
 Trong bài viết sau, chúng ta sẽ học cách sử dụng Julia với Jupyter notebook hoặc Jupyter lab. Hẹn gặp lại các bạn.
 

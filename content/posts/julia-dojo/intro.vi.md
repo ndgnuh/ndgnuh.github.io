@@ -82,20 +82,13 @@ Layout phía dưới có những phần dự định, có thể khi mình viết
 Những thứ cơ bản nhất
 - [Tải và cài đặt Julia](/julia-dojo/cai-dat-julia)
 - [Hello, world](/julia-dojo/hello-world)
-- [Khai báo biến, kiểu dữ liệu, phép toán](/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia)
+- [Làm việc với trình quản lí gói](/julia-dojo/cai-dat-va-su-dung-goi-julia)
+- [Sử dụng Julia với Project Jupyter](/julia-dojo/dung-julia-voi-jupyter-notebook-va-jupyter-lab)
+- [Biến số](/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia)
 - [Cấu trúc điều khiển](/julia-dojo/re-nhanh-va-lap-trong-julia)
 - [Hàm](/julia-dojo/ham-trong-julia)
 
-### Level 2: làm chủ vũ khí (dự định)
-Công cụ lập trình mà bạn có thể sẽ thích. 
-- [Làm việc với trình quản lí gói](/julia-dojo/cai-dat-va-su-dung-goi-julia)
-- [nên đọc] Jupyter notebook
-- [nên đọc] VSCode
-- [tùy chọn] Atom: Juno / Julia pro
-- [tùy chọn] Vim
-- Emacs (chưa chắc)
-
-### Level 3: vài đường cơ bản (dự định)
+### Level 2: vài đường cơ bản (dự định)
 Giống Level 1, nhưng kĩ hơn một tí, và giới thiệu các gói mình nghĩ là hay.
 - Làm việc với file
 - Tuple, từ điển, tập hợp
@@ -111,7 +104,7 @@ Giống Level 1, nhưng kĩ hơn một tí, và giới thiệu các gói mình n
 - Xử lý ngoại lệ
 - Broadcast
 
-### Level 4: thiên biến vạn hóa (dự định)
+### Level 3: thiên biến vạn hóa (dự định)
 Đa hình và những thứ liên quan tới nó
 - Nói thêm về hệ thống kiểu dữ liệu
 - Các loại giao diện
@@ -123,11 +116,16 @@ Sẽ có một ngày bạn phải tự viết chương trình của riêng mình
 - Unit testing
 - Viết tài liệu
 
-### Ngoại truyện???
+### Extra: làm chủ vũ khí (dự định)
+Công cụ lập trình mà bạn có thể sẽ thích. 
+- [nên đọc] Jupyter notebook
+- [nên đọc] VSCode
+- [tùy chọn] Atom: Juno / Julia pro
+- [tùy chọn] Vim
+- Emacs (chưa chắc)
 - Một số kĩ thuật để code nhanh hơn
 - Tính toán song song
 - Meta programming
-- 
 
 ### Về các module, gói
 

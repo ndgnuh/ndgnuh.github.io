@@ -1,5 +1,5 @@
 ---
-title: "Julia Dojo: cấu trúc điều khiển"
+title: "Julia Dojo: cấu trúc điều khiển trong Julia"
 date: 2020-01-28T12:04:27+07:00
 draft: false
 url: "/julia-dojo/re-nhanh-va-lap-trong-julia"

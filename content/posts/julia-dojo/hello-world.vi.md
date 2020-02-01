@@ -1,5 +1,5 @@
 ---
-title: "Julia Dojo: hello world"
+title: "Julia Dojo: Hello world"
 date: 2020-01-26T21:34:44+07:00
 url: "/julia-dojo/hello-world"
 draft: false
