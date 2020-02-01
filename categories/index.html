@@ -203,6 +203,9 @@
     var notAllowedTitleIds = null;
 
     
+    var tocFolding = JSON.parse("null");
+
+    
     singleContentsElem && singleContentsElem.querySelectorAll(".tab") ?
     singleContentsElem.querySelectorAll(".tab").forEach(function (elem) {
       elem.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(function (element) {
@@ -272,14 +275,18 @@
                   tocElem.querySelector('a[href="#' + id + '"]') ?
                     tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
 
-                  tableOfContentsElem.querySelectorAll('ul') ? 
-                  tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
-                    rootUl.querySelectorAll('li').forEach(function (liElem) {
-                      liElem.querySelectorAll('ul').forEach(function (ulElem) {
-                        ulElem.style.display = 'none';
-                      });
-                    });
-                  }) : null;
+                  if (false === tocFolding) {
+                    
+                  } else {
+                    tableOfContentsElem.querySelectorAll('ul') ?
+                      tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
+                        rootUl.querySelectorAll('li').forEach(function (liElem) {
+                          liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                            ulElem.style.display = 'none';
+                          });
+                        });
+                      }) : null;
+                  }
 
                   var curElem = tableOfContentsElem.querySelector("[href='#" + id + "']");
                   if (curElem && curElem.nextElementSibling) {
@@ -338,14 +345,18 @@
                   tocElem.querySelector('a[href="#' + id + '"]') ?
                     tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
 
-                  tableOfContentsElem.querySelectorAll('ul') ? 
-                  tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
-                    rootUl.querySelectorAll('li').forEach(function (liElem) {
-                      liElem.querySelectorAll('ul').forEach(function (ulElem) {
-                        ulElem.style.display = 'none';
-                      });
-                    });
-                  }) : null;
+                  if (false === tocFolding) {
+                    
+                  } else {
+                    tableOfContentsElem.querySelectorAll('ul') ?
+                      tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
+                        rootUl.querySelectorAll('li').forEach(function (liElem) {
+                          liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                            ulElem.style.display = 'none';
+                          });
+                        });
+                      }) : null;
+                  }
 
                   var curElem = tableOfContentsElem.querySelector("[href='#" + id + "']");
                   if (curElem && curElem.nextElementSibling) {
@@ -370,12 +381,16 @@
         }
 
         if (tableOfContentsElem && document.documentElement.scrollTop < 250) {
-          tableOfContentsElem.querySelector('ul') ?
-          tableOfContentsElem.querySelector('ul').querySelectorAll('li').forEach(function (liElem) {
-            liElem.querySelectorAll('ul').forEach(function (ulElem) {
-              ulElem.style.display = 'none';
-            });
-          }) : null;
+          if (false === tocFolding) {
+
+          } else {
+            tableOfContentsElem.querySelector('ul') ?
+              tableOfContentsElem.querySelector('ul').querySelectorAll('li').forEach(function (liElem) {
+                liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                  ulElem.style.display = 'none';
+                });
+              }) : null;
+          }
         }
       }
       lastScrollTop = st <= 0 ? 0 : st;
@@ -900,8 +915,8 @@
 
 <meta name="description" content="Blog cá nhân, viết tạp nham :)" />
 <meta name="keywords" content="">
-<meta name="created" content="2020-01-30T00:06:10&#43;0700">
-<meta name="modified" content="2020-01-30T00:06:10&#43;0700">
+<meta name="created" content="2020-02-01T23:29:43&#43;0700">
+<meta name="modified" content="2020-01-31T13:46:21&#43;0700">
 
 
 <meta property="og:site_name" content="#Rant">
@@ -1111,7 +1126,7 @@
         <span class="terms__categories">
           hướng dẫn
         </span>
-        <span class="terms__len">(6)</span>
+        <span class="terms__len">(8)</span>
       </a>
     
     
@@ -1120,7 +1135,7 @@
         <span class="terms__categories">
           lập trình
         </span>
-        <span class="terms__len">(6)</span>
+        <span class="terms__len">(8)</span>
       </a>
     
     

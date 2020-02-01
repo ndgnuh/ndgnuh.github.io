@@ -203,6 +203,9 @@
     var notAllowedTitleIds = null;
 
     
+    var tocFolding = JSON.parse("null");
+
+    
     singleContentsElem && singleContentsElem.querySelectorAll(".tab") ?
     singleContentsElem.querySelectorAll(".tab").forEach(function (elem) {
       elem.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(function (element) {
@@ -272,14 +275,18 @@
                   tocElem.querySelector('a[href="#' + id + '"]') ?
                     tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
 
-                  tableOfContentsElem.querySelectorAll('ul') ? 
-                  tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
-                    rootUl.querySelectorAll('li').forEach(function (liElem) {
-                      liElem.querySelectorAll('ul').forEach(function (ulElem) {
-                        ulElem.style.display = 'none';
-                      });
-                    });
-                  }) : null;
+                  if (false === tocFolding) {
+                    
+                  } else {
+                    tableOfContentsElem.querySelectorAll('ul') ?
+                      tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
+                        rootUl.querySelectorAll('li').forEach(function (liElem) {
+                          liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                            ulElem.style.display = 'none';
+                          });
+                        });
+                      }) : null;
+                  }
 
                   var curElem = tableOfContentsElem.querySelector("[href='#" + id + "']");
                   if (curElem && curElem.nextElementSibling) {
@@ -338,14 +345,18 @@
                   tocElem.querySelector('a[href="#' + id + '"]') ?
                     tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
 
-                  tableOfContentsElem.querySelectorAll('ul') ? 
-                  tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
-                    rootUl.querySelectorAll('li').forEach(function (liElem) {
-                      liElem.querySelectorAll('ul').forEach(function (ulElem) {
-                        ulElem.style.display = 'none';
-                      });
-                    });
-                  }) : null;
+                  if (false === tocFolding) {
+                    
+                  } else {
+                    tableOfContentsElem.querySelectorAll('ul') ?
+                      tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
+                        rootUl.querySelectorAll('li').forEach(function (liElem) {
+                          liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                            ulElem.style.display = 'none';
+                          });
+                        });
+                      }) : null;
+                  }
 
                   var curElem = tableOfContentsElem.querySelector("[href='#" + id + "']");
                   if (curElem && curElem.nextElementSibling) {
@@ -370,12 +381,16 @@
         }
 
         if (tableOfContentsElem && document.documentElement.scrollTop < 250) {
-          tableOfContentsElem.querySelector('ul') ?
-          tableOfContentsElem.querySelector('ul').querySelectorAll('li').forEach(function (liElem) {
-            liElem.querySelectorAll('ul').forEach(function (ulElem) {
-              ulElem.style.display = 'none';
-            });
-          }) : null;
+          if (false === tocFolding) {
+
+          } else {
+            tableOfContentsElem.querySelector('ul') ?
+              tableOfContentsElem.querySelector('ul').querySelectorAll('li').forEach(function (liElem) {
+                liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                  ulElem.style.display = 'none';
+                });
+              }) : null;
+          }
         }
       }
       lastScrollTop = st <= 0 ? 0 : st;
@@ -1115,8 +1130,9 @@
 <li>Email: <a href="mailto:ndgnuh@protonmail.com">ndgnuh@protonmail.com</a></li>
 <li>Repo github cho trang này: <a href="https://github.com/ndgnuh/ndgnuh.github.io">https://github.com/ndgnuh/ndgnuh.github.io</a></li>
 </ul>
-<div class="notices info" >Blog viết bởi một sinh viên, do tác giả còn rất nhiều thứ phải học nên khả năng cao sẽ gặp sai sót. Nếu bạn đọc phát hiện ra lỗi gì, về kĩ thuật, nội dung, câu cú hay lỗi chính tả ₍•⌣•₎ của trang cứ thoải mái đóng góp ý kiến nhé.</div>
-
+<div class="notices info" >
+  Blog viết bởi một sinh viên, do tác giả còn rất nhiều thứ phải học nên khả năng cao sẽ gặp sai sót. Nếu bạn đọc phát hiện ra lỗi gì, về kĩ thuật, nội dung, câu cú hay lỗi chính tả ₍•⌣•₎ của trang cứ thoải mái đóng góp ý kiến nhé.
+</div>
 
   </article>
 </main>

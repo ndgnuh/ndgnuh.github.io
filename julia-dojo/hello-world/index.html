@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Julia Dojo: hello world – #Rant</title>
+    <title>Julia Dojo: Hello world – #Rant</title>
     
 
 
@@ -203,6 +203,9 @@
     var notAllowedTitleIds = null;
 
     
+    var tocFolding = JSON.parse("null");
+
+    
     singleContentsElem && singleContentsElem.querySelectorAll(".tab") ?
     singleContentsElem.querySelectorAll(".tab").forEach(function (elem) {
       elem.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(function (element) {
@@ -272,14 +275,18 @@
                   tocElem.querySelector('a[href="#' + id + '"]') ?
                     tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
 
-                  tableOfContentsElem.querySelectorAll('ul') ? 
-                  tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
-                    rootUl.querySelectorAll('li').forEach(function (liElem) {
-                      liElem.querySelectorAll('ul').forEach(function (ulElem) {
-                        ulElem.style.display = 'none';
-                      });
-                    });
-                  }) : null;
+                  if (false === tocFolding) {
+                    
+                  } else {
+                    tableOfContentsElem.querySelectorAll('ul') ?
+                      tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
+                        rootUl.querySelectorAll('li').forEach(function (liElem) {
+                          liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                            ulElem.style.display = 'none';
+                          });
+                        });
+                      }) : null;
+                  }
 
                   var curElem = tableOfContentsElem.querySelector("[href='#" + id + "']");
                   if (curElem && curElem.nextElementSibling) {
@@ -338,14 +345,18 @@
                   tocElem.querySelector('a[href="#' + id + '"]') ?
                     tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
 
-                  tableOfContentsElem.querySelectorAll('ul') ? 
-                  tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
-                    rootUl.querySelectorAll('li').forEach(function (liElem) {
-                      liElem.querySelectorAll('ul').forEach(function (ulElem) {
-                        ulElem.style.display = 'none';
-                      });
-                    });
-                  }) : null;
+                  if (false === tocFolding) {
+                    
+                  } else {
+                    tableOfContentsElem.querySelectorAll('ul') ?
+                      tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
+                        rootUl.querySelectorAll('li').forEach(function (liElem) {
+                          liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                            ulElem.style.display = 'none';
+                          });
+                        });
+                      }) : null;
+                  }
 
                   var curElem = tableOfContentsElem.querySelector("[href='#" + id + "']");
                   if (curElem && curElem.nextElementSibling) {
@@ -370,12 +381,16 @@
         }
 
         if (tableOfContentsElem && document.documentElement.scrollTop < 250) {
-          tableOfContentsElem.querySelector('ul') ?
-          tableOfContentsElem.querySelector('ul').querySelectorAll('li').forEach(function (liElem) {
-            liElem.querySelectorAll('ul').forEach(function (ulElem) {
-              ulElem.style.display = 'none';
-            });
-          }) : null;
+          if (false === tocFolding) {
+
+          } else {
+            tableOfContentsElem.querySelector('ul') ?
+              tableOfContentsElem.querySelector('ul').querySelectorAll('li').forEach(function (liElem) {
+                liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                  ulElem.style.display = 'none';
+                });
+              }) : null;
+          }
         }
       }
       lastScrollTop = st <= 0 ? 0 : st;
@@ -903,7 +918,7 @@
 
 
 <meta property="og:site_name" content="#Rant">
-<meta property="og:title" content="Julia Dojo: hello world">
+<meta property="og:title" content="Julia Dojo: Hello world">
 <meta property="og:url" content="https://ndgnuh.github.io/julia-dojo/hello-world/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="Viết chương trình đầu tiên của bạn trong Julia">
@@ -924,7 +939,7 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Julia Dojo: hello world",
+    "headline": "Julia Dojo: Hello world",
     "datePublished": "2020-01-26T21:34:44+07:00",
     "dateModified": "2020-01-26T21:34:44+07:00",
     "url" : "https://ndgnuh.github.io/julia-dojo/hello-world/",
@@ -1103,7 +1118,7 @@
 
 <main class="single__main main-main">
   
-  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <nav class="breadcrumb" aria-label="breadcrumbs">
   <ol>
     
   
@@ -1127,7 +1142,7 @@
   
   <li  class="is-active" >
     
-      <span>Julia Dojo: hello world</span>
+      <span>Julia Dojo: Hello world</span>
     
   </li>
   
@@ -1136,7 +1151,7 @@
 </nav>
   
   <div class="single">
-    <h2 class="single__title">Julia Dojo: hello world</h2>
+    <h2 class="single__title">Julia Dojo: Hello world</h2>
     <div class="single__meta">
       
 <div class="single__infos">
@@ -1386,6 +1401,7 @@ hello world
   </div>
 </section>
 <hr class="hr-slash whoami-hr" />
+
 
     <section class="related">
     
@@ -1801,7 +1817,7 @@ document.addEventListener('DOMContentLoaded', function () {
       </label>
     
   </div>
-  <div class="toc " data-dir="ltr">
+  <div class="toc " data-dir="ltr" data-folding="false">
     <nav id="TableOfContents">
   <ul>
     <li><a href="#chương-trình-đầu-tiên-của-bạn">Chương trình đầu tiên của bạn</a></li>
@@ -1958,22 +1974,29 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
     
+    
     var enableToc = JSON.parse("true");
     var toc = JSON.parse("null");
     var hideToc = JSON.parse("false");
     var tocFlexbox = document.querySelector('.toc__flexbox');
     var tocFlexboxOuter = document.querySelector('.toc__flexbox--outer');
+    var tocFolding = JSON.parse("null");
     
     if ((enableToc || toc) && document.querySelector('.toc')) {
       var tableOfContentsElem = document.querySelector('.toc').querySelector('#TableOfContents');
-      tableOfContentsElem.querySelectorAll('ul') ?
-      tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
-        rootUl.querySelectorAll('li').forEach(function (liElem) {
-          liElem.querySelectorAll('ul').forEach(function (ulElem) {
-            ulElem.style.display = 'none';
-          });
-        });
-      }) : null;
+
+      if (false === tocFolding) {
+
+      } else {
+        tableOfContentsElem.querySelectorAll('ul') ?
+          tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
+            rootUl.querySelectorAll('li').forEach(function (liElem) {
+              liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                ulElem.style.display = 'none';
+              });
+            });
+          }) : null;
+      }
 
       if (tableOfContentsElem) {
         if (tableOfContentsElem.querySelectorAll('a').length > 0) {

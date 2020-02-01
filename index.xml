@@ -9,12 +9,30 @@
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
     <webMaster>ndgnuh@protonmail.com (Hùng)</webMaster>
     <copyright>©2020, copy ghi nguồn :)</copyright>
-    <lastBuildDate>Thu, 30 Jan 2020 00:06:10 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 01 Feb 2020 23:29:43 +0700</lastBuildDate>
     
         <atom:link href="https://ndgnuh.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>Julia Dojo: quản lí gói trong Julia</title>
+        <link>https://ndgnuh.github.io/julia-dojo/cai-dat-va-su-dung-goi-julia/</link>
+        <pubDate>Sat, 01 Feb 2020 23:29:43 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        <guid>https://ndgnuh.github.io/julia-dojo/cai-dat-va-su-dung-goi-julia/</guid>
+        <description>Hướng dẫn cài đặt và sử dụng các gói trong Julia</description>
+      </item>
+      
+      <item>
+        <title>Julia Dojo: Julia &#43; Project Jupyter</title>
+        <link>https://ndgnuh.github.io/julia-dojo/dung-julia-voi-jupyter-notebook-va-jupyter-lab/</link>
+        <pubDate>Sat, 01 Feb 2020 23:28:52 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        <guid>https://ndgnuh.github.io/julia-dojo/dung-julia-voi-jupyter-notebook-va-jupyter-lab/</guid>
+        <description>Hướng dẫn cấu hình Julia để sử dụng với Jupyter Notebook và Jupyter Lab</description>
+      </item>
       
       <item>
         <title>Julia Dojo: hàm</title>
@@ -26,7 +44,7 @@
       </item>
       
       <item>
-        <title>Julia Dojo: cấu trúc điều khiển</title>
+        <title>Julia Dojo: cấu trúc điều khiển trong Julia</title>
         <link>https://ndgnuh.github.io/julia-dojo/re-nhanh-va-lap-trong-julia/</link>
         <pubDate>Tue, 28 Jan 2020 12:04:27 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
@@ -44,7 +62,7 @@
       </item>
       
       <item>
-        <title>Julia Dojo: hello world</title>
+        <title>Julia Dojo: Hello world</title>
         <link>https://ndgnuh.github.io/julia-dojo/hello-world/</link>
         <pubDate>Sun, 26 Jan 2020 21:34:44 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
