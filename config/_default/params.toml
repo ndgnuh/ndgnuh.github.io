@@ -1,7 +1,7 @@
-logoText = "#Rant" # Logo text that appears in the site navigation bar.
+logoText = "Rants" # Logo text that appears in the site navigation bar.
 logoType = "short" # long, short -> short: squre shape includes logo text, long: rectangle shape not includes logo text
 logo = true # Logo that appears in the site navigation bar.
-description = "Blog cá nhân, viết tạp nham :)" # for SEO
+description = "Blog cá nhân, viết tạp nham" # for SEO
 custom_css = [
 "css/font.css"
 ] # custom_css = ["scss/custom.scss"] and then make file at root/assets/scss/custom.scss

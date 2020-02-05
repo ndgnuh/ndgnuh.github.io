@@ -1,5 +1,5 @@
 baseURL = "https://ndgnuh.github.io/"
-title = "#Rants"
+title = "Rants"
 theme = "zzo"
 
 defaultContentLanguage = "vi"
