@@ -1,10 +1,10 @@
 ---
 title: "Liên hệ"
 date: 2020-01-30T00:47:34+07:00
-draft: true
+draft: false
 url: "/lien-he"
 type: "contact"
-service: 
+service:
 ---
 
 Mọi người có thể gửi feedback cho mình thông qua các cách sau:
