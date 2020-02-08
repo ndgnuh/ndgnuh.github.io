@@ -13,6 +13,6 @@ weight = 1
 [[main]]
 identifier = "contact-vi"
 name = "Liên hệ"
-url = "/lien-he"
+url = "/lien-he/"
 weight = 2
 

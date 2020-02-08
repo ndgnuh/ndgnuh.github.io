@@ -15,4 +15,13 @@ usage(){
 
 [ -z $1 ] && usage;
 
-
+if [ $1 == "deploy" ]; then
+    git add .
+    git commit -m "$(date)"
+    git push origin gh-pages
+    hugo
+    cd public
+    git add .
+    git commit -m "$(date)"
+    git push origin master
+fi
