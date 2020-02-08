@@ -90,7 +90,7 @@ Những thứ cơ bản nhất
 
 ### Level 2: vài đường cơ bản (dự định)
 Giống Level 1, nhưng kĩ hơn một tí, và giới thiệu các gói mình nghĩ là hay.
-- Làm việc với file
+- [Làm việc với file](/julia-dojo/lam-viec-voi-file-trong-julia)
 - Tuple, từ điển, tập hợp
 - Struct
 - Chuỗi kí tự, biểu thức chính quy và biểu tượng
