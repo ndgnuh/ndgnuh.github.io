@@ -87,6 +87,13 @@
   </url>
   
   <url>
+    <loc>https://ndgnuh.github.io/lien-he/</loc>
+    <lastmod>2020-01-30T00:47:34+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ndgnuh.github.io/julia-dojo/ham-trong-julia/</loc>
     <lastmod>2020-01-30T00:06:10+07:00</lastmod>
     <changefreq>daily</changefreq>
