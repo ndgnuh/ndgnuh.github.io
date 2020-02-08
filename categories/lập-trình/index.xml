@@ -9,12 +9,21 @@
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
     <webMaster>ndgnuh@protonmail.com (Hùng)</webMaster>
     <copyright>©2020, copy ghi nguồn :)</copyright>
-    <lastBuildDate>Sat, 01 Feb 2020 23:29:43 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 08 Feb 2020 20:41:06 +0700</lastBuildDate>
     
         <atom:link href="https://ndgnuh.github.io/categories/l%E1%BA%ADp-tr%C3%ACnh/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>Julia Dojo: làm việc với file</title>
+        <link>https://ndgnuh.github.io/julia-dojo/lam-viec-voi-file-trong-julia/</link>
+        <pubDate>Sat, 08 Feb 2020 20:41:06 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        <guid>https://ndgnuh.github.io/julia-dojo/lam-viec-voi-file-trong-julia/</guid>
+        <description>Cách để lưu trữ dữ liệu từ Julia vào ổ đĩa, và nạp dữ liệu từ đĩa vào Julia</description>
+      </item>
       
       <item>
         <title>Julia Dojo: quản lí gói trong Julia</title>
