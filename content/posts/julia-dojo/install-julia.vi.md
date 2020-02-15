@@ -22,7 +22,7 @@ keywords:
 - hướng dẫn
 ---
 
-Chào mừng các bạn đến với bài viết đầu tiên của series "Julia từ con số không". Trong bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Julia.
+Chào mừng các bạn đến với bài viết đầu tiên của series "Julia Dojo". Trong bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Julia.
 Để cài Julia, chúng ta có 2 cách:
 - [Cài đặt từ bản phân phối chính thức](#cài-đặt-từ-bản-phân-phối-chính-thức): cách này được khuyến cáo vì nó sẽ không gây lỗi lặt vặt, tuy nhiên quá trình cài đặt sẽ hơi dài một chút.
 - [Cài đặt từ bản phân phối của cộng đồng](#cài-đặt-bản-phân-phối-từ-cộng-đồng): cách này rất đơn giản, đặc biệt với những bạn dùng Linux. Tuy nhiên cách này có thể gây lỗi vặt (thực ra mình mới chỉ thấy một lỗi trên ArchLinux, chưa thấy có người gửi issue nào khác)
