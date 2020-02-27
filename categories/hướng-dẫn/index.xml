@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>hướng dẫn on Rants</title>
     <link>https://ndgnuh.github.io/categories/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</link>
@@ -9,20 +14,92 @@
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
     <webMaster>ndgnuh@protonmail.com (Hùng)</webMaster>
     <copyright>©2020, copy ghi nguồn :)</copyright>
-    <lastBuildDate>Sat, 08 Feb 2020 20:41:06 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 27 Feb 2020 17:30:13 +0700</lastBuildDate>
     
         <atom:link href="https://ndgnuh.github.io/categories/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+
+      
+      <item>
+        <title>Julia Dojo: từ điển &amp; tập hợp</title>
+        <link>https://ndgnuh.github.io/julia-dojo/tu-dien-va-tap-hop-trong-julia/</link>
+        <pubDate>Thu, 27 Feb 2020 17:30:13 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Thu, 27 Feb 2020 17:30:13 +0700</atom:modified>
+        <guid>https://ndgnuh.github.io/julia-dojo/tu-dien-va-tap-hop-trong-julia/</guid>
+        <description>Kiểu dữ liệu tập hợp, kiểu dữ liệu từ điển trong Julia</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>julia</category>
+            
+          
+        
+        
+          
+            
+              <category>hướng dẫn</category>
+            
+          
+            
+              <category>lập trình</category>
+            
+          
+        
+        
+          
+            
+              <category>Julia Dojo</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>Julia Dojo: làm việc với file</title>
         <link>https://ndgnuh.github.io/julia-dojo/lam-viec-voi-file-trong-julia/</link>
         <pubDate>Sat, 08 Feb 2020 20:41:06 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Sat, 08 Feb 2020 20:41:06 +0700</atom:modified>
         <guid>https://ndgnuh.github.io/julia-dojo/lam-viec-voi-file-trong-julia/</guid>
         <description>Cách để lưu trữ dữ liệu từ Julia vào ổ đĩa, và nạp dữ liệu từ đĩa vào Julia</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>julia</category>
+            
+          
+        
+        
+          
+            
+              <category>hướng dẫn</category>
+            
+          
+            
+              <category>lập trình</category>
+            
+          
+        
+        
+          
+            
+              <category>Julia Dojo</category>
+            
+          
+        
       </item>
       
       <item>
@@ -30,8 +107,39 @@
         <link>https://ndgnuh.github.io/julia-dojo/cai-dat-va-su-dung-goi-julia/</link>
         <pubDate>Sat, 01 Feb 2020 23:29:43 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Wed, 29 Jan 2020 01:12:17 +0700</atom:modified>
         <guid>https://ndgnuh.github.io/julia-dojo/cai-dat-va-su-dung-goi-julia/</guid>
         <description>Hướng dẫn cài đặt và sử dụng các gói trong Julia</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>julia</category>
+            
+          
+        
+        
+          
+            
+              <category>hướng dẫn</category>
+            
+          
+            
+              <category>lập trình</category>
+            
+          
+        
+        
+          
+            
+              <category>Julia Dojo</category>
+            
+          
+        
       </item>
       
       <item>
@@ -39,8 +147,39 @@
         <link>https://ndgnuh.github.io/julia-dojo/dung-julia-voi-jupyter-notebook-va-jupyter-lab/</link>
         <pubDate>Sat, 01 Feb 2020 23:28:52 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Fri, 31 Jan 2020 13:46:21 +0700</atom:modified>
         <guid>https://ndgnuh.github.io/julia-dojo/dung-julia-voi-jupyter-notebook-va-jupyter-lab/</guid>
         <description>Hướng dẫn cấu hình Julia để sử dụng với Jupyter Notebook và Jupyter Lab</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>julia</category>
+            
+          
+        
+        
+          
+            
+              <category>hướng dẫn</category>
+            
+          
+            
+              <category>lập trình</category>
+            
+          
+        
+        
+          
+            
+              <category>Julia Dojo</category>
+            
+          
+        
       </item>
       
       <item>
@@ -48,8 +187,39 @@
         <link>https://ndgnuh.github.io/julia-dojo/ham-trong-julia/</link>
         <pubDate>Thu, 30 Jan 2020 00:06:10 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Thu, 30 Jan 2020 00:06:10 +0700</atom:modified>
         <guid>https://ndgnuh.github.io/julia-dojo/ham-trong-julia/</guid>
         <description>Giới thiệu về hàm trong Julia</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>julia</category>
+            
+          
+        
+        
+          
+            
+              <category>hướng dẫn</category>
+            
+          
+            
+              <category>lập trình</category>
+            
+          
+        
+        
+          
+            
+              <category>Julia Dojo</category>
+            
+          
+        
       </item>
       
       <item>
@@ -57,8 +227,39 @@
         <link>https://ndgnuh.github.io/julia-dojo/re-nhanh-va-lap-trong-julia/</link>
         <pubDate>Tue, 28 Jan 2020 12:04:27 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Thu, 30 Jan 2020 00:05:21 +0700</atom:modified>
         <guid>https://ndgnuh.github.io/julia-dojo/re-nhanh-va-lap-trong-julia/</guid>
         <description>Cấu trúc điều kiện và lặp trong Julia</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>julia</category>
+            
+          
+        
+        
+          
+            
+              <category>hướng dẫn</category>
+            
+          
+            
+              <category>lập trình</category>
+            
+          
+        
+        
+          
+            
+              <category>Julia Dojo</category>
+            
+          
+        
       </item>
       
       <item>
@@ -66,8 +267,39 @@
         <link>https://ndgnuh.github.io/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia/</link>
         <pubDate>Mon, 27 Jan 2020 17:28:39 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Mon, 27 Jan 2020 17:28:39 +0700</atom:modified>
         <guid>https://ndgnuh.github.io/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia/</guid>
         <description>Biến số, hằng số, kiểu dữ liệu và một số thao tác đơn giản với chúng trong Julia</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>julia</category>
+            
+          
+        
+        
+          
+            
+              <category>hướng dẫn</category>
+            
+          
+            
+              <category>lập trình</category>
+            
+          
+        
+        
+          
+            
+              <category>Julia Dojo</category>
+            
+          
+        
       </item>
       
       <item>
@@ -75,8 +307,39 @@
         <link>https://ndgnuh.github.io/julia-dojo/hello-world/</link>
         <pubDate>Sun, 26 Jan 2020 21:34:44 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Sun, 26 Jan 2020 21:34:44 +0700</atom:modified>
         <guid>https://ndgnuh.github.io/julia-dojo/hello-world/</guid>
         <description>Viết chương trình đầu tiên của bạn trong Julia</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>julia</category>
+            
+          
+        
+        
+          
+            
+              <category>hướng dẫn</category>
+            
+          
+            
+              <category>lập trình</category>
+            
+          
+        
+        
+          
+            
+              <category>Julia Dojo</category>
+            
+          
+        
       </item>
       
       <item>
@@ -84,8 +347,39 @@
         <link>https://ndgnuh.github.io/julia-dojo/cai-dat-julia/</link>
         <pubDate>Sat, 25 Jan 2020 21:36:08 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Sat, 25 Jan 2020 21:36:08 +0700</atom:modified>
         <guid>https://ndgnuh.github.io/julia-dojo/cai-dat-julia/</guid>
         <description>Hướng dẫn tải và cài đặt Julia trên máy tính của bạn</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>julia</category>
+            
+          
+        
+        
+          
+            
+              <category>hướng dẫn</category>
+            
+          
+            
+              <category>lập trình</category>
+            
+          
+        
+        
+          
+            
+              <category>Julia Dojo</category>
+            
+          
+        
       </item>
       
       <item>
@@ -93,10 +387,42 @@
         <link>https://ndgnuh.github.io/julia-dojo/</link>
         <pubDate>Mon, 20 Jan 2020 00:00:00 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Wed, 29 Jan 2020 01:12:17 +0700</atom:modified>
         <guid>https://ndgnuh.github.io/julia-dojo/</guid>
         <description>Julia là cái gì?</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>julia</category>
+            
+          
+        
+        
+          
+            
+              <category>hướng dẫn</category>
+            
+          
+            
+              <category>lập trình</category>
+            
+          
+        
+        
+          
+            
+              <category>Julia Dojo</category>
+            
+          
+        
       </item>
       
+
     
   </channel>
 </rss>

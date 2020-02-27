@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Tags on Rants</title>
     <link>https://ndgnuh.github.io/tags/</link>
@@ -9,22 +14,33 @@
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
     <webMaster>ndgnuh@protonmail.com (Hùng)</webMaster>
     <copyright>©2020, copy ghi nguồn :)</copyright>
-    <lastBuildDate>Sat, 08 Feb 2020 20:41:06 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 27 Feb 2020 17:30:13 +0700</lastBuildDate>
     
         <atom:link href="https://ndgnuh.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+
       
       <item>
         <title>julia</title>
         <link>https://ndgnuh.github.io/tags/julia/</link>
-        <pubDate>Sat, 08 Feb 2020 20:41:06 +0700</pubDate>
+        <pubDate>Thu, 27 Feb 2020 17:30:13 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
+        
         <guid>https://ndgnuh.github.io/tags/julia/</guid>
         <description></description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+        
+        
       </item>
       
+
     
   </channel>
 </rss>

@@ -4,69 +4,69 @@
   
   <url>
     <loc>https://ndgnuh.github.io/categories/</loc>
-    <lastmod>2020-02-08T20:41:06+07:00</lastmod>
+    <lastmod>2020-02-27T17:30:13+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/categories/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</loc>
-    <lastmod>2020-02-08T20:41:06+07:00</lastmod>
+    <lastmod>2020-02-27T17:30:13+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/tags/julia/</loc>
-    <lastmod>2020-02-08T20:41:06+07:00</lastmod>
+    <lastmod>2020-02-27T17:30:13+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/series/julia-dojo/</loc>
-    <lastmod>2020-02-08T20:41:06+07:00</lastmod>
+    <lastmod>2020-02-27T17:30:13+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://ndgnuh.github.io/julia-dojo/lam-viec-voi-file-trong-julia/</loc>
-    <lastmod>2020-02-08T20:41:06+07:00</lastmod>
+    <loc>https://ndgnuh.github.io/julia-dojo/tu-dien-va-tap-hop-trong-julia/</loc>
+    <lastmod>2020-02-27T17:30:13+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/categories/l%E1%BA%ADp-tr%C3%ACnh/</loc>
-    <lastmod>2020-02-08T20:41:06+07:00</lastmod>
+    <lastmod>2020-02-27T17:30:13+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/posts/</loc>
-    <lastmod>2020-02-08T20:41:06+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/</loc>
-    <lastmod>2020-02-08T20:41:06+07:00</lastmod>
+    <lastmod>2020-02-27T17:30:13+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/series/</loc>
-    <lastmod>2020-02-08T20:41:06+07:00</lastmod>
+    <lastmod>2020-02-27T17:30:13+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/tags/</loc>
+    <lastmod>2020-02-27T17:30:13+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/julia-dojo/lam-viec-voi-file-trong-julia/</loc>
     <lastmod>2020-02-08T20:41:06+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -88,6 +88,13 @@
   
   <url>
     <loc>https://ndgnuh.github.io/lien-he/</loc>
+    <lastmod>2020-01-30T00:47:34+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/</loc>
     <lastmod>2020-01-30T00:47:34+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
