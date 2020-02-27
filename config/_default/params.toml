@@ -38,7 +38,7 @@ myname = "Hùng"
 email = "ndgnuh@protonmail.com"
 whoami = "Hello, friend"
 useGravatar = true
-location = "Đâu đó ở Việt Nam"
+location = "~/"
 organization = ""
 link = "https://github.com/ndgnuh/"
 

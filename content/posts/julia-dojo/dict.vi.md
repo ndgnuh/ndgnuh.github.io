@@ -74,8 +74,8 @@ Tập hợp là kiểu được cài đặt giống với định nghĩa toán h
 ```julia
 s1 = Set([1, 2, 3])
 s2 = Set([3, 3, 4, 5, 6]) # sẽ tự bỏ phần tử trùng
-s1 ∪ s1 # hợp
-s1 ∩ s2 # giao
+s1 ∪ s1 # hợp, viết bằng cách \cup<tab>
+s1 ∩ s2 # giao, viết bằng cách \cap<tab>
 setdiff(s1, s2) # hiệu tập hợp s1 \ s2
 for x in s1 @show x end # lặp qua tập hợp
 filter(x -> x < 3, s1) # lọc phần tử
