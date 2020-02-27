@@ -20,23 +20,23 @@ keywords:
 - julia dojo
 - julialang
 - hướng dẫn
-aliases:
-- /julia-dojo
-- /posts/julia-dojo
-- /vi/julia-dojo
-- /vi/posts/julia-dojo
 ---
+
 ## Julia là gì? Tại sao lại học nó?
 
 Julia là một ngôn ngữ lập trình bậc cao dễ sử dụng, **nhanh** và mạnh mẽ. Một số đặc trưng của Julia cũng như lí do bạn sẽ muốn dùng nó (hoặc không):
-- Julia là một ngôn ngữ lập trình hàm
-- Kiểu động (dynamic typing)
-- Julia được biên dịch (compile), tuy nhiên cũng có chế độ thông dịch (intepreter) nếu bạn muốn
-- Julia **nhanh**
-- Cú pháp rất dễ chịu, những bạn nào quen dùng `python` hoặc `matlab` sẽ thấy quen thuộc
-- Cực kì mạnh, thư viện tiêu chuẩn hỗ trợ rất tốt việc tính toán toán học và xử lý song song.
-- Multiple dispatch (cái này có thể khiến bạn cảm giác lạ lạ, nhưng nó đỉnh lắm)
+- Julia là phần mềm tự do & mã nguồn mở (giấy phép MIT)
+- Kiểu dữ liệu người dùng định nghĩa nhanh và gọn giống như các kiểu built-in
+- Không cần chủ động vector hóa code vì hiệu năng, code chưa vector hóa cũng nhanh
+- Green threading
+- Hệ thống kiểu dữ liệu tự nhiên, mạnh mẽ
+- Chuyển đổi và thăng cập một cách "thanh nhã" giữa các kiểu dữ liệu
+- Hỗ trợ rất tốt Unicode, không giới hạn ở UTF-8.
+- Gọi trực tiếp code C, không cần wrapper hay API
+- Có thể thực hiện tốt các khả năng của shell hệ thống, quản lí các tiến trình khác
+- Macro, metaprogramming
 - Julia miễn phí và mã nguồn mở (giấy phép MIT)
+- Multiple dispatch (cái này có thể khiến bạn cảm giác lạ lạ, nhưng nó đỉnh lắm)
 - Julia hứa hẹn sẽ giải quyết vấn đề hai ngôn ngữ
 
 Khoan, nhiều "điểm tốt" quá, nghe vô lý. Thằng Python bậc cao nhưng nó chậm như rùa, mọi thư viện đều phải binding và viết với C. Thằng C thì nhanh, nhưng mà để viết được nó thì không phải ông nào cũng làm được. Thằng Matlab thì nhanh và dễ viết thật, nhưng bạn ơi, tiền đâu mà dùng Matlab, ngồi crack thôi chứ còn gì. Hơn nữa, Matlab nếu bạn dùng cho mục đích cá nhân thì crack được, chứ một tổ chức hay cơ quan thì họ sẽ bảo rằng: 
@@ -91,7 +91,7 @@ Những thứ cơ bản nhất
 ### Level 2: vài đường cơ bản (dự định)
 Giống Level 1, nhưng kĩ hơn một tí, và giới thiệu các gói mình nghĩ là hay.
 - [Làm việc với file](/julia-dojo/lam-viec-voi-file-trong-julia)
-- Tuple, từ điển, tập hợp
+- [Từ điển, tập hợp](/julia-dojo/tu-dien-va-tap-hop-trong-julia)
 - Struct
 - Chuỗi kí tự, biểu thức chính quy và biểu tượng
 - Đại số tuyến tính
@@ -137,7 +137,7 @@ Vì có rất nhiều module của Julia mang tính chuyên ngành cao, mà trì
 
 ## Tạm kết
 
-{{<notice note>}}
+{{<notice info>}}
 Fun fact: "Julia" nghe rất giống tên của một phụ nữ trong nhiều nền văn hóa, do đó, dù quy chuẩn của cộng đồng cho rằng Julia không dựa trên tên của ai và ngôn ngữ này không được nhân hóa dưới bất kì hình thức nào, một cơ số người khi nói về ngôn ngữ này vẫn vô thức dùng đại từ "cô ấy", trong đó có cả mình :))
 {{</notice>}}
 
