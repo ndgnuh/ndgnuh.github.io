@@ -1605,8 +1605,8 @@
 <td class="lntd">
 <pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">s1</span> <span class="o">=</span> <span class="kt">Set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 <span class="n">s2</span> <span class="o">=</span> <span class="kt">Set</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span> <span class="c"># sẽ tự bỏ phần tử trùng</span>
-<span class="n">s1</span> <span class="o">∪</span> <span class="n">s1</span> <span class="c"># hợp</span>
-<span class="n">s1</span> <span class="o">∩</span> <span class="n">s2</span> <span class="c"># giao</span>
+<span class="n">s1</span> <span class="o">∪</span> <span class="n">s1</span> <span class="c"># hợp, viết bằng cách \cup&lt;tab&gt;</span>
+<span class="n">s1</span> <span class="o">∩</span> <span class="n">s2</span> <span class="c"># giao, viết bằng cách \cap&lt;tab&gt;</span>
 <span class="n">setdiff</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">)</span> <span class="c"># hiệu tập hợp s1 \ s2</span>
 <span class="k">for</span> <span class="n">x</span> <span class="kp">in</span> <span class="n">s1</span> <span class="nd">@show</span> <span class="n">x</span> <span class="k">end</span> <span class="c"># lặp qua tập hợp</span>
 <span class="n">filter</span><span class="p">(</span><span class="n">x</span> <span class="o">-&gt;</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">,</span> <span class="n">s1</span><span class="p">)</span> <span class="c"># lọc phần tử</span>
