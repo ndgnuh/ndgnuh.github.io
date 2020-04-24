@@ -1204,7 +1204,12 @@
 
     
 <meta name="description" content="Blog cá nhân, viết tạp nham" />
+
 <meta name="keywords" content="file,tập,tệp,julia,lập trình,học lập trình,ngôn ngữ julia,julia dojo,julialang,hướng dẫn">
+
+
+<meta name="keywords" content="julia">
+
 <meta name="created" content="2020-02-08T20:41:06&#43;0700">
 <meta name="modified" content="2020-02-08T20:41:06&#43;0700">
 <meta property="article:published_time" content="2020-02-08T20:41:06&#43;0700">
@@ -1218,7 +1223,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="Blog cá nhân, viết tạp nham">
 
-<meta name="generator" content="Hugo 0.65.3" />
+<meta name="generator" content="Hugo 0.69.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1226,7 +1231,9 @@
 <meta name="msapplication-navbutton-color" content="#fff">
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+
 <link rel="canonical" href="https://ndgnuh.github.io/julia-dojo/lam-viec-voi-file-trong-julia/">
+
 <link rel="manifest" href="/manifest.json">
 
   
@@ -1280,6 +1287,11 @@
     </script>
     <div id="container">
         
+
+
+
+
+
         <div class="wrapper" data-type="posts" data-kind="page">
             <nav class="navbar" role="navigation" aria-label="main navigation" data-dir="ltr">
   <div class="navbar__brand">
@@ -1354,32 +1366,44 @@
   <span aria-hidden="true"></span>
 </a>
 <div class="navbarm__collapse" data-open="false">
-  <ul>
+  <ul dir="ltr">
     
     
       
       
       
       
-      <li class="navbarm__menu--item ">
-        <a href="/about">Giới thiệu</a>
-      </li>
+
+      
+        <li class="navbarm__menu--item ">
+          <a href="/about">Giới thiệu</a>
+        </li>
+      
+      
     
       
       
       
       
-      <li class="navbarm__menu--item ">
-        <a href="/lien-he/">Liên hệ</a>
-      </li>
+
+      
+        <li class="navbarm__menu--item ">
+          <a href="/lien-he/">Liên hệ</a>
+        </li>
+      
+      
     
       
       
       
       
-      <li class="navbarm__menu--item ">
-        <a href="/julia-dojo">Julia Dojo</a>
-      </li>
+
+      
+        <li class="navbarm__menu--item ">
+          <a href="/julia-dojo">Julia Dojo</a>
+        </li>
+      
+      
     
 
     
@@ -1486,31 +1510,31 @@
   
 </nav>
   
-  <noscript>
-    
-  </noscript>
-  <div class="single hide">
-    <script>document.querySelector('.single').classList.remove('hide')</script>
+  
+  <div class="single ">
+    <div class="single__nojs"></div>
+    <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
     <h2 class="single__title" data-ani="true">Julia Dojo: làm việc với file</h2>
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="Được viết lúc">📅&nbsp;08-02-2020 </time>  &middot; <span class="single__info" title="Thời gian đọc"> ☕ 10  phút đọc </span>
+  <time class="single__info" title="Được viết lúc">📅&nbsp;08-02-2020 </time>
+  
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Thời gian đọc"> ☕&nbsp;10&nbsp; phút đọc </span>
+  
   <span class="single__info">
     
   </span>
 </div>
       
-<div class="single__tags caption">
-
+<ul class="single__tags caption">
   
-    🏷️
-  
-  
-    <li><a href="https://ndgnuh.github.io/tags/julia/" class="single__tag" title="julia">#julia</a></li>
+  🏷️
   
 
-</div>
+  <li><a href="https://ndgnuh.github.io/tags/julia/" class="single__tag" title="julia">#julia</a></li>
+
+</ul>
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
@@ -1548,6 +1572,7 @@
 <div class="notices info" >
   Đừng lo lắng quá về các chế độ mở file. Theo mình, trong đa số trường hợp, bạn không cần quan tâm lắm về cái này.
 </div>
+
   </div>
 </div>
 <p>Sau khi làm việc với file xong, đừng quên đóng nó lại:</p>
@@ -2953,7 +2978,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var clipInit = false;
     var preChromaElem = document.querySelectorAll('pre.chroma');
     var langCodeElem = document.querySelectorAll('.language-code');
-    var dolorCodeElem = document.querySelectorAll('div.language-\\$');
+    var dollarCodeElem = document.querySelectorAll('div.language-\\$');
     var gtCodeElem = document.querySelectorAll('div.language-\\>');
 
     var makeClipboard = function(elem) {
@@ -3010,7 +3035,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var newClipboardElem = document.createElement('span');
             newClipboardElem.setAttribute('class', 'copy-to-clipboard');
             newClipboardElem.setAttribute('title', 'Copy to clipboard');
-            closest(code, 'div.chroma').append(newClipboardElem);
+            elem.parentNode.parentNode.insertBefore(newClipboardElem, elem.parentNode.nextElementSibling);
           }
         }
       }
@@ -3037,8 +3062,8 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }) : null;
 
-    dolorCodeElem ? 
-    dolorCodeElem.forEach(function(elem) {
+    dollarCodeElem ? 
+    dollarCodeElem.forEach(function(elem) {
       elem.querySelectorAll('code').forEach(function (codeElem) {
         makeSymbolClipboard(codeElem);
       });
@@ -3054,8 +3079,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     
-    dolorCodeElem ?
-    dolorCodeElem.forEach(function(elem) {
+    dollarCodeElem ?
+    dollarCodeElem.forEach(function(elem) {
       var lnts = elem.parentNode.parentNode ? elem.parentNode.parentNode.querySelectorAll('.lnt') : null;
       lnts ? 
       lnts.forEach(function(lnt) {
@@ -3377,7 +3402,12 @@ document.addEventListener('DOMContentLoaded', function () {
 </footer>
         </div>
         
-<div class="wrapper__right hide" dir="ltr">
+
+
+
+
+
+<div class="wrapper__right hide" data-pad="true" dir="ltr">
   <script>document.querySelector('.wrapper__right').classList.remove('hide')</script>
   
 </div>
