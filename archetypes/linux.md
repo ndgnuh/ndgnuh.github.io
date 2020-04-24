@@ -4,7 +4,13 @@ date: {{ .Date }}
 draft: true
 categories:
 tags:
-series:
+- linux
+- foss
 keywords:
+- ubuntu
+- linux
+- foss
+- mã nguồn mở
+- tự do
 ---
 
