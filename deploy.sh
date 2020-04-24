@@ -33,4 +33,4 @@ echo "Deploying to github..."
 cd public/
 git add .
 git commit -m "Rebuild site at $(date "+%Y-%m-%d %H:%M")"
-git push origin master
+git push origin HEAD:master
