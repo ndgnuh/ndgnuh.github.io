@@ -15,7 +15,7 @@ echo "Fetching the website..."
 git clone https://github.com/ndgnuh/ndgnuh.github.io -b master public
 
 echo "Building the website with hugo-${HUGO_VERSION}..."
-hugo --destination ../public
+hugo
 
 if [ $? != 0 ]; then
     echo "Build failed"
