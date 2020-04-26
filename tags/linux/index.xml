@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>linux on Rants</title>
+    <link>https://ndgnuh.github.io/tags/linux/</link>
+    <description>Recent content in linux on Rants</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi</language>
+    <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
+    <webMaster>ndgnuh@protonmail.com (Hùng)</webMaster>
+    <copyright>©2020, copy ghi nguồn :)</copyright>
+    <lastBuildDate>Sun, 26 Apr 2020 15:42:24 +0700</lastBuildDate>
+    
+        <atom:link href="https://ndgnuh.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Gõ tiếng Việt và Vim</title>
+        <link>https://ndgnuh.github.io/posts/ibus-and-vim/</link>
+        <pubDate>Sun, 26 Apr 2020 15:42:24 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Sun, 26 Apr 2020 15:42:24 +0700</atom:modified>
+        <guid>https://ndgnuh.github.io/posts/ibus-and-vim/</guid>
+        <description>Hello friend. Nếu bạn đã sử dụng bất kì hệ điều hành Unix based (Linux, BSD), bạn rất có thể đã gặp khá nhiều vấn đề trong việc gõ tiếng Việt. Đặc biệt nếu bạn gõ telex và những công cụ của bạn sử dụng phím tắt bàn phím như Vim.
+Vấn đề Nếu bạn đang xem bài viết này, khả năng là bạn đã quen sử dụng Vim rồi nên mình cũng chẳng giới thiệu về Vim làm gì.</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>linux</category>
+            
+          
+            
+              <category>foss</category>
+            
+          
+        
+        
+          
+            
+              <category>hướng dẫn</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
