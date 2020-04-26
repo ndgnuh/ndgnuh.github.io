@@ -2,6 +2,7 @@
 title: "Gõ tiếng Việt và Vim"
 date: 2020-04-26T15:42:24+07:00
 draft: false
+summary: "Thuốc giảm đau cho việc gõ tiếng Việt với Vim"
 categories:
 - hướng dẫn
 tags:
