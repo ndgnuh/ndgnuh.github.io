@@ -2,7 +2,8 @@
 title: "Gõ tiếng Việt và Vim"
 date: 2020-04-26T15:42:24+07:00
 draft: false
-categories: hướng dẫn
+categories:
+- hướng dẫn
 tags:
 - linux
 - foss
