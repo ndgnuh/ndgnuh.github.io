@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>linux on Rants</title>
-    <link>https://ndgnuh.github.io/tags/linux/</link>
-    <description>Recent content in linux on Rants</description>
+    <title>lyx on Rants</title>
+    <link>https://ndgnuh.github.io/tags/lyx/</link>
+    <description>Recent content in lyx on Rants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi</language>
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
@@ -16,7 +16,7 @@
     <copyright>©2020, copy ghi nguồn :)</copyright>
     <lastBuildDate>Fri, 08 May 2020 23:47:59 +0700</lastBuildDate>
     
-        <atom:link href="https://ndgnuh.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://ndgnuh.github.io/tags/lyx/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -58,40 +58,6 @@
             
           
         
-        
-        
-      </item>
-      
-      <item>
-        <title>Gõ tiếng Việt và Vim</title>
-        <link>https://ndgnuh.github.io/posts/ibus-and-vim/</link>
-        <pubDate>Sun, 26 Apr 2020 15:42:24 +0700</pubDate>
-        <author>ndgnuh@protonmail.com (Hùng)</author>
-        <atom:modified>Sun, 26 Apr 2020 15:42:24 +0700</atom:modified>
-        <guid>https://ndgnuh.github.io/posts/ibus-and-vim/</guid>
-        <description>Thuốc giảm đau cho việc gõ tiếng Việt với Vim</description>
-        
-        <dc:creator>Hùng</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>linux</category>
-            
-          
-            
-              <category>foss</category>
-            
-          
-        
-        
-          
-            
-              <category>hướng dẫn</category>
-            
-          
         
         
       </item>

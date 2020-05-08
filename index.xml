@@ -26,6 +26,46 @@
 
       
       <item>
+        <title>LyX: trình sửa văn bản WYSIWYM</title>
+        <link>https://ndgnuh.github.io/posts/lyx-tex-editor/</link>
+        <pubDate>Fri, 08 May 2020 23:47:59 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Fri, 08 May 2020 23:47:59 +0700</atom:modified>
+        <guid>https://ndgnuh.github.io/posts/lyx-tex-editor/</guid>
+        <description>LyX - trình xử lý văn bản WYSIWYM  và front end cho LaTeX</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>linux</category>
+            
+          
+            
+              <category>foss</category>
+            
+          
+            
+              <category>lyx</category>
+            
+          
+            
+              <category>latex</category>
+            
+          
+            
+              <category>tex</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
         <title>Gõ tiếng Việt và Vim</title>
         <link>https://ndgnuh.github.io/posts/ibus-and-vim/</link>
         <pubDate>Sun, 26 Apr 2020 15:42:24 +0700</pubDate>
