@@ -88,44 +88,11 @@ Những thứ cơ bản nhất
 - [Cấu trúc điều khiển](/julia-dojo/re-nhanh-va-lap-trong-julia)
 - [Hàm](/julia-dojo/ham-trong-julia)
 
-### Level 2: vài đường cơ bản (dự định)
+### Level 2: vài đường cơ bản
 Giống Level 1, nhưng kĩ hơn một tí, và giới thiệu các gói mình nghĩ là hay.
 - [Làm việc với file](/julia-dojo/lam-viec-voi-file-trong-julia)
 - [Từ điển, tập hợp](/julia-dojo/tu-dien-va-tap-hop-trong-julia)
-- Struct
-- Chuỗi kí tự, biểu thức chính quy và biểu tượng
-- Đại số tuyến tính
-- Mảng, ma trận
-- Thống kê
-- Vẽ đồ thị
-- DataFrame
-- Gọi các ngôn ngữ khác
-- Đa luồng, đa tiến trình
-- Xử lý ngoại lệ
-- Broadcast
-
-### Level 3: thiên biến vạn hóa (dự định)
-Đa hình và những thứ liên quan tới nó
-- Nói thêm về hệ thống kiểu dữ liệu
-- Các loại giao diện
-- Multiple dispatch
-
-### Level 5: sáng tạo chiêu thức (dự định)
-Sẽ có một ngày bạn phải tự viết chương trình của riêng mình
-- Tạo một project
-- Unit testing
-- Viết tài liệu
-
-### Extra: làm chủ vũ khí (dự định)
-Công cụ lập trình mà bạn có thể sẽ thích. 
-- [nên đọc] Jupyter notebook
-- [nên đọc] VSCode
-- [tùy chọn] Atom: Juno / Julia pro
-- [tùy chọn] Vim
-- Emacs (chưa chắc)
-- Một số kĩ thuật để code nhanh hơn
-- Tính toán song song
-- Meta programming
+- To be continued...
 
 ### Về các module, gói
 
