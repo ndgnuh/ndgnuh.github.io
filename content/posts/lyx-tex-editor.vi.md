@@ -68,3 +68,5 @@ Giờ hãy quay lại LyX. Hãy nhấn `Ctrl + s` để lưu file của bạn l�
 - `file > export` xuất ra file pdf (hoặc định dạng khác)
 
 Với LyX chúng ta sẽ có thể tạo ra những văn bản (mang tính kĩ thuật hoặc không) rất nhanh chóng và đẹp (báo cáo, viết sách, ghi bài, đồ án... làm được hết). Tuy nhiên tới đây bài viết cũng khá dài (và đây là một bài viết mang tính giới thiệu) nên những tính nay hay ho của LyX sẽ được trình bày trong những bài viết sau.
+
+Edit: Nếu bạn thử gõ tiếng Việt và LyX báo lỗi thì đừng lo, đây là do LaTeX chứ không phải LyX. Việc gõ tiếng Việt hoàn toàn khả thi và rất dễ thôi, nhưng mình sẽ nói trong bài viết khác.
