@@ -2,6 +2,7 @@
 title: "LyX: trình sửa văn bản WYSIWYM"
 date: 2020-05-08T23:47:59+07:00
 summary: "LyX - trình xử lý văn bản WYSIWYM  và front end cho LaTeX"
+lastmod: 2020-05-18T20:11:32+07:00
 draft: false
 tags:
 - linux
@@ -70,3 +71,16 @@ Giờ hãy quay lại LyX. Hãy nhấn `Ctrl + s` để lưu file của bạn l�
 Với LyX chúng ta sẽ có thể tạo ra những văn bản (mang tính kĩ thuật hoặc không) rất nhanh chóng và đẹp (báo cáo, viết sách, ghi bài, đồ án... làm được hết). Tuy nhiên tới đây bài viết cũng khá dài (và đây là một bài viết mang tính giới thiệu) nên những tính nay hay ho của LyX sẽ được trình bày trong những bài viết sau.
 
 Edit: Nếu bạn thử gõ tiếng Việt và LyX báo lỗi thì đừng lo, đây là do LaTeX chứ không phải LyX. Việc gõ tiếng Việt hoàn toàn khả thi và rất dễ thôi, nhưng mình sẽ nói trong bài viết khác.
+
+Edit: Để sử dụng đầy đủ những tính năng trong LyX, bạn cần có một số gói LaTeX như sau, hãy dùng lệnh ở dưới để cài chúng (mình sẽ cố lọc ra gói nào dùng cho việc gì ở bài viết sau):
+
+```
+tlmgr install algorithm2e algorithms apacite bbding bezos bibtopic
+tlmgr install breakurl covington csquotes diagbox endnotes enumitem
+tlmgr install epstopdf esint eurosym feyn fragments framed frankenstein
+tlmgr install harvard hyphenat jurabib lettrine luainputenc marginnote
+tlmgr install mathdesign mathdots mhchem multirow nicefrac nomencl
+tlmgr install picinpar pict2e prettyref preview rotfloat rsfs shapepar
+tlmgr install sidecap splitindex symbol tex-gyre ulem units wasy wasysym
+tlmgr install wrapfig xargs
+```
