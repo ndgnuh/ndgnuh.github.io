@@ -2,7 +2,7 @@
 title: "Lyx và văn bản tiếng Việt"
 date: 2020-05-28T22:52:30+07:00
 summary: "Cách gõ và build văn bản tiếng Việt với LyX"
-draft: true
+draft: false
 tags:
 - linux
 - foss
