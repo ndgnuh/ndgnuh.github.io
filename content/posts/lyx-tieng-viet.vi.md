@@ -1,6 +1,6 @@
 ---
 title: "Lyx và văn bản tiếng Việt"
-date: 2020-05-18T18:18:30+07:00
+date: 2020-05-28T22:52:30+07:00
 summary: "Cách gõ và build văn bản tiếng Việt với LyX"
 draft: true
 tags:
@@ -77,16 +77,30 @@ Compile tiếng Việt với hai TeX engine này khá đơn giản. Trong cài �
 ![](/img/lyx-vn-004.png)
 
 Bạn có thể tiếp tục dùng font mặc định của LaTeX hoặc sử dụng một font trên máy bạn. Với LuaLaTeX, nếu bạn gặp lỗi về font, hãy cài gói `luaotfload`. Gói này cần cho việc load font của LuaLaTeX.
+
 ```
 tlmgr install luaotfload
 # cập nhật lại hệ thống load font
 luaotfload-tool --update
 ```
 
-Trong phần cài đặt, chuyển sang phần `Format` và chọn `Output Format` là `Pdf (LuaLaTeX)` hoặc `Pdf (XeLaTeX)` theo ý muốn của bạn.
+Trong LuaLaTeX, có một lỗi khiến cho font Latin Modern Roman (font mặc định) không thể tìm thấy được (hên xui gặp phải). Cách xử lý là bạn cài gói `lm` (đề phòng trường hợp bạn chưa có font này)
+```
+tlmgr install lm
+```
+
+Nếu việc compile vẫn lỗi. Hãy vào thư mục cài đặt font Latin Modern Roman của LaTeX (`<thư mục cài LaTeX>/texmf-dist/fonts/opentype/public/lm/`) và cài đặt những font đó lên máy bạn. Trên \*Nix bạn chỉ cần symlink thư mục đó tới `/usr/share/fonts/` (trong ví dụ sẽ symlink toàn bộ thư mục font của LaTeX vào hệ thống)
+```sh
+# cả hệ thống
+ln -s $(realpath <thư mục LaTeX>/texmf-dist/fonts/) /usr/share/fonts/LaTeX
+# một người dùng
+ln -s $(realpath <thư mục LaTeX>/texmf-dist/fonts/) ~/.local/share/fonts/LaTeX
+```
+
+Cuối cùng, trong phần cài đặt, chuyển sang phần `Format` và chọn `Output Format` là `Pdf (LuaLaTeX)` hoặc `Pdf (XeLaTeX)` theo ý muốn của bạn.
 
 ![](/img/lyx-vn-005.png)
- 
+
 ## Lưu lại thay đổi cho văn bản sau này
 
 Nếu bạn phải làm việc với văn bản tiếng Việt thường xuyên, việc phải chỉnh Language mỗi khi viết văn bản mới sẽ rất bất tiện. LyX cung cấp chức năng lưu lại những tùy chọn của bạn và dùng nó cho những văn bản mới. Để làm việc này, bạn chỉ cần vào cài đặt văn bản (`Alt + D, S`), sau đó nhấn `Save as document defaults`. Những văn bản bạn tạo ra *sau đó* sẽ mặc định có những tùy chọn như bạn đã thiết lập.
@@ -95,6 +109,6 @@ Nếu bạn phải làm việc với văn bản tiếng Việt thường xuyên,
 
 ## Kết luận
 
-Đến đây thì việc build một văn bản tiếng Việt trong LyX không còn là vấn đề. Các bộ gõ tiếng Việt cũng hoạt động khá tốt trên LyX. Riêng với người dùng *Nix, nếu bạn dùng Ibus Unikey, chế độ preedit có thể hơi khó chịu một chút vì phải commit trước khi dùng phím tắt. Theo tôi, cách ổn nhất là dùng [Ibus Bamboo](https://github.com/BambooEngine/ibus-bamboo), hãy chuyển sang chế độ 5 (forward as commit), vừa có thể gõ rất ổn và vừa có thể dùng được phím tắt.
+Đến đây thì việc build một văn bản tiếng Việt trong LyX không còn là vấn đề. Các bộ gõ tiếng Việt cũng hoạt động khá tốt trên LyX. Riêng với người dùng \*Nix, nếu bạn dùng Ibus Unikey, chế độ preedit có thể hơi khó chịu một chút vì phải commit trước khi dùng phím tắt. Theo tôi, cách ổn nhất là dùng [Ibus Bamboo](https://github.com/BambooEngine/ibus-bamboo), hãy chuyển sang chế độ 5 (forward as commit), vừa có thể gõ rất ổn và vừa có thể dùng được phím tắt.
 
 Nếu bạn muốn tìm hiểu thêm về tiếng Việt trong LaTeX thì có thể tham khảo bài viết http://vntex.sourceforge.net/doc/vn-fonts.html
