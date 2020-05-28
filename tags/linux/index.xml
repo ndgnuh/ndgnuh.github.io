@@ -14,13 +14,53 @@
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
     <webMaster>ndgnuh@protonmail.com (Hùng)</webMaster>
     <copyright>©2020, copy ghi nguồn :)</copyright>
-    <lastBuildDate>Fri, 08 May 2020 23:47:59 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2020 22:52:30 +0700</lastBuildDate>
     
         <atom:link href="https://ndgnuh.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Lyx và văn bản tiếng Việt</title>
+        <link>https://ndgnuh.github.io/posts/lyx-tieng-viet/</link>
+        <pubDate>Thu, 28 May 2020 22:52:30 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Thu, 28 May 2020 22:52:30 +0700</atom:modified>
+        <guid>https://ndgnuh.github.io/posts/lyx-tieng-viet/</guid>
+        <description>Cách gõ và build văn bản tiếng Việt với LyX</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>linux</category>
+            
+          
+            
+              <category>foss</category>
+            
+          
+            
+              <category>lyx</category>
+            
+          
+            
+              <category>latex</category>
+            
+          
+            
+              <category>tex</category>
+            
+          
+        
+        
+        
+      </item>
       
       <item>
         <title>LyX: trình sửa văn bản WYSIWYM</title>
