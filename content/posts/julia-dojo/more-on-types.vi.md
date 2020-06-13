@@ -173,4 +173,4 @@ Bài này nói về khá nhiều thứ. Một số điểm quan trọng là:
 - Trong Julia có kiểu dữ liệu con mà kế thừa hành động của kiểu dữ liệu cha (super type) của nó
 - Kiểu dữ liệu có thể có tham số
 
-Ngoài ra một số kiểu dữ liệu còn có bí danh (alias), ví dụ như `Int` là bí danh có `Int32` hoặc `Int64`, `Vector` là bí danh của `Array{T, 1} where T`. Kiểu dữ liệu là một trong những lý do chính mà Julia nhanh, nhưng việc đó để cho bài viết khác. Sau khi biết về hệ thống kiểu dữ liệu, ở bài viết sau chúng ta có thể tìm hiểu về *multiple dispatch trong Julìa*.
+Ngoài ra một số kiểu dữ liệu còn có bí danh (alias), ví dụ như `Int` là bí danh có `Int32` hoặc `Int64`, `Vector` là bí danh của `Array{T, 1} where T`. Kiểu dữ liệu là một trong những lý do chính mà Julia nhanh, nhưng việc đó để cho bài viết khác. Sau khi biết về hệ thống kiểu dữ liệu, ở bài viết sau chúng ta có thể tìm hiểu về *multiple dispatch trong Julia*.
