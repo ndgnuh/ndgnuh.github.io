@@ -14,13 +14,53 @@
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
     <webMaster>ndgnuh@protonmail.com (Hùng)</webMaster>
     <copyright>©2020, copy ghi nguồn :)</copyright>
-    <lastBuildDate>Sun, 26 Apr 2020 15:42:24 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2020 23:00:00 +0700</lastBuildDate>
     
         <atom:link href="https://ndgnuh.github.io/categories/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Julia dojo: nói thêm về kiểu dữ liệu</title>
+        <link>https://ndgnuh.github.io/posts/julia-dojo/more-on-types/</link>
+        <pubDate>Sun, 14 Jun 2020 23:00:00 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Sun, 14 Jun 2020 23:00:00 +0700</atom:modified>
+        <guid>https://ndgnuh.github.io/posts/julia-dojo/more-on-types/</guid>
+        <description>Nói thêm về hệ thống kiểu dữ liệu trong Julia</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>julia</category>
+            
+          
+        
+        
+          
+            
+              <category>hướng dẫn</category>
+            
+          
+            
+              <category>lập trình</category>
+            
+          
+        
+        
+          
+            
+              <category>Julia Dojo</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>Gõ tiếng Việt và Vim</title>
