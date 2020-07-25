@@ -1,5 +1,5 @@
 ---
-title: "Multiple Dispatch"
+title: "Julia Dojo: Multiple Dispatch"
 date: 2020-07-25T16:00:00+07:00
 draft: false
 summary: "Multiple dispatch và lý do Julia không cần class"
@@ -50,7 +50,7 @@ methods(sum)
 
 ## Class là không cần thiết
 
-Bản thân tác giá lần đầu tìm hiểu Julia cũng không thấy mặn mà vì thiếu đi class, sau một thời gian sử dụng Julia mới thấy Multiple Dispatch có những ưu điểm của class, thậm chí có nhứng ưu điểm mà class không có.
+Bản thân tác giả lần đầu tìm hiểu Julia cũng không thấy mặn mà vì thiếu đi class, sau một thời gian sử dụng Julia mới thấy Multiple Dispatch có những ưu điểm của class, thậm chí có nhứng ưu điểm mà class không có.
 
 ### Đa hình
 
