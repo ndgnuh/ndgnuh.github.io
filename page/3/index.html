@@ -9,11 +9,14 @@
     
 
 
+  
+  <script defer src="/js/fuse.min.94c78ad70b02749822921660cf4e9f0b3701bc0680c421afb784a78228de0275.js"></script>
+
+
+
 <script src="/js/enquire.min.dfb99dee1e029d51d6cfb672d847929890b1585402de17f5ed092edd72a688b4.js"></script>
 
 <script defer src="/js/lazysizes.min.31dd6a2d3a1ec0f78a8df007535cf23f03aeb5c70f026e6d6a19dac3b3acc340.js"></script>
-
-<script defer src="/js/fuse.min.94c78ad70b02749822921660cf4e9f0b3701bc0680c421afb784a78228de0275.js"></script>
 
 <script defer src="/js/helper/getParents.min.1618c696be7c98933f9a92677f518b512a74e55bdbb976b09936b4182e93181b.js"></script>
 
@@ -551,44 +554,59 @@
 
   
     
+    var baseurl = JSON.parse("\"https://ndgnuh.github.io/\"");
+    
     var permalink = JSON.parse("\"https://ndgnuh.github.io/\"");
+    
+    var langprefix = JSON.parse("\"\"");
     var searchResults = null;
     var searchMenu = null;
     var searchText = null;
     
+    
+    var enableSearch = JSON.parse("true");
     
     var enableSearchHighlight = JSON.parse("true");
     
     var searchResultPosition = JSON.parse("null");
     
     var sectionType = JSON.parse("\"page\"");
-
+    
+    var kind = JSON.parse("\"home\"");
+    
     var fuse = null;
 
-    (function initFuse() {
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', permalink + "index.json");
-      xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
-      xhr.onload = function () {
-        if (xhr.status === 200) {
-          fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
-            keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
-            includeMatches: enableSearchHighlight,
-            shouldSort: true,
-            threshold: 0.4,
-            location: 0,
-            distance: 100,
-            maxPatternLength: 32,
-            minMatchCharLength: 1,
-          });
-          window.fuse = fuse;
+    if (enableSearch) {
+      (function initFuse() {
+        var xhr = new XMLHttpRequest();
+        if (sectionType === "publication" && kind !== "page") {
+          xhr.open('GET', permalink + "index.json");
+        } else {
+          xhr.open('GET', baseurl + langprefix + "/index.json");
         }
-        else {
-          console.error('[' + xhr.status + ']Error:', xhr.statusText);
-        }
-      };
-      xhr.send();
-    })();
+        
+        xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+        xhr.onload = function () {
+          if (xhr.status === 200) {
+            fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
+              keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
+              includeMatches: enableSearchHighlight,
+              shouldSort: true,
+              threshold: 0.4,
+              location: 0,
+              distance: 100,
+              maxPatternLength: 32,
+              minMatchCharLength: 1,
+            });
+            window.fuse = fuse;
+          }
+          else {
+            console.error('[' + xhr.status + ']Error:', xhr.statusText);
+          }
+        };
+        xhr.send();
+      })();
+    }
 
     function makeLi(ulElem, obj) {
       var li = document.createElement('li');
@@ -1500,10 +1518,14 @@
             
             
             
+            
+            
+            
+            
                 
   <article class="summary-card" data-ani="true">
   <header>
-    <h5 class="title h5"><a href='https://ndgnuh.github.io/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia/'> Julia Dojo: biến số, kiểu dữ liệu, phép toán</a> </h5>
+    <h5 class="title h5"><a href='https://ndgnuh.github.io/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia/'>Julia Dojo: biến số, kiểu dữ liệu, phép toán</a> </h5>
     <h6 class="subtitle caption">
       <time title="Được viết lúc" dir="ltr">📅27-01-2020 </time> 
        
@@ -1526,7 +1548,7 @@
                 
   <article class="summary-card" data-ani="true">
   <header>
-    <h5 class="title h5"><a href='https://ndgnuh.github.io/julia-dojo/hello-world/'> Julia Dojo: Hello world</a> </h5>
+    <h5 class="title h5"><a href='https://ndgnuh.github.io/julia-dojo/hello-world/'>Julia Dojo: Hello world</a> </h5>
     <h6 class="subtitle caption">
       <time title="Được viết lúc" dir="ltr">📅26-01-2020 </time> 
        
@@ -1549,7 +1571,7 @@
                 
   <article class="summary-card" data-ani="true">
   <header>
-    <h5 class="title h5"><a href='https://ndgnuh.github.io/julia-dojo/cai-dat-julia/'> Julia Dojo: cài đặt Julia</a> </h5>
+    <h5 class="title h5"><a href='https://ndgnuh.github.io/julia-dojo/cai-dat-julia/'>Julia Dojo: cài đặt Julia</a> </h5>
     <h6 class="subtitle caption">
       <time title="Được viết lúc" dir="ltr">📅25-01-2020 </time> 
        
@@ -1572,7 +1594,7 @@
                 
   <article class="summary-card" data-ani="true">
   <header>
-    <h5 class="title h5"><a href='https://ndgnuh.github.io/julia-dojo/'> Julia Dojo: giới thiệu</a> </h5>
+    <h5 class="title h5"><a href='https://ndgnuh.github.io/julia-dojo/'>Julia Dojo: giới thiệu</a> </h5>
     <h6 class="subtitle caption">
       <time title="Được viết lúc" dir="ltr">📅20-01-2020 </time> 
       
@@ -1836,6 +1858,7 @@
         </span>
         
         
+        
             <span class="tag">
                 <a href="/tags/foss/" class="is-tags taxo__link" data-dir="ltr">
                     <span class="taxo__text">
@@ -1926,6 +1949,7 @@
         </span>
         
         
+        
             <span class="tag">
                 <a href="/categories/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/" class="is-categories taxo__link" data-dir="ltr">
                     <span class="taxo__text">
@@ -1962,6 +1986,7 @@
                 Series
             </a>
         </span>
+        
         
         
             <span class="tag">
@@ -2145,11 +2170,12 @@
   
   
     
-      <a href="https://ndgnuh.github.io//index.xml" type="application/rss+xml" title="RSS" aria-label="RSS Feed Link">
+      <a href="https://ndgnuh.github.io/index.xml" type="application/rss+xml" title="RSS" aria-label="RSS Feed Link">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><circle fill="currentColor" cx="6.18" cy="17.82" r="2.18"/><path fill="currentColor" d="M5.59 10.23c-.84-.14-1.59.55-1.59 1.4 0 .71.53 1.28 1.23 1.4 2.92.51 5.22 2.82 5.74 5.74.12.7.69 1.23 1.4 1.23.85 0 1.54-.75 1.41-1.59-.68-4.2-3.99-7.51-8.19-8.18zm-.03-5.71C4.73 4.43 4 5.1 4 5.93c0 .73.55 1.33 1.27 1.4 6.01.6 10.79 5.38 11.39 11.39.07.73.67 1.28 1.4 1.28.84 0 1.5-.73 1.42-1.56-.73-7.34-6.57-13.19-13.92-13.92z"/></svg>
       </a>
     
   
+
 
   </div>
 </div>
