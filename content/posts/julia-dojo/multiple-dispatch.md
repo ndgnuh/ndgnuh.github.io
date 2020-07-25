@@ -1,7 +1,7 @@
 ---
 title: "Multiple Dispatch"
-date: 2020-07-20T23:51:45+07:00
-draft: true
+date: 2020-07-25T16:00:00+07:00
+draft: false
 summary: "Multiple dispatch và lý do Julia không cần class"
 description: "Multiple dispatch và lý do Julia không cần class"
 categories:
