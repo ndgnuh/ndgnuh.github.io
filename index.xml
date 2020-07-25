@@ -26,6 +26,46 @@
 
       
       <item>
+        <title>Multiple Dispatch</title>
+        <link>https://ndgnuh.github.io/posts/julia-dojo/multiple-dispatch/</link>
+        <pubDate>Sat, 25 Jul 2020 16:00:00 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Sat, 25 Jul 2020 16:00:00 +0700</atom:modified>
+        <guid>https://ndgnuh.github.io/posts/julia-dojo/multiple-dispatch/</guid>
+        <description>Multiple dispatch và lý do Julia không cần class</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>julia</category>
+            
+          
+        
+        
+          
+            
+              <category>hướng dẫn</category>
+            
+          
+            
+              <category>lập trình</category>
+            
+          
+        
+        
+          
+            
+              <category>Julia Dojo</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>Julia dojo: nói thêm về kiểu dữ liệu</title>
         <link>https://ndgnuh.github.io/posts/julia-dojo/more-on-types/</link>
         <pubDate>Sun, 14 Jun 2020 23:00:00 +0700</pubDate>

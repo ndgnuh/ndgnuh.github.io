@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Julia dojo: nói thêm về kiểu dữ liệu – Rants</title>
+    <title>Multiple Dispatch – Rants</title>
     
 
 
@@ -556,7 +556,7 @@
     
     var baseurl = JSON.parse("\"https://ndgnuh.github.io/\"");
     
-    var permalink = JSON.parse("\"https://ndgnuh.github.io/posts/julia-dojo/more-on-types/\"");
+    var permalink = JSON.parse("\"https://ndgnuh.github.io/posts/julia-dojo/multiple-dispatch/\"");
     
     var langprefix = JSON.parse("\"\"");
     var searchResults = null;
@@ -1229,25 +1229,25 @@
 
 
     
-<meta name="description" content="Nói thêm về hệ thống kiểu dữ liệu trong Julia" />
+<meta name="description" content="Multiple dispatch và lý do Julia không cần class" />
 
 <meta name="keywords" content="julia,lập trình,học lập trình,ngôn ngữ julia,julia dojo,julialang,hướng dẫn,kiểu dữ liệu">
 
 
 <meta name="keywords" content="julia">
 
-<meta name="created" content="2020-06-14T23:00:00&#43;0700">
-<meta name="modified" content="2020-06-14T23:00:00&#43;0700">
-<meta property="article:published_time" content="2020-06-14T23:00:00&#43;0700">
+<meta name="created" content="2020-07-25T16:00:00&#43;0700">
+<meta name="modified" content="2020-07-25T16:00:00&#43;0700">
+<meta property="article:published_time" content="2020-07-25T16:00:00&#43;0700">
 
 <meta name="author" content="Hùng">
 
 
 <meta property="og:site_name" content="Rants">
-<meta property="og:title" content="Julia dojo: nói thêm về kiểu dữ liệu">
-<meta property="og:url" content="https://ndgnuh.github.io/posts/julia-dojo/more-on-types/">
+<meta property="og:title" content="Multiple Dispatch">
+<meta property="og:url" content="https://ndgnuh.github.io/posts/julia-dojo/multiple-dispatch/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="Nói thêm về hệ thống kiểu dữ liệu trong Julia">
+<meta property="og:description" content="Multiple dispatch và lý do Julia không cần class">
 
 <meta name="generator" content="Hugo 0.69.2" />
 <meta name="msapplication-TileColor" content="#fff">
@@ -1258,7 +1258,7 @@
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
 
-<link rel="canonical" href="https://ndgnuh.github.io/posts/julia-dojo/more-on-types/">
+<link rel="canonical" href="https://ndgnuh.github.io/posts/julia-dojo/multiple-dispatch/">
 
 <link rel="manifest" href="/manifest.json">
 
@@ -1272,11 +1272,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Julia dojo: nói thêm về kiểu dữ liệu",
-    "datePublished": "2020-06-14T23:00:00+07:00",
-    "dateModified": "2020-06-14T23:00:00+07:00",
-    "url" : "https://ndgnuh.github.io/posts/julia-dojo/more-on-types/",
-    "description": "Nói thêm về hệ thống kiểu dữ liệu trong Julia",
+    "headline": "Multiple Dispatch",
+    "datePublished": "2020-07-25T16:00:00+07:00",
+    "dateModified": "2020-07-25T16:00:00+07:00",
+    "url" : "https://ndgnuh.github.io/posts/julia-dojo/multiple-dispatch/",
+    "description": "Multiple dispatch và lý do Julia không cần class",
     "keywords": ["julia"],
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -1528,7 +1528,7 @@
   
   <li  class="is-active" >
     
-      <span>Julia dojo: nói thêm về kiểu dữ liệu</span>
+      <span>Multiple Dispatch</span>
     
   </li>
   
@@ -1540,13 +1540,13 @@
   <div class="single ">
     <div class="single__nojs"></div>
     <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
-    <h2 class="single__title" data-ani="true">Julia dojo: nói thêm về kiểu dữ liệu</h2>
+    <h2 class="single__title" data-ani="true">Multiple Dispatch</h2>
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="Được viết lúc">📅&nbsp;14-06-2020 </time>
+  <time class="single__info" title="Được viết lúc">📅&nbsp;25-07-2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Thời gian đọc"> ☕&nbsp;7&nbsp; phút đọc </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Thời gian đọc"> ☕&nbsp;8&nbsp; phút đọc </span>
   
   <span class="single__info">
     
@@ -1564,123 +1564,10 @@
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
-      <p>Chào mừng trở lại với Julia Dojo, đã khá lâu rồi không đăng bài có bài đăng với lý do deadline ngập mồm :( Bài viết trước đã giới thiệu một số kiểu dữ liệu cơ bản như số, từ điển, mảng. Trong bài viết này chúng ta sẽ khám phá một các tổng quan hơn về hệ thống kiểu dữ liệu của Julia.</p>
-<h2 id="động-nhưng-không-hẳn">Động, nhưng không hẳn</h2>
-<p>Mặc dù Julia có hệ thống kiểu dữ liệu, Julia vẫn có những lợi thế của hệ thống kiểu tĩnh bằng khả năng định kiểu dữ liệu cho các giá trị. Lợi thế tuyệt vời nhất là: hệ thống kiểu này cho phép <em>dispatch</em> dựa trên kiểu dữ liệu trong bất kì hàm nào.</p>
-<p>Mình không biết dịch dispatch là gì, bạn hiểu nôm na rằng, khi code chạy và hàm được gọi, kiểu dữ liệu của các tham số đều sẽ được biết hết, do đó Julia có thể tạo ra một phương thức phù hợp cho kiểu dữ liệu đó, compile nó thành mã máy và chạy. Điều này xảy ra với mọi hàm, bất kể bạn gọi nó ở đâu, do đó, bạn có thể <em>viết hàm mà không cần định kiểu</em> nhưng <em>code vẫn có thể chặt chẽ và nhanh</em>.</p>
-<p>Ví dụ như hàm <code>map</code>, hàm này nhận vào 1 hàm <code>f</code>, một mảng <code>xs</code> (không hẳn là mảng, nhưng phần đó sẽ được nói sau), trả về một mảng khác với các phần tử của nó là <code>f(x)</code> với <code>x</code> thuộc <code>xs</code>. Đoạn code dưới đây sẽ chạy ngon lành mặc dù hàm <code>x -&gt; x * ...</code> không có định kiểu.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">map</span><span class="p">(</span><span class="n">x</span> <span class="o">-&gt;</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
-<span class="n">map</span><span class="p">(</span><span class="n">x</span> <span class="o">-&gt;</span> <span class="n">x</span> <span class="o">*</span> <span class="s">&#34;!&#34;</span><span class="p">,</span> <span class="p">[</span><span class="s">&#34;a&#34;</span><span class="p">,</span> <span class="s">&#34;b&#34;</span><span class="p">,</span> <span class="s">&#34;c&#34;</span><span class="p">])</span>
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="định-kiểu-cho-một-giá-trị">Định kiểu cho một giá trị</h2>
-<p>Mặc dù tôi nói ở trên bạn có thể viết hàm mà không cần định kiểu, nhưng đôi lúc bạn sẽ cần phải làm chuyện ấy. Một số lý do chúng ta sẽ muốn định kiểu:</p>
-<ul>
-<li>Đưa ra quy tắc, giúp phần mềm của chúng ta sẽ chạy như mong muốn</li>
-<li>Đưa thêm thông tin cho bộ dịch, có thể cải thiện hiệu năng trong một số trường hợp (nói sau)</li>
-</ul>
-<p>Vậy chúng ta làm thế nào để gắn một kiểu dữ liệu vào giá trị? Chúng ta sẽ dùng phép toán <code>::</code> (&ldquo;phát âm&rdquo;: <em>là một thực thể thuộc &hellip;</em>). Cú pháp:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="c"># môt điều tôi thích ở Julia là:</span>
-<span class="c"># dòng code này hoàn toàn legit :)</span>
-<span class="n">giá_trị</span><span class="o">::</span><span class="n">KiểuDữLiệu</span>
-<span class="mi">100</span><span class="o">::</span><span class="kt">Int</span>
-<span class="mf">100.0</span><span class="o">::</span><span class="kt">AbstractFloat</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Bạn có thể định kiểu cho các biến địa phương. Khi khai báo kiểu cho biến địa phương, mọi giá trị sẽ được ép kiểu với hàm convert trước khi gán vào biến:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">function</span><span class="p">()</span>
-    <span class="kd">local</span> <span class="n">n</span><span class="o">::</span><span class="kt">Int8</span> <span class="o">=</span> <span class="mi">2</span>
-    <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span> <span class="c"># ok</span>
-    <span class="n">n</span> <span class="o">=</span> <span class="mi">255</span> <span class="c"># lỗi vì Int8 không biểu diễn được</span>
-<span class="k">end</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Ngoài ra, bạn cũng có thể định kiểu cho tham số và giá trị trả về của hàm. Tham số sẽ được ép kiểu trước khi chạy và đầu ra sẽ được ép kiểu sau khi trả về (nếu được):</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="o">::</span><span class="kt">Integer</span><span class="p">)</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span> <span class="c"># ép kiểu tham số x thành Int</span>
-<span class="n">f</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">::</span><span class="kt">Float32</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="c"># ép kiểu đầu ra thành Float32</span>
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="kiểu-trừu-tượng-abstracttype">Kiểu trừu tượng (AbstractType)</h2>
-<p>Trong ví dụ ở trên một kiểu là <code>AbstractFloat</code>, đó chính là một hình ảnh về kiểu trừu tượng (phân biệt với <em>kiểu dữ liệu trừu tượng</em> nhé).</p>
-<p>Để hiểu về kiểu trừu tượng trong Julia, hãy tưởng tượng một đồ thị có hướng, mỗi nút là một kiểu dữ liệu, và <code>A</code> → <code>B</code> có nghĩa rằng: kiểu <code>B</code> kế thừa mọi <em>hành động</em> từ kiểu <code>A</code>.</p>
-<p>Kiểu trừu tượng trong Julia đóng vai trò là một nút phụ trong cái đồ thị trên. Ta có thể gọi một kiểu dữ liệu là <em>kiểu dữ liệu con</em> (subdatatype) của kiểu dữ liệu <code>A</code> nếu nó kế thừa những hành động của <code>A</code>. Một kiểu trừu tượng được định nghĩa bằng cú pháp:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">abstract type</span> <span class="n">KiểuA</span> <span class="k">end</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Một số ví dụ về kiểu trừu tượng trong Julia là <code>Real</code>, <code>Number</code>, <code>Integer</code> và <code>AbstractArray</code>. Bạn có thể kiểm tra một kiểu cụ thể có thuộc một kiểu trừu tượng không bằng phép toán <code>&lt;:</code> hoặc <code>&gt;:</code>.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="kt">Int</span> <span class="o">&lt;:</span> <span class="kt">Integer</span> <span class="c"># true</span>
-<span class="kt">Real</span> <span class="o">&gt;:</span> <span class="kt">Float64</span> <span class="c"># true</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Trong Julia, kiểu dữ liệu trừu tượng cũng có thể đóng vai trò là kiểu con. Mọi kiểu dữ liệu trong Julia là kiểu con của một kiểu trừu tượng là <code>Any</code>. Hãy chạy thử ví dụ dưới đây:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="kt">Real</span> <span class="o">&lt;:</span> <span class="kt">Number</span>
-<span class="kt">Number</span> <span class="o">&lt;:</span> <span class="kt">Any</span>
-<span class="kt">Real</span> <span class="o">&lt;:</span> <span class="kt">Any</span>
-<span class="k">abstract type</span> <span class="n">KiểuB</span> <span class="o">&lt;:</span> <span class="n">KiểuA</span> <span class="k">end</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Lưu ý rằng không phải kiểu dữ liệu nào cũng so sánh được, khi đó phép so sánh sẽ mặc định trả về <code>false</code>:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="kt">Real</span> <span class="o">&lt;:</span> <span class="kt">Complex</span>
-<span class="kt">Complex</span> <span class="o">&lt;:</span> <span class="kt">Real</span>
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="kiểu-dữ-liệu-có-tham-số">Kiểu dữ liệu có tham số</h2>
-<p>Trong Julia, đôi lúc chúng ta thấy những kiểu dữ liệu như sau:</p>
+      <p>Chào mừng quay trở lại với series Julia Dojo. Ở bài viết trước chúng ta đã tìm hiểu về hệ thống kiểu dữ liệu trong Julia. Chúng ta cũng đã biết rằng để viết hàm thì không cần định kiểu dữ liệu. Vậy tại sao lại có những hàm hoạt động với nhiều kiểu dữ liệu khác nhau? Đó là do <em>multiple dispatch</em>. Những hàm với đầu vào không cố định kiểu dữ liệu như vậy được gọi là <em>generic function</em>.</p>
+<h2 id="multiple-dispatch-là-gì">Multiple dispatch là gì?</h2>
+<p>Trong Julia, mỗi khi một generic function được gọi với một kiểu dữ liệu mới, bộ dịch sẽ tạo ra một &ldquo;phiên bản&rdquo; của function đó. Sự kết hợp của một hàm và một đầu vào có kiểu cụ thể này được gọi là một <em>method</em>. Danh sách tất cả method đi với một function sẽ được khi trong một bảng nhớ ảo trong chính function đó. Trong runtime (thời gian chạy), Julia sẽ tìm chính xác method cần gọi trong bảng trên, dựa vào những tham số đầu vào khi gọi hàm. Điều này khả thi vì khi gọi hàm, thông tin về tham số đầu vào đều sẵn có.</p>
+<p>Cơ chế này không chỉ riêng Julia có, nhưng rất ít ngôn ngữ khác được thiết kế theo cơ chế này. Một ví dụ nhỏ với phép toán <code>*</code>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1690,31 +1577,116 @@
 </span><span class="lnt">5
 </span><span class="lnt">6
 </span><span class="lnt">7
-</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">typeof</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
-<span class="kt">Array</span><span class="p">{</span><span class="kt">Int64</span><span class="p">,</span><span class="mi">1</span><span class="p">}</span>
-
-<span class="n">julia</span><span class="o">&gt;</span> <span class="n">typeof</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="nb">im</span><span class="p">)</span>
-<span class="kt">Complex</span><span class="p">{</span><span class="kt">Int64</span><span class="p">}</span>
-
-<span class="n">julia</span><span class="o">&gt;</span> <span class="n">typeof</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mf">2.0</span><span class="nb">im</span><span class="p">)</span>
-<span class="kt">Complex</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">mat_a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span><span class="p">;</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">mat_b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span> <span class="mi">0</span><span class="p">;</span> <span class="mi">1</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">mat_a</span> <span class="o">*</span> <span class="n">mat_b</span> <span class="c"># nhân ma trận</span>
+<span class="n">mat_a</span> <span class="o">*</span> <span class="n">x</span> <span class="c"># nhân ma trận với số</span>
+<span class="n">x</span> <span class="o">*</span> <span class="n">y</span> <span class="c"># nhân số với số</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Những kiểu dữ liệu như trên gọi là <em>kiểu dữ liệu có tham số</em> (hay <em>parametric type</em>). Phần ở trong cặp dấu <code>{}</code>. Trong trường hợp <code>Array</code>, tham số thứ nhất cho biết <code>Array</code> đó chứa kiểu dữ liệu thuộc loại gì, tham số thứ hai cho biết số chiều của Array đó. Trong trường hợp <code>Complex</code>, tham số cho biết phần thực và phần ảo của số phức thuộc loại gì.</p>
-<p>Khi so sánh kiểu có tham số, cần lưu ý rằng tham số không được đưa vào so sánh, ví dụ:</p>
+</div><p>Phép toán trên thực chất cũng là một hàm và có thể gọi như hàm thông thường (<code>*(1, 3) == 3</code>). Để xem tất cả methods của một hàm, ta dùng hàm <code>methods</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="kt">Array</span><span class="p">{</span><span class="kt">Int</span><span class="p">}</span> <span class="o">&lt;:</span> <span class="kt">Array</span><span class="p">{</span><span class="kt">Number</span><span class="p">}</span> <span class="c"># false</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">methods</span><span class="p">(</span><span class="n">sum</span><span class="p">)</span>
+<span class="c"># 13 methods for generic function &#34;sum&#34;:</span>
+<span class="c"># [1] sum(x::Tuple{Any,Vararg{Any,N} where N}) in Base at tuple.jl:396</span>
+<span class="c"># [2] sum(r::StepRangeLen) in Base at twiceprecision.jl:536</span>
+<span class="c"># [3] sum(r::AbstractRange{#s69} where #s69&lt;:Real) in Base at range.jl:978</span>
+<span class="c"># ... Kết quả khá dài</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="tạo-một-kiểu-dữ-liệu-mới">Tạo một kiểu dữ liệu mới</h2>
-<p>Julia hỗ trợ tạo kiểu dữ liệu mới thông qua cú pháp <code>struct</code> hoặc <code>abstract type</code>. Cú pháp <code>abstract type</code> tạo một kiểu trừu tượng, vậy còn <code>struct</code> thì sao?</p>
+</div><h2 id="class-là-không-cần-thiết">Class là không cần thiết</h2>
+<p>Bản thân tác giá lần đầu tìm hiểu Julia cũng không thấy mặn mà vì thiếu đi class, sau một thời gian sử dụng Julia mới thấy Multiple Dispatch có những ưu điểm của class, thậm chí có nhứng ưu điểm mà class không có.</p>
+<h3 id="đa-hình">Đa hình</h3>
+<p>Điều này là hiển nhiên vì Multiple Dispatch tạo method với mỗi kiểu dữ liệu mới. Điểm khác biệt với những ngôn ngữ lập trình hướng đối tượng với class là: method trong những ngôn ngữ này gắn liền với class, trong khi method trong Julia gắn với function.</p>
+<p>Điều này thậm chí có một vài ưu điểm so với ngôn ngữ với những ngôn ngữ với class. Thứ nhất, vì method gắn với hàm chứ không phải class, chúng ta có thể định nghĩa generic một cách dễ dàng. Thứ hai, với Multiple Dispatch, chúng ta có thể mở rộng chức năng cho một kiểu dữ liệu tùy ý mà không cần thay đổi mã nguồn của kiểu dữ liệu hay tạo ra kiểu dữ liệu mới.</p>
+<p>Ví dụ, một thư viện cung cấp hệ màu RGB, bạn muốn một hàm chuyển đổi từ RGB sang YMCK nhưng thư viện này không cung cấp. Trong ngôn ngữ với class, bạn hoặc phải viết lại toàn bộ mã nguồn của class - Không hay cho lắm, hoặc phải kế thừa lại class RGB và viết method cho class mới đó. Nhưng chuyện kế thừa lại cũng nhiều vấn đề: class mới tên là gì, có ý nghĩa gì, thậm chí class RGB trên có thể không được cho kế thứa&hellip; Với Multiple Dispatch, bạn có thể đơn giản viết một hàm như sau:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">function</span> <span class="n">YMCK</span><span class="p">(</span><span class="n">color</span><span class="o">::</span><span class="n">RGB</span><span class="p">)</span>
+	<span class="c"># convert logic trong này</span>
+<span class="k">end</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Không có class nào cần phải viết lại, không có class nào để kế thừa, chỉ cần viết hàm.</p>
+<h3 id="đóng-gói">Đóng gói</h3>
+<p>Nếu như những ngôn ngữ khác sử dụng namespace để quản lý tên thì Julia cũng có <code>module</code>. Một module bao gồm những hàm, kiểu dữ liệu, và biến số. Một số đặc điểm trong module của Julia là:</p>
+<ul>
+<li>Namespace trong những ngôn ngữ class chỉ có class bên trong, còn module có hàm, kiểu dữ liệu (struct) và biến/hằng số</li>
+<li>Một module có thể mở rộng hàm của module khác, ví dụ như gói <code>SymEngine</code> định nghĩa ra kiểu dữ liệu là <code>Basic</code> và phép cộng trừ nhân chia, cộng nhân ma trận trên đó. Tuy nhiên, khi thực hiện các thao tác trên chúng ta vẫn chỉ cần viết dấu <code>*</code>, <code>+</code> và <code>det(...)</code> mà không phải làm mấy trò con bò như <code>SymEngine.sym_mul</code>, <code>SymEngine.sym_add</code> hay <code>SymEngine.sym_matrix_det</code>. Lý do vì gói này đã mở rộng thêm những method cho hàm cộng và nhân trong module <code>Base</code> (module gốc của Julia). Cơ chế này không chỉ áp dụng cho toán tử mà tất cả các hàm, kể cả hàm tự định nghĩa.</li>
+<li>Việc gọi hàm không nhất thiết phải chỉ ra hàm đó thuộc namespace nào, lý do vì các gói Julia thường extend lại hàm của nhau và mỗi khi dùng gói, ta chỉ lấy thêm những method được định nghĩa trong module đó. Ví dụ:</li>
+</ul>
+<h3 id="kế-thừa">Kế thừa</h3>
+<p>Trong Julia, kiểu dữ liệu chia làm trừu tượng (<code>AbstractArray</code>, <code>Number</code>, <code>Real</code>&hellip;) và cụ thể (<code>Float32</code>, <code>Bool</code>, <code>Int64</code>&hellip;). Cơ chế kế thừa của Julia rất đơn giản: <em>dùng method với kiểu dữ liệu cụ thể nhất có thể</em>. Nói cách khác, khi ta gọi một hàm, nếu kiểu của tham số có một method cụ thể, nếu không thì Julia sẽ tìm tới method của những kiểu dữ liệu trừu tượng hơn.</p>
+<blockquote>
+<p>Vẫn không hiểu?</p>
+</blockquote>
+<p>Sau đây là một ví dụ nho nhỏ:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">function</span> <span class="n">square</span><span class="p">(</span><span class="n">x</span><span class="o">::</span><span class="kt">Number</span><span class="p">)</span>
+	<span class="nd">@info</span> <span class="s">&#34;square cho Number nói chung&#34;</span>
+	<span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
+<span class="k">end</span>
+<span class="n">square</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c"># square cho Number</span>
+<span class="n">square</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="nb">im</span><span class="p">)</span> <span class="c"># square cho Number</span>
+<span class="k">function</span> <span class="n">square</span><span class="p">(</span><span class="n">x</span><span class="o">::</span><span class="kt">Real</span><span class="p">)</span>
+	<span class="nd">@info</span> <span class="s">&#34;square cho Real, Real &lt;: Number&#34;</span>
+	<span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
+<span class="k">end</span>
+<span class="n">square</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c"># square cho Real</span>
+<span class="n">square</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="nb">im</span><span class="p">)</span> <span class="c"># square cho Number</span>
+<span class="k">function</span> <span class="n">square</span><span class="p">(</span><span class="n">x</span><span class="o">::</span><span class="kt">Float32</span><span class="p">)</span>
+	<span class="nd">@info</span> <span class="s">&#34;square cho Float32, Float32 &lt;: AbstractFloat &lt;: Real&#34;</span>
+	<span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
+<span class="k">end</span>
+<span class="n">square</span><span class="p">(</span><span class="mf">2f0</span><span class="p">)</span> <span class="c"># square cho Float32</span>
+<span class="n">square</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c"># square cho Real</span>
+<span class="n">square</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="nb">im</span><span class="p">)</span> <span class="c"># square cho Number</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Vì kiểu dữ liệu cụ thể không thể làm kiểu dữ liệu con của nhau trong Julia, chỉ có method mới có thể được kế thừa từ kiểu dữ liệu cha.</p>
+<h2 id="multiple-dispatch-đặc-biệt">Multiple Dispatch đặc biệt</h2>
+<h3 id="dispatch-với-datatype">Dispatch với DataType</h3>
+<p>Hàm <code>rand</code> của <code>Julia</code> có một số cách gọi như sau:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1723,28 +1695,55 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">struct</span> <span class="n">MyDataStruct</span>
-	<span class="n">prop1</span>
-	<span class="n">prop2</span><span class="o">::</span><span class="kt">Real</span>
-<span class="k">end</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">rand</span><span class="p">(</span><span class="kt">DataType</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+<span class="n">rand</span><span class="p">(</span><span class="kt">Float32</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+<span class="n">rand</span><span class="p">(</span><span class="kt">Int</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+<span class="n">rand</span><span class="p">(</span><span class="n">Distribution</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span> <span class="c"># từ gói Distributions.jl</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Cú pháp <code>struct</code> như trên tạo ra một kiểu dữ liệu cụ thể. Cú pháp <code>struct</code> cũng hỗ trợ tham số kiểu:</p>
+</div><p>Mỗi cách gọi sẽ trả về một số, ma trận ngẫu nhiên tùy vào kiểu dữ liệu được ở tham số thứ nhất. Dispatch như trên có thể được viết bằng cú pháp:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">struct</span> <span class="n">MyDataStruct</span><span class="p">{</span><span class="n">T</span><span class="p">,</span> <span class="n">N</span><span class="p">}</span>
-	<span class="n">prop1</span><span class="o">::</span><span class="kt">Array</span><span class="p">{</span><span class="n">T</span><span class="p">,</span> <span class="n">N</span><span class="p">}</span>
-	<span class="n">prop2</span><span class="o">::</span><span class="p">{</span><span class="n">T</span><span class="p">}</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">function</span> <span class="n">f</span><span class="p">(</span><span class="o">::</span><span class="kt">Type</span><span class="p">{</span><span class="n">DataTypeHere</span><span class="p">},</span> <span class="o">...</span><span class="p">)</span>
+	<span class="c"># thân hàm</span>
 <span class="k">end</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Với <code>struct</code> chúng ta có thể định ra một hàm với cùng tên để khởi tạo ra một thực thể của kiểu đó:</p>
+</div><p>Ví dụ:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">function</span> <span class="n">f</span><span class="p">(</span><span class="o">::</span><span class="kt">Type</span><span class="p">{</span><span class="kt">Real</span><span class="p">},</span> <span class="n">x</span><span class="p">)</span>
+	<span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="k">end</span>
+<span class="k">function</span> <span class="n">f</span><span class="p">(</span><span class="o">::</span><span class="kt">Type</span><span class="p">{</span><span class="kt">Complex</span><span class="p">},</span> <span class="n">x</span><span class="p">)</span>
+	<span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="k">end</span>
+
+<span class="n">f</span><span class="p">(</span><span class="kt">Real</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c"># trả về 11</span>
+<span class="n">f</span><span class="p">(</span><span class="kt">Complex</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span> <span class="c"># trẻ về 22</span>
+<span class="n">f</span><span class="p">(</span><span class="kt">Float32</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c"># lỗi, không có method nào như thế này</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Dispatch với tham số là kiểu dữ liệu không sử dụng kiểu dữ liệu con, do đó gọi <code>f</code> với <code>Float32</code> như ở trong ví dụ trên lỗi (dù <code>Float32</code> là kiểu con của <code>Real</code>). Đương nhiên, tham số dựa trên kiểu dữ liệu có thể được đặt ở bất cứ vị trí nào trong hàm, nhưng hàm trong Julia thường viết với tham số loại này ở đầu.</p>
+<h3 id="dispatch-với-val">Dispatch với Val</h3>
+<p>Kiểu dữ liệu Val được dùng để dispatch trên một số giá trị biết trước. Sử dụng <code>Val</code> hơi giống với <code>switch - case</code> trong C, nhưng gọn hơn rất nhiều. Cách viết dispatch với <code>Val</code> khá giống với cách viết của dispatch kiểu dữ liệu, nhưng thay vì <code>Type{DataType}</code> thì ta viết <code>Val{giá trị}</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1758,19 +1757,18 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">struct</span> <span class="n">MyDataStruct</span><span class="p">{</span><span class="n">T</span><span class="p">}</span>
-	<span class="n">prop1</span><span class="o">::</span><span class="kt">Matrix</span><span class="p">{</span><span class="n">T</span><span class="p">}</span>
-	<span class="n">prop2</span><span class="o">::</span><span class="n">T</span>
-	<span class="k">function</span> <span class="n">MyDataStruct</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-		<span class="n">T</span> <span class="o">=</span> <span class="n">typeof</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-		<span class="n">arr</span> <span class="o">=</span> <span class="n">rand</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-		<span class="n">new</span><span class="p">{</span><span class="n">T</span><span class="p">}(</span><span class="n">arr</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-	<span class="k">end</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">function</span> <span class="n">do_something</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">::</span><span class="kt">Val</span><span class="p">{</span><span class="o">:</span><span class="n">double</span><span class="p">})</span>
+	<span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="k">end</span>
+<span class="k">function</span> <span class="n">do_something</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">::</span><span class="kt">Val</span><span class="p">{</span><span class="o">:</span><span class="n">sqrt</span><span class="p">})</span>
+	<span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">end</span>
+<span class="k">function</span> <span class="n">do_something</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">::</span><span class="kt">Val</span><span class="p">{</span><span class="o">:</span><span class="n">add3</span><span class="p">})</span>
+	<span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
 <span class="k">end</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Với ví dụ trên ta có thể gọi ra <code>MyDataStruct(3)</code> và chúng ta sẽ có <code>MyDataStruct</code> với thuộc tính đầu tiên là một ma trận ngẫu nhiên có kiểu <code>Int</code> và thuộc tính số hai là <code>3</code>. Hàm <code>new</code> là một hàm đặc biệt để tạo ra một thực thể mới. Trong trường hợp <code>struct</code> có tham số, <code>new</code> cần được gọi với các tham số kiểu (như ví dụ trên là <code>new{T}</code>).</p>
-<p>Mặc định, kiểu dữ kiệu định nghĩa với <code>struct</code> trong Julia không thay đổi được (nguyên văn là <em>immutable</em>, dịch hơi khó). Điều đó nghĩa rằng một khi ta gọi <code>x = MyDataStruct(3)</code> thì các thuộc tính của <code>x</code> không thay đổi được. Để định nghĩa nghĩa ra một kiểu dữ liệu mà có thay đổi được, ta cần dùng thêm từ khóa <code>mutable</code></p>
+</div><p>Để gọi một hàm với giá trị như trên chúng ta phải dùng hàm <code>Val</code>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1778,39 +1776,44 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">mutable</span> <span class="k">struct</span> <span class="n">MyMutableDataStruct</span>
-	<span class="n">val</span>
-<span class="k">end</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">do_something</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="kt">Val</span><span class="p">(</span><span class="o">:</span><span class="n">double</span><span class="p">))</span> <span class="c"># 8</span>
+<span class="n">do_something</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="kt">Val</span><span class="p">(</span><span class="o">:</span><span class="n">sqrt</span><span class="p">))</span> <span class="c"># 2.0</span>
+<span class="n">do_something</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="kt">Val</span><span class="p">(</span><span class="o">:</span><span class="n">add3</span><span class="p">))</span> <span class="c"># 7</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Sau khi tạo <code>x = MyMutableDataStruct(3)</code>, chúng ta có thể đổi thuộc tính <code>val</code> bằng cách <code>x.val = 10</code>.</p>
-<p>Ngoài ra, kiểu dữ liệu có thể được định nghĩa là kiểu dữ liệu con của một kiểu trừu tượng như sau:</p>
+</div><p><em>Lưu ý</em>: Để viết hàm ta dùng <code>Val{...}</code> (ngoặc nhọn), để gọi hàm ta dùng <code>Val(...)</code> (ngoặc tròn).</p>
+<p>Trong một vài trường hợp, chúng ta có thể làm một trick nho nhỏ như sau để gọi hàm tiện lợi hơn:</p>
+<pre><code>do_something(x, action::Symbol) = do_something(x, Val(action))
+</code></pre><p>Khi đó chúng ta có thể gọi hàm với kiểu Symbol mà không cần <code>Val</code>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
+</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">abstract type</span> <span class="n">MyAbstractType</span> <span class="k">end</span>
-<span class="k">struct</span> <span class="n">MyType</span> <span class="o">&lt;:</span> <span class="n">MyAbstractType</span> <span class="k">end</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">do_something</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="o">:</span><span class="n">double</span><span class="p">)</span> <span class="c"># 8</span>
+<span class="n">do_something</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="o">:</span><span class="n">sqrt</span><span class="p">)</span> <span class="c"># 2.0</span>
+<span class="n">do_something</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="o">:</span><span class="n">add3</span><span class="p">)</span> <span class="c"># 7</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Cuối cùng, bạn có thể đưa một tham số vào một kiểu dữ liệu cụ thể để tạo ra kiểu dữ liệu mới.</p>
+</div><h2 id="lưu-ý-khi-extend-function">Lưu ý khi extend function</h2>
+<p>Chúng ta sẽ kết thúc bài này bằng một vài lưu ý. Thứ nhất, <em>có thể có hai hàm cùng tên</em>. Nếu muốn extend một hàm từ một module của thư viện khác, tốt nhất hãy dùng: <code>TênModule.tên_function</code> khi khai báo một method mới cho một hàm có sẵn. Ngoài ra, bạn cũng có thể dùng</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">ComplexFloat</span> <span class="o">=</span> <span class="kt">Complex</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}</span>
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">Import</span><span class="o">:</span> <span class="n">hàm_1</span><span class="p">,</span> <span class="n">hàm_2</span><span class="p">,</span> <span class="o">...</span><span class="c"># danh sách hàm cần extend</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="kết">Kết</h2>
-<p>Bài này nói về khá nhiều thứ. Một số điểm quan trọng là:</p>
-<ul>
-<li>Trong Julia có kiểu dữ liệu con mà kế thừa hành động của kiểu dữ liệu cha (super type) của nó</li>
-<li>Kiểu dữ liệu có thể có tham số</li>
-</ul>
-<p>Ngoài ra một số kiểu dữ liệu còn có bí danh (alias), ví dụ như <code>Int</code> là bí danh có <code>Int32</code> hoặc <code>Int64</code>, <code>Vector</code> là bí danh của <code>Array{T, 1} where T</code>. Kiểu dữ liệu là một trong những lý do chính mà Julia nhanh, nhưng việc đó để cho bài viết khác. Sau khi biết về hệ thống kiểu dữ liệu, ở bài viết sau chúng ta có thể tìm hiểu về <em>multiple dispatch trong Julia</em>.</p>
+</div><p>trước khi định nghĩa method mới. Nếu không muốn định nghĩa method mới mà viết hàm mới thì không cần làm những việc trên, chỉ cần không <code>export</code> hàm đó ra là được (<code>export</code> là gì nói sau).</p>
+<p>Thứ hai, khi extend một hàm từ module <code>Base</code>, những module khác cũng sẽ dùng method mới được định nghĩa đó. Ví dụ, nếu định nghĩa <code>*</code> với kiểu <code>Symbol</code> như sau:</p>
+<pre><code>module A
+import Base.*
+*(x::Symbol, y::Symbol) = Symbol(x,y)
+end
+</code></pre><p>Thì tất cả các module khác dùng <code>Base</code> mà dùng <code>*</code> cũng có thể dùng method trên. Vì vậy hãy cận thận kiểm tra xem method đó đã được định nghĩa chưa trước khi khai báo.</p>
 
     </article>
     
@@ -1969,6 +1972,10 @@
     <ul class="related-ul">
         
         <li>
+          <a href="/posts/julia-dojo/more-on-types/" class="related__link">Julia dojo: nói thêm về kiểu dữ liệu</a>
+        </li>
+        
+        <li>
           <a href="/julia-dojo/tu-dien-va-tap-hop-trong-julia/" class="related__link">Julia Dojo: từ điển &amp; tập hợp</a>
         </li>
         
@@ -1984,10 +1991,6 @@
           <a href="/julia-dojo/dung-julia-voi-jupyter-notebook-va-jupyter-lab/" class="related__link">Julia Dojo: Julia &#43; Project Jupyter</a>
         </li>
         
-        <li>
-          <a href="/julia-dojo/ham-trong-julia/" class="related__link">Julia Dojo: hàm</a>
-        </li>
-        
     </ul>
     
   </section>
@@ -1995,21 +1998,14 @@
 <nav class="pagination-single">
   
     
-      <a href="https://ndgnuh.github.io/posts/lyx-tieng-viet/" class="pagination-single__left">
+      <a href="https://ndgnuh.github.io/posts/julia-dojo/more-on-types/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">Lyx và văn bản tiếng Việt</div>      
+        <div class="pagination-single__left-title">Julia dojo: nói thêm về kiểu dữ liệu</div>      
       </a>
     
     <div class="grow"></div>
-    
-      <a href="https://ndgnuh.github.io/posts/julia-dojo/multiple-dispatch/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">Multiple Dispatch</div>
-        <div class="pagination-single__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-        </div>
-      </a>
     
   
 </nav>
@@ -2386,12 +2382,21 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="false" data-ani="true">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#động-nhưng-không-hẳn">Động, nhưng không hẳn</a></li>
-    <li><a href="#định-kiểu-cho-một-giá-trị">Định kiểu cho một giá trị</a></li>
-    <li><a href="#kiểu-trừu-tượng-abstracttype">Kiểu trừu tượng (AbstractType)</a></li>
-    <li><a href="#kiểu-dữ-liệu-có-tham-số">Kiểu dữ liệu có tham số</a></li>
-    <li><a href="#tạo-một-kiểu-dữ-liệu-mới">Tạo một kiểu dữ liệu mới</a></li>
-    <li><a href="#kết">Kết</a></li>
+    <li><a href="#multiple-dispatch-là-gì">Multiple dispatch là gì?</a></li>
+    <li><a href="#class-là-không-cần-thiết">Class là không cần thiết</a>
+      <ul>
+        <li><a href="#đa-hình">Đa hình</a></li>
+        <li><a href="#đóng-gói">Đóng gói</a></li>
+        <li><a href="#kế-thừa">Kế thừa</a></li>
+      </ul>
+    </li>
+    <li><a href="#multiple-dispatch-đặc-biệt">Multiple Dispatch đặc biệt</a>
+      <ul>
+        <li><a href="#dispatch-với-datatype">Dispatch với DataType</a></li>
+        <li><a href="#dispatch-với-val">Dispatch với Val</a></li>
+      </ul>
+    </li>
+    <li><a href="#lưu-ý-khi-extend-function">Lưu ý khi extend function</a></li>
   </ul>
 </nav>
   </div>

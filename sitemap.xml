@@ -4,62 +4,69 @@
   
   <url>
     <loc>https://ndgnuh.github.io/categories/</loc>
-    <lastmod>2020-06-14T23:00:00+07:00</lastmod>
+    <lastmod>2020-07-25T16:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/categories/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</loc>
-    <lastmod>2020-06-14T23:00:00+07:00</lastmod>
+    <lastmod>2020-07-25T16:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/tags/julia/</loc>
-    <lastmod>2020-06-14T23:00:00+07:00</lastmod>
+    <lastmod>2020-07-25T16:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/series/julia-dojo/</loc>
-    <lastmod>2020-06-14T23:00:00+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/posts/julia-dojo/more-on-types/</loc>
-    <lastmod>2020-06-14T23:00:00+07:00</lastmod>
+    <lastmod>2020-07-25T16:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/categories/l%E1%BA%ADp-tr%C3%ACnh/</loc>
-    <lastmod>2020-06-14T23:00:00+07:00</lastmod>
+    <lastmod>2020-07-25T16:00:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/posts/julia-dojo/multiple-dispatch/</loc>
+    <lastmod>2020-07-25T16:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/posts/</loc>
-    <lastmod>2020-06-14T23:00:00+07:00</lastmod>
+    <lastmod>2020-07-25T16:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/series/</loc>
-    <lastmod>2020-06-14T23:00:00+07:00</lastmod>
+    <lastmod>2020-07-25T16:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/tags/</loc>
+    <lastmod>2020-07-25T16:00:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/posts/julia-dojo/more-on-types/</loc>
     <lastmod>2020-06-14T23:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
