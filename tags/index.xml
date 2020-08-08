@@ -14,7 +14,7 @@
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
     <webMaster>ndgnuh@protonmail.com (Hùng)</webMaster>
     <copyright>©2020, copy ghi nguồn :)</copyright>
-    <lastBuildDate>Sat, 25 Jul 2020 16:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2020 21:00:00 +0700</lastBuildDate>
     
         <atom:link href="https://ndgnuh.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,27 +23,9 @@
 
       
       <item>
-        <title>julia</title>
-        <link>https://ndgnuh.github.io/tags/julia/</link>
-        <pubDate>Sat, 25 Jul 2020 16:00:00 +0700</pubDate>
-        <author>ndgnuh@protonmail.com (Hùng)</author>
-        
-        <guid>https://ndgnuh.github.io/tags/julia/</guid>
-        <description></description>
-        
-        <dc:creator>Hùng</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
         <title>foss</title>
         <link>https://ndgnuh.github.io/tags/foss/</link>
-        <pubDate>Thu, 28 May 2020 22:52:30 +0700</pubDate>
+        <pubDate>Sat, 08 Aug 2020 21:00:00 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
         
         <guid>https://ndgnuh.github.io/tags/foss/</guid>
@@ -59,9 +41,27 @@
       </item>
       
       <item>
+        <title>học online</title>
+        <link>https://ndgnuh.github.io/tags/h%E1%BB%8Dc-online/</link>
+        <pubDate>Sat, 08 Aug 2020 21:00:00 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        
+        <guid>https://ndgnuh.github.io/tags/h%E1%BB%8Dc-online/</guid>
+        <description></description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>latex</title>
         <link>https://ndgnuh.github.io/tags/latex/</link>
-        <pubDate>Thu, 28 May 2020 22:52:30 +0700</pubDate>
+        <pubDate>Sat, 08 Aug 2020 21:00:00 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
         
         <guid>https://ndgnuh.github.io/tags/latex/</guid>
@@ -79,7 +79,7 @@
       <item>
         <title>linux</title>
         <link>https://ndgnuh.github.io/tags/linux/</link>
-        <pubDate>Thu, 28 May 2020 22:52:30 +0700</pubDate>
+        <pubDate>Sat, 08 Aug 2020 21:00:00 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
         
         <guid>https://ndgnuh.github.io/tags/linux/</guid>
@@ -97,7 +97,7 @@
       <item>
         <title>lyx</title>
         <link>https://ndgnuh.github.io/tags/lyx/</link>
-        <pubDate>Thu, 28 May 2020 22:52:30 +0700</pubDate>
+        <pubDate>Sat, 08 Aug 2020 21:00:00 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
         
         <guid>https://ndgnuh.github.io/tags/lyx/</guid>
@@ -113,12 +113,48 @@
       </item>
       
       <item>
+        <title>productivity</title>
+        <link>https://ndgnuh.github.io/tags/productivity/</link>
+        <pubDate>Sat, 08 Aug 2020 21:00:00 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        
+        <guid>https://ndgnuh.github.io/tags/productivity/</guid>
+        <description></description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>tex</title>
         <link>https://ndgnuh.github.io/tags/tex/</link>
-        <pubDate>Thu, 28 May 2020 22:52:30 +0700</pubDate>
+        <pubDate>Sat, 08 Aug 2020 21:00:00 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
         
         <guid>https://ndgnuh.github.io/tags/tex/</guid>
+        <description></description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>julia</title>
+        <link>https://ndgnuh.github.io/tags/julia/</link>
+        <pubDate>Sat, 25 Jul 2020 16:00:00 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        
+        <guid>https://ndgnuh.github.io/tags/julia/</guid>
         <description></description>
         
         <dc:creator>Hùng</dc:creator>
