@@ -84,6 +84,17 @@ Câu lệnh chính là phần trong ngoặc (`dialog show character`). Nó có t
 
 ![](/img/lyx-shortcut-008.png)
 
+### Sao lưu và khôi phục phím tắt
+
+LyX lưu phím tắt người dùng thư mục tên `bind` trong đường dẫn như sau (`~` là thư mục home):
+- Linux/Unix nói chung: `~/.lyx`
+- MacOS: `~/Library/Application Support/LyX-<phiên bản>/` (chưa test)
+- Windows: `C:\Documents and Settings\<tên người dùng>\Application Data\lyx<phiên bản>\`, `C:\Program files\lyx\resources\lyx\` (chưa test)
+
+Chỉ cần lưu lại file bind và đặt nó vào đúng các thư mục trên là ok. 
+
+> Ngoài ra, nếu không tìm thấy thư mục LyX thì có thể vào phần `Help > About LyX` trên menu. Phần này sẽ có cả thông tin về thư mục người dùng và hệ thống của LyX.
+
 ## Một số phím tắt hữu dụng
 
 ### Phím tắt thao túng môi trường
