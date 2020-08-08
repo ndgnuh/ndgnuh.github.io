@@ -16,6 +16,8 @@ keywords:
 - foss
 - mã nguồn mở
 - tự do
+series:
+- lyx
 ---
 
 Bài viết trước đã giới thiệu về cách dùng cơ bản của LyX. Tuy nhiên, vì cách mà LaTeX hoạt động, chúng ta chưa thể tạo được một văn bản tiếng Việt ngay được. Bài viết này sẽ trình bày những cách để tạo văn bản tiếng Việt trong LyX.
