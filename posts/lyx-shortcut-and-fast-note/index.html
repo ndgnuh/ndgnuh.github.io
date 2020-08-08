@@ -1546,7 +1546,7 @@
 <div class="single__infos">
   <time class="single__info" title="Được viết lúc">📅&nbsp;08-08-2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Thời gian đọc"> ☕&nbsp;11&nbsp; phút đọc </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Thời gian đọc"> ☕&nbsp;12&nbsp; phút đọc </span>
   
   <span class="single__info">
     
@@ -1623,6 +1623,17 @@
 <p><img src="/img/lyx-shortcut-007.png" alt="" /></p>
 <p>Câu lệnh chính là phần trong ngoặc (<code>dialog show character</code>). Nó có thể được gắn với một phím tắt bằng cách thêm câu lệnh vào phần <code>Function</code> của phím tắt đó.</p>
 <p><img src="/img/lyx-shortcut-008.png" alt="" /></p>
+<h3 id="sao-lưu-và-khôi-phục-phím-tắt">Sao lưu và khôi phục phím tắt</h3>
+<p>LyX lưu phím tắt người dùng thư mục tên <code>bind</code> trong đường dẫn như sau (<code>~</code> là thư mục home):</p>
+<ul>
+<li>Linux/Unix nói chung: <code>~/.lyx</code></li>
+<li>MacOS: <code>~/Library/Application Support/LyX-&lt;phiên bản&gt;/</code> (chưa test)</li>
+<li>Windows: <code>C:\Documents and Settings\&lt;tên người dùng&gt;\Application Data\lyx&lt;phiên bản&gt;\</code>, <code>C:\Program files\lyx\resources\lyx\</code> (chưa test)</li>
+</ul>
+<p>Chỉ cần lưu lại file bind và đặt nó vào đúng các thư mục trên là ok.</p>
+<blockquote>
+<p>Ngoài ra, nếu không tìm thấy thư mục LyX thì có thể vào phần <code>Help &gt; About LyX</code> trên menu. Phần này sẽ có cả thông tin về thư mục người dùng và hệ thống của LyX.</p>
+</blockquote>
 <h2 id="một-số-phím-tắt-hữu-dụng">Một số phím tắt hữu dụng</h2>
 <h3 id="phím-tắt-thao-túng-môi-trường">Phím tắt thao túng môi trường</h3>
 <p>Nếu bạn không làm việc với toán hoặc các ký hiệu kỹ thuật (chỉ cần viết chữ), bạn có thể skip mục này.</p>
@@ -2277,6 +2288,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <ul>
         <li><a href="#xem-và-cài-đặt-phím-tắt">Xem và cài đặt phím tắt</a></li>
         <li><a href="#tìm-câu-lệnh--phím-tắt-của-lyx">Tìm câu lệnh &amp; phím tắt của LyX</a></li>
+        <li><a href="#sao-lưu-và-khôi-phục-phím-tắt">Sao lưu và khôi phục phím tắt</a></li>
       </ul>
     </li>
     <li><a href="#một-số-phím-tắt-hữu-dụng">Một số phím tắt hữu dụng</a>
