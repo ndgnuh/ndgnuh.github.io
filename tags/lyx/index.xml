@@ -14,13 +14,63 @@
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
     <webMaster>ndgnuh@protonmail.com (Hùng)</webMaster>
     <copyright>©2020, copy ghi nguồn :)</copyright>
-    <lastBuildDate>Sat, 08 Aug 2020 21:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2020 16:12:00 +0700</lastBuildDate>
     
         <atom:link href="https://ndgnuh.github.io/tags/lyx/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Gõ tắt sử dụng macro trong Lyx</title>
+        <link>https://ndgnuh.github.io/posts/lyx-macro/</link>
+        <pubDate>Thu, 20 Aug 2020 16:12:00 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Thu, 20 Aug 2020 16:12:00 +0700</atom:modified>
+        <guid>https://ndgnuh.github.io/posts/lyx-macro/</guid>
+        <description>Cách sử dụng Macro trong LyX. Các loại macro hay xuất hiện. Một số mẹo khi sử dụng.</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>true</category>
+            
+          
+            
+              <category>linux</category>
+            
+          
+            
+              <category>foss</category>
+            
+          
+            
+              <category>lyx</category>
+            
+          
+            
+              <category>latex</category>
+            
+          
+            
+              <category>tex</category>
+            
+          
+        
+        
+        
+          
+            
+              <category>lyx</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>Phím tắt trong LyX &amp; ghi chép tốc độ</title>
@@ -159,6 +209,12 @@
           
         
         
+        
+          
+            
+              <category>lyx</category>
+            
+          
         
       </item>
       

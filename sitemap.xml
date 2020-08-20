@@ -4,41 +4,83 @@
   
   <url>
     <loc>https://ndgnuh.github.io/tags/foss/</loc>
-    <lastmod>2020-08-08T21:00:00+07:00</lastmod>
+    <lastmod>2020-08-20T16:12:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://ndgnuh.github.io/tags/h%E1%BB%8Dc-online/</loc>
-    <lastmod>2020-08-08T21:00:00+07:00</lastmod>
+    <loc>https://ndgnuh.github.io/posts/lyx-macro/</loc>
+    <lastmod>2020-08-20T16:12:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/tags/latex/</loc>
-    <lastmod>2020-08-08T21:00:00+07:00</lastmod>
+    <lastmod>2020-08-20T16:12:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/tags/linux/</loc>
-    <lastmod>2020-08-08T21:00:00+07:00</lastmod>
+    <lastmod>2020-08-20T16:12:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/tags/lyx/</loc>
-    <lastmod>2020-08-08T21:00:00+07:00</lastmod>
+    <lastmod>2020-08-20T16:12:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/series/lyx/</loc>
+    <lastmod>2020-08-20T16:12:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/posts/</loc>
+    <lastmod>2020-08-20T16:12:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/series/</loc>
+    <lastmod>2020-08-20T16:12:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/tags/</loc>
+    <lastmod>2020-08-20T16:12:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/tags/tex/</loc>
+    <lastmod>2020-08-20T16:12:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/tags/true/</loc>
+    <lastmod>2020-08-20T16:12:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/tags/h%E1%BB%8Dc-online/</loc>
     <lastmod>2020-08-08T21:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -52,35 +94,7 @@
   </url>
   
   <url>
-    <loc>https://ndgnuh.github.io/posts/</loc>
-    <lastmod>2020-08-08T21:00:00+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://ndgnuh.github.io/tags/productivity/</loc>
-    <lastmod>2020-08-08T21:00:00+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/series/</loc>
-    <lastmod>2020-08-08T21:00:00+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/tags/</loc>
-    <lastmod>2020-08-08T21:00:00+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/tags/tex/</loc>
     <lastmod>2020-08-08T21:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
