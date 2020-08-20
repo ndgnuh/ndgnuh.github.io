@@ -3,8 +3,6 @@ title: "Phím tắt trong LyX & ghi chép tốc độ"
 date: 2020-08-08T21:00:00+07:00
 summary: "Phím tắt trong LyX và cách để ghi chép tốc độ cao"
 draft: false
-series:
-- lyx
 tags:
 - linux
 - foss
@@ -20,6 +18,8 @@ keywords:
 - foss
 - mã nguồn mở
 - tự do
+series:
+- lyx
 ---
 
 Có thể nói, LyX là một trong những nỗ lực của tác giả để thích nghi với việc học online, vì khi học online, việc ghi chép với vở trở nên rất lỉnh kỉnh do có nhiều công cụ trên bàn, hơn nữa một số giáo viên nói rất nhanh khi sử dụnng slide thay vì viết bảng. Tuy nhiên, dùng LyX với cả bàn phím và chuột sẽ không thể đạt được tốc độ tối đa. Do đó bài viết này sẽ cung cấp những thông tin cần thiết để làm việc với LyX chỉ bằng bàn phím (và có thể là một ít chuột). Đây có lẽ cũng là bài viết quan trọng nhất trong những bài về LyX.

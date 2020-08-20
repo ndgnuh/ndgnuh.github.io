@@ -17,6 +17,8 @@ keywords:
 - foss
 - mã nguồn mở
 - tự do
+series:
+- lyx
 ---
 
 # LyX là gì?
