@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Gõ tắt sử dụng macro trong Lyx – Rants</title>
+    <title>Julia dojo: Macro &amp; meta programming – Rants</title>
     
 
 
@@ -556,7 +556,7 @@
     
     var baseurl = JSON.parse("\"https://ndgnuh.github.io/\"");
     
-    var permalink = JSON.parse("\"https://ndgnuh.github.io/posts/lyx-macro/\"");
+    var permalink = JSON.parse("\"https://ndgnuh.github.io/posts/julia-dojo/macro/\"");
     
     var langprefix = JSON.parse("\"\"");
     var searchResults = null;
@@ -1231,21 +1231,21 @@
     
 <meta name="description" content="Blog cá nhân, viết tạp nham" />
 
-<meta name="keywords" content="lyx,ubuntu,linux,foss,mã nguồn mở,tự do,macro,word,soạn thảo,tex,latex,math">
+<meta name="keywords" content="julia,lập trình,học lập trình,ngôn ngữ julia,julia dojo,julialang,hướng dẫn,macro,meta,meta programming">
 
 
-<meta name="keywords" content="true,linux,foss,lyx,latex,tex">
+<meta name="keywords" content="julia">
 
-<meta name="created" content="2020-08-20T16:12:00&#43;0700">
-<meta name="modified" content="2020-08-20T16:12:00&#43;0700">
-<meta property="article:published_time" content="2020-08-20T16:12:00&#43;0700">
+<meta name="created" content="2020-08-22T10:42:00&#43;0700">
+<meta name="modified" content="2020-08-22T10:42:00&#43;0700">
+<meta property="article:published_time" content="2020-08-22T10:42:00&#43;0700">
 
 <meta name="author" content="Hùng">
 
 
 <meta property="og:site_name" content="Rants">
-<meta property="og:title" content="Gõ tắt sử dụng macro trong Lyx">
-<meta property="og:url" content="https://ndgnuh.github.io/posts/lyx-macro/">
+<meta property="og:title" content="Julia dojo: Macro &amp; meta programming">
+<meta property="og:url" content="https://ndgnuh.github.io/posts/julia-dojo/macro/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="Blog cá nhân, viết tạp nham">
 
@@ -1258,7 +1258,7 @@
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
 
-<link rel="canonical" href="https://ndgnuh.github.io/posts/lyx-macro/">
+<link rel="canonical" href="https://ndgnuh.github.io/posts/julia-dojo/macro/">
 
 <link rel="manifest" href="/manifest.json">
 
@@ -1272,12 +1272,12 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Gõ tắt sử dụng macro trong Lyx",
-    "datePublished": "2020-08-20T16:12:00+07:00",
-    "dateModified": "2020-08-20T16:12:00+07:00",
-    "url" : "https://ndgnuh.github.io/posts/lyx-macro/",
-    "description": "Cách sử dụng Macro trong LyX. Các loại macro hay xuất hiện. Một số mẹo khi sử dụng.",
-    "keywords": ["true","linux","foss","lyx","latex","tex"],
+    "headline": "Julia dojo: Macro \u0026 meta programming",
+    "datePublished": "2020-08-22T10:42:00+07:00",
+    "dateModified": "2020-08-22T10:42:00+07:00",
+    "url" : "https://ndgnuh.github.io/posts/julia-dojo/macro/",
+    "description": "Macro và meta programming trong Julia",
+    "keywords": ["julia"],
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://ndgnuh.github.io/"
@@ -1528,7 +1528,7 @@
   
   <li  class="is-active" >
     
-      <span>Gõ tắt sử dụng macro trong Lyx</span>
+      <span>Julia dojo: Macro &amp; meta programming</span>
     
   </li>
   
@@ -1540,13 +1540,13 @@
   <div class="single ">
     <div class="single__nojs"></div>
     <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
-    <h2 class="single__title" data-ani="true">Gõ tắt sử dụng macro trong Lyx</h2>
+    <h2 class="single__title" data-ani="true">Julia dojo: Macro &amp; meta programming</h2>
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="Được viết lúc">📅&nbsp;20-08-2020 </time>
+  <time class="single__info" title="Được viết lúc">📅&nbsp;22-08-2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Thời gian đọc"> ☕&nbsp;5&nbsp; phút đọc </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Thời gian đọc"> ☕&nbsp;11&nbsp; phút đọc </span>
   
   <span class="single__info">
     
@@ -1558,77 +1558,669 @@
   🏷️
   
 
-  <li><a href="https://ndgnuh.github.io/tags/foss/" class="single__tag" title="foss">#foss</a></li>
-
-  <li><a href="https://ndgnuh.github.io/tags/latex/" class="single__tag" title="latex">#latex</a></li>
-
-  <li><a href="https://ndgnuh.github.io/tags/linux/" class="single__tag" title="linux">#linux</a></li>
-
-  <li><a href="https://ndgnuh.github.io/tags/lyx/" class="single__tag" title="lyx">#lyx</a></li>
-
-  <li><a href="https://ndgnuh.github.io/tags/tex/" class="single__tag" title="tex">#tex</a></li>
-
-  <li><a href="https://ndgnuh.github.io/tags/true/" class="single__tag" title="true">#true</a></li>
+  <li><a href="https://ndgnuh.github.io/tags/julia/" class="single__tag" title="julia">#julia</a></li>
 
 </ul>
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
-      <p>LyX cung cấp khả năng tương thích với mọi lệnh trong môi trường toán của TeX. Khi có những biểu thức toán dài và lặp lại nhiều lần, ta tạo ra một macro trong TeX để rút gọn câu lệnh và tiết kiệm thời gian. Trong LyX cũng hỗ trợ tạo những macro cho môi trường toán, tuy nhiên cấu trúc của macro trong LyX hơi khác một chút.</p>
-<h2 id="sử-dụng-macro">Sử dụng macro</h2>
-<h3 id="tạo-một-macro">Tạo một macro</h3>
-<p>Macro trong LyX được tạo bởi phím tắt <code>Alt-I + H + O</code> (<code>Insert &gt; Math &gt; Macro</code>). Macro trong LyX gồm ba phần:</p>
+      <p>Trong khi lập trình, để rút ngắn và làm mã nguồn trong sạch, dễ đọc hơn, chúng ta thường viết các hàm với những chức răng riêng biệt. Tuy nhiên, đôi lúc viết hàm không phải là đủ. Khai báo hàm có thể cồng kềnh, bị lồng vào nhau, những cấu trúc lặp đi lặp lại nhưng không dùng hàm xử lý được&hellip; Những trường hợp đó là nơi macro tỏa sáng. May thay, những nhà khoa học MIT đã lường trước điều này và thiết kế Julia với một hệ thống macro - meta programming đầy đủ chức năng.</p>
+<h2 id="sử-dụng-macro">Sử dụng Macro</h2>
+<p>Macro được tận dụng khá nhiều trong Julia. Chúng thường được nhận biết bằng dấu <code>@</code> ở đầu. Một số macro quen thuộc là:</p>
 <ul>
-<li>Phần tên (Name)</li>
-<li>Phần câu lệnh (TeX)</li>
-<li>Phần hiển thị (LyX)</li>
+<li><code>@time</code>: đo độ trễ khi chạy một biểu thức</li>
+<li><code>@show</code>: hiện giá trị một biến</li>
+<li><code>@info</code>: hiện một thông báo với chữ màu</li>
+<li><code>@error</code>: quăng một lỗi, <em>không</em> dừng chương trình</li>
+<li><code>@warning</code>: quăng một cảnh báo, <em>không</em> dừng chương trình</li>
+<li><code>@.</code>: broadcast mọi hàm trong scope</li>
 </ul>
-<p><img src="/img/lyx-macro-001.png" alt="" /></p>
-<p>Phần tên là câu lệnh rút gọn mà ta cần tạo. Phần câu lệnh chính là phần code LaTeX sẽ được dùng khi tạo văn bản. Phần hiển thị chỉ là phần mà LyX sẽ hiển thị cho chúng ta khi dùng câu lệnh đó, phần này không ảnh hưởng tới văn bản được tạo ra. Nếu để trống phần hiển thị thì LyX sẽ mặc định hiển thị những thứ trong phần TeX.</p>
-<h3 id="macro-có-tham-số">Macro có tham số</h3>
-<p>Nhiều khi, biểu thức toán lặp lại nhiều lần với cấu trúc gần giống nhau, chỉ khác nhau một chút. Đó là lúc chúng ta cần tới tham số. Để chèn tham số trong macro, chúng ta chèn <code>\#&lt;thứ tự tham số&gt;</code> vào nơi muốn đặt tham số đó. Ví dụ:</p>
-<p><img src="/img/lyx-macro-002.png" alt="" /><br />
-Trong hình định nghĩa macro <code>\ang</code>, với 2 tham số đặt trong ngoặc nhọn.</p>
-<h2 id="một-số-loại-macro-thường-dùng">Một số loại macro thường dùng</h2>
-<h3 id="macro-toán-tử-macro-hàm">Macro toán tử, macro hàm</h3>
-<p>Trong LaTeX chúng ta định nghĩa một toán tử bằng <code>\operatorname</code>. Tuy nhiên LyX không cung cấp hiển thị cho lệnh này, lý do vì không cần thiết. Khi muốn tạo một toán tử trong LyX, chúng ta tạo một macro với phần TeX là <code>\operatorname{&lt;tên toán tứ&gt;}</code> và dùng <code>\mathrm</code> ở phần hiển thị để toán tử hiển thị gọn gàng khi edit. Hình minh họa một macro với tên <code>\name</code> được định nghĩa, tạo ra một toán tử tên &ldquo;name&rdquo;, và sẽ hiển thị là <code>\mathrm{name}</code> trên trình soạn thảo.</p>
-<p><img src="/img/lyx-macro-001.png" alt="" /></p>
-<p><em>Tuy dùng <code>\mathrm</code> có vẻ nhanh nhưng <code>\mathrm</code> trong văn bản cuối sẽ gây ra sai khoảng cách, do đó chỉ dùng <code>\mathrm</code> để hiển thị trong LyX chứ không dùng <code>\mathrm</code> cho tên hàm, toán tử trong TeX.</em></p>
-<p>Có thể vì ký hiệu khá đa dạng, LyX (và có thể cả TeX) không định nghĩa sẵn một số hàm lượng giác (hyperbolic) ngược, do đó chúng ta cần tự định nghĩa bằng macro:<br />
-<img src="/img/lyx-macro-001b.png" alt="" /></p>
-<h3 id="macro-ngoặc-khó-dịch-delimiters">Macro ngoặc (khó dịch, delimiters)</h3>
-<p>Những cặp ngoặc như <code>(){}[]||</code> trong LyX được gọi chung là Delimiters. Ngoài những cặp ngoặc này ra chúng ta còn những cặp thường dùng khác nhưng không được gắn phím tắt mặc định. Ví dụ như:</p>
-<p><img src="/img/lyx-macro-003.png" alt="" /></p>
-<p>Những cặp ngoặc này có thể được chèn bằng <code>Alt-I + R</code> hoặc <code>Insert &gt; Math &gt; Delimiters...</code>, hộp thoại chèn delimiter có cấu trúc như sau:<br />
-<img src="/img/lyx-macro-004.png" alt="" /></p>
-<ul>
-<li>Ô chọn ngoặc trái phải</li>
-<li>Câu lệnh TeX tương ứng</li>
-<li>Keep matched khi được đánh dấu sẽ làm cho ngoặc trái với ngoặc phải cùng loại với nhau.</li>
-<li>Swap &amp; Reverse đổi chỗ ngoặc trái và phải.</li>
-<li>Size là kích cỡ ngoặc, chọn variable để ngoặc kéo dài bao phủ hết phần bên trong ngoặc.</li>
-</ul>
-<p>Dưới đây là các macro tương ứng với hình ở trên. Ngoặc trái của lệnh <code>\sub</code> được chọn là <code>(none)</code>, tức là không có ngoặc.<br />
-<img src="/img/lyx-macro-005.png" alt="" /></p>
-<h3 id="macro-alias">Macro alias</h3>
-<p>Khi có một lệnh dài nhưng xuất hiện nhiều lần, ta tạo alias cho nó bằng macro để tăng tốc độ soạn thao. Ví dụ, các tập số thường được kí hiệu bằng <code>\mathbb{tên}</code> (ví dụ như <code>\mathbb{R}</code>). Dù LyX có hỗ trợ nhưng tần suất xuất hiện của lệnh này khá cao, dẫn đến chậm khi gõ. Do đó, để tiện thì chúng ta có thể định ra macro với một chữ cái cho các tập số:<br />
-<img src="/img/lyx-macro-006.png" alt="" /></p>
-<h2 id="lưu-macro-thường-dùng">Lưu macro thường dùng</h2>
-<p>Sau một thời gian sử dụng, số macro cần dùng sẽ tăng lên kha khá. Do đó copy hoặc víết tất cả macro với mỗi văn bản cần dùng macro đó sẽ phiền vô cùng. LyX khắc phục điều này với hệ thống <em>Child document</em> (nói thêm sau).</p>
-<p>Đầu tiên, chúng ta cần lưu macro vào một file LyX. File này không có gì ngoài Macro. Giả sử file này có tên <code>macro.lyx</code>, với mỗi văn bản mà ta cần dùng macro, ta chèn file <code>macro.lyx</code> trên đầu của file hiện tại bằng cách di con trỏ soạn thảo lên đầu (<code>Ctrl-Home</code>), sau đó nhấn tổ hợp phím <code>Alt-I + E + D</code> (hoặc <code>Insert &gt; File &gt; Child Document...</code>). Tại hộp văn bản hiện ra:<br />
-<img src="/img/lyx-macro-007.png" alt="" /></p>
+<p>Khi dùng macro, chúng ta đặt macro trước biểu thức cần tác động vào. Macro sẽ có hiệu lực trong biểu thức đứng trước nó. Ví dụ:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="err">@</span><span class="o">.</span> <span class="n">sum</span><span class="p">(</span><span class="n">x</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span> <span class="c">#  [1, 4, 9]</span>
+<span class="n">sum</span><span class="p">(</span><span class="err">@</span><span class="o">.</span> <span class="n">x</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span> <span class="c"># 14</span>
+<span class="err">@</span><span class="o">.</span> <span class="n">x</span><span class="o">^</span><span class="mi">2</span><span class="p">,</span> <span class="n">x</span><span class="o">^</span><span class="mi">3</span> <span class="c"># ([1, 4, 9], [1, 8, 27])</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Ngoài ra, chúng ta còn có macro với đuôi <code>_str</code>. Đây là những macro được thiết kế đặc biệt cho kiểu dữ liệu String, và có cách gọi rút gọn:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">using</span> <span class="n">Markdown</span>
+<span class="nd">@md_str</span> <span class="s">&#34;**Bold**&#34;</span>
+<span class="n">md</span><span class="s">&#34;**Bold**&#34;</span>
+<span class="nd">@html_str</span> <span class="s">&#34;&lt;b&gt;Bold&lt;/b&gt;&#34;</span>
+<span class="n">str</span><span class="s">&#34;&lt;b&gt;Bold&lt;/b&gt;&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Để xem macro sẽ tạo ra đoạn code như nào, ta dùng macro <code>@macroexpand</code>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="nd">@macroexpand</span> <span class="err">@</span><span class="o">.</span> <span class="n">sum</span><span class="p">(</span><span class="n">x</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span>
+<span class="c"># trả về :(sum.((^).(x, 2)))</span>
+<span class="nd">@macroexpand</span> <span class="n">sum</span><span class="p">(</span><span class="err">@</span><span class="o">.</span> <span class="n">x</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span>
+<span class="c"># trả về :(sum((^).(x, 2)))</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Từ ví dụ trên có thể thấy <code>@. sum(...)</code> tác động tới cả hàm <code>sum</code> vì <code>sum</code> nằm trong biểu thức mà nó tác động vào, còn <code>sum(@. ...)</code> thì không.</p>
+<h2 id="tự-tạo-macro">Tự tạo macro</h2>
+<h3 id="kiểu-dữ-liệu-expr">Kiểu dữ liệu Expr</h3>
+<p>Khi một đoạn mã Julia được dịch, trước hết nó được đưa qua <em>Abstract Syntax Tree</em> (AST). Kiểu dữ liệu <code>Expr</code> biểu diễn đoạn mã julia khi được đưa qua AST. Một <code>Expr</code> gồm hai phần là <code>head</code> và <code>args</code>. Trong đó <code>head</code> là phần cho biết đoạn mã nguồn thuộc loại biểu thức gì (gọi hàm, lặp, rẽ nhánh&hellip;); <code>args</code> là một vector chứa những biểu thức con.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">expr</span> <span class="o">=</span> <span class="o">:</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">dump</span><span class="p">(</span><span class="n">expr</span><span class="p">)</span>
+<span class="c"># Expr</span>
+<span class="c">#   head: </span>
+<span class="c"># Symbol call</span>
+<span class="c">#   args: Array{Any}((3,))</span>
+<span class="c">#     1: Symbol +</span>
+<span class="c">#     2: Int64 1</span>
+<span class="c">#     3: Expr</span>
+<span class="c">#       head: Symbol call</span>
+<span class="c">#       args: Array{Any}((3,))</span>
+<span class="c">#         1: Symbol +</span>
+<span class="c">#         2: Int64 2</span>
+<span class="c">#         3: Int64 3</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Hàm <code>dump</code> in ra một cách trực quan cấu trúc của <code>Expr</code>. Để tạo ra một <code>Expr</code>, nếu biểu thức ngắn, chúng ta có thể bọc <code>:(...)</code> quanh biểu thức.</p>
+<pre><code>ex = :(sum(c))
+ex.head # :call
+ex.args
+# 2-element Array{Any,1}:
+#  :sum
+#  :c
+</code></pre><p>Hoặc dùng khối <code>quote</code> với một nhóm biểu thức hoặc một biểu thức dài:</p>
+<pre><code>ex = quote
+	a = 1
+	b = 2
+	a + b
+end
+ex.head # :block
+ex.args
+# 6-element Array{Any,1}:
+#  :(#= REPL[96]:2 =#)
+#  :(a = 1)
+#  :(#= REPL[96]:3 =#)
+#  :(b = 2)
+#  :(#= REPL[96]:4 =#)
+#  :(a + b)
+</code></pre><p>Gọi <code>Meta.parse</code> để chuyển một đoạn code về AST:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">expr</span> <span class="o">=</span> <span class="n">Meta</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s">&#34;1 + 1&#34;</span><span class="p">)</span>
+<span class="n">dump</span><span class="p">(</span><span class="n">expr</span><span class="p">)</span>
+<span class="c"># Expr</span>
+<span class="c">#   head: Symbol call</span>
+<span class="c">#   args: Array{Any}((3,))</span>
+<span class="c">#     1: Symbol +</span>
+<span class="c">#     2: Int64 1</span>
+<span class="c">#     3: Int64 1</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Cách cuối cùng là gọi trực tiếp <code>Expr</code> với tham số là các biểu thức:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">ex</span> <span class="o">=</span> <span class="kt">Expr</span><span class="p">(</span><span class="o">:</span><span class="n">call</span><span class="p">,</span> <span class="o">:</span><span class="p">(</span><span class="o">+</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="c"># :(1 + 1)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Mặc dù nhìn như lời gọi hàm như tất cả mọi thứ chỉ là biểu thức, do đó nếu có một biến số, hàm bên trong <code>Expr</code> thì nó không cần được xác định cho tới khi <code>Expr</code> được đánh giá. Để đánh giá một biểu thức ở dạng <code>Expr</code>, chúng ta dùng hàm <code>eval</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">ex</span> <span class="o">=</span> <span class="o">:</span><span class="p">(</span><span class="n">sum</span><span class="p">(</span><span class="n">c</span><span class="p">))</span> <span class="c"># không gây lỗi, vì :c chỉ là một biểu thức con</span>
+<span class="n">eval</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span> <span class="c"># gây lỗi vì `c` chưa được định nghĩa</span>
+<span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">eval</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span> <span class="c"># trả về 6</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Nếu muốn đưa một biến có sẵn vào trong <code>Expr</code>ession, chúng ta dùng cú pháp nội suy giống trong xâu kí tự:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">x</span> <span class="o">=</span> <span class="nb">π</span>
+<span class="n">expr</span> <span class="o">=</span> <span class="o">:</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="o">$</span><span class="n">x</span><span class="p">)</span>
+<span class="n">dump</span><span class="p">(</span><span class="n">expr</span><span class="p">)</span>
+<span class="c"># Expr</span>
+<span class="c">#   head: Symbol call</span>
+<span class="c">#   args: Array{Any}((3,))</span>
+<span class="c">#     1: Symbol +</span>
+<span class="c">#     2: Int64 1</span>
+<span class="c">#     3: Irrational{:π} π</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Có thể nói, bản thân mã nguồn cũng chỉ là một kiểu dữ liệu trong Julia. Do đó việc meta-programming trong Julia diễn ra rất tự nhiên.</p>
+<h3 id="cách-viết-macro">Cách viết macro</h3>
+<p>Cú pháp của macro khá giống hàm</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">macro</span> <span class="n">tên_macro</span><span class="p">(</span><span class="n">expr</span><span class="p">)</span>
+	<span class="c"># thân macro</span>
+<span class="k">end</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Cách hoạt động của macro có thể được hiểu như sau:</p>
 <ol>
-<li>Nhấn vào browse, tìm và chọn file <code>macro.lyx</code>.</li>
-<li>Chọn <code>Input</code> tại <code>include type</code></li>
-<li>Nhấn <code>Ok</code> để đóng hộp thoại</li>
+<li>Macro nhận biểu thức cần tác động qua tham số đầu tiên của nó dưới kiểu dữ liệu <code>Expr</code></li>
+<li>Phần thân macro biến đổi biểu thức, trả về một <code>Expr</code> khác</li>
+<li>Julia lấy biểu thức <code>Expr</code> do macro trả về và đánh giá nó</li>
 </ol>
-<p>Sau đó, tất cả macro sẽ tự nhiên hoạt động trong văn bản một cách kì diệu :)</p>
-<h2 id="kết-luận">Kết luận</h2>
-<p>Cũng như việc dùng phím tắt ra, macro tăng tốc độ soạn thảo văn bản lên đáng kể. Ngoài ra còn một số lưu ý nhỏ sau khi tạo macro:</p>
-<ul>
-<li>Kiểm tra xem macro đó có được định nghĩa bởi LaTeX hay không (nếu nó được định nghĩa trước thì tạo macro có thể gây lỗi). Cách dễ nhất là xóa macro đi, tạo môi trường toán và thử xem lệnh đó có tồn tại hay không.</li>
-<li>Macro cũng như lệnh trong môi trường toán, do đó cũng có thể được sử dụng với phím tắt như một lệnh toán (dùng <code>math-insert &lt;tên macro&gt;</code>)</li>
-</ul>
+<p>Chúng ta có thể &ldquo;thử&rdquo; thông qua macro sau</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">macro</span> <span class="n">m1</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+	<span class="nd">@show</span> <span class="n">typeof</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+	<span class="nd">@show</span> <span class="n">ex</span>
+	<span class="k">return</span> <span class="n">ex</span>
+<span class="k">end</span>
+
+<span class="nd">@m1</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="c"># typeof(ex) = Expr</span>
+<span class="c"># ex = :(1 + 1)</span>
+<span class="c"># 2</span>
+
+<span class="nd">@m1</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="c"># typeof(ex) = Expr</span>
+<span class="c"># ex = :((1 + 1, 2 * 2))</span>
+<span class="c"># (2, 4)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Có thể thấy, macro <code>@show</code> đã được gọi trong phần thân của <code>m1</code>, kết quả trả về của <code>@m1</code> là một biểu thức và được đánh giá ngay lập tức. Dưới đây là một macro mà tìm nghịch đảo của một biểu thức:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">macro</span> <span class="n">inv</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+	<span class="kt">Expr</span><span class="p">(</span><span class="o">:</span><span class="n">call</span><span class="p">,</span> <span class="o">:</span><span class="p">(</span><span class="o">/</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">ex</span><span class="p">)</span>
+<span class="k">end</span>
+<span class="nd">@inv</span> <span class="mi">4</span> <span class="c"># 0.25</span>
+<span class="nd">@inv</span> <span class="mi">5</span> <span class="c"># 0.2</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Thực ra, macro cũng có thể nhận nhiều tham số, tham số của macro được ngăn cách bằng dấu <code>,</code>, sẽ phải dùng ngoặc (trước ngoặc không có dấu cách), hoặc dùng dấu cách:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">macro</span> <span class="n">inv2</span><span class="p">(</span><span class="n">ex</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+	<span class="kt">Expr</span><span class="p">(</span><span class="o">:</span><span class="n">call</span><span class="p">,</span> <span class="o">:</span><span class="p">(</span><span class="o">/</span><span class="p">),</span> <span class="n">i</span><span class="p">,</span> <span class="n">ex</span><span class="p">)</span>
+<span class="k">end</span>
+<span class="nd">@inv2</span> <span class="mi">4</span> <span class="c"># 0.25</span>
+<span class="nd">@inv2</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c"># 0.4</span>
+<span class="nd">@inv2</span> <span class="mi">5</span> <span class="mi">2</span> <span class="c"># 0.4</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Dưới đây là một phiên bản khác của macro dùng <code>quote</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">macro</span> <span class="n">inv</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+	<span class="k">quote</span>
+		<span class="mi">1</span> <span class="o">/</span> <span class="o">$</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+	<span class="k">end</span>
+<span class="k">end</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>phần expression được bọc trong cú pháp nội suy <code>$(...)</code>.</p>
+<h3 id="macro-hygiene">Macro hygiene</h3>
+<p>Macro trong những ví dụ trên chạy rất bình thường. Giả sử chúng ta đang viết một phần mềm, chúng ta muốn chia module, và có một module như sau</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">module</span> <span class="n">MyMacro</span>
+
+<span class="s">&#34;&#34;&#34;
+</span><span class="s">	@inv expr
+</span><span class="s">
+</span><span class="s">Nghịch đảo biểu thức
+</span><span class="s">&#34;&#34;&#34;</span>
+<span class="k">macro</span> <span class="n">inv</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+	<span class="k">quote</span>
+		<span class="mi">1</span> <span class="o">/</span> <span class="o">$</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+	<span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c"># end of module</span>
+<span class="k">end</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Sau khi chạy đoạn mã nguồn module trên, chúng ta nhập macro đó để sử dụng:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">using</span> <span class="n">Main</span><span class="o">.</span><span class="n">MacroExample</span><span class="o">:</span> <span class="nd">@inv</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Nhưng đoạn mã nguồn sau sẽ gây lỗi:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="nd">@inv</span> <span class="n">x</span>
+<span class="c"># ERROR: UndefVarError: x not defined</span>
+<span class="c"># Stacktrace:</span>
+<span class="c">#  [1] top-level scope at REPL[1]:...</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Nhưng <code>x</code> đã được định nghĩa, vậy chuyện gì đã xảy ra? Macro trên được gọi là &ldquo;vệ sinh&rdquo; (hygiene), tức là nó chỉ dùng những biến trong phạm vi mà macro đã được định nghĩa (trong module). Trong trường hợp này <code>MacroExample.@inv</code> sẽ gọi tới <code>MacroExample.x</code> (không tồn tại), dẫn đến lỗi như trên.</p>
+<p>Giờ biến <code>x</code> cần được trỏ tới <code>x</code> trong môi trường gọi macro. Chúng ta có thể giải quyết vấn đề này bằng cách <code>esc</code> (escape) nó. Macro <code>@inv</code> sẽ được định nghĩa như sau:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">macro</span> <span class="n">inv</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+	<span class="k">quote</span>
+		<span class="mi">1</span> <span class="o">/</span> <span class="o">$</span><span class="p">(</span><span class="n">esc</span><span class="p">(</span><span class="n">ex</span><span class="p">))</span>
+	<span class="k">end</span>
+<span class="k">end</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Nói cách khác, macro này dùng biến trong môi trường gọi macro, tức là nó &ldquo;không vệ sinh&rdquo; (unhygiene). Một phiên bản gọn hơn của <code>@inv</code></p>
+<pre><code>macro inv(ex)
+	Expr(:call, :(/), 1, esc(ex))
+end
+</code></pre><p>Vậy chuyện gì sẽ sảy ra nếu trong môi trường khai báo có một biến trùng tên với biến nội bộ của macro?</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">macro</span> <span class="n">inv3</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+	<span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+	<span class="kt">Expr</span><span class="p">(</span><span class="o">:</span><span class="n">call</span><span class="p">,</span> <span class="o">:</span><span class="p">(</span><span class="o">/</span><span class="p">),</span> <span class="n">x</span><span class="p">,</span> <span class="n">esc</span><span class="p">(</span><span class="n">ex</span><span class="p">))</span>
+<span class="k">end</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="nd">@inv3</span> <span class="n">x</span> <span class="c"># 0.25</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Câu trả lời là không có gì xảy ra, macro vẫn hoạt động bình thường, vì hàm <code>gensym</code> của Julia tạo ra một biểu tượng độc nhất cho mỗi biến nội bộ của macro.</p>
+<h3 id="macro--multiple-dispatch">Macro &amp; multiple dispatch</h3>
+<p>Vì macro giống function nên cũng có các method khác nhau, vẫn là ví dụ <code>inv</code>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">macro</span> <span class="n">inv</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+	<span class="kt">Expr</span><span class="p">(</span><span class="o">:</span><span class="n">call</span><span class="p">,</span> <span class="o">:</span><span class="p">(</span><span class="o">/</span><span class="p">),</span> <span class="n">x</span><span class="p">,</span> <span class="n">esc</span><span class="p">(</span><span class="n">ex</span><span class="p">))</span>
+<span class="k">end</span>
+<span class="k">macro</span> <span class="n">inv</span><span class="p">(</span><span class="n">ex</span><span class="o">...</span><span class="p">)</span>
+	<span class="k">quote</span>
+		<span class="n">map</span><span class="p">(</span><span class="o">$</span><span class="p">(</span><span class="n">esc</span><span class="p">(</span><span class="n">ex</span><span class="p">)))</span> <span class="k">do</span> <span class="n">x</span>
+			<span class="mi">1</span> <span class="o">/</span> <span class="n">x</span>
+		<span class="k">end</span>
+	<span class="k">end</span>
+<span class="k">end</span>
+<span class="nd">@inv</span> <span class="mi">1</span> <span class="mi">2</span> <span class="mi">4</span> <span class="mi">5</span> <span class="c"># (1.0, 0.5, 0.25, 0.2)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="macro-với-cách-gọi-tắt-cho-string">Macro với cách gọi tắt cho string</h3>
+<p>Những macro có tên với đuôi <code>_str</code> sẽ <em>tự động</em> có cách gọi tắt với String.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">macro</span> <span class="n">capslock_party_str</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+	<span class="k">quote</span>
+		<span class="n">uppercase</span><span class="p">(</span><span class="o">$</span><span class="p">(</span><span class="n">esc</span><span class="p">(</span><span class="n">s</span><span class="p">)))</span>
+	<span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">capslock_party</span><span class="s">&#34;wooloowooloo&#34;</span> <span class="c"># &#34;WOOLOOWOOLOO&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Đương nhiên ta vẫn có thể gọi theo cách thông thường:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">s</span> <span class="o">=</span> <span class="s">&#34;wooloowooloo&#34;</span>
+<span class="nd">@capslock_party_str</span> <span class="n">s</span>  <span class="c"># &#34;WOOLOOWOOLOO&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="khi-nào-dùng-macro">Khi nào dùng macro</h2>
+<p>Trường hợp thường thấy khi dùng macro là macro cho string (<code>@..._str</code>), trường hợp thường thấy tiếp theo là chúng ta có một cấu trúc code lặp đi lặp lại, nhưng lại là cấu trúc không thể dùng hàm để mô tả được. Khi đó macro sẽ giảm thiểu tối đa việc trùng lặp. Giả sử chúng ta đang cần một kiểu dữ liệu biểu diễn tổng của các số mà không làm mất đi thông tin các số hạng.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">struct</span> <span class="n">Summation</span><span class="p">{</span><span class="n">T</span><span class="o">&lt;:</span><span class="kt">Real</span><span class="p">}</span> <span class="o">&lt;:</span> <span class="kt">Real</span>
+	<span class="n">terms</span><span class="o">::</span><span class="kt">AbstractArray</span><span class="p">{</span><span class="n">T</span><span class="p">}</span>
+	<span class="n">Summation</span><span class="p">(</span><span class="n">xs</span><span class="o">...</span><span class="p">)</span> <span class="o">=</span> <span class="n">Summation</span><span class="p">(</span><span class="n">collect</span><span class="p">(</span><span class="n">xs</span><span class="p">))</span>
+	<span class="n">Summation</span><span class="p">(</span><span class="n">xs</span><span class="o">::</span><span class="kt">AbstractArray</span><span class="p">)</span> <span class="o">=</span> <span class="n">new</span><span class="p">{</span><span class="n">eltype</span><span class="p">(</span><span class="n">xs</span><span class="p">)}(</span><span class="n">vec</span><span class="p">(</span><span class="n">xs</span><span class="p">))</span>
+<span class="k">end</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Giờ chúng ta muốn định nghĩa lại các hàm sơ cấp lượng giác trên kiểu dữ liệu này. Nếu không dùng macro chúng ta sẽ dùng như sau:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">Base</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">s</span><span class="o">::</span><span class="n">Summation</span><span class="p">)</span> <span class="o">=</span> <span class="n">sum</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">terms</span><span class="p">)</span>
+<span class="n">Base</span><span class="o">.</span><span class="n">length</span><span class="p">(</span><span class="n">s</span><span class="o">::</span><span class="n">Summation</span><span class="p">)</span> <span class="o">=</span> <span class="n">length</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">terms</span><span class="p">)</span>
+<span class="n">Base</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">s</span><span class="o">::</span><span class="n">Summation</span><span class="p">)</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="n">sum</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="n">Base</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">s</span><span class="o">::</span><span class="n">Summation</span><span class="p">)</span> <span class="o">=</span> <span class="n">cos</span><span class="p">(</span><span class="n">sum</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="n">Base</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">s</span><span class="o">::</span><span class="n">Summation</span><span class="p">)</span> <span class="o">=</span> <span class="n">tan</span><span class="p">(</span><span class="n">sum</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="n">Base</span><span class="o">.</span><span class="n">cot</span><span class="p">(</span><span class="n">s</span><span class="o">::</span><span class="n">Summation</span><span class="p">)</span> <span class="o">=</span> <span class="n">tan</span><span class="p">(</span><span class="n">sum</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="n">Base</span><span class="o">.</span><span class="n">asin</span><span class="p">(</span><span class="n">s</span><span class="o">::</span><span class="n">Summation</span><span class="p">)</span> <span class="o">=</span> <span class="n">asin</span><span class="p">(</span><span class="n">sum</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="n">Base</span><span class="o">.</span><span class="n">acos</span><span class="p">(</span><span class="n">s</span><span class="o">::</span><span class="n">Summation</span><span class="p">)</span> <span class="o">=</span> <span class="n">acos</span><span class="p">(</span><span class="n">sum</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="n">Base</span><span class="o">.</span><span class="n">atan</span><span class="p">(</span><span class="n">s</span><span class="o">::</span><span class="n">Summation</span><span class="p">)</span> <span class="o">=</span> <span class="n">atan</span><span class="p">(</span><span class="n">sum</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="n">Base</span><span class="o">.</span><span class="n">acot</span><span class="p">(</span><span class="n">s</span><span class="o">::</span><span class="n">Summation</span><span class="p">)</span> <span class="o">=</span> <span class="n">acot</span><span class="p">(</span><span class="n">sum</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="c"># sinh, cosh, tanh, cosh, asinh, acosh....</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Nói chung là dài. Với macro, chúng ta có thể làm như sau (hãy mở lại Julia và định nghĩa lại struct trên trước khi thử)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="k">for</span> <span class="n">op</span> <span class="kp">in</span> <span class="p">(</span><span class="o">:</span><span class="n">sin</span><span class="p">,</span> <span class="o">:</span><span class="n">cos</span><span class="p">,</span> <span class="o">:</span><span class="n">tan</span><span class="p">,</span> <span class="o">:</span><span class="n">cot</span><span class="p">),</span>
+	 <span class="n">vop</span> <span class="kp">in</span> <span class="kt">Symbol</span><span class="o">.</span><span class="p">([</span><span class="n">op</span><span class="p">,</span> <span class="s">&#34;a</span><span class="si">$</span><span class="p">(</span><span class="n">op</span><span class="p">)</span><span class="s">&#34;</span><span class="p">,</span> <span class="s">&#34;</span><span class="si">$</span><span class="p">(</span><span class="n">op</span><span class="p">)</span><span class="s">h&#34;</span><span class="p">,</span> <span class="s">&#34;a</span><span class="si">$</span><span class="p">(</span><span class="n">op</span><span class="p">)</span><span class="s">h&#34;</span><span class="p">])</span>
+	<span class="nd">@eval</span> <span class="n">Base</span><span class="o">.$</span><span class="n">vop</span><span class="p">(</span><span class="n">s</span><span class="o">::</span><span class="n">Summation</span><span class="p">)</span> <span class="o">=</span> <span class="o">$</span><span class="n">vop</span><span class="p">(</span><span class="n">sum</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="k">end</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Trong đó <code>@evals x</code> là macro cho <code>eval(:(x))</code>. Giờ thử với <code>methodswith</code>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-julia" data-lang="julia"><span class="n">methodswith</span><span class="p">(</span><span class="n">Summation</span><span class="p">)</span>
+<span class="c"># [1] acos(s::Summation) in Main at REPL[2]:2</span>
+<span class="c"># [2] acosh(s::Summation) in Main at REPL[2]:2</span>
+<span class="c"># [3] acot(s::Summation) in Main at REPL[2]:2</span>
+<span class="c"># [4] acoth(s::Summation) in Main at REPL[2]:2</span>
+<span class="c"># [5] asin(s::Summation) in Main at REPL[2]:2</span>
+<span class="c"># [6] asinh(s::Summation) in Main at REPL[2]:2</span>
+<span class="c"># [7] atan(s::Summation) in Main at REPL[2]:2</span>
+<span class="c"># [8] atanh(s::Summation) in Main at REPL[2]:2</span>
+<span class="c"># [9] cos(s::Summation) in Main at REPL[2]:2</span>
+<span class="c"># [10] cosh(s::Summation) in Main at REPL[2]:2</span>
+<span class="c"># [11] cot(s::Summation) in Main at REPL[2]:2</span>
+<span class="c"># [12] coth(s::Summation) in Main at REPL[2]:2</span>
+<span class="c"># [13] sin(s::Summation) in Main at REPL[2]:2</span>
+<span class="c"># [14] sinh(s::Summation) in Main at REPL[2]:2</span>
+<span class="c"># [15] tan(s::Summation) in Main at REPL[2]:2</span>
+<span class="c"># [16] tanh(s::Summation) in Main at REPL[2]:2</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Như vậy chúng ta với 4 dòng gọn gàng chúng ta đã định nghĩa được 16 method cho kiểu dữ liệu này mà không có dòng nào bị trùng lặp hay thừa.</p>
+<h2 id="những-macro-hữu-dụng">Những macro hữu dụng</h2>
+<p>Đây không phải tất cả macro, trong các module khác có thể có nhiều macro hơn nữa. Macro khá ít so với hàm nên có thể được tìm nhanh bằng cách gõ <code>@</code> và tab trên REPL.</p>
+<table>
+<thead>
+<tr>
+<th>Macro</th>
+<th>chức năng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@time</td>
+<td>tính thời gian thực thi</td>
+</tr>
+<tr>
+<td>@btime (từ Benchmark.jl)</td>
+<td>tính thời gian thực thi, nhưng chính xác hơn và không bao gồm thời gian JIT</td>
+</tr>
+<tr>
+<td>@benchmark (từ Benchmark.jl)</td>
+<td>đánh giá biểu thức, bao gồm thống kê thời gian thực thi và phân bố bộ nhớ</td>
+</tr>
+<tr>
+<td>@.</td>
+<td>thực hiện broadcast (<code>f.(x)</code>) trên tất cả các phép toán và hàm trong cùng phạm vi</td>
+</tr>
+<tr>
+<td>@simd</td>
+<td>thực hiện simd cho vòng lặp, map và filter</td>
+</tr>
+<tr>
+<td>@inbounds</td>
+<td>không kiểm tra chỉ số khi truy cập mảng, tăng tốc đáng kể trong trường hợp kiểm soát được chỉ số mảng</td>
+</tr>
+<tr>
+<td>@show,@info,@error</td>
+<td>các macro hỗ trợ debug</td>
+</tr>
+<tr>
+<td>Base.@kwdef</td>
+<td>định nghĩa struct với method khởi tạo dùng keyword</td>
+</tr>
+<tr>
+<td>@isdefined</td>
+<td>kiểm tra xem một biến được định nghĩa hay chưa</td>
+</tr>
+<tr>
+<td>@deprecate</td>
+<td>cảnh báo rằng một hàm, đoạn mã nguồn đã bị lỗi thời, không nên dùng</td>
+</tr>
+<tr>
+<td>@view/@views</td>
+<td>tạo View khi lấy chỉ số của Array thay vì tạo ra một array mới</td>
+</tr>
+<tr>
+<td>@inline/@noinline</td>
+<td>báo với compiler rằng một hàm có nên được inline hay không</td>
+</tr>
+<tr>
+<td>@<strong>DIR</strong></td>
+<td>đường dẫn thư mục chứa file mà macro này được gọi</td>
+</tr>
+<tr>
+<td>@<strong>FILE</strong></td>
+<td>đường dẫn file chứa lời gọi macro</td>
+</tr>
+<tr>
+<td>@<strong>MODULE</strong></td>
+<td>module mà code đang được gọi từ</td>
+</tr>
+<tr>
+<td>@which</td>
+<td>xem một method, hàm, biến nằm trong module nào</td>
+</tr>
+</tbody>
+</table>
+<h2 id="kết">Kết</h2>
+<p>Macro có vẻ là một thức khá thần thánh và hữu dụng trong nhiều trường hợp. Tuy nhiên macro không nên bị làm dụng, đa số các tình huống có thể xử lý được (một cách đủ tốt) bằng hàm và có thể kết hợp với những macro có sẵn. Dùng macro bừa bãi có thể khiến chương trình thiếu ổn định (vì macro sinh mã nguồn nên khó kiểm soát), và một số trường hợp gây ảnh hưởng tới hiệu năng.</p>
 
     </article>
     
@@ -1787,19 +2379,23 @@ Trong hình định nghĩa macro <code>\ang</code>, với 2 tham số đặt tro
     <ul class="related-ul">
         
         <li>
-          <a href="/posts/lyx-shortcut-and-fast-note/" class="related__link">Phím tắt trong LyX &amp; ghi chép tốc độ</a>
+          <a href="/posts/julia-dojo/multiple-dispatch/" class="related__link">Julia Dojo: Multiple Dispatch</a>
         </li>
         
         <li>
-          <a href="/posts/lyx-tieng-viet/" class="related__link">Lyx và văn bản tiếng Việt</a>
+          <a href="/posts/julia-dojo/more-on-types/" class="related__link">Julia dojo: nói thêm về kiểu dữ liệu</a>
         </li>
         
         <li>
-          <a href="/posts/lyx-tex-editor/" class="related__link">LyX: trình sửa văn bản WYSIWYM</a>
+          <a href="/julia-dojo/tu-dien-va-tap-hop-trong-julia/" class="related__link">Julia Dojo: từ điển &amp; tập hợp</a>
         </li>
         
         <li>
-          <a href="/posts/ibus-and-vim/" class="related__link">Gõ tiếng Việt và Vim</a>
+          <a href="/julia-dojo/lam-viec-voi-file-trong-julia/" class="related__link">Julia Dojo: làm việc với file</a>
+        </li>
+        
+        <li>
+          <a href="/julia-dojo/cai-dat-va-su-dung-goi-julia/" class="related__link">Julia Dojo: quản lí gói trong Julia</a>
         </li>
         
     </ul>
@@ -1809,21 +2405,14 @@ Trong hình định nghĩa macro <code>\ang</code>, với 2 tham số đặt tro
 <nav class="pagination-single">
   
     
-      <a href="https://ndgnuh.github.io/posts/lyx-shortcut-and-fast-note/" class="pagination-single__left">
+      <a href="https://ndgnuh.github.io/posts/lyx-macro/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">Phím tắt trong LyX &amp; ghi chép tốc độ</div>      
+        <div class="pagination-single__left-title">Gõ tắt sử dụng macro trong Lyx</div>      
       </a>
     
     <div class="grow"></div>
-    
-      <a href="https://ndgnuh.github.io/posts/julia-dojo/macro/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">Julia dojo: Macro &amp; meta programming</div>
-        <div class="pagination-single__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-        </div>
-      </a>
     
   
 </nav>
@@ -2200,21 +2789,19 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="false" data-ani="true">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#sử-dụng-macro">Sử dụng macro</a>
+    <li><a href="#sử-dụng-macro">Sử dụng Macro</a></li>
+    <li><a href="#tự-tạo-macro">Tự tạo macro</a>
       <ul>
-        <li><a href="#tạo-một-macro">Tạo một macro</a></li>
-        <li><a href="#macro-có-tham-số">Macro có tham số</a></li>
+        <li><a href="#kiểu-dữ-liệu-expr">Kiểu dữ liệu Expr</a></li>
+        <li><a href="#cách-viết-macro">Cách viết macro</a></li>
+        <li><a href="#macro-hygiene">Macro hygiene</a></li>
+        <li><a href="#macro--multiple-dispatch">Macro &amp; multiple dispatch</a></li>
+        <li><a href="#macro-với-cách-gọi-tắt-cho-string">Macro với cách gọi tắt cho string</a></li>
       </ul>
     </li>
-    <li><a href="#một-số-loại-macro-thường-dùng">Một số loại macro thường dùng</a>
-      <ul>
-        <li><a href="#macro-toán-tử-macro-hàm">Macro toán tử, macro hàm</a></li>
-        <li><a href="#macro-ngoặc-khó-dịch-delimiters">Macro ngoặc (khó dịch, delimiters)</a></li>
-        <li><a href="#macro-alias">Macro alias</a></li>
-      </ul>
-    </li>
-    <li><a href="#lưu-macro-thường-dùng">Lưu macro thường dùng</a></li>
-    <li><a href="#kết-luận">Kết luận</a></li>
+    <li><a href="#khi-nào-dùng-macro">Khi nào dùng macro</a></li>
+    <li><a href="#những-macro-hữu-dụng">Những macro hữu dụng</a></li>
+    <li><a href="#kết">Kết</a></li>
   </ul>
 </nav>
   </div>
