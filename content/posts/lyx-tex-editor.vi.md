@@ -76,6 +76,8 @@ Edit: Nếu bạn thử gõ tiếng Việt và LyX báo lỗi thì đừng lo, �
 
 Edit: Để sử dụng đầy đủ những tính năng trong LyX, bạn cần có một số gói LaTeX như sau, hãy dùng lệnh ở dưới để cài chúng (mình sẽ cố lọc ra gói nào dùng cho việc gì ở bài viết sau):
 
+Edit: Những bài viết về LyX có thể được tìm thấy thông qua [/series/lyx](/series/lyx)
+
 ```
 tlmgr install algorithm2e algorithms apacite bbding bezos bibtopic
 tlmgr install breakurl covington csquotes diagbox endnotes enumitem
