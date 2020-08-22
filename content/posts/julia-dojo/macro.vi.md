@@ -1,7 +1,7 @@
 ---
 title: "Julia dojo: Macro & meta programming"
-date: 2020-08-21T09:53:03+07:00
-draft: true
+date: 2020-08-22T10:42:00+07:00
+draft: false
 summary: "Macro và meta programming trong Julia"
 categories:
 - hướng dẫn
