@@ -26,6 +26,56 @@
 
       
       <item>
+        <title>Pluto.jl: Reactive notebook cho Julia</title>
+        <link>https://ndgnuh.github.io/posts/plutojl-reactive-notebook-julia/</link>
+        <pubDate>Tue, 15 Sep 2020 20:28:54 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Tue, 15 Sep 2020 20:28:54 +0700</atom:modified>
+        <guid>https://ndgnuh.github.io/posts/plutojl-reactive-notebook-julia/</guid>
+        <description>Một luồng làm việc mới với Pluto.jl - reactive notebook</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>julia</category>
+            
+          
+            
+              <category>pluto</category>
+            
+          
+            
+              <category>plutojl</category>
+            
+          
+            
+              <category>reactive</category>
+            
+          
+            
+              <category>reactive notebook</category>
+            
+          
+        
+        
+          
+            
+              <category>hướng dẫn</category>
+            
+          
+            
+              <category>lập trình</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>Julia dojo: Macro &amp; meta programming</title>
         <link>https://ndgnuh.github.io/posts/julia-dojo/macro/</link>
         <pubDate>Sat, 22 Aug 2020 10:42:00 +0700</pubDate>
@@ -542,8 +592,8 @@
         <author>ndgnuh@protonmail.com (Hùng)</author>
         <atom:modified>Thu, 30 Jan 2020 00:47:34 +0700</atom:modified>
         <guid>https://ndgnuh.github.io/lien-he/</guid>
-        <description>Mọi người có thể gửi feedback cho mình thông qua các cách sau:
- Email: ndgnuh@protonmail.com Github (gửi issue hoặc pr): https://github.com/ndgnuh/ndgnuh.github.io Google form: https://forms.gle/EPHRrgPggS1dNEjW9  Nếu bạn muốn gửi feedback nặc danh, không dùng bất kì loại tài khoản nào, hãy dùng google form.  </description>
+        <description>Mọi feedback cho page có thể được gửi qua những phương tiện sau:
+ Email: ndgnuh@protonmail.com Github (gửi issue hoặc pr): https://github.com/ndgnuh/ndgnuh.github.io Google form: https://forms.gle/EPHRrgPggS1dNEjW9  Nếu muốn feedback được gửi một cách nặc danh, không dùng bất kì loại tài khoản nào, người gửi có thể dùng google form.  </description>
         
         <dc:creator>Hùng</dc:creator>
         

@@ -4,21 +4,77 @@
   
   <url>
     <loc>https://ndgnuh.github.io/categories/</loc>
-    <lastmod>2020-08-22T10:42:00+07:00</lastmod>
+    <lastmod>2020-09-15T20:28:54+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/categories/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</loc>
-    <lastmod>2020-08-22T10:42:00+07:00</lastmod>
+    <lastmod>2020-09-15T20:28:54+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ndgnuh.github.io/tags/julia/</loc>
-    <lastmod>2020-08-22T10:42:00+07:00</lastmod>
+    <lastmod>2020-09-15T20:28:54+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/categories/l%E1%BA%ADp-tr%C3%ACnh/</loc>
+    <lastmod>2020-09-15T20:28:54+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/tags/pluto/</loc>
+    <lastmod>2020-09-15T20:28:54+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/posts/plutojl-reactive-notebook-julia/</loc>
+    <lastmod>2020-09-15T20:28:54+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/tags/plutojl/</loc>
+    <lastmod>2020-09-15T20:28:54+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/posts/</loc>
+    <lastmod>2020-09-15T20:28:54+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/tags/reactive/</loc>
+    <lastmod>2020-09-15T20:28:54+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/tags/reactive-notebook/</loc>
+    <lastmod>2020-09-15T20:28:54+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ndgnuh.github.io/tags/</loc>
+    <lastmod>2020-09-15T20:28:54+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -38,28 +94,7 @@
   </url>
   
   <url>
-    <loc>https://ndgnuh.github.io/categories/l%E1%BA%ADp-tr%C3%ACnh/</loc>
-    <lastmod>2020-08-22T10:42:00+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/posts/</loc>
-    <lastmod>2020-08-22T10:42:00+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://ndgnuh.github.io/series/</loc>
-    <lastmod>2020-08-22T10:42:00+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ndgnuh.github.io/tags/</loc>
     <lastmod>2020-08-22T10:42:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

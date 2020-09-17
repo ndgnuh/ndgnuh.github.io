@@ -14,7 +14,7 @@
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
     <webMaster>ndgnuh@protonmail.com (Hùng)</webMaster>
     <copyright>©2020, copy ghi nguồn :)</copyright>
-    <lastBuildDate>Sat, 22 Aug 2020 10:42:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2020 20:28:54 +0700</lastBuildDate>
     
         <atom:link href="https://ndgnuh.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,10 +25,82 @@
       <item>
         <title>julia</title>
         <link>https://ndgnuh.github.io/tags/julia/</link>
-        <pubDate>Sat, 22 Aug 2020 10:42:00 +0700</pubDate>
+        <pubDate>Tue, 15 Sep 2020 20:28:54 +0700</pubDate>
         <author>ndgnuh@protonmail.com (Hùng)</author>
         
         <guid>https://ndgnuh.github.io/tags/julia/</guid>
+        <description></description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>pluto</title>
+        <link>https://ndgnuh.github.io/tags/pluto/</link>
+        <pubDate>Tue, 15 Sep 2020 20:28:54 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        
+        <guid>https://ndgnuh.github.io/tags/pluto/</guid>
+        <description></description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>plutojl</title>
+        <link>https://ndgnuh.github.io/tags/plutojl/</link>
+        <pubDate>Tue, 15 Sep 2020 20:28:54 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        
+        <guid>https://ndgnuh.github.io/tags/plutojl/</guid>
+        <description></description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>reactive</title>
+        <link>https://ndgnuh.github.io/tags/reactive/</link>
+        <pubDate>Tue, 15 Sep 2020 20:28:54 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        
+        <guid>https://ndgnuh.github.io/tags/reactive/</guid>
+        <description></description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>reactive notebook</title>
+        <link>https://ndgnuh.github.io/tags/reactive-notebook/</link>
+        <pubDate>Tue, 15 Sep 2020 20:28:54 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        
+        <guid>https://ndgnuh.github.io/tags/reactive-notebook/</guid>
         <description></description>
         
         <dc:creator>Hùng</dc:creator>

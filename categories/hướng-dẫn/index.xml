@@ -14,13 +14,63 @@
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
     <webMaster>ndgnuh@protonmail.com (Hùng)</webMaster>
     <copyright>©2020, copy ghi nguồn :)</copyright>
-    <lastBuildDate>Sat, 22 Aug 2020 10:42:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2020 20:28:54 +0700</lastBuildDate>
     
         <atom:link href="https://ndgnuh.github.io/categories/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Pluto.jl: Reactive notebook cho Julia</title>
+        <link>https://ndgnuh.github.io/posts/plutojl-reactive-notebook-julia/</link>
+        <pubDate>Tue, 15 Sep 2020 20:28:54 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Tue, 15 Sep 2020 20:28:54 +0700</atom:modified>
+        <guid>https://ndgnuh.github.io/posts/plutojl-reactive-notebook-julia/</guid>
+        <description>Một luồng làm việc mới với Pluto.jl - reactive notebook</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>julia</category>
+            
+          
+            
+              <category>pluto</category>
+            
+          
+            
+              <category>plutojl</category>
+            
+          
+            
+              <category>reactive</category>
+            
+          
+            
+              <category>reactive notebook</category>
+            
+          
+        
+        
+          
+            
+              <category>hướng dẫn</category>
+            
+          
+            
+              <category>lập trình</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>Julia dojo: Macro &amp; meta programming</title>

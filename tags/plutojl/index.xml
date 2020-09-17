@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>plutojl on Rants</title>
+    <link>https://ndgnuh.github.io/tags/plutojl/</link>
+    <description>Recent content in plutojl on Rants</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi</language>
+    <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
+    <webMaster>ndgnuh@protonmail.com (Hùng)</webMaster>
+    <copyright>©2020, copy ghi nguồn :)</copyright>
+    <lastBuildDate>Tue, 15 Sep 2020 20:28:54 +0700</lastBuildDate>
+    
+        <atom:link href="https://ndgnuh.github.io/tags/plutojl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Pluto.jl: Reactive notebook cho Julia</title>
+        <link>https://ndgnuh.github.io/posts/plutojl-reactive-notebook-julia/</link>
+        <pubDate>Tue, 15 Sep 2020 20:28:54 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Tue, 15 Sep 2020 20:28:54 +0700</atom:modified>
+        <guid>https://ndgnuh.github.io/posts/plutojl-reactive-notebook-julia/</guid>
+        <description>Một luồng làm việc mới với Pluto.jl - reactive notebook</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>julia</category>
+            
+          
+            
+              <category>pluto</category>
+            
+          
+            
+              <category>plutojl</category>
+            
+          
+            
+              <category>reactive</category>
+            
+          
+            
+              <category>reactive notebook</category>
+            
+          
+        
+        
+          
+            
+              <category>hướng dẫn</category>
+            
+          
+            
+              <category>lập trình</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
