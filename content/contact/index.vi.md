@@ -7,12 +7,11 @@ type: "contact"
 service:
 ---
 
-Mọi người có thể gửi feedback cho mình thông qua các cách sau:
-
+Mọi feedback cho page có thể được gửi qua những phương tiện sau:
 - Email: ndgnuh@protonmail.com
 - Github (gửi issue hoặc pr): https://github.com/ndgnuh/ndgnuh.github.io
 - Google form: https://forms.gle/EPHRrgPggS1dNEjW9
 
 {{< notice info >}}
-Nếu bạn muốn gửi feedback nặc danh, không dùng bất kì loại tài khoản nào, hãy dùng google form.
+Nếu muốn feedback được gửi một cách nặc danh, không dùng bất kì loại tài khoản nào, người gửi có thể dùng google form.
 {{< /notice >}}

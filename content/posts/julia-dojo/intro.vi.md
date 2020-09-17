@@ -87,7 +87,7 @@ Tất cả bài viết có thể được tìm thấy tại [đây](/series/juli
 5. [Hàm](/julia-dojo/ham-trong-julia/)
 
 
-6. [IJulia, jupyter notebook](/julia-dojo/dung-julia-voi-jupyter-notebook-va-jupyter-lab/)
+6. [IJulia, jupyter notebook](/julia-dojo/dung-julia-voi-jupyter-notebook-va-jupyter-lab/) (xem thêm: [Pluto notebook](/posts/plutojl-reactive-notebook-julia))
 7. [Quản lý gói](/julia-dojo/cai-dat-va-su-dung-goi-julia/)
 8. [Làm việc với file](/julia-dojo/lam-viec-voi-file-trong-julia/)
 9. [Từ điển và tập hợp](/julia-dojo/tu-dien-va-tap-hop-trong-julia/)

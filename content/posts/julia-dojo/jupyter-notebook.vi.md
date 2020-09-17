@@ -88,3 +88,4 @@ Qua bài viết lần này, chúng ta đã biết cách cấu hình Julia để 
 Tham khảo:
 - https://github.com/JuliaLang/IJulia.jl
 - https://jupyter.org/install
+- [Pluto notebook](/posts/plutojl-reactive-notebook-julia)
