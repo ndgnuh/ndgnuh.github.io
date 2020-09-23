@@ -1,6 +1,7 @@
 ---
 title: "Gõ tiếng Việt và Vim"
 date: 2020-04-26T15:42:24+07:00
+lastmod: 2020-09-23T09:56:33+07:00
 draft: false
 summary: "Thuốc giảm đau cho việc gõ tiếng Việt với Vim"
 categories:
@@ -22,6 +23,8 @@ keywords:
 - vi
 - neovim
 ---
+
+Update: Đổi một số dòng code (đổi `silent` -> `silent!`) khi IBus không bật thì VIM sẽ không kêu gào mỗi lần vào/thoát normal mode.
 
 Hello friend. Nếu bạn đã sử dụng bất kì hệ điều hành Unix based (Linux, BSD), bạn rất có thể đã gặp khá nhiều vấn đề trong việc gõ tiếng Việt. Đặc biệt nếu bạn gõ telex và những công cụ của bạn sử dụng phím tắt bàn phím như Vim.
 
@@ -62,7 +65,7 @@ function! IBusOff()
 	" Nếu bạn thấy cái cờ ở đây
 	" khả năng là font của bạn đang render emoji lung tung...
 	" xkb : us :: eng (không có dấu cách)
-	execute 'silent !ibus engine xkb:us::eng'
+	silent! execute '!ibus engine xkb:us::eng'
 endfunction
 ```
 
@@ -76,7 +79,7 @@ function! IBusOn()
 		let g:ibus_prev_engine = l:current_engine
 	endif
 	" Khôi phục lại engine
-	execute 'silent !' . 'ibus engine ' . g:ibus_prev_engine
+	silent! execute '!ibus engine ' . g:ibus_prev_engine
 endfunction
 ```
 
@@ -124,4 +127,4 @@ Vấn đề terminal bị trễ nhập liệu rất tiếc mình không xử lý
 - QTerminal
 - Xfce4-terminal
 
-Gõ tiếng Việt vui vẻ :v
+Gõ tiếng Việt vui vẻ.
