@@ -1237,7 +1237,7 @@
 <meta name="keywords" content="linux,foss">
 
 <meta name="created" content="2020-04-26T15:42:24&#43;0700">
-<meta name="modified" content="2020-04-26T15:42:24&#43;0700">
+<meta name="modified" content="2020-09-23T09:56:33&#43;0700">
 <meta property="article:published_time" content="2020-04-26T15:42:24&#43;0700">
 
 <meta name="author" content="Hùng">
@@ -1274,7 +1274,7 @@
     "@type": "WebPage",
     "headline": "Gõ tiếng Việt và Vim",
     "datePublished": "2020-04-26T15:42:24+07:00",
-    "dateModified": "2020-04-26T15:42:24+07:00",
+    "dateModified": "2020-09-23T09:56:33+07:00",
     "url" : "https://ndgnuh.github.io/posts/ibus-and-vim/",
     "description": "Thuốc giảm đau cho việc gõ tiếng Việt với Vim",
     "keywords": ["linux","foss"],
@@ -1546,6 +1546,8 @@
 <div class="single__infos">
   <time class="single__info" title="Được viết lúc">📅&nbsp;26-04-2020 </time>
   
+  &nbsp;&middot;&nbsp; <time class="single__info" title="Chỉnh sửa lúc"> 📝&nbsp;23-09-2020 </time>
+  
   &nbsp;&middot;&nbsp; <span class="single__info" title="Thời gian đọc"> ☕&nbsp;6&nbsp; phút đọc </span>
   
   <span class="single__info">
@@ -1566,7 +1568,8 @@
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
-      <p>Hello friend. Nếu bạn đã sử dụng bất kì hệ điều hành Unix based (Linux, BSD), bạn rất có thể đã gặp khá nhiều vấn đề trong việc gõ tiếng Việt. Đặc biệt nếu bạn gõ telex và những công cụ của bạn sử dụng phím tắt bàn phím như Vim.</p>
+      <p>Update: Đổi một số dòng code (đổi <code>silent</code> -&gt; <code>silent!</code>) khi IBus không bật thì VIM sẽ không kêu gào mỗi lần vào/thoát normal mode.</p>
+<p>Hello friend. Nếu bạn đã sử dụng bất kì hệ điều hành Unix based (Linux, BSD), bạn rất có thể đã gặp khá nhiều vấn đề trong việc gõ tiếng Việt. Đặc biệt nếu bạn gõ telex và những công cụ của bạn sử dụng phím tắt bàn phím như Vim.</p>
 <h1 id="vấn-đề">Vấn đề</h1>
 <p>Nếu bạn đang xem bài viết này, khả năng là bạn đã quen sử dụng Vim rồi nên mình cũng chẳng giới thiệu về Vim làm gì. Vấn đề chủ yếu mình gặp phải khi gõ tiếng Việt với Vim là:</p>
 <ul>
@@ -1625,7 +1628,7 @@ chủ quan :v)</li>
 </span><span class="err"></span><span class="c">	&#34; Nếu bạn thấy cái cờ ở đây</span><span class="err">
 </span><span class="err"></span><span class="c">	&#34; khả năng là font của bạn đang render emoji lung tung...</span><span class="err">
 </span><span class="err"></span><span class="c">	&#34; xkb : us :: eng (không có dấu cách)</span><span class="err">
-</span><span class="err"></span>	<span class="nx">execute</span> <span class="s1">&#39;silent !ibus engine xkb🇺🇸:eng&#39;</span><span class="err">
+</span><span class="err"></span>	<span class="nx">silent</span><span class="p">!</span> <span class="nx">execute</span> <span class="s1">&#39;!ibus engine xkb🇺🇸:eng&#39;</span><span class="err">
 </span><span class="err"></span><span class="k">endfunction</span><span class="err">
 </span></code></pre></td></tr></table>
 </div>
@@ -1652,7 +1655,7 @@ chủ quan :v)</li>
 </span><span class="err"></span>		<span class="k">let</span> <span class="nx">g</span>:<span class="nx">ibus_prev_engine</span> <span class="p">=</span> <span class="nx">l</span>:<span class="nx">current_engine</span><span class="err">
 </span><span class="err"></span>	<span class="k">endif</span><span class="err">
 </span><span class="err"></span><span class="c">	&#34; Khôi phục lại engine</span><span class="err">
-</span><span class="err"></span>	<span class="nx">execute</span> <span class="s1">&#39;silent !&#39;</span> . <span class="s1">&#39;ibus engine &#39;</span> . <span class="nx">g</span>:<span class="nx">ibus_prev_engine</span><span class="err">
+</span><span class="err"></span>	<span class="nx">silent</span><span class="p">!</span> <span class="nx">execute</span> <span class="s1">&#39;!ibus engine &#39;</span> . <span class="nx">g</span>:<span class="nx">ibus_prev_engine</span><span class="err">
 </span><span class="err"></span><span class="k">endfunction</span><span class="err">
 </span></code></pre></td></tr></table>
 </div>
@@ -1718,7 +1721,7 @@ thêm dòng sau:</p>
 <li>QTerminal</li>
 <li>Xfce4-terminal</li>
 </ul>
-<p>Gõ tiếng Việt vui vẻ :v</p>
+<p>Gõ tiếng Việt vui vẻ.</p>
 
     </article>
     
