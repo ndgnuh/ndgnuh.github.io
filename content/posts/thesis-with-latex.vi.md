@@ -1,6 +1,7 @@
 ---
 title: "Đồ án, luận văn với LaTeX"
 date: 2021-06-16T03:10:11+07:00
+summary: "Đánh lộn với quy định khi làm đồ án, luận văn dùng LaTeX"
 tags:
 series:
 keywords:
