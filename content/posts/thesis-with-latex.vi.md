@@ -239,7 +239,13 @@ Tài liệu đã được sắp theo ngôn ngữ rồi, nhưng sắp xếp theo 
 	}
 }
 ```
-Trong đó `given` là tên gọi, `family` là họ đệm.
+Trong đó `given` là tên gọi, `family` là họ đệm. Trong một số trường hợp hi hữu, tên sắp xếp sai vì chữ cái đầu có dấu, ta thêm `sortname` vào trong file `.bib` để BiBLaTeX sắp xếp đúng cách:
+```bib
+@article{Abc,
+    author = {Trung, Đỗ Nam}, % Đỗ Nam Trung
+    sortname = {Trung, Do Nam}
+}
+```
 
 Giờ thì các tài liệu đã sắp xếp hẳn hoi, nhưng `language` (`01vietnamese`, `02english`) lại xuất hiện ở trong đó. Để ẩn `language` đi, ta sử dụng `\AtEveryBibitem` và `\clearlist`.
 ```latex
@@ -360,7 +366,7 @@ Một format đầy đủ của `article` và `book` theo luật ở trên là:
 
 ## Kết
 
-Tôi rất rất khuyến nghị đọc tài liệu của BiBLaTeX. Có thể không cần đọc theo kiểu từ trên xuống dưới dâu, chỉ cần tìm những lệnh ở trên và tham khảo có lẽ cũng đủ dùng. Tài liệu của BiBLaTeX nằm ở https://ctan.org/pkg/biblatex?lang=en, chỉ cần kéo xuống dưới và nhấn vào "Package Documentation". Những ai có BiBLaTeX và `texdoc` trên máy có thể mở nhanh tài liệu bằng lệnh `texdoc biblatex`.
+Tôi rất rất khuyến nghị đọc tài liệu của BiBLaTeX. Có thể không cần đọc theo kiểu từ trên xuống dưới dâu, chỉ cần tìm những lệnh ở trên và tham khảo có lẽ cũng đủ dùng. Tài liệu của BiBLaTeX nằm ở https://ctan.org/pkg/biblatex?lang=en, chỉ cần kéo xuống dưới và nhấn vào "Package Documentation". Những ai có BiBLaTeX và `texdoc` trên máy có thể mở nhanh tài liệu bằng lệnh `texdoc biblatex`. Bản full của ví dụ tài liệu tham khảo nằm ở [đây](https://gist.github.com/ndgnuh/f6c235698a665702a585c8a4f9f4cd85), những ông ở viện S trường H dùng cái này trong đồ án luôn cũng được.
 
 Với BiBLaTeX thì tôi cũng khuyên dùng LuaLaTeX. Nếu dùng pdfLaTeX thì BiBLaTeX sẽ kêu lỗi về encoding `utf8x`, phải chuyển về `utf8`; mà chuyển về `utf8` thì LaTeX sẽ phàn nàn một đống thứ về ký tự tiếng Việt.
 
