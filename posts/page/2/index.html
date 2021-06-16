@@ -10,17 +10,17 @@
 
 
   
-  <script defer src="/js/fuse.min.94c78ad70b02749822921660cf4e9f0b3701bc0680c421afb784a78228de0275.js"></script>
+  <script defer src="/js/fuse.min.32195737929df2c8096e855a5789cbb3f1331224d9169e8705493e7008f47df8.js"></script>
 
 
 
 <script src="/js/enquire.min.dfb99dee1e029d51d6cfb672d847929890b1585402de17f5ed092edd72a688b4.js"></script>
 
-<script defer src="/js/lazysizes.min.31dd6a2d3a1ec0f78a8df007535cf23f03aeb5c70f026e6d6a19dac3b3acc340.js"></script>
+<script defer src="/js/lazysizes.min.fb649fcae62177dfe63e67081ddceb830b5ce1f05a4184e9bbb7d87ac4b8f4e5.js"></script>
 
-<script defer src="/js/helper/getParents.min.1618c696be7c98933f9a92677f518b512a74e55bdbb976b09936b4182e93181b.js"></script>
+<script defer src="/js/helper/getParents.min.ccd45f158c1b17849307ba913a72beac239c410f2b6e648496a79842da84e55b.js"></script>
 
-<script defer src="/js/helper/fadeinout.min.93a331f96194789a542f33690bbe4f0c102c7e78ffc018217f5a1c33010bad91.js"></script>
+<script defer src="/js/helper/fadeinout.min.1d13d3e810c3940e80cbba6216a1c76fbf42b5431fc83537ea6997863802362b.js"></script>
 
 <script defer src="/js/helper/closest.min.js"></script>
   
@@ -99,6 +99,74 @@
           navCollapse.setAttribute('data-open', 'true');
           navCollapse.style.maxHeight = navCollapse.scrollHeight + "px";
           navCollapseBtn.classList.add('is-active');
+        }
+      }
+    }) : null;
+    
+
+
+    
+    var tables = document.querySelectorAll('.single__contents > table');
+    for (let i = 0; i < tables.length; i++) {
+      var table = tables[i];
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-wrapper';
+      table.parentElement.replaceChild(wrapper, table);
+      wrapper.appendChild(table);
+    }
+    
+
+
+    
+    var footNoteRefs = document.querySelectorAll('.footnote-ref');
+    var footNoteBackRefs = document.querySelectorAll('.footnote-backref');
+
+    footNoteRefs ? 
+    footNoteRefs.forEach(function(elem, idx) {
+      elem.onmouseenter = function () {
+        if (navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('scrolling');
+        }
+      }
+
+      elem.onmouseleave = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          setTimeout(function () {
+            navbar.classList.add('scrolling');
+          }, 100);
+        }
+      }
+
+      elem.onclick = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('navbar--show');
+          navbar.classList.remove('navbar--hide');
+          navbar.classList.add('navbar--hide');
+        }
+      }
+    }) : null;
+
+    footNoteBackRefs ? 
+    footNoteBackRefs.forEach(function(elem, idx) {
+      elem.onmouseenter = function () {
+        if (navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('scrolling');
+        }
+      }
+
+      elem.onmouseleave = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          setTimeout(function() {
+            navbar.classList.add('scrolling');
+          }, 100);
+        }
+      }
+
+      elem.onclick = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('navbar--show');
+          navbar.classList.remove('navbar--hide');
+          navbar.classList.add('navbar--hide');
         }
       }
     }) : null;
@@ -292,11 +360,13 @@
         if (st < 45) {
           return null;
         }
-        
-        if (!navbar.classList.contains('navbar--hide')) {
-          navbar.classList.add('navbar--hide');
-        } else if (navbar.classList.contains('navbar--show')) {
-          navbar.classList.remove('navbar--show');
+
+        if (navbar.classList.contains('scrolling')) {
+          if (!navbar.classList.contains('navbar--hide')) {
+            navbar.classList.add('navbar--hide');
+          } else if (navbar.classList.contains('navbar--show')) {
+            navbar.classList.remove('navbar--show');
+          }
         }
 
         if (singleContentsElem) {
@@ -363,10 +433,12 @@
           gttBtn.style.display = "none";
         }
 
-        if (navbar.classList.contains('navbar--hide')) {
-          navbar.classList.remove('navbar--hide');
-        } else if (!navbar.classList.contains('navbar--show')) {
-          navbar.classList.add('navbar--show');
+        if (navbar.classList.contains('scrolling')) {
+          if (navbar.classList.contains('navbar--hide')) {
+            navbar.classList.remove('navbar--hide');
+          } else if (!navbar.classList.contains('navbar--show')) {
+            navbar.classList.add('navbar--show');
+          }
         }
 
         if (singleContentsElem) {
@@ -447,6 +519,17 @@
     var rootEleme = document.getElementById('root');
     var selectThemeElem = document.querySelectorAll('.select-theme');
     var selectThemeItemElem = document.querySelectorAll('.select-theme__item');
+    
+    
+    var skinDarkCode = JSON.parse("\"dark\"");
+    
+    var skinLightCode = JSON.parse("\"light\"");
+    
+    var skinHackerCode = JSON.parse("\"hacker\"");
+    
+    var skinSolarizedCode = JSON.parse("\"solarized\"");
+    
+    var skinKimbieCode = JSON.parse("\"kimbie\"");
 
     var setMetaColor = function(themeColor) {
       var metaMsapplicationTileColor = document.getElementsByName('msapplication-TileColor')[0];
@@ -479,7 +562,21 @@
         metaThemeColor.setAttribute('content', '#eee8d5');
         metaMsapplicationNavbuttonColor.setAttribute('content', '#eee8d5');
         metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#eee8d5');
-      } 
+      }
+    }
+
+    var parseSkinCode = function(themeText) {
+      if (themeText === skinDarkCode) {
+        return 'dark';
+      } else if (themeText === skinLightCode) {
+        return 'light';
+      } else if (themeText === skinHackerCode) {
+        return 'hacker';
+      } else if (themeText === skinSolarizedCode) {
+        return 'solarized';
+      } else if (themeText === skinKimbieCode) {
+        return 'kimbie';
+      }
     }
     
     if (localTheme) {
@@ -500,7 +597,7 @@
     selectThemeItemElem ? 
     selectThemeItemElem.forEach(function (v, i) {
       v.addEventListener('click', function (e) {
-        var selectedThemeVariant = e.target.text.trim();
+        var selectedThemeVariant = parseSkinCode(e.target.text.trim());
         localStorage.setItem('theme', selectedThemeVariant);
         setMetaColor(selectedThemeVariant);
 
@@ -566,6 +663,12 @@
     
     var enableSearch = JSON.parse("true");
     
+    var searchDistance = JSON.parse("null");
+    
+    var searchThreshold = JSON.parse("null");
+    
+    var searchContent = JSON.parse("null");
+    
     var enableSearchHighlight = JSON.parse("true");
     
     var searchResultPosition = JSON.parse("null");
@@ -589,14 +692,18 @@
         xhr.onload = function () {
           if (xhr.status === 200) {
             fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
-              keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
+              keys: sectionType.includes('publication') ? ['title', 'abstract'] : 
+                searchContent ? ['title', 'description', 'content'] : ['title', 'description'],
               includeMatches: enableSearchHighlight,
-              shouldSort: true,
-              threshold: 0.4,
-              location: 0,
-              distance: 100,
+              shouldSort: true, 
+              threshold: searchThreshold ? searchThreshold : 0.4, 
+              location: 0, 
+              distance: searchDistance ? searchDistance : 100, 
               maxPatternLength: 32,
               minMatchCharLength: 1,
+              isCaseSensitive: false, 
+              findAllMatches: false, 
+              useExtendedSearch: false, 
             });
             window.fuse = fuse;
           }
@@ -613,16 +720,16 @@
       li.className = 'search-result__item';
       
       var a = document.createElement('a');
-      a.innerHTML = obj.title;
+      a.innerHTML = obj.item.title;
       a.setAttribute('class', 'search-result__item--title');
-      a.setAttribute('href', obj.permalink);
+      a.setAttribute('href', obj.item.uri);
 
       var descDiv = document.createElement('div');
       descDiv.setAttribute('class', 'search-result__item--desc');
-      if (obj.description) {
-        descDiv.innerHTML = obj.description;
-      } else if (obj.content) {
-        descDiv.innerHTML = obj.content.substring(0, 225);
+      if (obj.item.description) {
+        descDiv.innerHTML = obj.item.description;
+      } else if (obj.item.content) {
+        descDiv.innerHTML = obj.item.content.substring(0, 225);
       }
       
       li.appendChild(a);
@@ -1096,7 +1203,7 @@
   
     var mobileSearchInputElem = document.querySelector('#search-mobile');
     var mobileSearchClassElem = document.querySelector('.mobile-search');
-    var mobileSearchBtnElem = document.querySelector('#mobileSearchBtn');
+    var mobileSearchBtnElems = document.querySelectorAll('.navbar-search');
     var mobileSearchCloseBtnElem = document.querySelector('#search-mobile-close');
     var mobileSearchContainer = document.querySelector('#search-mobile-container');
     var mobileSearchResultsElem = document.querySelector('#search-mobile-results');
@@ -1106,19 +1213,21 @@
       mobileSearchClassElem.style.display = 'none';
     }
 
-    mobileSearchBtnElem ? 
-    mobileSearchBtnElem.addEventListener('click', function () {
-      if (mobileSearchContainer) {
-        mobileSearchContainer.style.display = 'block';
-      }
+    mobileSearchBtnElems ? 
+    mobileSearchBtnElems.forEach(function (elem, idx) {
+      elem.addEventListener('click', function () {
+        if (mobileSearchContainer) {
+          mobileSearchContainer.style.display = 'block';
+        }
 
-      if (mobileSearchInputElem) {
-        mobileSearchInputElem.focus();
-      }
+        if (mobileSearchInputElem) {
+          mobileSearchInputElem.focus();
+        }
 
-      if (htmlElem) {
-        htmlElem.style.overflowY = 'hidden';
-      }
+        if (htmlElem) {
+          htmlElem.style.overflowY = 'hidden';
+        }
+      });
     }) : null;
 
     mobileSearchCloseBtnElem ? 
@@ -1213,7 +1322,8 @@
     }
   
   });
-</script>    
+</script>
+    
     
 
 
@@ -1234,9 +1344,9 @@
 <meta name="description" content="Blog cá nhân, viết tạp nham" />
 
 
-<meta name="created" content="2020-09-15T20:28:54&#43;0700">
-<meta name="modified" content="2020-09-23T09:56:33&#43;0700">
-<meta property="article:published_time" content="2020-09-15T20:28:54&#43;0700">
+<meta name="created" content="2021-06-16T03:10:11&#43;0700">
+<meta name="modified" content="2021-06-16T03:10:11&#43;0700">
+<meta property="article:published_time" content="2021-06-16T03:10:11&#43;0700">
 
 <meta name="author" content="Hùng">
 
@@ -1247,7 +1357,7 @@
 <meta property="og:type" content="website">
 <meta property="og:description" content="Blog cá nhân, viết tạp nham">
 
-<meta name="generator" content="Hugo 0.69.2" />
+<meta name="generator" content="Hugo 0.83.1" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1314,7 +1424,7 @@
 
 
         <div class="wrapper" data-type="posts" data-kind="section">
-            <nav class="navbar" role="navigation" aria-label="main navigation" data-dir="ltr">
+            <nav class="navbar scrolling" role="navigation" aria-label="main navigation" data-dir="ltr">
   <div class="navbar__brand">
     
     <a href="/" title="Trang chủ" rel="home" class="navbar__logo-link">
@@ -1363,7 +1473,7 @@
 </div>
 
 
-<div id="mobileSearchBtn" class="mobile-search__btn" data-ani="true">
+<div class="mobile-search__btn navbar-search" data-ani="true">
   <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
 </div>
 
@@ -1431,6 +1541,8 @@
   </ul>
 </div>
   <div class="navbar__menu">
+  
+  
   
 <div class="theme" data-ani="true">
   <div class="dropdown">
@@ -1535,6 +1647,30 @@
                 
   <article class="summary-card" data-ani="true">
   <header>
+    <h5 class="title h5"><a href='https://ndgnuh.github.io/posts/julia-dojo/multiple-dispatch/'>Julia Dojo: Multiple Dispatch</a> </h5>
+    <h6 class="subtitle caption">
+      <time title="Được viết lúc" dir="ltr">📅25-07-2020 </time> 
+       
+      <span title="Thời gian đọc" dir="ltr"> &middot; ☕ 8  phút đọc</span>
+      
+    </h6>
+  </header>
+  <div class="summary-card__content">
+    <div class="summary-card__text p2">
+      
+      Multiple dispatch và lý do Julia không cần class
+      
+    </div>
+    
+  </div>
+  <hr />
+</article>
+
+
+            
+                
+  <article class="summary-card" data-ani="true">
+  <header>
     <h5 class="title h5"><a href='https://ndgnuh.github.io/posts/julia-dojo/more-on-types/'>Julia dojo: nói thêm về kiểu dữ liệu</a> </h5>
     <h6 class="subtitle caption">
       <time title="Được viết lúc" dir="ltr">📅14-06-2020 </time> 
@@ -1553,6 +1689,7 @@
   </div>
   <hr />
 </article>
+
 
             
                 
@@ -1576,6 +1713,7 @@
   </div>
   <hr />
 </article>
+
 
             
                 
@@ -1602,6 +1740,7 @@
   <hr />
 </article>
 
+
             
                 
   <article class="summary-card" data-ani="true">
@@ -1627,28 +1766,6 @@
   <hr />
 </article>
 
-            
-                
-  <article class="summary-card" data-ani="true">
-  <header>
-    <h5 class="title h5"><a href='https://ndgnuh.github.io/julia-dojo/tu-dien-va-tap-hop-trong-julia/'>Julia Dojo: từ điển &amp; tập hợp</a> </h5>
-    <h6 class="subtitle caption">
-      <time title="Được viết lúc" dir="ltr">📅27-02-2020 </time> 
-       
-      <span title="Thời gian đọc" dir="ltr"> &middot; ☕ 3  phút đọc</span>
-      
-    </h6>
-  </header>
-  <div class="summary-card__content">
-    <div class="summary-card__text p2">
-      
-      Kiểu dữ liệu tập hợp, kiểu dữ liệu từ điển trong Julia
-      
-    </div>
-    
-  </div>
-  <hr />
-</article>
 
             
             
@@ -1663,35 +1780,23 @@
   <ul class="pagination">
     
       
-      <script>
-      </script>
       
-        <li
-        ><a href="/posts/">1</a></li>
+        <li ><a href="/posts/">1</a></li>
       
     
       
-      <script>
-      </script>
       
-        <li
-        class="active"><a href="/posts/page/2/">2</a></li>
+        <li class="active"><a href="/posts/page/2/">2</a></li>
       
     
       
-      <script>
-      </script>
       
-        <li
-        ><a href="/posts/page/3/">3</a></li>
+        <li ><a href="/posts/page/3/">3</a></li>
       
     
       
-      <script>
-      </script>
       
-        <li
-        ><a href="/posts/page/4/">4</a></li>
+        <li ><a href="/posts/page/4/">4</a></li>
       
     
   </ul>
@@ -1741,6 +1846,10 @@
     
         
         <li class="sidebar-recent">
+            <a href="/posts/thesis-with-latex/" class="sidebar-recent__title p1">Đồ án, luận văn với LaTeX</a>
+        </li>
+        
+        <li class="sidebar-recent">
             <a href="/posts/plutojl-reactive-notebook-julia/" class="sidebar-recent__title p1">Pluto.jl: Reactive notebook cho Julia</a>
         </li>
         
@@ -1754,10 +1863,6 @@
         
         <li class="sidebar-recent">
             <a href="/posts/lyx-shortcut-and-fast-note/" class="sidebar-recent__title p1">Phím tắt trong LyX &amp; ghi chép tốc độ</a>
-        </li>
-        
-        <li class="sidebar-recent">
-            <a href="/posts/julia-dojo/multiple-dispatch/" class="sidebar-recent__title p1">Julia Dojo: Multiple Dispatch</a>
         </li>
         
         <hr class="hr-fade sidebar-hr" />
@@ -2197,7 +2302,7 @@
 
     <hr />
 
-    <div class="basicflex">
+    <div class="basicflex flexwrap">
         
     </div>
 

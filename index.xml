@@ -14,16 +14,32 @@
     <managingEditor>ndgnuh@protonmail.com (Hùng)</managingEditor>
     <webMaster>ndgnuh@protonmail.com (Hùng)</webMaster>
     <copyright>©2020, copy ghi nguồn :)</copyright>
-    <lastBuildDate>Thu, 30 Jan 2020 00:47:34 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 16 Jun 2021 03:10:11 +0700</lastBuildDate>
     
         <atom:link href="https://ndgnuh.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
     
       
       
       
 
+      
+      <item>
+        <title>Đồ án, luận văn với LaTeX</title>
+        <link>https://ndgnuh.github.io/posts/thesis-with-latex/</link>
+        <pubDate>Wed, 16 Jun 2021 03:10:11 +0700</pubDate>
+        <author>ndgnuh@protonmail.com (Hùng)</author>
+        <atom:modified>Wed, 16 Jun 2021 03:10:11 +0700</atom:modified>
+        <guid>https://ndgnuh.github.io/posts/thesis-with-latex/</guid>
+        <description>Đánh lộn với quy định khi làm đồ án, luận văn dùng LaTeX</description>
+        
+        <dc:creator>Hùng</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>Pluto.jl: Reactive notebook cho Julia</title>
