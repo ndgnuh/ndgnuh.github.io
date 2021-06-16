@@ -1656,7 +1656,7 @@
 <div class="single__infos">
   <time class="single__info" title="Được viết lúc">📅&nbsp;16-06-2021 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Thời gian đọc"> ☕&nbsp;14&nbsp; phút đọc </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Thời gian đọc"> ☕&nbsp;15&nbsp; phút đọc </span>
   
   <span class="single__info">
     
@@ -1995,8 +1995,22 @@ Trong bản ghi:</p>
 <span class="nb">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Trong đó <code>given</code> là tên gọi, <code>family</code> là họ đệm.</p>
-<p>Giờ thì các tài liệu đã sắp xếp hẳn hoi, nhưng <code>language</code> (<code>01vietnamese</code>, <code>02english</code>) lại xuất hiện ở trong đó. Để ẩn <code>language</code> đi, ta sử dụng <code>\AtEveryBibitem</code> và <code>\clearlist</code>.</p>
+</div><p>Trong đó <code>given</code> là tên gọi, <code>family</code> là họ đệm. Trong một số trường hợp hi hữu, tên sắp xếp sai vì chữ cái đầu có dấu, ta thêm <code>sortname</code> vào trong file <code>.bib</code> để BiBLaTeX sắp xếp đúng cách:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bib" data-lang="bib"><span class="nc">@article</span><span class="p">{</span><span class="nl">Abc</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">{Trung, Đỗ Nam}</span><span class="p">,</span> <span class="err">%</span> <span class="err">Đỗ</span> <span class="err">Nam</span> <span class="err">Trung</span>
+    <span class="err">sortname</span> <span class="err">=</span> <span class="err">{Trung,</span> <span class="err">Do</span> <span class="err">Nam</span><span class="p">}</span>
+<span class="c">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Giờ thì các tài liệu đã sắp xếp hẳn hoi, nhưng <code>language</code> (<code>01vietnamese</code>, <code>02english</code>) lại xuất hiện ở trong đó. Để ẩn <code>language</code> đi, ta sử dụng <code>\AtEveryBibitem</code> và <code>\clearlist</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -2177,7 +2191,7 @@ Ví dụ:  5. Nguyen Dinh Tri, “On a free boundary problem for the heat equati
 \DeclareBibliographyDriver{article}{\articlelikebib}
 \DeclareBibliographyDriver{inproceedings}{\articlelikebib}
 </code></pre><h2 id="kết">Kết</h2>
-<p>Tôi rất rất khuyến nghị đọc tài liệu của BiBLaTeX. Có thể không cần đọc theo kiểu từ trên xuống dưới dâu, chỉ cần tìm những lệnh ở trên và tham khảo có lẽ cũng đủ dùng. Tài liệu của BiBLaTeX nằm ở <a href="https://ctan.org/pkg/biblatex?lang=en,">https://ctan.org/pkg/biblatex?lang=en,</a> chỉ cần kéo xuống dưới và nhấn vào &ldquo;Package Documentation&rdquo;. Những ai có BiBLaTeX và <code>texdoc</code> trên máy có thể mở nhanh tài liệu bằng lệnh <code>texdoc biblatex</code>.</p>
+<p>Tôi rất rất khuyến nghị đọc tài liệu của BiBLaTeX. Có thể không cần đọc theo kiểu từ trên xuống dưới dâu, chỉ cần tìm những lệnh ở trên và tham khảo có lẽ cũng đủ dùng. Tài liệu của BiBLaTeX nằm ở <a href="https://ctan.org/pkg/biblatex?lang=en,">https://ctan.org/pkg/biblatex?lang=en,</a> chỉ cần kéo xuống dưới và nhấn vào &ldquo;Package Documentation&rdquo;. Những ai có BiBLaTeX và <code>texdoc</code> trên máy có thể mở nhanh tài liệu bằng lệnh <code>texdoc biblatex</code>. Bản full của ví dụ tài liệu tham khảo nằm ở <a href="https://gist.github.com/ndgnuh/f6c235698a665702a585c8a4f9f4cd85">đây</a>, những ông ở viện S trường H dùng cái này trong đồ án luôn cũng được.</p>
 <p>Với BiBLaTeX thì tôi cũng khuyên dùng LuaLaTeX. Nếu dùng pdfLaTeX thì BiBLaTeX sẽ kêu lỗi về encoding <code>utf8x</code>, phải chuyển về <code>utf8</code>; mà chuyển về <code>utf8</code> thì LaTeX sẽ phàn nàn một đống thứ về ký tự tiếng Việt.</p>
 <p>Ngoài ra tài liệu <a href="http://tug.ctan.org/info/biblatex-cheatsheet/biblatex-cheatsheet.pdf">BiBLaTeX cheatsheet</a> cũng được khuyến nghị vì nó ngắn gọn và liệt kê đủ các loại tài liệu tham khảo bên trong. Chúc anh chị em có mùa đồ án thành công và hết chật vật với báo cáo.</p>
 
