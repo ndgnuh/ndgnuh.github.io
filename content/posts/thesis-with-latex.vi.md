@@ -58,7 +58,7 @@ Khoảng cách dòng được cài đặt với gói `setspace` (khuyên dùng) 
 
 Cuối cùng, font chữ Times New Roman là một font có bản quyền, và trong LaTeX vốn **không có** Times New Roman. Có một font gần với Times New Roman là Times Roman. Font được dùng khi thêm gói `mathptmx`.
 ```latex
-\usepackage{mathptpx}
+\usepackage{mathptmx}
 ```
 Lưu ý không dùng gói `times`. Gói này đã bị khai tử và sẽ làm cho font toán tệ không ngửi được. Để cài kích cỡ font, ta thêm `14pt` vào option của lệnh `\documentclass`
 ```latex
@@ -92,6 +92,8 @@ Không giống pdfLaTeX, XeLaTeX và LuaLaTeX hỗ trợ font định dạng `.o
     BoldItalicFont = *-RZI,
 }
 ```
+
+*Lưu ý:* Khi dùng LuaLaTeX hoặc XeLaTeX thì cần bỏ hết các gói liên quan tới tiếng Việt và những gói font thông thường của LaTeX, ví dụ là những gói `vietnam`, `fontenc`, `babel` (option `vietnamese`), `mathptmx`, `times`...
 
 ## Tài liệu tham khảo
 
