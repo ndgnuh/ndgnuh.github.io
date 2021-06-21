@@ -1732,7 +1732,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\usepackage</span><span class="nb">{</span>mathptpx<span class="nb">}</span>
+<pre class="chroma"><code class="language-latex" data-lang="latex"><span class="k">\usepackage</span><span class="nb">{</span>mathptmx<span class="nb">}</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>Lưu ý không dùng gói <code>times</code>. Gói này đã bị khai tử và sẽ làm cho font toán tệ không ngửi được. Để cài kích cỡ font, ta thêm <code>14pt</code> vào option của lệnh <code>\documentclass</code></p>
@@ -1786,7 +1786,8 @@
 <span class="nb">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="tài-liệu-tham-khảo">Tài liệu tham khảo</h2>
+</div><p><em>Lưu ý:</em> Khi dùng LuaLaTeX hoặc XeLaTeX thì cần bỏ hết các gói liên quan tới tiếng Việt và những gói font thông thường của LaTeX, ví dụ là những gói <code>vietnam</code>, <code>fontenc</code>, <code>babel</code> (option <code>vietnamese</code>), <code>mathptmx</code>, <code>times</code>&hellip;</p>
+<h2 id="tài-liệu-tham-khảo">Tài liệu tham khảo</h2>
 <p>Đây có thể nói là phần khó nhằn nhất. Một phần vì BiBTeX dùng file <code>.bst</code> để xử lý việc format, sắp xếp tài liệu tham khảo. File <code>.bst</code> lại là một một ngữ stack dùng biểu thức hậu tố, cực kỳ khó viết nếu không quen với việc lập trình. Ngoài ra, BiBTeX cũng đã cũ và không hỗ trợ tiếng Việt (hay unicode bất kỳ). Một phần do cái mớ BiBLaTeX và BiBTeX khá bừa bộn.</p>
 <p>Với các tạp chí khoa học, file <code>.bst</code> thường được làm sẵn. Tuy nhiên, như đã trình bày ở trên, trường H chỉ dùng đồ của Microsoft, do đó ta không thể đòi hỏi file <code>.bst</code>. Trước đây tôi cũng thử viết thủ công một file <code>.bst</code> tùy chỉnh, vừa khó vừa không hiệu quả. Những ai muốn thử có thể xem tài liệu <a href="http://tug.ctan.org/info/bibtex/tamethebeast/ttb_en.pdf">Tame the BeaST</a> và công cụ <code>makebst</code></p>
 <p>Để phân biệt, BiBTeX là một công cụ khá cũ. Khi comiple file LaTeX, một file có đuôi <code>.aux</code> sẽ được tạo ra. Nếu trong file <code>tex</code> có lệnh <code>\bibliography</code> và <code>\cite</code>, những thông tin đó được lưu vào file <code>.aux</code>. File này được đưa vào lệnh <code>bibtex</code> để tạo ra một vài file phụ khác. Khi compile file LaTeX một lần nữa thì các tài liệu tham khảo sẽ xuất hiện chính xác. Vậy tạo một văn bản với BiBTeX cần ba bước:</p>
