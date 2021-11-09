@@ -24,16 +24,17 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: everything
+      
+      - name: install hugo
         run: |
           sudo apt-get install hugo
           ls
           
       - name: build
-      - run: |
+        run: |
           hugo
           
-      - name: push
-      - run: |
+      - name: pushing
+        run: |
           cd public
           git push origin master
