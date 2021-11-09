@@ -28,20 +28,19 @@ jobs:
           submodules: true
           ref: gh-pages
       
-      - name: install hugo
-        run: |
-          sudo apt-get install hugo
-          ls
+      - name: Hugo setup
+        uses: peaceiris/actions-hugo@v2.4.13
+        with:
+          hugo-version: 'latest'
+          extended: true
           
       - name: build
-        run: |
-          hugo --minify
+        run: hugo --minify
           
-      - name: pushing
-        run: |
-          cd public
-          git add .
-          git commit -m "$(date)"
-          git push origin master
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/master' }}
         with:
-          token: ${{ secret.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+
