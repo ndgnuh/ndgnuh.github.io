@@ -35,9 +35,13 @@ jobs:
           
       - name: build
         run: |
-          hugo
+          hugo --minify
           
       - name: pushing
         run: |
           cd public
+          git add .
+          git commit -m "$(date)"
           git push origin master
+        with:
+          token: ${{ secret.GITHUB_TOKEN }}
