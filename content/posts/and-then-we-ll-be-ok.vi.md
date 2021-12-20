@@ -12,7 +12,7 @@ keywords:
 
 *Transcribe bởi https://www.reddit.com/r/Exurb1a/comments/a2xqkg/and_then_well_be_okay_transcript/*
 
-Dưới chân ngọn núi cuối cùng, có một ngôi làng, và trong ngôi làng, có một chàng trai tên Tao. Hôm nay là sinh nhật của Tao. Trong khi anh đang xử lý mấy bắp ngô, anh bạn Samuel hô hoán và thúc anh tới. Tao chạy tới rìa làng nơi có Tử Giới, ngoài đó là cha của anh, nằm trên mặt đất. Tao vội tới chỗ cha mình. Ông ấy đã tắt thở. Tao lôi ông từ Ranh giới Chêt vào, và bác sĩ của làng bắt đầu khám xét. Bác sĩ kết luận,
+Dưới chân ngọn núi cuối cùng, có một ngôi làng, và trong ngôi làng, có một chàng trai tên Tao. Hôm nay là sinh nhật của Tao. Trong khi anh đang làm việc trên đồng ngô, người bạn Samuel hô hoán và giục anh tới. Tao chạy tới rìa làng nơi có Tử Giới Tuyến, ngoài đó là cha của anh, nằm trên mặt đất. Tao vội tới chỗ cha mình. Ông ấy đã tắt thở. Tao lôi ông từ Ranh giới Chêt vào, và bác sĩ của làng bắt đầu khám xét. Bác sĩ kết luận,
 
 > Xin lỗi, ông ấy đã mất rồi. Chính Con Rắn đă làm việc này.
 
@@ -85,7 +85,7 @@ Tao đáp, "Tôi không có ý thô lỗ đâu, nhưng bà xay xỉn, già quắ
 
 <!--“No,” the old woman said. “No, you won’t.”-->
 
-Hai người tìm dưới những tảng đá, những cái hố, nhưng Con Rắn không ở nó. Chắc hẳn nó đã leo lên cao hơn rồi. Họ trèo tiếp.
+Họ tìm dưới những tảng đá, những cái hố, nhưng Con Rắn không ở nó. Chắc hẳn nó đã leo lên cao hơn rồi. Họ trèo tiếp.
 <!--They looked about under rocks, then, in holes, but the Snake wasn’t there. He must’ve gone further up. And so, they climbed.-->
 
 Buổi đêm, họ ngủ một cách trằn trọc. Buối sáng, Tao ăn bánh mì, còn bà già, cái bình trên hông. Họ tiếp tục leo ngọn núi. Tới trưa, họ ở nơi đủ cao để có thể bao quát khu vực phía dưới, trong đó có làng của Tao-li ti với một vài ngôi nhà và vài ngọn khói dưới hẻm.
@@ -121,7 +121,7 @@ Chuyện gì đă xảy ra?
 
 “Hừmm,” bà già trả lời, “Hừmm.”
 
-Hai người tìm dưới những tảng đá, những cái hố, nhưng Con Rắn không ở nó. Chắc hẳn nó đã leo lên cao hơn rồi. Họ trèo tiếp.
+Họ tìm dưới những tảng đá, những cái hố, nhưng Con Rắn không ở nó. Chắc hẳn nó đã leo lên cao hơn rồi. Họ trèo tiếp.
 <!--They looked about under rocks, then, in holes, but the Snake wasn’t there. He must’ve gone further up. And so, they climbed.-->
 
 Họ lại ngủ một đêm trằn trọc, chào đón một bình minh xám xịt và ốm yếu khi tỉnh dậy. Họ bước đi trong im lặng, và sớm nhận ra sương mù bao phủ tới tận đầu gói mình. Không khí có mùi kim loại. Ánh bình mình nhìn có vẻ sai. "Chuyện gì đang xảy ra?", Tao hỏi. Bà già lặng im, chỉ uống một ngụm dài từ cái bình bên hông. Tao nhìn thấy thứ gì đó trong đám bùn, ánh bạc và phức tạp.
@@ -183,7 +183,7 @@ Bà già tháo đôi kính ra khỏi Tao.
 "À, ai là ai cơ chứ?"
 <!-- “Oh,” she replied. “Who’s anyone?” -->
 
-Hai người tìm dưới những tảng đá, những cái hố, nhưng Con Rắn không ở nó. Chắc hẳn nó đã leo lên cao hơn rồi. Họ trèo tiếp.
+Họ tìm dưới những tảng đá, những cái hố, nhưng Con Rắn không ở nó. Chắc hẳn nó đã leo lên cao hơn rồi. Họ trèo tiếp.
 <!-- They looked about under rocks, then, in holes, but the Snake wasn’t there. He must’ve gone further up. And so, they climbed. -->
 
 Họ tỉnh dậy quá bình minh của ngày hôm sau, và được chứng kiến khung cảnh ngôi làng của Tao. Tao hỏi, "Tại sao thế giới này lại chết?"
@@ -276,78 +276,123 @@ Tao tỉnh dậy với cái đầu đau nhức và vị của cái chết ở tr
 "Ừm… 326,"
 <!-- “Mmm… 326,” Tao said. -->
 
-“By your calendar, yes. By mine, it’s the 98th century. Your ancestors did some wonderful things, became very powerful and wise, all right? Those objects, the glasses, the sword, the tankard - these are the things they left behind. Relics.”
+"Đúng, nhưng chỉ theo lịch của ngươi. Trong lịch của ta, đây là thế kỷ thứ chín mươi tám. Tổ tiên ngươi đã làm những thứ tuyệt vời, trở nên vô cùng hùng mạnh và thông thái. Những vật kia, cặp kính, thanh kiếm, chiếc cốc, đều là những thứ họ bỏ lại-những tàn tích."
+<!-- “By your calendar, yes. By mine, it’s the 98th century. Your ancestors did some wonderful things, became very powerful and wise, all right? Those objects, the glasses, the sword, the tankard - these are the things they left behind. Relics.” -->
 
-“Relics of what?”
+"Tàn tích của cái gì?"
+<!-- “Relics of what?” -->
 
-“I’ll show you.”
+"Để ta chỉ cho"
+<!-- “I’ll show you.” -->
 
-“No!” Tao yelled. “No more games!”
+"Không", Tao hét lên, "Không giỡn quanh nữa!"
+<!-- “No!” Tao yelled. “No more games!” -->
 
-The old woman snapped then. “Look,” she said, “you’re only doing all of this because you think you killed your father. He asked you what you wanted for your birthday, and you said ‘a meteorite’. So he went out beyond the Death Barrier to find you one. And that’s how he ended up dead. So don’t take all this out on me.”
+Bà già đã hết kiên nhẫn. "Này, ngươi chỉ làm những thứ này chỉ vì ngươi nghĩ mình đã hại chết chính cha mình. Ông ấy hỏi ngươi muốn gì cho ngày sinh nhật, ngươi muốn một mẩu thiên thạch. Ông ấy đi ra ngoài Tử Giới Tuyến để tìm cho ngươi một viên, và đó là cách ông ấy đã chết. Vậy nên đừng có nổi nóng với ta."
+<!-- The old woman snapped then. “Look,” she said, “you’re only doing all of this because you think you killed your father. He asked you what you wanted for your birthday, and you said ‘a meteorite’. So he went out beyond the Death Barrier to find you one. And that’s how he ended up dead. So don’t take all this out on me.” -->
 
-Tao was silent a while, then said quietly, “How do you know that?”
+Tao lặng im một lúc, rồi hỏi nhỏ,
+\- Tại sao bà biết điều đó?
+\- Vì ta rất thông minh, và ta đang giúp cậu. Vậy nên để ta yên đi, được không?
+<!-- Tao was silent a while, then said quietly, “How do you know that?” -->
 
-“Because I’m really, really clever. And I’m trying to help you here. So would you give an old woman a break?”
+<!-- “Because I’m really, really clever. And I’m trying to help you here. So would you give an old woman a break?” -->
 
-Tao thought about this and collected his things. They walked on in silence.
+Tao suy nghĩ rồi thu dọn đồ đạc. Họ tiếp tục bước đi trong lặng im.
+<!-- Tao thought about this and collected his things. They walked on in silence. -->
 
-The village was almost invisible below, and the mountain peak was very close. They turned a corner, and came upon a picture of a king. Then a queen, then more. The portraits regal and proud, with faces that spoke of legacy and divine right. They pushed on and now the portraits were of scenes Tao didn’t recognize: of battles, and rulers, and machines, and great structures that kissed the skyline. Episodes from his species history that he’d never even heard of, let alone considered. Millions dead and gone. While nation-states turned to dust. The great human project - forgotten, as though a dream upon waking. Testament to a time when billions lived on a fragile marble among the ink dark of space, holding out against the hostile cosmos, and yet worse threats that lurked within themselves. And somehow, for a long time, against all odds and sense, they did hold out, bettering themselves slowly, as a toddler attempts to climb a set of steps. Then, for some reason, devolving again. The Great Sleep, The Great Forgetting. Sent to bed without supper. Then decline, then savagery then dust.
+Ngôi làng giờ đă thành một hình bóng mờ nhạt ở dưới, đỉnh núi đã rất gần rồi. Tại một góc ngoặt, họ bắt gặp bức ảnh của một vị vua, rồi hoàng hậu, rồi nhiều bức ảnh khác. Những bức chân dung lộng lẫy và kiêu hãnh, những khuôn mặt quyền quý và thiêng liêng. Khi đi tiêp, các bức tranh mô tả khung cảnh mà Tao chưa nhìn thấy bao giờ: những trận chiến, những vị vua, máy móc, những công trình cao chọc trời, những trang sử từ giống nòi của chính mình mà anh chưa tưng nghe đến, hay nghĩ về.
+Hàng triệu tồn tại, chết và biến mất. Những quốc gia trở về với cát bụi. Những thành tựu vĩ đại, bị lãng quên, như một giấc mơ khi ta tính dậy. Lời chứng thực về một thời mà hàng tỉ sinh linh cùng chung sống trên một hòn đất mỏng manh giữa không gian tăm tối, chống chọi lại sự dữ đội của vũ trụ, ấy vậy mà trong họ lại ẩn chứa những mối nguy lớn hơn. Rồi bằng một cách nào đó, trong một thời gian dài, bất chấp hoàn cảnh và lý lẽ, họ vẫn tồn tại, vẫn cải thiện bản thân, như một đứa trẻ chập chững bước lên những bậc thang.  Rồi, vì một vài lý do, họ biến chất. Giấc ngủ Lớn, Sự Lãng quên Vĩ đại, say giấc mà không có một bữa ăn cuối cùng. Họ thoái hoá, rồi man rợ, rồi lụi tàn.
 
-And ahead, Tao spied was a pair of armored boots. “There,” the old woman said. “For as long as you wear those, you’ll never die. You can live into your thousands if you like. This is the armor you’ll defend yourself with from the Snake.” They fitted perfectly. “And one more thing,” the old woman said. She took from he shawl, a necklace, and on that necklace was a locket. And in the locket was a picture of Tao’s father. She put the necklace over his head. “To remember,” she said. “This is the story you’ll kill the Snake with.” He felt finally ready to do battle since he began his adventure up the mountain. He knew it would only be a short walk, now.
+<!-- The village was almost invisible below, and the mountain peak was very close. They turned a corner, and came upon a picture of a king. Then a queen, then more. The portraits regal and proud, with faces that spoke of legacy and divine right. They pushed on and now the portraits were of scenes Tao didn’t recognize: of battles, and rulers, and machines, and great structures that kissed the skyline. Episodes from his species history that he’d never even heard of, let alone considered. Millions dead and gone. While nation-states turned to dust. The great human project - forgotten, as though a dream upon waking. Testament to a time when billions lived on a fragile marble among the ink dark of space, holding out against the hostile cosmos, and yet worse threats that lurked within themselves. And somehow, for a long time, against all odds and sense, they did hold out, bettering themselves slowly, as a toddler attempts to climb a set of steps. Then, for some reason, devolving again. The Great Sleep, The Great Forgetting. Sent to bed without supper. Then decline, then savagery then dust. -->
 
-The peak was just a few yards away. It was only a small plateau, and the wind was high here, and it was raining. And there sat the Snake, it’s back turned to Tao, Staring off into the dead wilderness below. “There you are,” the old woman said. “Do as you will.”
+Phía trước, Tao nhìn thấy một đôi giày chiến giáp. "Đây," bà già nói, "một khi đi đôi giày này, ngươi sẽ không bao giờ chết. Ngươi có thể sống hàng ngàn năm nếu muốn. Đây sẽ là đôi giày để ngươi bảo vệ mình khỏi Con Rắn.". Đôi giày vừa như in. "Thêm nữa", bà già lấy ra từ khăn choàng của mình một chiếc vòng cổ, trên đó có gắn mề đay với ảnh người cha của Tao. Bà đeo chiếc vòng lên Tao "để tưởng nhớ. Đây là câu truyện mà ngươi sẽ dùng để giết Con Rắn". Tao cảm thấy mình cuối cùng cũng sẵn sàng chiến đấu. Anh biết một cuốc bộ nhỏ nữa mình sẽ tới đích.
 
-With the glasses of the New Gods on his face, he saw the snake in its essence. It’s black heart, its cunning mind, its contempt for the last remaining humans. Tao approached it, silently, his heart in his temples, his eyes wide, his hands clutching the locket of his father. And he thought of his father, then. Thought of the man dead, through the futility of death, and he closed his eyes, and screamed, and brought the sword down with such power that it struck a grating chord out into the rain, and rang all the way back to the mountains base. He opened his eyes. The Snake… was gone.
+<!-- And ahead, Tao spied was a pair of armored boots. “There,” the old woman said. “For as long as you wear those, you’ll never die. You can live into your thousands if you like. This is the armor you’ll defend yourself with from the Snake.” They fitted perfectly. “And one more thing,” the old woman said. She took from he shawl, a necklace, and on that necklace was a locket. And in the locket was a picture of Tao’s father. She put the necklace over his head. “To remember,” she said. “This is the story you’ll kill the Snake with.” He felt finally ready to do battle since he began his adventure up the mountain. He knew it would only be a short walk, now. -->
 
-Tao turned around to the old woman. “Where did he go? Did you see him?”
+Đỉnh núi chỉ còn cách đó vài mét. Đó là một cao nguyên nhỏ, gió thổi hun hút và trời thì mưa. Con Rắn ngồi đó, quay lưng về phía Tao, nhìn vô định vào khung cảnh chết chóc phía dưới. "Tới nơi rồi,", bà già nói, "làm những gì mình muốn đi.".
+<!-- The peak was just a few yards away. It was only a small plateau, and the wind was high here, and it was raining. And there sat the Snake, it’s back turned to Tao, Staring off into the dead wilderness below. “There you are,” the old woman said. “Do as you will.” -->
 
-“No,” said the old woman. “I didn’t see him because he doesn’t exist.” The rain was getting heavier. Tao stood silently in his armor. The old woman said, “Did you really think there was some evil snake on a mountain bringing death and misery into the village? Did you really think the world was so simple that only one thing is responsible for all the bad days? God, what is it with you lot? You have everything, you know that? And you spit on it! Like living in some enormous mansion, and one day you find a chipped brick, so you burn the whole damn house down. You’ve got everything down there. I gave you everything. Endless food, endless life - and you’re still miserable! Do you know how difficult it is, playing deity? I’d give anything, just to give up knowing everything.”
+Với cặp kính của những Tân Thần trên mắt, Tao nhìn thấy bản chất của Con Rắn: trái tim đen, đầu óc gian xảo, sự khinh bỉ cho những con người còn lại. Tao tiến lại gần nó, lặng lẽ, tim đánh trống, mắt mở to, tay nắm lấy chiếc mề đay có ảnh cha mình. Anh nghĩ về ông ấy, rồi nghĩ về cái chết của ông, về sự vô nghĩa của cái chết, rồi nhắm mắt, rồi vung kiếm với sức mạnh vang vọng vào tiếng mưa, vang tới tận chân núi.  Anh mở mắt. Con rắn... đã biến mất.
+<!-- With the glasses of the New Gods on his face, he saw the snake in its essence. It’s black heart, its cunning mind, its contempt for the last remaining humans. Tao approached it, silently, his heart in his temples, his eyes wide, his hands clutching the locket of his father. And he thought of his father, then. Thought of the man dead, through the futility of death, and he closed his eyes, and screamed, and brought the sword down with such power that it struck a grating chord out into the rain, and rang all the way back to the mountains base. He opened his eyes. The Snake… was gone. -->
 
-And on the skyline appeared shimmering and translucent buildings, high technology, and science. “They got everything they wanted, your ancestors,”the old woman said, “and they still weren’t happy. The Snake was still there: misery, chaos, death.
+Tao quay về phía bà già.
+\- Nó đi đâu rồi? Bà có thấy nó không?
+\- Không, ta không thấy nó vì nó không tồn tại.
+Trời mưa nặng hạt hơn. Tao lặng im trong giáp trụ của mình. "Cậu thực sự nghĩ có một con rắn ác ôn trên núi, mang lại cái chết và sự đau khổ cho dân làng sao? Cậu nghĩ thế gian này đơn giản tới mức, có một thứ gì đó gây ra những ngày tồi tệ? Trời ạ, bị cái gì vậy không biết? Cậu có tất cả mọi thứ, biết không hả? Và cậu phỉ nhổ lên nó! Như kiểu sống trong một toà lâu đài nguy nga, nhưng phát hiện ra một vết sứt nhỏ rồi đốt trụi toàn bộ. Cậu có tất cả mọi thứ ở dưới đó. Ta cho cậu mọi thứ, lương thực vô hạn, cuộc đời vô hạn, và cậu vẫn khốn khổ! Cậu biết đóng vai thần thánh mệt mỏi như thế nào không? Ta sẵn sàng từ bỏ bất cứ thứ gì, để có thể không biết thứ gì hết."
 
-They tried sending it away with perfect knowledge.
+<!-- Tao turned around to the old woman. “Where did he go? Did you see him?” -->
 
-They tried killing it with ultimate power.
+<!-- “No,” said the old woman. “I didn’t see him because he doesn’t exist.” The rain was getting heavier. Tao stood silently in his armor. The old woman said, “Did you really think there was some evil snake on a mountain bringing death and misery into the village? Did you really think the world was so simple that only one thing is responsible for all the bad days? God, what is it with you lot? You have everything, you know that? And you spit on it! Like living in some enormous mansion, and one day you find a chipped brick, so you burn the whole damn house down. You’ve got everything down there. I gave you everything. Endless food, endless life - and you’re still miserable! Do you know how difficult it is, playing deity? I’d give anything, just to give up knowing everything.” -->
 
-They tried forgetting it with abandon.
+Trời tạnh mưa. Rồi chân trời hiện lên những toà nhà lung linh mờ ảo, với công nghệ và khoa học. "Họ có tất cả mọi thứ họ muốn, tổ tiên của cậu, và họ vẫn không hạnh phúc. Con Rắn vẫn ở đó: sự đau khổ, hỗn loạn, cái chết.
+Họ cố đẩy nó đi với kiến thức tối thượng
+Họ cố giết nó với sức mạng tột đỉnh
+Họ cố lãng quên nó với sự buông bỏ
+Họ cố sống lâu hơn
+Họ cố bám víu vào nhau
+Cặp kính, thanh kiếm, chiếc cốc, bộ giáp và chiếc vòng cổ.
 
-They tried living longer.
+<!-- And on the skyline appeared shimmering and translucent buildings, high technology, and science. “They got everything they wanted, your ancestors,”the old woman said, “and they still weren’t happy. The Snake was still there: misery, chaos, death. -->
+<!-- They tried sending it away with perfect knowledge. -->
+<!-- They tried killing it with ultimate power. -->
+<!-- They tried forgetting it with abandon. -->
+<!-- They tried living longer. -->
+<!-- They tried clinging to each other. -->
 
-They tried clinging to each other.
+<!-- The spectacles, sword, tankard, armor, and necklace. -->
 
-The spectacles, sword, tankard, armor, and necklace.
+Họ tìm dưới những tảng đá, những cái hố, nhưng Con Rắn không ở nó. Chắc hẳn nó đã leo lên cao hơn rồi. Họ trèo tiếp, trèo nữa, trèo mãi, và không tìm thấy thứ gì. Chỉ có mình họ trong cái vũ trụ khốn khổ này, và họ vẫn khốn khổ. Những Tân Thần đã đi mất rồi. Tất cả trừ ta. Giống loài của cậu cũng vậy, trừ ngôi làng ra, và đó là cách sống cũ. Ta giữ mọi người lại vì nó là một kỷ niệm đẹp tới cách chúng ta từng sống một thời. Ta rất tiếc cha cậu đã mất. Ta rất tiếc cậu sẽ không bao giờ gặp được ông ấy. Nhưng dưới kia là cả một ngôi làng với những con người yêu thương cậu, mà cậu lại lên đây hét thi với gió trên cái đỉnh núi chết tiệt này! Chuyện xấu xảy ra, với nhân quả phức tạp. Không có con rắn, phù thuỷ, hay thiên tài xấu xa nào đứng sau mọi chuyện cả. Và rồi sẽ có lúc mọi thứ tồn tại mãi mãi, không có ai bị đau đớn nữa cả. Nhưng sức mạnh nằm là khi ta nhìn vào vực sâu, vào mắt của Con Rắn, vẫn lừa chọn trở thành một con người tử tế, bất kể khi đối mặt với sự vô định bất tận, với cái ác, với ngày tàn của mọi thứ. Nhưng ngày đó chưa tới, và sẽ không tới trong một thời gian dài. Đừng có phí thời gian lên rắn và cối xay gió. Hãy tạm biệt đi."
 
-They looked about under rocks, then, in holes, but the Snake wasn’t there. He must’ve gone further up. And so, they climbed, and climbed, and climbed, and found nothing, it was just them in the miserable universe, and they were still miserable. So the New Gods are all gone now. All except me. And your species i gone, too now. All except your village, the old mode of living. I keep you lot around because it’s a nice souvenir to how we were once. I’m sorry your father is gone. I’m sorry you’ll never see him again. But there’s a whole village down there of people who love you. And here you are screaming at the wind on a fucking mountain! Bad things happen, and the reasons for them are complicated - there is no snake, no witch, no evil genius. And there will never come a time where everything lasts forever, and nothing hurts ever again. But the strength is in taking a good look into the abyss, into the eyes of the Snake, and then choosing to still be a good human, even in the face of great uncertainty, and malice, and that day where everything will be gone forever. It’s not gone yet. It won’t be for ages. Don’t waste your time on snakes and windmills. Say goodbye.”
+<!-- They looked about under rocks, then, in holes, but the Snake wasn’t there. He must’ve gone further up. And so, they climbed, and climbed, and climbed, and found nothing, it was just them in the miserable universe, and they were still miserable. So the New Gods are all gone now. All except me. And your species i gone, too now. All except your village, the old mode of living. I keep you lot around because it’s a nice souvenir to how we were once. I’m sorry your father is gone. I’m sorry you’ll never see him again. But there’s a whole village down there of people who love you. And here you are screaming at the wind on a fucking mountain! Bad things happen, and the reasons for them are complicated - there is no snake, no witch, no evil genius. And there will never come a time where everything lasts forever, and nothing hurts ever again. But the strength is in taking a good look into the abyss, into the eyes of the Snake, and then choosing to still be a good human, even in the face of great uncertainty, and malice, and that day where everything will be gone forever. It’s not gone yet. It won’t be for ages. Don’t waste your time on snakes and windmills. Say goodbye.” -->
 
-She took the jam jar out of Tao’s satchel and gave it to him. She put her arm around his shoulder. Slowly, Tao opened the jar, and the wind took the ashes of his father, and flung them out over the mountain. And in the last light of dusk, they were not unlike a million tiny meteorites, all done with being cosmic, and bound for the everyday ground.
+Bà già lấy một chiếc hũ ra khỏi hành lý của Tao và đưa nó cho cậu. Bà đặt tay lên vai anh. Một cách cẩn thận, Tao mở chiếc hũ. Cơn gió cuốn tro cốt người cha của anh và trả nó trên ngọn núi. Trong ánh hoàng hôn cuối ngày, chúng không khác gì hàng triệu vì tinh tú, chán nản với vũ trụ rộng lớn và trở về mặt đất.
 
-The old woman said, “Your species - mine, once, too - we must be the only creatures allergic to happiness. We ruled the galaxy a long time ago, and still quibbled over who got more ice cream for dessert. Still wanted to pretend we didn’t come from the mud, still couldn’t accept that meaning and solace aren’t to be found in the heavens,but in the trenches of everyday living."
+"Loài của cậu, và cả của ta một thời trước đó, chúng ta chắc hẳn là những sinh vật duy nhất bị dị ứng với hạnh phúc. Chúng ta đã cai trị thiên hà từ lâu, nhưng vẫn phải cãi nhau xem ai được ăn nhiều kem hơn khi tráng miệng, vẫn giả vờ rằng chúng ta không đi lên từ bùn đất, không chấp nhận rằng ý nghĩa và sự thanh thản không tồn tại ở thiên đàng, mà chỉ có thể tìm được khi ta vật lộn với cuộc sống.
+Hiểu biết mọi thứ, rồi chúng ta sẽ ổn thôi.
+Tiêu diệt mọi thứ, rồi chúng ta sẽ ổn thôi.
+Buông bỏ mọi thứ, rồi chúng ta sẽ ổn thôi.
+Trường sinh bất lão, rồi chúng ta sẽ ổn thôi.
+Níu kéo tất cả, rồi chúng ta sẽ ổn thôi.
+Ngay cả khi vậy, chúng ta vẫn không ổn.
+Vì đó không phải luật chơi của trò đời. Về nhà đi Tao. Đừng cố trở thành một anh hùng, một hiền nhân, hay chiến binh. Hãy cứ tồn tại thời gian và sống tử tế, như vậy là đủ anh dũng rồi. Mọi thứ đã luôn như vậy. Cậu vẫn có thể giữ cặp kính, thanh kiếm, cái cốc và bộ giáp. Cậu có thể cai trị thế gian này, nếu muốn."
 
-“ ‘We’ll know everything, and then we’ll be okay.’
+<!-- She took the jam jar out of Tao’s satchel and gave it to him. She put her arm around his shoulder. Slowly, Tao opened the jar, and the wind took the ashes of his father, and flung them out over the mountain. And in the last light of dusk, they were not unlike a million tiny meteorites, all done with being cosmic, and bound for the everyday ground. -->
 
-‘We’ll kill everything, and then we’ll be okay.’
+<!-- The old woman said, “Your species - mine, once, too - we must be the only creatures allergic to happiness. We ruled the galaxy a long time ago, and still quibbled over who got more ice cream for dessert. Still wanted to pretend we didn’t come from the mud, still couldn’t accept that meaning and solace aren’t to be found in the heavens,but in the trenches of everyday living." -->
 
-‘We’ll forget everything, and then we’ll be okay.’
+<!-- “ ‘We’ll know everything, and then we’ll be okay.’ -->
 
-‘We’ll live forever, and then we’ll be okay.’
+<!-- ‘We’ll kill everything, and then we’ll be okay.’ -->
 
-‘We’ll cling to everyone, and then we’ll be okay.’ ”
+<!-- ‘We’ll forget everything, and then we’ll be okay.’ -->
 
-And even then, we weren’t okay. Because that’s not how the game works. Go home, Tao. Don’t try to be a hero, or a sage, or a warrior. Just exist for a while and be decent. That’s heroism enough. It’s how it’s always been done. Hey, you wanna keep the glasses, and sword, and tankard, and armor - You can rule the world, if you like.”
+<!-- ‘We’ll live forever, and then we’ll be okay.’ -->
 
-“No.” Tao said.
+<!-- ‘We’ll cling to everyone, and then we’ll be okay.’ ” -->
 
-“Good choice.”
+<!-- And even then, we weren’t okay. Because that’s not how the game works. Go home, Tao. Don’t try to be a hero, or a sage, or a warrior. Just exist for a while and be decent. That’s heroism enough. It’s how it’s always been done. Hey, you wanna keep the glasses, and sword, and tankard, and armor - You can rule the world, if you like.” -->
 
-Tao said, “Am I the first from the village to come up after the Snake?”
+Tao trả lời:
+\- Không.
+\- Lựa chọn tốt đấy.
+\- Tôi có phải người đâu tiên lên đây truy sát Con Rắn không?
+\- Trời, mọi người trong làng đều lên đây, từng người một. Ta tiếp họ cùng một kiểu, và họ đều quay trở lại. Kể cả cha cậu. Lão hỏi rất nhiều câu ngu học về siêu hình... ta có thể thấy sự tương đồng. Cậu là người cuối cùng lên đây, hãy quay về đi, làm người. Vũ trụ đếch thèm quan tâm tới cậu đâu. Ngôi làng, gia đình cậu, và ta thì có. Nhớ về cha mình, luôn kính yêu ông ấy. Trời biết ông ấy cũng yêu thương cậu. Rồi quay lại đây bất cứ khi nào cậu muốn, chúng ta sẽ hàn huyên và tưởng nhớ ông ấy cùng nhau.
+<!-- “No.” Tao said. -->
 
-“Boy,” the old woman said, “Everyone from the village came up, one by one. I gave them all the same treatment, they all went back down. Even your father. God, he asked a lot of stupid metaphysical questions… I can see where you get it. You’re the last one to come up here, so go home, be human. The universe doesn’t give a shit about you. Your village, your family, me - we do. Remember you dad. Love him always. God knows, he loved you. And come up here anytime you like, and we’ll hang out and remember him together.”
+<!-- “Good choice.” -->
 
-Tao took off the glasses, and the armor, and the tankard, and laid the sword on the ground.
+<!-- Tao said, “Am I the first from the village to come up after the Snake?” -->
 
-“Can I keep the necklace?” he said.
+<!-- “Boy,” the old woman said, “Everyone from the village came up, one by one. I gave them all the same treatment, they all went back down. Even your father. God, he asked a lot of stupid metaphysical questions… I can see where you get it. You’re the last one to come up here, so go home, be human. The universe doesn’t give a shit about you. Your village, your family, me - we do. Remember you dad. Love him always. God knows, he loved you. And come up here anytime you like, and we’ll hang out and remember him together.” -->
 
-“Of course,” she said. “And the memories, they will always be yours, too.”
+Tao tháo bỏ đôi kính, bộ giáp và chiếc cốc, bỏ thanh kiếm lên mặt đất.
 
-The curtain of ashes was gone now. The sky was clear and fine. He set off back down the last mountain, bound for the last village. It would not be a difficult walk. And even if it were, he thought, he would not mind so much now. It would give him time to remember.
+\- Tôi có thể giữ chiếc vòng cổ chứ?
+\- Đương nhiên, và cả những ký ức nữa.
+<!-- Tao took off the glasses, and the armor, and the tankard, and laid the sword on the ground. -->
+<!-- “Can I keep the necklace?” he said. -->
+<!-- “Of course,” she said. “And the memories, they will always be yours, too.” -->
+
+Tấm màn tro giờ đã biết mất. Bầu trời trong và đẹp. Tao bắt đầu đi xuống chân của con núi cuối cùng, nơi có ngôi làng duy nhất. Quãng đường về sẽ thật dễ đi, và dẫu không phải vậy, anh nghĩ, cũng không thành vấn đề, vì đó sẽ là thời gian để anh khắc cốt ghi tâm.
+<!-- The curtain of ashes was gone now. The sky was clear and fine. He set off back down the last mountain, bound for the last village. It would not be a difficult walk. And even if it were, he thought, he would not mind so much now. It would give him time to remember. -->
