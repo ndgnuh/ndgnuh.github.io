@@ -19,7 +19,7 @@ Bài viết mang tính kể chuyện và đi kèm một ít yếu tố kỹ thu�
 
 
 ## Mở đầu
-Câu chuyện kể về một sinh viên ngành "toán" tên X ở trường [____], khi X bắt đầu vào năm thứ tư. Dù học ba năm đại học, X vẫn không biết học xong ra trường làm việc gì. Do đó, dù đã lựa chọn đề tài làm đồ án, X vẫn đi hóng hớt mấy thanh niên cùng lớp xem chúng nó có làm gì hay ho, khiến X hứng thú hay không.
+Câu chuyện kể về một sinh viên ngành "toán" tên X ở trường [----], khi X bắt đầu vào năm thứ tư. Dù học ba năm đại học, X vẫn không biết học xong ra trường làm việc gì. Do đó, dù đã lựa chọn đề tài làm đồ án, X vẫn đi hóng hớt mấy thanh niên cùng lớp xem chúng nó có làm gì hay ho, khiến X hứng thú hay không.
 
 > Những sinh viên cùng khoá với X được làm hai đồ án. Đây là đồ án thứ nhất.
 
@@ -48,10 +48,58 @@ Mô hình hiện tại chạy một lần mất 10 phút. Bỏ qua những chi t
 
 > Gọi "lab" cho oai thôi chứ thực ra là đó phòng máy tính cho sinh viên thực hành. Phòng toàn máy tính chạy Windows 7 với cầu hình tàng tàng. Có máy còn bị sinh viên làm cho dính virus hoặc dính những lỗi lặt vặt của Windows (có những lỗi khá vớ vẩn như Windows không mở được file Python dù đã cài PATH đúng cách, tìm ba trang Google không có cách sửa).
 
-Đợt đó, nhóm chạy khoảng 128000 mô phỏng. Thực chất chỉ có 64000 lần lấy kết quả do mô hình có sửa đổi cần chạy lại. Do máy tính chạy Windows và cấu hình mạng cũng không ổn định, việc truyền file sử dụng... USB. Mỗi lần chạy thử nghiệm mất 2-3 tiếng để cài đặt (copy mã nguồn và file cấu hình tới từng máy), khoảng nữa ngày để chạy mô phỏng, 2-3 tiếng nữa để copy dữ liệu về một kho chứa.
+Đợt đó, nhóm chạy khoảng 128000 mô phỏng, thực chất chỉ có 64000 lần lấy kết quả do mô hình có sửa đổi cần chạy lại. Do máy tính chạy Windows và cấu hình mạng cũng không ổn định, việc truyền file sử dụng... USB. Mỗi lần chạy thử nghiệm mất 2-3 tiếng để cài đặt (copy mã nguồn và file cấu hình tới từng máy), khoảng nữa ngày để chạy mô phỏng, 2-3 tiếng nữa để copy dữ liệu về một kho chứa.
 
 ## Hai mũi tên trúng ba đích
 
 Thời gian trôi qua, kỳ đầu tiên của năm thứ tư sắp kết thúc. Dù trầy trật nhưng đợt thí nghiệm ở kỳ đầu hoá ra lại thành công. Cô Z dự định cho X trình bày bài kết quả ở một hội thảo. Ban đầu X khá lưỡng lự vì còn phải lo đồ án tốt nghiệp. Nhưng sau đó, cô Z gọi diện và offer một công việc liên quan tại một dự án nghiên cứu cho X và Y. Big brain time, X nghĩ rằng mình có thể dùng project sẽ thực hiện ở công việc ở dự án trên để làm luôn đồ án tốt nghiệp, nhận luôn cả hai kèo. Nghe đâu, báo cáo ở hội thảo còn được cộng điểm vào đồ án.
 
-Có một điều X không lường trước, đó là Covid, dịch khiến cho mọi công việc delay. X không thực sự làm việc cho dự án nghiên cứu kia cho tới một nửa kỳ hai năm bốn.
+Có một điều X không lường trước, đó là Covid, dịch khiến cho mọi công việc delay. X không thực sự làm việc cho dự án nghiên cứu kia cho tới một nửa kỳ hai năm bốn. X không dành đủ thời gian cho đồ án. Tua nhanh tới 2 tháng trước khi hết học kỳ. X không có chút tiến độ nào đồ án tốt nghiệp.
+Cô Z offer rằng X có thể dùng bài rầy nâu này làm đồ án tốt nghiệp, thế là X lại làm việc nhởn nhơ trong vòng một tháng. Nhưng tới khi bắt đầu bắt tay vào viết báo cáo, X lại phát hiện ra một sai lầm chết người: mô hình này anh T (anh xây dựng mô hình ban đầu) đã dùng trong đồ án tốt nghiệp của mình, và X không thể dùng trong đồ án của mình được.
+
+> Panik time <!-- TODO: ảnh -->
+
+Trong cơn hoảng loạn, cô Z bảo X có thể thực hiện lại bài toán này với một mô hình mới, thậm chí cài đặt lại mô hình cũ bằng công cụ khác cũng được. Trong cái rủi lại có cái may, khi cài đặt lại mô hình bằng [Agents.jl](https://juliadynamics.github.io/Agents.jl/stable/), X phát hiện ra mô hình viết trên Agents chạy nhanh hơn khoảng... 1000 lần so với Gama, tức thời gian chạy được rút từ 10 phút xuống còn khoảng 0.3 giây. Hơn nữa, bằng cách sử dụng các tool lập trình song song của Julia, X có thể thử nghiệm toàn bộ 64000 mô phỏng như trước trong một đêm, trên máy tính cá nhân.
+
+## Phức tạp hoá và tối ưu
+
+Tưởng như mọi việc đã thành công tốt đẹp, khi viết báo cáo, X lại bới ra sạn trong mô hình. Khi ngẫm lại về một số lựa chọn khi thiết kế trong mô hình, nhiều chi tiết có vẻ vô lý:
+- Tại sao con rầy nào cũng có thể đẻ, chỉ có con cái mới có thể đẻ chứ?
+- Tại sao con rầy nào cũng di chuyển ngẫu nhiên sang một ô bên cạnh, ô đó không có lúa thì nó nhảy sang làm gì?
+- Tại sao rầy đi qua hoa lại mất HP? (thực chất hoa chỉ thu hút ong, nhện... để tiêu diệt rầy, đi qua đây dính DOT là không chuẩn)
+
+Đồng thời, nếu để mô hình của mình giống với mô hình của một người đã làm trước đó cũng không hay lắm. Thế là X cậy mình có tool ngon, ngồi cài thêm một đống thứ vào trong model. 
+
+### Di chuyển nâng cao
+
+Thay đổi đầu tiên là sự di chuyển của mấy con rầy. Giờ chúng không di chuyển ngẫu nhiên nữa. X nghĩ sự di chuyển phải theo xác suất, được phải được tính bởi yếu tố môi trường xung quanh và có lợi cho rầy nâu. Cách đơn giản nhất là sử dụng chính HP của lúa để tính xác suất. Phiên bản chọn đường đi đầu tiên:
+```julia
+# model là trạng thái của mô hình
+# x, y là vị trí con rầy
+# directions là tập các hướng di chuyển có thể
+# đầu ra là một cặp hướng (x, y)
+function select_direction(model, x, y, directions)::Tuple{<:Integer,<:Integer}
+    for (dx, dy) in directions
+        foodlim = get(model.food, (x + dx, y + dy), 0)
+        should_select = if isnan(foodlim)
+            rand(model.rng) ≤ 0.5
+        else
+            rand(model.rng) ≤ foodlim
+        end
+        if should_select
+            return (dx, dy)
+        end
+    end
+    return rand(model.rng, directions)
+end
+```
+
+Thuật toán lựa chọn có thể hiểu như sau:
+1. Lặp qua các ô có thể di chuyển tới.
+2. Nếu ô đó là hoa, chọn ô đó với xác suất $0.5$.
+3. Nếu ô đó là lúa, chọn ô đó với xác suất là HP của nó.
+4. Nếu không có ô nào được chọn, chọn ngẫu nhiên một ô trong số các ô.
+
+Dù nghe rất hợp lý nhưng thuật toán trên thất bại thảm hại, lý do là đám rầy sẽ di chuyển theo cùng một phía sang ô lúa có HP cao nhất, tạo ra một mẫu hình di chuyển kì dị. X phải revert lại commit vừa rồi để thay bằng một thuật toán khác.
+
+
