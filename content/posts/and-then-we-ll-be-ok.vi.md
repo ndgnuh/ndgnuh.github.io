@@ -268,7 +268,7 @@ Vì đó không phải luật chơi của trò đời. Về nhà đi Đạo. Đ�
 
 "Lựa chọn tốt đấy."
 
-"Tôi có phải người đâu tiên lên đây truy sát Con Rắn không?"
+"Tôi có phải người đầu tiên lên đây truy sát Con Rắn không?"
 
 "Trời, mọi người trong làng đều lên đây, từng người một. Ta tiếp họ cùng một kiểu, và họ đều quay trở lại. Kể cả cha cậu. Lão hỏi rất nhiều câu ngu học về siêu hình... ta có thể thấy sự tương đồng. Cậu là người cuối cùng lên đây, hãy quay về đi, làm người. Vũ trụ đếch thèm quan tâm tới cậu đâu. Ngôi làng, gia đình cậu, và ta thì có. Nhớ về cha mình, luôn kính yêu ông ấy. Trời biết ông ấy cũng yêu thương cậu. Rồi quay lại đây bất cứ khi nào cậu muốn, chúng ta sẽ hàn huyên và tưởng nhớ ông ấy cùng nhau."
 Đạo tháo bỏ đôi kính, bộ giáp và chiếc cốc, bỏ thanh kiếm lên mặt đất.
