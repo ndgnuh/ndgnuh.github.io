@@ -144,9 +144,9 @@ Họ tìm dưới những tảng đá, những cái hố, nhưng Con Rắn khôn
 
 Bà già nhún vai, "Thôi đi nào, sắp muộn rồi."
 
-Họ tiếp tục đi lên núi, đỉnh núi vẫn còn xa, nhưng chân núi giờ còn xa hơn. Tao nghĩ về người cha quá cố. Anh tưởng tượng những ngày u ám và trống trải đang đợi phía trước; không có ai cùng trò chuyện, chơi đùa, hay cười vui. Khi anh tìm thấy Con Rắn, anh xẽ sẻ nó làm đôi.
+Họ tiếp tục đi lên núi, đỉnh núi vẫn còn xa, nhưng chân núi giờ còn xa hơn. Tao nghĩ về người cha quá cố. Anh tưởng tượng những ngày u ám và trống trải đang đợi phía trước; không có ai cùng trò chuyện, chơi đùa, hay cười vui. Khi anh tìm thấy Con Rắn, anh sẽ xẻ nó làm đôi.
 
-Tao nhìn thấy một mạch nước màu đỏ, và nhận ra đó là máu. Mạch nước máu trở nên dày đặc hơn khi họ lên cao. Không, đó là một *dòng sông* máu. Xung quanh rơi vãi những mẩu giấy, đồng tiền, nào là trang sức, nào là đá quý, nào là quyền trượng. Mặt đất bị cháy xém, và những cột khói âm ỷ bốc lên, cùng với mùi tanh của cái chết, vinh quang và thống trị. Rồi Tao nhìn thấy một thanh kiếm. Nó nhô lên khỏi mặt đất, phần chuôi kiếm lấp lánh với ánh đỏ, tím, vàng; và phần lưỡi với ánh bạc chói sáng. Họ tiến lại gần thanh kiếm.
+Tao nhìn thấy một mạch nước màu đỏ, và nhận ra đó là máu. Mạch nước máu trở nên dày đặc hơn khi họ lên cao. Không, đó là một *dòng sông* máu. Xung quanh rơi vãi những mẩu giấy, đồng tiền, nào là trang sức, nào là đá quý, nào là quyền trượng. Mặt đất bị cháy sém, và những cột khói âm ỷ bốc lên, cùng với mùi tanh của cái chết, vinh quang và thống trị. Rồi Tao nhìn thấy một thanh kiếm. Nó nhô lên khỏi mặt đất, phần chuôi kiếm lấp lánh với ánh đỏ, tím, vàng; và phần lưỡi với ánh bạc chói sáng. Họ tiến lại gần thanh kiếm.
 
 "Lấy nó ra khỏi mặt đất, cậu trai."
 
