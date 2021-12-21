@@ -74,7 +74,7 @@ Tao tiếp tục bước đi, nhưng bà già đi theo sau.
 
 "Không, cậu sẽ không làm được đâu." 
 
-Họ tìm dưới những tảng đá, những cái hố, nhưng Con Rắn không ở nó. Chắc hẳn nó đã leo lên cao hơn rồi. Thế là họ trèo tiếp. Buổi đêm, họ ngủ một cách trằn trọc. Buối sáng, Tao ăn bánh mì, còn bà già, cái bình trên hông. Họ tiếp tục leo lên ngọn núi. Tới trưa, họ ở nơi đủ cao để có thể bao quát khu vực phía dưới, trong đó có làng của Tao-bé li ti với một vài ngôi nhà và vài ngọn khói dưới thung lũng.
+Họ tìm dưới những tảng đá, những cái hố, nhưng Con Rắn không ở đó. Chắc hẳn nó đã leo lên cao hơn rồi. Thế là họ trèo tiếp. Buổi đêm, họ ngủ một cách trằn trọc. Buối sáng, Tao ăn bánh mì, còn bà già, cái bình trên hông. Họ tiếp tục leo lên ngọn núi. Tới trưa, họ ở nơi đủ cao để có thể bao quát khu vực phía dưới, trong đó có làng của Tao-bé li ti với một vài ngôi nhà và vài ngọn khói dưới thung lũng.
 
 "Còn ngôi làng nào khác trên thế giới không?", Tao hỏi.
 
@@ -96,7 +96,7 @@ Họ tìm dưới những tảng đá, những cái hố, nhưng Con Rắn khôn
 
 "Hừmm, hừmm."
 
-Họ tìm dưới những tảng đá, những cái hố, nhưng Con Rắn không ở nó. Chắc hẳn nó đã leo lên cao hơn rồi. Thế là họ trèo tiếp. Họ lại ngủ một đêm trằn trọc, chào đón một bình minh xám xịt và ốm yếu khi tỉnh dậy. Họ bước đi trong im lặng, và sớm nhận ra sương mù đã bao phủ tới tận đầu gối mình. Không khí có mùi kim loại. Ánh bình minh nhìn có vẻ sai sai. "Chuyện gì đang xảy ra?", Tao hỏi nhưng bà già chỉ lặng im, uống một ngụm dài từ cái bình bên hông. Tao nhìn thấy thứ gì đó trong đám bùn, ánh bạc và phức tạp.
+Họ tìm dưới những tảng đá, những cái hố, nhưng Con Rắn không ở đó. Chắc hẳn nó đã leo lên cao hơn rồi. Thế là họ trèo tiếp. Họ lại ngủ một đêm trằn trọc, chào đón một bình minh xám xịt và ốm yếu khi tỉnh dậy. Họ bước đi trong im lặng, và sớm nhận ra sương mù đã bao phủ tới tận đầu gối mình. Không khí có mùi kim loại. Ánh bình minh nhìn có vẻ sai sai. "Chuyện gì đang xảy ra?", Tao hỏi nhưng bà già chỉ lặng im, uống một ngụm dài từ cái bình bên hông. Tao nhìn thấy thứ gì đó trong đám bùn, ánh bạc và phức tạp.
 
 "Kia là cái gì?"
 
@@ -134,7 +134,7 @@ Rồi bà già tháo đôi kính ra khỏi Tao.
 
 "À, ai là ai cơ chứ?"
 
-Họ tìm dưới những tảng đá, những cái hố, nhưng Con Rắn không ở nó. Chắc hẳn nó đã leo lên cao hơn rồi. Thế là họ trèo tiếp. Họ tỉnh dậy quá bình minh của ngày hôm sau, và được chứng kiến khung cảnh ngôi làng của Tao. 
+Họ tìm dưới những tảng đá, những cái hố, nhưng Con Rắn không ở đó. Chắc hẳn nó đã leo lên cao hơn rồi. Thế là họ trèo tiếp. Họ tỉnh dậy quá bình minh của ngày hôm sau, và được chứng kiến khung cảnh ngôi làng của Tao. 
 
 "Tại sao thế giới này lại chết?"
 
@@ -251,7 +251,7 @@ Họ cố lãng quên nó với sự buông bỏ
 Họ cố sống lâu hơn
 Họ cố bám víu vào nhau
 Cặp kính, thanh kiếm, chiếc cốc, bộ giáp và chiếc vòng cổ.
-Họ tìm dưới những tảng đá, những cái hố, nhưng con rắn không ở nó. Chắc hẳn nó đã leo lên cao hơn rồi. Họ trèo tiếp, trèo nữa, trèo mãi, và không tìm thấy thứ gì. Chỉ có mình họ trong cái vũ trụ khốn khổ này, và họ vẫn khốn khổ. Những Tân Thần đã đi mất rồi. Tất cả trừ ta. Giống loài của cậu cũng vậy, trừ ngôi làng ra, và đó là cách sống cũ. Ta giữ mọi người lại vì nó là một kỷ niệm đẹp tới cách chúng ta từng sống một thời. Ta rất tiếc cha cậu đã mất. Ta rất tiếc cậu sẽ không bao giờ gặp được ông ấy. Nhưng dưới kia là cả một ngôi làng với những con người yêu thương cậu, mà cậu lại lên đây hét thi với gió trên cái đỉnh núi chết tiệt này! Chuyện xấu xảy ra, với nhân quả phức tạp. Không có con rắn, phù thuỷ, hay thiên tài xấu xa nào đứng sau mọi chuyện cả. Và rồi sẽ có lúc mọi thứ tồn tại mãi mãi, không có ai bị đau đớn nữa cả. Nhưng sức mạnh nằm là khi ta nhìn vào vực sâu, vào mắt của con rắn, vẫn lựa chọn trở thành một con người lương thiện, kể cả khi đối mặt với sự vô định bất tận, với ác tâm, với ngày tàn của mọi thứ. Nhưng ngày đó chưa tới, và sẽ không tới trong một thời gian dài. Đừng có phí thời gian lên rắn và cối xay gió. Giờ hãy tạm biệt đi."
+Họ tìm dưới những tảng đá, những cái hố, nhưng con rắn không ở đó. Chắc hẳn nó đã leo lên cao hơn rồi. Họ trèo tiếp, trèo nữa, trèo mãi, và không tìm thấy thứ gì. Chỉ có mình họ trong cái vũ trụ khốn khổ này, và họ vẫn khốn khổ. Những Tân Thần đã đi mất rồi. Tất cả trừ ta. Giống loài của cậu cũng vậy, trừ ngôi làng ra, và đó là cách sống cũ. Ta giữ mọi người lại vì nó là một kỷ niệm đẹp tới cách chúng ta từng sống một thời. Ta rất tiếc cha cậu đã mất. Ta rất tiếc cậu sẽ không bao giờ gặp được ông ấy. Nhưng dưới kia là cả một ngôi làng với những con người yêu thương cậu, mà cậu lại lên đây hét thi với gió trên cái đỉnh núi chết tiệt này! Chuyện xấu xảy ra, với nhân quả phức tạp. Không có con rắn, phù thuỷ, hay thiên tài xấu xa nào đứng sau mọi chuyện cả. Và rồi sẽ có lúc mọi thứ tồn tại mãi mãi, không có ai bị đau đớn nữa cả. Nhưng sức mạnh nằm là khi ta nhìn vào vực sâu, vào mắt của con rắn, vẫn lựa chọn trở thành một con người lương thiện, kể cả khi đối mặt với sự vô định bất tận, với ác tâm, với ngày tàn của mọi thứ. Nhưng ngày đó chưa tới, và sẽ không tới trong một thời gian dài. Đừng có phí thời gian lên rắn và cối xay gió. Giờ hãy tạm biệt đi."
 
 Bà già lấy một chiếc hũ ra khỏi hành lý của Tao và đưa nó cho anh. Bà đặt tay lên vai anh. Một cách cẩn thận, Tao mở chiếc hũ. Cơn gió cuốn tro cốt người cha và trải nó lên ngọn núi. Trong ánh hoàng hôn cuối ngày, chúng không khác gì hàng triệu vì tinh tú, chán nản với vũ trụ rộng lớn và trở về mặt đất.
 
