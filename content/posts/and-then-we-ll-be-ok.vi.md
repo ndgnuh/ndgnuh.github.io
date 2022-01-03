@@ -142,7 +142,7 @@ Họ tìm dưới những tảng đá, những cái hố, nhưng Con Rắn khôn
 
 "Họ đi đâu vậy?" Đạo hỏi và chỉ lên bầu trời, "trên kia sao?"
 
-Bà già nhún vai, "Thôi đi nào, sắp muộn rồi."
+Bà già phớt lờ Đạo, "Thôi đi nào, sắp muộn rồi."
 
 Họ tiếp tục đi lên núi, đỉnh núi vẫn còn xa, nhưng chân núi giờ còn xa hơn. Đạo nghĩ về người cha quá cố. Anh tưởng tượng những ngày u ám và trống trải đang đợi phía trước; không có ai cùng trò chuyện, chơi đùa, hay cười vui. Khi anh tìm thấy Con Rắn, anh sẽ xẻ nó làm đôi.
 
