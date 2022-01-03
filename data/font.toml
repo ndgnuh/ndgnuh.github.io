@@ -1,2 +1,2 @@
-title_font = "Comfortaa, sans-serif"
-content_font = "Merriweather, serif"
+title_font = "titlefont"
+content_font = "contentfont"
