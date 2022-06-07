@@ -3,14 +3,9 @@ title: "Và rồi, chúng ta sẽ ổn thôi"
 date: 2021-12-21T09:00:00+07:00
 draft: false
 categories:
-- dịch thuật
-- chuyển thể
-- truyện ngắn
+- truyện
 tags:
-- dịch thuật
-- chuyển thể
 - exurb1a
-- truyện ngắn
 keywords:
 - dịch thuật
 - chuyển thể

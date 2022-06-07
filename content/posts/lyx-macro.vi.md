@@ -4,7 +4,6 @@ date: 2020-08-20T16:12:00+07:00
 summary: "Cách sử dụng Macro trong LyX. Các loại macro hay xuất hiện. Một số mẹo khi sử dụng."
 draft: false
 tags:
-- true
 - linux
 - foss
 - lyx

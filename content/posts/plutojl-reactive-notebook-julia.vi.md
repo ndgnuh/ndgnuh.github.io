@@ -8,10 +8,6 @@ categories:
 - lập trình
 tags:
 - julia
-- pluto
-- plutojl
-- reactive
-- reactive notebook
 keywords:
 - julia
 - lập trình

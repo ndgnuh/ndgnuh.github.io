@@ -9,8 +9,6 @@ tags:
 - lyx
 - latex
 - tex
-- học online
-- productivity
 keywords:
 - lyx
 - ubuntu
