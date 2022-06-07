@@ -1,4 +1,10 @@
 [[main]]
+identifier = "lyx"
+name = "LyX"
+url = "/series/lyx/"
+weight = 5
+
+[[main]]
 identifier = "julia Dojo"
 name = "Julia Dojo"
 url = "/julia-dojo"
