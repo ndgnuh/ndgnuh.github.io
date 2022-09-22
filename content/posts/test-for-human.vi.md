@@ -11,6 +11,7 @@ keywords:
 - kiểm tra cho con người
 libraries:
 - katex
+draft: true
 summary: Bài kiểm tra cho con người.
 description: Bài kiểm tra cho con người
 ---
