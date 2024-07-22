@@ -1,3 +1,7 @@
+.single__contents {
+    text-align: justify !important;
+}
+
 .slider {
     background-color: #ff6188 !important;
 }
