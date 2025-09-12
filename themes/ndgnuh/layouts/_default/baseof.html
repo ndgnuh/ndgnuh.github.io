@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<body>
+    <header>
+        {{ partial "header.html" . }}
+    </header>
+    <main>
+        <div>
+            <strong>debug</strong>
+            <pre>{{ templates.Current }}</pre>
+            <pre>{{ debug.Dump . }}</pre>
+        </div>
+        {{ block "main" . }}{{ end }}
+    </main>
+    <footer>
+        {{ partial "footer.html" . }}
+    </footer>
+
+
+    <script type="text/javascript">
+        console.log("Kind: {{ .Kind }}");
+    </script>
+    <pre>{{ debug.Dump hugo }}</pre>
+</body>
+
+</html>

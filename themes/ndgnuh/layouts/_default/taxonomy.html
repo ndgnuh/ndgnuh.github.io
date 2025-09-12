@@ -1,0 +1,26 @@
+{{ define "main" }}
+<!-- {{ $pages := where .RegularPages "Type" "posts" }} -->
+{{ $paginator := .Paginate (.Pages.ByPublishDate) 5 }}
+<h1>{{ .Title }}</h1>
+
+{{ range .Paginator.Pages.ByPublishDate }}
+<div>
+    <h3>
+        <a href="{{ .Permalink }}">
+            {{ .Title }}
+        </a>
+    </h3>
+    <!-- <p>{{ .Summary }}</p> -->
+    {{ if eq .Description "" }}
+    <p>{{ .Summary }}</p>
+    {{ else }}
+    <p>{{ .Description }}</p>
+    {{ end }}
+</div>
+<!-- For debugging only -->
+<!-- <pre>{{ debug.Dump . }}</pre> -->
+{{ end }}
+
+{{ partial "pagination.html" . }}
+
+{{ end }}

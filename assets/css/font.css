@@ -1,31 +1,31 @@
-@font-face {
-    font-family: 'contentfont';
-    src: url('../fonts/linux-libertine/LinLibertine_RI.otf') format('opentype');
-    font-weight: 400;
-    font-style: italic;
-	size-adjust: 130%;
-}
-
-@font-face {
-    font-family: 'contentfont';
-    src: url('../fonts/linux-libertine/LinLibertine_RZ.otf') format('opentype');
-    font-weight: bold;
-	size-adjust: 130%;
-}
-
-@font-face {
-    font-family: 'contentfont';
-    src: url('../fonts/linux-libertine/LinLibertine_R.otf') format('opentype');
-    font-weight: 400;
-	size-adjust: 130%;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'titlefont';
-    src: url('../fonts/M PLUS 2_300.ttf') format('truetype');
-    font-weight: bold;
-	size-adjust: 120%;
-    font-style: normal;
-}
-
+/* @font-face { */
+/*     font-family: 'contentfont'; */
+/*     src: url('../fonts/linux-libertine/LinLibertine_RI.otf') format('opentype'); */
+/*     font-weight: 400; */
+/*     font-style: italic; */
+/* 	size-adjust: 130%; */
+/* } */
+/*  */
+/* @font-face { */
+/*     font-family: 'contentfont'; */
+/*     src: url('../fonts/linux-libertine/LinLibertine_RZ.otf') format('opentype'); */
+/*     font-weight: bold; */
+/* 	size-adjust: 130%; */
+/* } */
+/*  */
+/* @font-face { */
+/*     font-family: 'contentfont'; */
+/*     src: url('../fonts/linux-libertine/LinLibertine_R.otf') format('opentype'); */
+/*     font-weight: 400; */
+/* 	size-adjust: 130%; */
+/*     font-style: normal; */
+/* } */
+/*  */
+/* @font-face { */
+/*     font-family: 'titlefont'; */
+/*     src: url('../fonts/M PLUS 2_300.ttf') format('truetype'); */
+/*     font-weight: bold; */
+/* 	size-adjust: 120%; */
+/*     font-style: normal; */
+/* } */
+/*  */

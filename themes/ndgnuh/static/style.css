@@ -1,0 +1,89 @@
+/* ========= THEME VARIABLES ========= */
+:root {
+  --color-bg: #f9fafb;
+  --color-text: #1f2937;
+  --color-primary: #3b82f6;
+  --color-secondary: #6366f1;
+  --color-accent: #f59e0b;
+
+  --font-family: "Inter", system-ui, sans-serif;
+  --font-size-base: 16px;
+  --line-height: 1.6;
+
+  --radius: 8px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --transition: 0.3s ease;
+}
+
+/* ========= GLOBAL RESET & BASE ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height);
+  transition: background var(--transition), color var(--transition);
+
+  margin: 0pt auto !important;
+  padding: 1rem;
+  width: 100%;
+  max-width: 768px;
+}
+
+/* ========= TYPOGRAPHY ========= */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: var(--color-text);
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+img { width: 100%; }
+
+
+/* :root { */
+/*     --site-bg: #2D2A2E; */
+/*     --site-fg: #FCFCFA; */
+/*     --heading-fg: #FFD866; */
+/* } */
+/*  */
+/* :root { */
+/*     /* Color variables */ */
+/*     --white: #2D2A2E; */
+/*     --black: #FCFCFA; */
+/*  */
+/*     /* Default theme variables */ */
+/*     --text-color: var(--black); */
+/*     --background-color: var(--white); */
+/* } */
+/*  */
+/* html { */
+/*     accent-color: var(--primary); */
+/* } */
+/*  */
+/*  */
+/* body { */
+/*     margin: 0 auto; */
+/*     width: 70%; */
+/* } */
+/*  */
+/* @media (prefers-color-scheme: dark) { */
+/*     :root { */
+/*         /* Dark theme variables */ */
+/*         --text-color: var(--white); */
+/*         --background-color: var(--black); */
+/*     } */
+/* } */
+
+.breadcrumb ol { padding-left: 0pt; }
+.breadcrumb li { display: inline; }
+.breadcrumb li+li:before { content: " / "; padding: 0 5px; color: #999; }

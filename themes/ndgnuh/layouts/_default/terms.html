@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{ $pages := where (where site.Pages "Type" .Section) "Kind" "term" }}
+
+<h1>{{ .LinkTitle }}</h1>
+
+{{ range $pages.ByTitle }}
+{{- $ppath := printf "terms-%s.html" .Section }}
+{{- partial $ppath . -}}
+<!-- {{ if eq .Section "series"}} -->
+<!-- <div class="series"> -->
+<!--     <h2 class="series-title">{{ .Title }}</h2> -->
+<!--     <div class="series-description">{{ .Description }}</div> -->
+<!-- </div> -->
+<!-- {{ end }} -->
+<!-- For debugging only -->
+<!-- <pre>{{ debug.Dump . }}</pre> -->
+{{ end }}
+
+{{ end }}

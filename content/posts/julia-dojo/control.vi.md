@@ -27,14 +27,14 @@ keywords:
 
 Chào mừng các bạn trở lại với Julia Dojo. Chúng ta đã tìm hiểu về cách khai báo biến và làm việc với một số kiểu dữ liệu trong bài viết [biến số, kiểu dữ liệu, phép toán](/julia-dojo/bien-so-va-kieu-du-lieu-trong-julia). Nhưng một chương trình chỉ có gán, gọi hàm và phép toán không thì không đủ, do đó, chúng ta ta có các cấu trúc điều khiển.
 
-{{< expand "Nội dung chỉnh sửa">}}
+```
 29/01/2020:
     - thêm phần lặp for, lặp với bước nhảy không phải 1
     - thêm phần khối lệnh (vốn định đưa sang bài hàm, nhưng thôi)
-{{< /expand >}}
+```
 
 ## Khối lệnh
-Đến phần này, chúng ta sẽ phải biết cách nhận biết một khối lệnh trong Julia. Trong các ngôn ngữ như C hoặc Java, chúng ta dùng một cặp { } để đánh dấu các dòng lệnh. Ở đây chúng tôi không làm vậy.
+Đến phần này, chúng ta sẽ phải biết cách nhận biết một khối lệnh trong Julia. Trong các ngôn ngữ như C hoặc Java, chúng ta dùng một cặp `{ }` để đánh dấu các dòng lệnh. Ở đây chúng tôi không làm vậy.
 
 {{<notice error>}}
 Lỗi: meme được dùng đi dùng lại quá nhiều

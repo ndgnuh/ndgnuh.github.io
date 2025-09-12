@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{ $pages := where site.Pages "Type" "posts" }}
+{{ $paginator := .Paginate $pages.ByWeight 5 }}
+
+<h1>Home</h1>
+<h2>{{ .Kind }}</h2>
+{{ range $paginator.Pages }}
+<div class="page-item">
+    <h2>
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    </h2>
+    <p>{{ .Summary }}</p>
+</div>
+
+{{ end }}
+
+{{ partial "pagination.html" . }}
+
+{{ end }}

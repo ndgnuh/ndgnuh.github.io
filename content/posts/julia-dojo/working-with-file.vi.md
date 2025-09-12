@@ -38,7 +38,7 @@ io = open("đương dẫn tới file")
 io = open("đương dẫn tới file", "mode")
 ```
 
-{{< expand "Các giá trị của mode" >}}
+Các giá trị mà mode có thể nhận là:
 - `"r"`: đọc
 - `"w"`: ghi, tạo mới, cắt bớt
 - `"a"`: ghi, tạo mới, ghi thêm
@@ -46,11 +46,6 @@ io = open("đương dẫn tới file", "mode")
 - `"w+"`: đọc, ghi, tạo, cắt bớt
 - `"a+"`: đọc, ghi, tạo, ghi thêm
 
-{{< notice info >}}
-Đừng lo lắng quá về các chế độ mở file. Theo mình, trong đa số trường hợp, bạn không cần quan tâm lắm về cái này.
-{{< /notice >}}
-
-{{< /expand >}}
 
 
 Sau khi làm việc với file xong, đừng quên đóng nó lại:

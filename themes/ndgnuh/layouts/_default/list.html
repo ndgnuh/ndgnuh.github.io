@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{ $pagerSize := 5 }}
+{{ $pages := where site.RegularPages "Kind" "page" }}
+{{ $paginator := .Paginate $pages.ByPublishDate.Reverse }}
+
+Site
+
+<h1>List page {{ .Type }}</h1>
+<h2>{{ .Kind }}</h2>
+{{ range .Paginator.Pages }}
+<div class="page-item">
+    <h2>
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    </h2>
+    <p>{{ .Summary }}</p>
+</div>
+
+{{ end }}
+
+{{ partial "pagination.html" . }}
+
+{{ end }}

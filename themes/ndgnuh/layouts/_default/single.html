@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{ partial "breadcrumb" . }}
+<h1>{{ .Title }}</h1>
+<h3>Page kind: {{ .Kind }}</h3>
+
+{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+{{ $dateHuman := .Date | time.Format ":date_long" }}
+<time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+
+{{ .Content }}
+{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+<div>---</div>
+{{ with .PrevInSection }}
+<a href="{{ .Permalink }}" class="pagination-single__right">
+    <strong class="pagination-single__icon">
+        Bài trước
+    </strong>
+    <div class="pagination-single__right-title">{{ .Title }}</div>
+</a>
+{{ end }}
+{{ with .NextInSection }}
+<a href="{{ .Permalink }}" class="pagination-single__right">
+    <strong class="pagination-single__icon">
+        Bài tiếp theo
+    </strong>
+    <div class="pagination-single__right-title">{{ .Title }}</div>
+</a>
+{{ end }}
+
+<!-- End of main -->
+{{ end }}

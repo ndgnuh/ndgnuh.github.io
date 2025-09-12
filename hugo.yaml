@@ -1,0 +1,61 @@
+baseURL: https://ndgnuh.github.io/
+title: "#Rants"
+theme: ndgnuh
+copyright: CC BY 4.0
+
+pagination:
+  pagerSize: 7
+
+taxonomies:
+  tag: tags
+  series: series
+
+Language:
+  LanguageCode: vi-VN
+
+outputs:
+  home: [html, rss]
+  page: [html, rss]
+  rss: [html]
+  taxonomy: [html, rss]
+  term: [html, rss]
+
+sitemap:
+  changefreq: daily
+  filename: sitemap.xml
+  priority: 0.5
+
+module:
+  hugoVersion:
+    extended: true
+    min: 0.116.0
+
+menus:
+  main:
+    - identifier: about
+      name: Giới thiệu
+      url: /about
+      weight: 10
+    - identifier: series
+      name: Loạt bài viết
+      url: /series/
+      weight: 20
+    - identifier: tags
+      name: Danh mục
+      url: /tags/
+      weight: 30
+    - identifier: lyx
+      name: LyX
+      url: /series/lyx/
+      parent: series
+      weight: 1
+    - identifier: julia Dojo
+      name: Julia Dojo
+      url: /julia-dojo
+      parent: series
+      weight: 1
+    - identifier: contact
+      name: Liên hệ
+      url: /lien-he/
+      weight: 99
+
