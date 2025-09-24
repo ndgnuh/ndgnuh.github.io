@@ -59,3 +59,19 @@ menus:
       url: /lien-he/
       weight: 99
 
+goldmark:
+  extensions:
+    passthrough:
+      delimiters:
+        block:
+        - [ "\\[", "\\]"]
+        - [ "$$", "$$" ]
+        inline:
+          - - \(
+            - \)
+          - - "$"
+            - "$"
+      enable: true
+
+params:
+  math: true

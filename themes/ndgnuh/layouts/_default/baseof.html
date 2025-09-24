@@ -6,26 +6,32 @@
 </head>
 
 <body>
-    <header>
-        {{ partial "header.html" . }}
-    </header>
-    <main>
-        <div>
-            <strong>debug</strong>
-            <pre>{{ templates.Current }}</pre>
-            <pre>{{ debug.Dump . }}</pre>
-        </div>
-        {{ block "main" . }}{{ end }}
-    </main>
-    <footer>
-        {{ partial "footer.html" . }}
-    </footer>
+    <div class="container">
+        <header>
+            {{ partial "header.html" . }}
+        </header>
+        <main>
+            <!-- <div> -->
+            <!--     <strong>debug</strong> -->
+            <!--     <pre>{{ templates.Current }}</pre> -->
+            <!--     <pre>{{ debug.Dump . }}</pre> -->
+            <!-- </div> -->
+            {{ block "main" . }}{{ end }}
+        </main>
+        <footer>
+            {{ partial "footer.html" . }}
+        </footer>
 
 
-    <script type="text/javascript">
-        console.log("Kind: {{ .Kind }}");
-    </script>
-    <pre>{{ debug.Dump hugo }}</pre>
+
+        {{ if .Param "math" }}
+        {{ partialCached "math.html" . }}
+        {{ end }}
+        <script type="text/javascript">
+            console.log("Kind: {{ .Kind }}");
+        </script>
+        <pre>{{ debug.Dump hugo }}</pre>
+    </div>
 </body>
 
 </html>

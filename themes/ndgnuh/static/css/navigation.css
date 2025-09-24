@@ -1,0 +1,171 @@
+header {
+    width: 100%;
+    font-family: var(--font-family-heading);
+    background: var(--nav-bg-normal);
+    color: white;
+    top: 0;
+    z-index: 1000;
+}
+
+header > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header > nav > h1 {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header > nav > h1 > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* NAV LIST - DESKTOP */
+header > nav > nav > ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+    background: var(--nav-bg-hover);
+    border-radius: var(--radius);
+}
+
+header {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+header * {
+    background-color: var(--nav-bg-normal);
+}
+
+/* DROPDOWN MENU */
+header nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    min-width: 180px;
+    border-radius: var(--radius);
+
+    display: flex;
+    row-gap: 0.25rem;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+
+    /* hide dropdown by default
+     * displace it slightly for the animation
+     * */
+    opacity: 0;
+    transform: translateY(-0.5rem); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Second level menu on hover */
+header nav ul li:hover ul {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Second level menu items */
+header nav ul li ul li {
+    width: 100%;
+}
+
+/* Second level menu items on hover */
+header nav ul li ul li:hover {
+    background: var(--nav-bg-normal);
+}
+
+/* Second level menu items' links */
+header nav ul li ul li a {
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+
+/* ===== BURGER MENU ===== */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+/* ===== MOBILE STYLES ===== */
+@media (max-width: 768px) {
+    header nav {
+        flex-wrap: wrap;
+    }
+
+    /* Hide nav list initially */
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        background: #222;
+        padding: 1rem 0;
+    }
+
+    header nav ul li {
+        justify-content: center; /* flex align center */
+    }
+
+    /* Show burger */
+    .burger {
+        display: flex;
+    }
+
+    /* Show menu when active */
+    header nav.active ul {
+        display: flex;
+    }
+}
+
+/* ===== BURGER ANIMATION (optional) ===== */
+header nav.active .burger div:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+header nav.active .burger div:nth-child(2) {
+    opacity: 0;
+}
+header nav.active .burger div:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+

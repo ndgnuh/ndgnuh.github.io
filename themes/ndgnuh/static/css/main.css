@@ -1,0 +1,95 @@
+@import '/css/navigation.css';
+@import '/css/footer.css';
+@import '/css/content.css';
+@import '/css/list-content.css';
+@import '/css/breadcrumb.css';
+
+/* ========= THEME VARIABLES ========= */
+:root {
+    --color-bg: #f9fafb;
+    --color-text: #1f2937;
+    --color-primary: #3b82f6;
+    --color-secondary: #6366f1;
+    --color-accent: #f59e0b;
+
+    --font-family: "Merriweather", system-ui, serif;
+    --font-size-base: 16px;
+    --line-height: 1.5;
+
+    --radius: 8px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --transition: 0.3s ease;
+
+    --primary-hue: 0;
+    --primary-sat: 30%;
+
+
+    --nav-bg-normal: hsl(var(--primary-hue), 8%, 15%);
+    --nav-bg-hover: rgba(255, 255, 255, 0.15);
+    --nav-fg: rgb(255, 216, 102, 1);
+    --nav-link-fg: hsl(var(--primary-hue), 50%, 50%);
+
+    --breadcrumb-bg-color: hsl(var(--primary-hue), 8%, 5%);
+    --breadcrumb-text-color: rgb(255, 216, 102, 0.3);
+    --breadcrumb-link-color: rgb(255, 216, 102, 1);
+    --breadcrumb-link-hover-color: #004999;
+    --breadcrumb-link-active-color: #002f66;
+
+    --font-family-heading: "Comfortaa", system-ui, sans-serif;
+}
+
+/* ========= GLOBAL RESET & BASE ========= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* background: var(--color-bg); */
+body {
+    background-color: #9a9a9a;
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-size: calc(100% + 0.25vw);
+    line-height: var(--line-height);
+    transition: background var(--transition), color var(--transition);
+
+    margin: 0pt auto !important;
+    padding: 0pt 1rem;
+    width: 100%;
+    max-width: 960px;
+}
+
+/* ========= TYPOGRAPHY ========= */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-heading);
+}
+
+.container {
+    min-height: 100vh;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid var(--nav-bg-normal);
+}
+
+
+p {
+    margin-bottom: 1em;
+}
+
+img { width: 100%; }
+
+main {
+    padding: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+
+    background-color: #FAF0E6;
+}
+
+/* ========= FOOTER ========= */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-family: var(--font-family-heading);
+}

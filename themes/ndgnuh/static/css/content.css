@@ -1,0 +1,95 @@
+.content > p {
+    text-align: justify;
+    font-family: var(--font-family);
+    margin-bottom: 12px;
+    margin-top: 0px;
+}
+
+/* heaings */
+.content > h1 {
+    font-size: 300%;
+    line-height: 1.2;
+}
+
+.content > h2 {
+    color: hsl(16, 70%, 30%);
+    font-weight: bold;
+    font-size: 200%;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.content > h3 {
+    font-size: 150%;
+    color: hsl(var(--primary-hue), 0%, 20%);
+    line-height: 1.2;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+
+/* links */
+.content a {
+    text-decoration: none;
+    color: hsl(190, 70%, 30%);
+}
+
+.content a:hover {
+    text-decoration: underline;
+    color: hsl(190, 70%, 35%);
+}
+
+/* enumerations */
+.content ul, .content li {
+    margin-left: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* code highlighting */
+.highlight {
+    margin-bottom: 0.5rem;
+    radius: var(--radius);
+}
+
+.highlight > pre {
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+
+span.begin {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+span.end {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* inline code */
+.content p code {
+    color: hsl(70, 80%, 30%);
+    font-weight: bold;
+    /* font-family: var(--font-family) !important; */
+}
+
+.content p code:hover {
+    cursor: pointer;
+}
+
+/* blockquote */
+.content blockquote {
+    border-left: 4px solid hsl(240, 70%,
+    30%);
+    font-style: italic;
+    padding: 1rem;
+    padding-right: 1.5rem;
+    color: hsl(240, 70%, 20%);
+    background-color: hsl(240, 70%, 95%);
+    margin-bottom: 12px; /* same as paragraph */
+}
+
+.content blockquote p {
+    margin: 0;
+}

@@ -10,7 +10,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- FONT -->
-<!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+    rel="stylesheet">
 
 <!-- JS -->
 <!-- <script src="//unpkg.com/alpinejs" defer></script> -->
@@ -18,11 +22,14 @@
 <!-- CSS -->
 <!-- <link rel="stylesheet" href="/normalize.css" type="text/css"> -->
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"> -->
-<link rel="stylesheet" href="/style.css" type="text/css">
+<link rel="stylesheet" href="/css/main.css" type="text/css">
 <meta name="theme-color" content="#196EC2" />
 
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="/favicon.ico">
 
-{{ partialCached "head/css.html" . }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+    integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+
+<!-- {{ partialCached "head/css.html" . }} -->
 {{ partialCached "head/js.html" . }}

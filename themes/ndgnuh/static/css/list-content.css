@@ -1,0 +1,4 @@
+.list-content h2 a {
+    color: var(--nav-link-fg);
+    text-decoration: none;
+}

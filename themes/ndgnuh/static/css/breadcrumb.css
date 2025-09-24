@@ -1,0 +1,36 @@
+.breadcrumb {
+    background-color: var(--breadcrumb-bg-color);
+    color: var(--breadcrumb-link-color);
+    display: inline-block;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    radius: var(--radius);
+    border-radius: var(--radius);
+    font-family: var(--font-family-heading);
+}
+
+.breadcrumb a {
+    color: var(--breadcrumb-link-color);
+    text-decoration: none;
+}
+
+.breadcrumb ol {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0rem 0.5rem;
+}
+
+.breadcrumb li {
+    display: inline;
+    padding: 0.5rem 0rem;
+}
+
+.breadcrumb li+li:before {
+    content: "/";
+    margin-right: 0.25rem;
+    color: var(--breadcrumb-text-color);
+}
+

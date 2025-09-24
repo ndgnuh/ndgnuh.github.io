@@ -1,4 +1,9 @@
 <nav>
     <h1><a href="/">{{ site.Title }}</a></h1>
     {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    <div class="burger" onclick="this.parentElement.classList.toggle('active')">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </nav>
